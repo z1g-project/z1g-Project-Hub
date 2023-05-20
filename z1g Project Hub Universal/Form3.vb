@@ -113,7 +113,7 @@ Public Class Form3
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim getpassword As New System.IO.StreamReader("C:\Users\Public\z1g-project\password.dat")
-        TextBox1.Text = getpassword.ReadToEnd
+        TextBox2.Text = getpassword.ReadToEnd
 
         If TextBox2.Text = getpassword.ReadToEnd Then
             Label31.Visible = True
