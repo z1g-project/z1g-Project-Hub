@@ -1,4 +1,4 @@
-<p align="center"><img src="static/assets/img/logo.png" height="200">
+<p align="center"><img src="https://z1g-project.repl.co/assets/img/logo.png" height="200">
 </p>
 
 # The z1g Project Hub Source Code
