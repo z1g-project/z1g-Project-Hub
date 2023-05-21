@@ -17,7 +17,7 @@ Public Class Form1
         End If
         If ProgressBar1.Value = 100 Then
             Timer1.Stop()
-            If My.Computer.FileSystem.FileExists("C:\Users\Public\z1g-project\acciscreated.dat") Then
+            If My.Computer.FileSystem.FileExists(My.Settings.savelocation + "acciscreated.dat") Then
                 Form3.Show()
                 Me.Hide()
             Else

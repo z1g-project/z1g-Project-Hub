@@ -13,18 +13,22 @@ Public Class Form3
     End Sub
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        Tutorial.Hide()
         Tutorial.Show()
     End Sub
 
     Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
+        Tutorial.Hide()
         Tutorial.Show()
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        beta.Hide()
         beta.Show()
     End Sub
 
     Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
+        beta.Hide()
         beta.Show()
     End Sub
 
@@ -102,7 +106,7 @@ Public Class Form3
         Panel5.Visible = False
         Panel6.Visible = False
         Panel7.Visible = False
-        Dim getuser As New System.IO.StreamReader("C:\Users\Public\z1g-project\username.dat")
+        Dim getuser As New System.IO.StreamReader(My.Settings.savelocation + "username.dat")
         Label2.Text = getuser.ReadToEnd
     End Sub
 
@@ -200,5 +204,10 @@ Public Class Form3
             MessageBox.Show("An error occurred: " & ex.Message)
             Button7.Enabled = True
         End Try
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+        Settings.Hide()
+        Settings.Show()
     End Sub
 End Class

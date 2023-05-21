@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "z1g Project Hub Universal", "z1g Project Hub Universal\z1g Project Hub Universal.vbproj", "{05182897-EE51-4FC4-9CB9-CCBF03C76510}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "z1g Project Hub Universal", "z1g Project Hub Universal\z1g Project Hub Universal.vbproj", "{05182897-EE51-4FC4-9CB9-CCBF03C76510}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "update", "update\update.vbproj", "{3DB83222-D484-4531-80CF-3C26A0CBB7D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{05182897-EE51-4FC4-9CB9-CCBF03C76510}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05182897-EE51-4FC4-9CB9-CCBF03C76510}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05182897-EE51-4FC4-9CB9-CCBF03C76510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB83222-D484-4531-80CF-3C26A0CBB7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB83222-D484-4531-80CF-3C26A0CBB7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB83222-D484-4531-80CF-3C26A0CBB7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB83222-D484-4531-80CF-3C26A0CBB7D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
