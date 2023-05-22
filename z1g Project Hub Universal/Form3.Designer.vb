@@ -422,9 +422,9 @@ Partial Class Form3
         Me.Label61.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label61.Location = New System.Drawing.Point(218, 571)
         Me.Label61.Name = "Label61"
-        Me.Label61.Size = New System.Drawing.Size(99, 17)
+        Me.Label61.Size = New System.Drawing.Size(111, 17)
         Me.Label61.TabIndex = 43
-        Me.Label61.Text = "Source: website"
+        Me.Label61.Text = "Source: Loading..."
         '
         'Label62
         '
@@ -442,9 +442,9 @@ Partial Class Form3
         Me.Label63.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label63.Location = New System.Drawing.Point(226, 537)
         Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(84, 17)
+        Me.Label63.Size = New System.Drawing.Size(64, 17)
         Me.Label63.TabIndex = 41
-        Me.Label63.Text = "%description"
+        Me.Label63.Text = "Loading..."
         '
         'Label64
         '
@@ -452,15 +452,16 @@ Partial Class Form3
         Me.Label64.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label64.Location = New System.Drawing.Point(212, 496)
         Me.Label64.Name = "Label64"
-        Me.Label64.Size = New System.Drawing.Size(105, 25)
+        Me.Label64.Size = New System.Drawing.Size(95, 25)
         Me.Label64.TabIndex = 40
-        Me.Label64.Text = "%newstitle"
+        Me.Label64.Text = "Loading..."
         '
         'PictureBox15
         '
         Me.PictureBox15.Location = New System.Drawing.Point(60, 490)
         Me.PictureBox15.Name = "PictureBox15"
         Me.PictureBox15.Size = New System.Drawing.Size(133, 98)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox15.TabIndex = 39
         Me.PictureBox15.TabStop = False
         '
@@ -470,9 +471,9 @@ Partial Class Form3
         Me.Label57.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label57.Location = New System.Drawing.Point(218, 440)
         Me.Label57.Name = "Label57"
-        Me.Label57.Size = New System.Drawing.Size(99, 17)
+        Me.Label57.Size = New System.Drawing.Size(111, 17)
         Me.Label57.TabIndex = 38
-        Me.Label57.Text = "Source: website"
+        Me.Label57.Text = "Source: Loading..."
         '
         'Label58
         '
@@ -490,9 +491,9 @@ Partial Class Form3
         Me.Label59.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label59.Location = New System.Drawing.Point(226, 406)
         Me.Label59.Name = "Label59"
-        Me.Label59.Size = New System.Drawing.Size(84, 17)
+        Me.Label59.Size = New System.Drawing.Size(64, 17)
         Me.Label59.TabIndex = 36
-        Me.Label59.Text = "%description"
+        Me.Label59.Text = "Loading..."
         '
         'Label60
         '
@@ -500,15 +501,16 @@ Partial Class Form3
         Me.Label60.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label60.Location = New System.Drawing.Point(212, 365)
         Me.Label60.Name = "Label60"
-        Me.Label60.Size = New System.Drawing.Size(105, 25)
+        Me.Label60.Size = New System.Drawing.Size(95, 25)
         Me.Label60.TabIndex = 35
-        Me.Label60.Text = "%newstitle"
+        Me.Label60.Text = "Loading..."
         '
         'PictureBox14
         '
         Me.PictureBox14.Location = New System.Drawing.Point(60, 359)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Size = New System.Drawing.Size(133, 98)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox14.TabIndex = 34
         Me.PictureBox14.TabStop = False
         '
@@ -518,9 +520,9 @@ Partial Class Form3
         Me.Label53.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label53.Location = New System.Drawing.Point(218, 316)
         Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(99, 17)
+        Me.Label53.Size = New System.Drawing.Size(111, 17)
         Me.Label53.TabIndex = 33
-        Me.Label53.Text = "Source: website"
+        Me.Label53.Text = "Source: Loading..."
         '
         'Label54
         '
@@ -538,9 +540,9 @@ Partial Class Form3
         Me.Label55.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label55.Location = New System.Drawing.Point(226, 282)
         Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(84, 17)
+        Me.Label55.Size = New System.Drawing.Size(64, 17)
         Me.Label55.TabIndex = 31
-        Me.Label55.Text = "%description"
+        Me.Label55.Text = "Loading..."
         '
         'Label56
         '
@@ -548,15 +550,16 @@ Partial Class Form3
         Me.Label56.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label56.Location = New System.Drawing.Point(212, 241)
         Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(105, 25)
+        Me.Label56.Size = New System.Drawing.Size(95, 25)
         Me.Label56.TabIndex = 30
-        Me.Label56.Text = "%newstitle"
+        Me.Label56.Text = "Loading..."
         '
         'PictureBox13
         '
         Me.PictureBox13.Location = New System.Drawing.Point(60, 235)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(133, 98)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox13.TabIndex = 29
         Me.PictureBox13.TabStop = False
         '
@@ -579,9 +582,9 @@ Partial Class Form3
         Me.Label52.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label52.Location = New System.Drawing.Point(218, 191)
         Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(99, 17)
+        Me.Label52.Size = New System.Drawing.Size(111, 17)
         Me.Label52.TabIndex = 27
-        Me.Label52.Text = "Source: website"
+        Me.Label52.Text = "Source: Loading..."
         '
         'Label51
         '
@@ -599,9 +602,9 @@ Partial Class Form3
         Me.Label50.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label50.Location = New System.Drawing.Point(226, 157)
         Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(84, 17)
+        Me.Label50.Size = New System.Drawing.Size(64, 17)
         Me.Label50.TabIndex = 25
-        Me.Label50.Text = "%description"
+        Me.Label50.Text = "Loading..."
         '
         'Label49
         '
@@ -609,15 +612,16 @@ Partial Class Form3
         Me.Label49.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label49.Location = New System.Drawing.Point(212, 116)
         Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(105, 25)
+        Me.Label49.Size = New System.Drawing.Size(95, 25)
         Me.Label49.TabIndex = 24
-        Me.Label49.Text = "%newstitle"
+        Me.Label49.Text = "Loading..."
         '
         'PictureBox12
         '
         Me.PictureBox12.Location = New System.Drawing.Point(60, 110)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(133, 98)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox12.TabIndex = 23
         Me.PictureBox12.TabStop = False
         '
