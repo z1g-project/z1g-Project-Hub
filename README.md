@@ -10,6 +10,7 @@ The Official z1g Project Hub Client source code repository!
 To Install The z1g Project Hub on other Operating systems you need the followoing:
 - A Computer or Laptop of any kind (Linux, MacOS, Windows, etc)
 - Download the .NET Framework from here: https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+- *Note if your on Linux there are extra steps you need to follow refer to this [article](https://z1g-project.johnglynn2.repl.co/support/kb/19987/?ref=github) for more information*
 
 Once you Install the .NET Framework you should be able to run the program!
 
