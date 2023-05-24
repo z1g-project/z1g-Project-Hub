@@ -38,6 +38,37 @@ Partial Class Form3
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label65 = New System.Windows.Forms.Label()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
@@ -94,46 +125,10 @@ Partial Class Form3
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -145,6 +140,14 @@ Partial Class Form3
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel5.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -315,6 +318,8 @@ Partial Class Form3
         'Panel4
         '
         Me.Panel4.Controls.Add(Me.Panel5)
+        Me.Panel4.Controls.Add(Me.Label65)
+        Me.Panel4.Controls.Add(Me.PictureBox16)
         Me.Panel4.Controls.Add(Me.Label26)
         Me.Panel4.Controls.Add(Me.PictureBox11)
         Me.Panel4.Controls.Add(Me.Label25)
@@ -337,6 +342,319 @@ Partial Class Form3
         Me.Panel4.Size = New System.Drawing.Size(828, 641)
         Me.Panel4.TabIndex = 13
         '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label26.Location = New System.Drawing.Point(298, 455)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(73, 20)
+        Me.Label26.TabIndex = 25
+        Me.Label26.Text = "Blurred X"
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.bx
+        Me.PictureBox11.Location = New System.Drawing.Point(257, 313)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox11.TabIndex = 24
+        Me.PictureBox11.TabStop = False
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label25.Location = New System.Drawing.Point(457, 455)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(108, 20)
+        Me.Label25.TabIndex = 23
+        Me.Label25.Text = "Blurred's Vault"
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources._128
+        Me.PictureBox10.Location = New System.Drawing.Point(438, 313)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox10.TabIndex = 22
+        Me.PictureBox10.TabStop = False
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label24.Location = New System.Drawing.Point(111, 455)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(74, 20)
+        Me.Label24.TabIndex = 21
+        Me.Label24.Text = "BruhProx"
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.uv
+        Me.PictureBox9.Location = New System.Drawing.Point(70, 313)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox9.TabIndex = 20
+        Me.PictureBox9.TabStop = False
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label18.Location = New System.Drawing.Point(663, 270)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(66, 20)
+        Me.Label18.TabIndex = 19
+        Me.Label18.Text = "z1g VPN"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label19.Location = New System.Drawing.Point(470, 270)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(93, 20)
+        Me.Label19.TabIndex = 18
+        Me.Label19.Text = "z1g X Center"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label20.Location = New System.Drawing.Point(301, 270)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(63, 20)
+        Me.Label20.TabIndex = 17
+        Me.Label20.Text = "Velocity"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label21.Location = New System.Drawing.Point(115, 270)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(65, 20)
+        Me.Label21.TabIndex = 16
+        Me.Label21.Text = "Terbium"
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
+        Me.PictureBox5.Location = New System.Drawing.Point(622, 128)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 15
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
+        Me.PictureBox6.Location = New System.Drawing.Point(438, 128)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 14
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.velocity
+        Me.PictureBox7.Location = New System.Drawing.Point(257, 128)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 13
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.terbium
+        Me.PictureBox8.Location = New System.Drawing.Point(70, 128)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox8.TabIndex = 12
+        Me.PictureBox8.TabStop = False
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label22.Location = New System.Drawing.Point(367, 80)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(110, 21)
+        Me.Label22.TabIndex = 11
+        Me.Label22.Text = "Avalible Apps"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label23.Location = New System.Drawing.Point(329, 40)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(192, 37)
+        Me.Label23.TabIndex = 10
+        Me.Label23.Text = "App Manager"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.TextBox1.ForeColor = System.Drawing.Color.White
+        Me.TextBox1.Location = New System.Drawing.Point(50, 370)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TextBox1.Size = New System.Drawing.Size(734, 259)
+        Me.TextBox1.TabIndex = 12
+        Me.TextBox1.Text = resources.GetString("TextBox1.Text")
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label16.Location = New System.Drawing.Point(328, 337)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(163, 21)
+        Me.Label16.TabIndex = 11
+        Me.Label16.Text = "View the Changelogs"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label17.Location = New System.Drawing.Point(292, 301)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(236, 30)
+        Me.Label17.TabIndex = 10
+        Me.Label17.Text = "Whats new in z1g Hub"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label15.Location = New System.Drawing.Point(638, 261)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(120, 20)
+        Me.Label15.TabIndex = 9
+        Me.Label15.Text = "z1g Hub Tutorial"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label14.Location = New System.Drawing.Point(442, 261)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(154, 20)
+        Me.Label14.TabIndex = 8
+        Me.Label14.Text = "Try out Beta Features"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(249, 261)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(183, 20)
+        Me.Label13.TabIndex = 7
+        Me.Label13.Text = "Check the z1g Feed [Beta]"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label12.Location = New System.Drawing.Point(86, 261)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(125, 20)
+        Me.Label12.TabIndex = 6
+        Me.Label12.Text = "Install Basic Apps"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
+        Me.PictureBox4.Location = New System.Drawing.Point(626, 119)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 5
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.beta_features
+        Me.PictureBox3.Location = New System.Drawing.Point(442, 119)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 4
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.feed
+        Me.PictureBox2.Location = New System.Drawing.Point(261, 119)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 3
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.downloadicon
+        Me.PictureBox1.Location = New System.Drawing.Point(74, 119)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 2
+        Me.PictureBox1.TabStop = False
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label11.Location = New System.Drawing.Point(371, 71)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(94, 21)
+        Me.Label11.TabIndex = 1
+        Me.Label11.Text = "Get Started"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label10.Location = New System.Drawing.Point(249, 14)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(343, 37)
+        Me.Label10.TabIndex = 0
+        Me.Label10.Text = "Welcome to the z1g Hub!"
+        '
+        'Label65
+        '
+        Me.Label65.AutoSize = True
+        Me.Label65.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label65.Location = New System.Drawing.Point(641, 455)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(113, 20)
+        Me.Label65.TabIndex = 28
+        Me.Label65.Text = "Coming Soon..."
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
+        Me.PictureBox16.Location = New System.Drawing.Point(622, 313)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(150, 130)
+        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox16.TabIndex = 27
+        Me.PictureBox16.TabStop = False
+        '
         'Panel5
         '
         Me.Panel5.Controls.Add(Me.Panel6)
@@ -354,7 +672,7 @@ Partial Class Form3
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(828, 641)
-        Me.Panel5.TabIndex = 26
+        Me.Panel5.TabIndex = 29
         '
         'Panel6
         '
@@ -961,299 +1279,6 @@ Partial Class Form3
         Me.Label28.TabIndex = 12
         Me.Label28.Text = "Account Manager"
         '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label26.Location = New System.Drawing.Point(383, 455)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(73, 20)
-        Me.Label26.TabIndex = 25
-        Me.Label26.Text = "Blurred X"
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.bx
-        Me.PictureBox11.Location = New System.Drawing.Point(342, 313)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox11.TabIndex = 24
-        Me.PictureBox11.TabStop = False
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label25.Location = New System.Drawing.Point(537, 455)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(113, 20)
-        Me.Label25.TabIndex = 23
-        Me.Label25.Text = "Coming Soon..."
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
-        Me.PictureBox10.Location = New System.Drawing.Point(518, 313)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox10.TabIndex = 22
-        Me.PictureBox10.TabStop = False
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label24.Location = New System.Drawing.Point(209, 455)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(74, 20)
-        Me.Label24.TabIndex = 21
-        Me.Label24.Text = "BruhProx"
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.uv
-        Me.PictureBox9.Location = New System.Drawing.Point(168, 313)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox9.TabIndex = 20
-        Me.PictureBox9.TabStop = False
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label18.Location = New System.Drawing.Point(663, 270)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(66, 20)
-        Me.Label18.TabIndex = 19
-        Me.Label18.Text = "z1g VPN"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label19.Location = New System.Drawing.Point(470, 270)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(93, 20)
-        Me.Label19.TabIndex = 18
-        Me.Label19.Text = "z1g X Center"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label20.Location = New System.Drawing.Point(301, 270)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(63, 20)
-        Me.Label20.TabIndex = 17
-        Me.Label20.Text = "Velocity"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label21.Location = New System.Drawing.Point(115, 270)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(65, 20)
-        Me.Label21.TabIndex = 16
-        Me.Label21.Text = "Terbium"
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
-        Me.PictureBox5.Location = New System.Drawing.Point(622, 128)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 15
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
-        Me.PictureBox6.Location = New System.Drawing.Point(438, 128)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 14
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.velocity
-        Me.PictureBox7.Location = New System.Drawing.Point(257, 128)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 13
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.terbium
-        Me.PictureBox8.Location = New System.Drawing.Point(70, 128)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox8.TabIndex = 12
-        Me.PictureBox8.TabStop = False
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label22.Location = New System.Drawing.Point(367, 80)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(110, 21)
-        Me.Label22.TabIndex = 11
-        Me.Label22.Text = "Avalible Apps"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label23.Location = New System.Drawing.Point(329, 40)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(192, 37)
-        Me.Label23.TabIndex = 10
-        Me.Label23.Text = "App Manager"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.TextBox1.ForeColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(50, 370)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox1.Size = New System.Drawing.Size(734, 259)
-        Me.TextBox1.TabIndex = 12
-        Me.TextBox1.Text = resources.GetString("TextBox1.Text")
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label16.Location = New System.Drawing.Point(328, 337)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(163, 21)
-        Me.Label16.TabIndex = 11
-        Me.Label16.Text = "View the Changelogs"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label17.Location = New System.Drawing.Point(292, 301)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(236, 30)
-        Me.Label17.TabIndex = 10
-        Me.Label17.Text = "Whats new in z1g Hub"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label15.Location = New System.Drawing.Point(638, 261)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(120, 20)
-        Me.Label15.TabIndex = 9
-        Me.Label15.Text = "z1g Hub Tutorial"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label14.Location = New System.Drawing.Point(442, 261)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(154, 20)
-        Me.Label14.TabIndex = 8
-        Me.Label14.Text = "Try out Beta Features"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.Location = New System.Drawing.Point(249, 261)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(183, 20)
-        Me.Label13.TabIndex = 7
-        Me.Label13.Text = "Check the z1g Feed [Beta]"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.Location = New System.Drawing.Point(86, 261)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(125, 20)
-        Me.Label12.TabIndex = 6
-        Me.Label12.Text = "Install Basic Apps"
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
-        Me.PictureBox4.Location = New System.Drawing.Point(626, 119)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 5
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.beta_features
-        Me.PictureBox3.Location = New System.Drawing.Point(442, 119)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 4
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.feed
-        Me.PictureBox2.Location = New System.Drawing.Point(261, 119)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 3
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.downloadicon
-        Me.PictureBox1.Location = New System.Drawing.Point(74, 119)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.Location = New System.Drawing.Point(371, 71)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(94, 21)
-        Me.Label11.TabIndex = 1
-        Me.Label11.Text = "Get Started"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.Location = New System.Drawing.Point(249, 14)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(343, 37)
-        Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Welcome to the z1g Hub!"
-        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -1277,16 +1302,6 @@ Partial Class Form3
         Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1298,6 +1313,17 @@ Partial Class Form3
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1346,47 +1372,11 @@ Partial Class Form3
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents Label24 As Label
     Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents Label65 As Label
+    Friend WithEvents PictureBox16 As PictureBox
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label32 As Label
-    Friend WithEvents Label31 As Label
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Label29 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label30 As Label
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents Label38 As Label
-    Friend WithEvents Label37 As Label
-    Friend WithEvents Label33 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Label34 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Label36 As Label
-    Friend WithEvents Label45 As Label
-    Friend WithEvents Label44 As Label
-    Friend WithEvents Label43 As Label
-    Friend WithEvents Label42 As Label
-    Friend WithEvents Label41 As Label
-    Friend WithEvents Label40 As Label
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Label39 As Label
-    Friend WithEvents Label46 As Label
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents Label47 As Label
-    Friend WithEvents Label48 As Label
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Label52 As Label
-    Friend WithEvents Label51 As Label
-    Friend WithEvents Label50 As Label
-    Friend WithEvents Label49 As Label
-    Friend WithEvents PictureBox12 As PictureBox
     Friend WithEvents Label61 As Label
     Friend WithEvents Label62 As Label
     Friend WithEvents Label63 As Label
@@ -1402,4 +1392,42 @@ Partial Class Form3
     Friend WithEvents Label55 As Label
     Friend WithEvents Label56 As Label
     Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Label52 As Label
+    Friend WithEvents Label51 As Label
+    Friend WithEvents Label50 As Label
+    Friend WithEvents Label49 As Label
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents Label47 As Label
+    Friend WithEvents Label48 As Label
+    Friend WithEvents Label46 As Label
+    Friend WithEvents Label45 As Label
+    Friend WithEvents Label44 As Label
+    Friend WithEvents Label43 As Label
+    Friend WithEvents Label42 As Label
+    Friend WithEvents Label41 As Label
+    Friend WithEvents Label40 As Label
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Label39 As Label
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label38 As Label
+    Friend WithEvents Label37 As Label
+    Friend WithEvents Label33 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Label34 As Label
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label35 As Label
+    Friend WithEvents Label36 As Label
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Label29 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label30 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Label28 As Label
 End Class

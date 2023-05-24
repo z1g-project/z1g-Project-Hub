@@ -2,6 +2,7 @@
 Imports System.Reflection.Emit
 Imports Newtonsoft.Json.Linq
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
+Imports System.IO.Compression
 
 Public Class Form3
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -437,12 +438,12 @@ Public Class Form3
         Label2.Text = getuser.ReadToEnd
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) 
         Form2.Show()
         Panel6.Visible = False
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) 
         Dim getpassword As New System.IO.StreamReader(My.Settings.savelocation + "password.dat")
         TextBox2.Text = getpassword.ReadToEnd
 
@@ -470,7 +471,7 @@ Public Class Form3
 
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) 
         Button6.Enabled = False
         Label43.Text = My.Computer.Name
 
@@ -491,7 +492,7 @@ Public Class Form3
         Button6.Enabled = True
     End Sub
 
-    Private Async Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Async Sub Button7_Click(sender As Object, e As EventArgs) 
         Try
             Button7.Enabled = False
             Using client As New HttpClient()
@@ -825,13 +826,27 @@ Public Class Form3
     End Sub
 
     Private Sub Label25_Click(sender As Object, e As EventArgs) Handles Label25.Click
-        'Soon
-        MsgBox("This product is not announced yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+        'Blurred's Vault
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\Blurreds Vault\Blurred's Vault.exe") Then
+            Process.Start("C:\z1g Apps\Blurreds Vault\Blurred's Vault.exe")
+        Else
+            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/blurreds-vault.zip", "C:\z1g Apps\Blurreds Vault\blurreds-vault.zip")
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Blurreds Vault\blurreds-vault.zip", "C:\Users\Public\Blurreds Vault\")
+            System.IO.Directory.CreateDirectory("C:\Users\Public\Blurreds Vault\")
+            Process.Start("C:\z1g Apps\Blurreds Vault\Blurred's Vault.exe")
+        End If
     End Sub
 
     Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
-        'Soon
-        MsgBox("This product is not announced yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+        'Blurred's Vault
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\Blurreds Vault\Blurred's Vault.exe") Then
+            Process.Start("C:\z1g Apps\Blurreds Vault\Blurred's Vault.exe")
+        Else
+            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/blurreds-vault.zip", "C:\z1g Apps\Blurreds Vault\blurreds-vault.zip")
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Blurreds Vault\blurreds-vault.zip", "C:\Users\Public\Blurreds Vault\")
+            System.IO.Directory.CreateDirectory("C:\Users\Public\Blurreds Vault\")
+            Process.Start("C:\z1g Apps\Blurreds Vault\Blurred's Vault.exe")
+        End If
     End Sub
 
     Private Sub Label26_Click(sender As Object, e As EventArgs) Handles Label26.Click
@@ -912,5 +927,15 @@ Public Class Form3
     Private Sub Label18_Click(sender As Object, e As EventArgs) Handles Label18.Click
         'z1g VPN
         MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub PictureBox16_Click(sender As Object, e As EventArgs) Handles PictureBox16.Click
+        'Soon
+        MsgBox("This product is not announced yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub Label65_Click(sender As Object, e As EventArgs) Handles Label65.Click
+        'Soon
+        MsgBox("This product is not announced yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
     End Sub
 End Class
