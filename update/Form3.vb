@@ -14,9 +14,18 @@ Public Class Form3
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ProgressBar1.Increment(1)
         If ProgressBar1.Value = 25 Then
-            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/z1g-project-hub.exe", "C:/Users/Public/z1g-project/z1g-project-hub.exe")
+            If My.Computer.FileSystem.FileExists("C:/Users/Public/z1g-project/temp/z1g-project-hub.zip") Then
+                My.Computer.FileSystem.DeleteFile("C:/Users/Public/z1g-project/temp/z1g-project-hub.zip")
+                My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/z1g-project-hub.zip", "C:/Users/Public/z1g-project/temp/z1g-project-hub.zip")
+                ZipFile.ExtractToDirectory("C:/Users/Public/z1g-project/temp/z1g-project-hub.zip", "C:/Users/Public/z1g-project/")
+                My.Computer.FileSystem.DeleteFile("C:/Users/Public/z1g-project/temp/z1g-project-hub.zip")
+            Else
+                My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/z1g-project-hub.zip", "C:/Users/Public/z1g-project/temp/z1g-project-hub.zip")
+                ZipFile.ExtractToDirectory("C:/Users/Public/z1g-project/temp/z1g-project-hub.zip", "C:/Users/Public/z1g-project/")
+                My.Computer.FileSystem.DeleteFile("C:/Users/Public/z1g-project/temp/z1g-project-hub.zip")
+            End If
         End If
-        If ProgressBar1.Value = 50 Then
+            If ProgressBar1.Value = 50 Then
             Label2.Text = "Installing..."
             My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/z1g-Project-Hub.lnk", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\z1g Project Hub.lnk")
             Panel3.Visible = True
