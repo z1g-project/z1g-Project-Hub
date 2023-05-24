@@ -821,4 +821,94 @@ Public Class Form3
         Settings.Hide()
         Settings.Show()
     End Sub
+
+    Private Sub Label25_Click(sender As Object, e As EventArgs) Handles Label25.Click
+        'Soon
+        MsgBox("This product is not announced yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+        'Soon
+        MsgBox("This product is not announced yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub Label26_Click(sender As Object, e As EventArgs) Handles Label26.Click
+        'BlurredX
+        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
+        'BlurredX
+        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub Label24_Click(sender As Object, e As EventArgs) Handles Label24.Click
+        'BruhProx
+        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
+        'BruhProx
+        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        'Terbium
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\Terbium\Terbium.exe") Then
+            Process.Start("C:\z1g Apps\Terbium\Terbium.exe")
+        Else
+            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe", "C:\z1g Apps\Terbium\Terbium-bootstrap.exe")
+            Process.Start("C:\z1g Apps\Terbium\Terbium-bootstrap.exe")
+        End If
+    End Sub
+
+    Private Sub Label21_Click(sender As Object, e As EventArgs) Handles Label21.Click
+        'Terbium
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\Terbium\Terbium.exe") Then
+            Process.Start("C:\z1g Apps\Terbium\Terbium.exe")
+        Else
+            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe", "C:\z1g Apps\Terbium\Terbium-bootstrap.exe")
+            Process.Start("C:\z1g Apps\Terbium\Terbium-bootstrap.exe")
+        End If
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        'Velocity
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\Velocity\velocity.exe") Then
+            Process.Start("C:\z1g Apps\Velocity\velocity.exe")
+        Else
+            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/velocity-bootstrap.exe", "C:\z1g Apps\Velocity\velocity-bootstrap.exe")
+            Process.Start("C:\z1g Apps\Velocity\velocity-bootstrap.exe")
+        End If
+    End Sub
+
+    Private Sub Label20_Click(sender As Object, e As EventArgs) Handles Label20.Click
+        'Velocity
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\Velocity\velocity.exe") Then
+            Process.Start("C:\z1g Apps\Velocity\velocity.exe")
+        Else
+            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/velocity-bootstrap.exe", "C:\z1g Apps\Velocity\velocity-bootstrap.exe")
+            Process.Start("C:\z1g Apps\Velocity\velocity-bootstrap.exe")
+        End If
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        'z1g X
+        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub Label19_Click(sender As Object, e As EventArgs) Handles Label19.Click
+        'z1g X
+        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        'z1g VPN
+        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
+
+    Private Sub Label18_Click(sender As Object, e As EventArgs) Handles Label18.Click
+        'z1g VPN
+        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+    End Sub
 End Class
