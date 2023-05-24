@@ -1,7 +1,10 @@
 ﻿Public Class Tutorial
     Private Sub Tutorial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
-        panel1.visible = False
+        Panel1.Visible = False
+        Panel2.Visible = False
+        panel3.visible = False
+        panel4.visible = False
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -52,6 +55,27 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        panel1.visible = True
+        Panel1.Visible = True
+        Timer1.Stop()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        panel2.visible = True
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        panel3.visible = True
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        panel4.visible = True
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Me.Hide()
+        Panel1.Visible = False
+        Panel2.Visible = False
+        Panel3.Visible = False
+        Panel4.Visible = False
     End Sub
 End Class

@@ -14,11 +14,13 @@ Public Class Form3
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         Tutorial.Hide()
+        Tutorial.Timer1.Start()
         Tutorial.Show()
     End Sub
 
     Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
         Tutorial.Hide()
+        Tutorial.Timer1.Start()
         Tutorial.Show()
     End Sub
 
@@ -441,7 +443,7 @@ Public Class Form3
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim getpassword As New System.IO.StreamReader("C:\Users\Public\z1g-project\password.dat")
+        Dim getpassword As New System.IO.StreamReader(My.Settings.savelocation + "password.dat")
         TextBox2.Text = getpassword.ReadToEnd
 
         If TextBox2.Text = getpassword.ReadToEnd Then
