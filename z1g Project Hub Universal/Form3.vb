@@ -438,12 +438,12 @@ Public Class Form3
         Label2.Text = getuser.ReadToEnd
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Form2.Show()
         Panel6.Visible = False
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim getpassword As New System.IO.StreamReader(My.Settings.savelocation + "password.dat")
         TextBox2.Text = getpassword.ReadToEnd
 
@@ -471,7 +471,7 @@ Public Class Form3
 
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs)
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Button6.Enabled = False
         Label43.Text = My.Computer.Name
 
@@ -492,7 +492,7 @@ Public Class Form3
         Button6.Enabled = True
     End Sub
 
-    Private Async Sub Button7_Click(sender As Object, e As EventArgs)
+    Private Async Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Try
             Button7.Enabled = False
             Using client As New HttpClient()

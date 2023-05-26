@@ -108,6 +108,7 @@ Public Class Settings
                 Label16.Text = "Restart the z1g Project Hub to update!"
                 Button4.Text = "Restart"
                 Button4.Visible = True
+                Timer2.Start()
             End If
             Timer1.Stop()
             ProgressBar1.Value = 0
@@ -121,5 +122,15 @@ Public Class Settings
         Panel3.Visible = True
         Panel4.Visible = True
         Panel5.Visible = True
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        ProgressBar3.Increment(1)
+        If ProgressBar3.Value = 100 Then
+            Timer2.Stop()
+            notifengine.Show()
+            notifengine.Label48.Text = "Update is ready"
+            notifengine.Label47.Text = "Visit Settings to finish the update"
+        End If
     End Sub
 End Class
