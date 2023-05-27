@@ -45,12 +45,12 @@ Partial Class Form3
         Me.Label62 = New System.Windows.Forms.Label()
         Me.Label63 = New System.Windows.Forms.Label()
         Me.Label64 = New System.Windows.Forms.Label()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.articleimg4 = New System.Windows.Forms.PictureBox()
         Me.Label57 = New System.Windows.Forms.Label()
         Me.Label58 = New System.Windows.Forms.Label()
         Me.Label59 = New System.Windows.Forms.Label()
         Me.Label60 = New System.Windows.Forms.Label()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.articleimg3 = New System.Windows.Forms.PictureBox()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.Label54 = New System.Windows.Forms.Label()
         Me.Label55 = New System.Windows.Forms.Label()
@@ -132,8 +132,8 @@ Partial Class Form3
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.articleimg4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.articleimg3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -396,12 +396,12 @@ Partial Class Form3
         Me.Panel7.Controls.Add(Me.Label62)
         Me.Panel7.Controls.Add(Me.Label63)
         Me.Panel7.Controls.Add(Me.Label64)
-        Me.Panel7.Controls.Add(Me.PictureBox15)
+        Me.Panel7.Controls.Add(Me.articleimg4)
         Me.Panel7.Controls.Add(Me.Label57)
         Me.Panel7.Controls.Add(Me.Label58)
         Me.Panel7.Controls.Add(Me.Label59)
         Me.Panel7.Controls.Add(Me.Label60)
-        Me.Panel7.Controls.Add(Me.PictureBox14)
+        Me.Panel7.Controls.Add(Me.articleimg3)
         Me.Panel7.Controls.Add(Me.Label53)
         Me.Panel7.Controls.Add(Me.Label54)
         Me.Panel7.Controls.Add(Me.Label55)
@@ -461,14 +461,14 @@ Partial Class Form3
         Me.Label64.TabIndex = 40
         Me.Label64.Text = "Loading..."
         '
-        'PictureBox15
+        'articleimg4
         '
-        Me.PictureBox15.Location = New System.Drawing.Point(60, 490)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(133, 98)
-        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox15.TabIndex = 39
-        Me.PictureBox15.TabStop = False
+        Me.articleimg4.Location = New System.Drawing.Point(60, 490)
+        Me.articleimg4.Name = "articleimg4"
+        Me.articleimg4.Size = New System.Drawing.Size(133, 98)
+        Me.articleimg4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.articleimg4.TabIndex = 39
+        Me.articleimg4.TabStop = False
         '
         'Label57
         '
@@ -510,14 +510,14 @@ Partial Class Form3
         Me.Label60.TabIndex = 35
         Me.Label60.Text = "Loading..."
         '
-        'PictureBox14
+        'articleimg3
         '
-        Me.PictureBox14.Location = New System.Drawing.Point(60, 359)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(133, 98)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox14.TabIndex = 34
-        Me.PictureBox14.TabStop = False
+        Me.articleimg3.Location = New System.Drawing.Point(60, 359)
+        Me.articleimg3.Name = "articleimg3"
+        Me.articleimg3.Size = New System.Drawing.Size(133, 98)
+        Me.articleimg3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.articleimg3.TabIndex = 34
+        Me.articleimg3.TabStop = False
         '
         'Label53
         '
@@ -1308,8 +1308,8 @@ Partial Class Form3
         Me.Panel6.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.articleimg4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.articleimg3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1381,12 +1381,12 @@ Partial Class Form3
     Friend WithEvents Label62 As Label
     Friend WithEvents Label63 As Label
     Friend WithEvents Label64 As Label
-    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents articleimg4 As PictureBox
     Friend WithEvents Label57 As Label
     Friend WithEvents Label58 As Label
     Friend WithEvents Label59 As Label
     Friend WithEvents Label60 As Label
-    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents articleimg3 As PictureBox
     Friend WithEvents Label53 As Label
     Friend WithEvents Label54 As Label
     Friend WithEvents Label55 As Label

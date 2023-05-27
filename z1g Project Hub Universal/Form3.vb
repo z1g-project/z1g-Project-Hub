@@ -277,7 +277,7 @@ Public Class Form3
                     If article3.TryGetValue("image", imageUrl3) Then
                         ' The "image" property exists, assign its value to the imageUrl variable
                         ' Set the ImageLocation property of PictureBox to the imageUrl
-                        PictureBox14.ImageLocation = imageUrl3
+                        articleimg3.ImageLocation = imageUrl3
                     Else
                         ' The "image" property is missing, handle it accordingly
                         ' You might want to set a default image or display an error message
@@ -331,7 +331,7 @@ Public Class Form3
 
 
                     ' Display the data in the appropriate controls
-                    PictureBox14.Load(imageUrl3)
+                    articleimg3.Load(imageUrl3)
                     Label60.Text = title3
                     Label59.Text = description3
                     Label58.Text = "Released: " + datePublished3
@@ -344,7 +344,7 @@ Public Class Form3
                 End If
                 If response4.IsSuccessStatusCode Then
                     ' Read the response content as a string
-                    Dim articleData4 As String = Await response3.Content.ReadAsStringAsync()
+                    Dim articleData4 As String = Await response4.Content.ReadAsStringAsync()
 
                     ' Parse the article data (assuming it's in JSON format)
                     Dim article4 As JObject = JObject.Parse(articleData4)
@@ -354,7 +354,7 @@ Public Class Form3
                     If article4.TryGetValue("image", imageUrl4) Then
                         ' The "image" property exists, assign its value to the imageUrl variable
                         ' Set the ImageLocation property of PictureBox to the imageUrl
-                        PictureBox15.ImageLocation = imageUrl4
+                        articleimg4.ImageLocation = imageUrl4
                     Else
                         ' The "image" property is missing, handle it accordingly
                         ' You might want to set a default image or display an error message
@@ -408,7 +408,7 @@ Public Class Form3
 
 
                     ' Display the data in the appropriate controls
-                    PictureBox14.Load(imageUrl4)
+                    articleimg4.Load(imageUrl4)
                     Label64.Text = title4
                     Label63.Text = description4
                     Label62.Text = "Released: " + datePublished4
@@ -669,7 +669,7 @@ Public Class Form3
                     If article3.TryGetValue("image", imageUrl3) Then
                         ' The "image" property exists, assign its value to the imageUrl variable
                         ' Set the ImageLocation property of PictureBox to the imageUrl
-                        PictureBox14.ImageLocation = imageUrl3
+                        articleimg3.ImageLocation = imageUrl3
                     Else
                         ' The "image" property is missing, handle it accordingly
                         ' You might want to set a default image or display an error message
@@ -723,7 +723,7 @@ Public Class Form3
 
 
                     ' Display the data in the appropriate controls
-                    PictureBox14.Load(imageUrl3)
+                    articleimg3.Load(imageUrl3)
                     Label60.Text = title3
                     Label59.Text = description3
                     Label58.Text = "Released: " + datePublished3
@@ -736,7 +736,7 @@ Public Class Form3
                 End If
                 If response4.IsSuccessStatusCode Then
                     ' Read the response content as a string
-                    Dim articleData4 As String = Await response3.Content.ReadAsStringAsync()
+                    Dim articleData4 As String = Await response4.Content.ReadAsStringAsync()
 
                     ' Parse the article data (assuming it's in JSON format)
                     Dim article4 As JObject = JObject.Parse(articleData4)
@@ -746,7 +746,7 @@ Public Class Form3
                     If article4.TryGetValue("image", imageUrl4) Then
                         ' The "image" property exists, assign its value to the imageUrl variable
                         ' Set the ImageLocation property of PictureBox to the imageUrl
-                        PictureBox15.ImageLocation = imageUrl4
+                        articleimg4.ImageLocation = imageUrl4
                     Else
                         ' The "image" property is missing, handle it accordingly
                         ' You might want to set a default image or display an error message
@@ -800,7 +800,7 @@ Public Class Form3
 
 
                     ' Display the data in the appropriate controls
-                    PictureBox14.Load(imageUrl4)
+                    articleimg4.Load(imageUrl4)
                     Label64.Text = title4
                     Label63.Text = description4
                     Label62.Text = "Released: " + datePublished4
