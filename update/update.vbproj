@@ -10,7 +10,12 @@
     <FileVersion>1.2.0.0</FileVersion>
     <Company>z1g Project</Company>
     <Version>1.2.0.0</Version>
+    <ApplicationIcon>z1g.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="z1g.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Import Include="System.Data" />
