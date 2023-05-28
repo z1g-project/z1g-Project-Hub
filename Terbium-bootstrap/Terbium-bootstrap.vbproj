@@ -3,19 +3,11 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Terbium_bootstrap</RootNamespace>
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
-    <AssemblyVersion>1.2.5.0</AssemblyVersion>
-    <FileVersion>1.2.5.0</FileVersion>
-    <Company>z1g Project</Company>
-    <Version>1.2.5.0</Version>
-    <ApplicationIcon>z1g.ico</ApplicationIcon>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="z1g.ico" />
-  </ItemGroup>
 
   <ItemGroup>
     <Import Include="System.Data" />
