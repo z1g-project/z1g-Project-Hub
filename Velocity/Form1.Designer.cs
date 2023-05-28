@@ -75,6 +75,7 @@
             this.Button3.TabIndex = 13;
             this.Button3.Text = "X";
             this.Button3.UseVisualStyleBackColor = false;
+            this.Button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // Button2
             // 
@@ -89,6 +90,7 @@
             this.Button2.TabIndex = 12;
             this.Button2.Text = "-";
             this.Button2.UseVisualStyleBackColor = false;
+            this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Label9
             // 

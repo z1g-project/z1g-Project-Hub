@@ -131,5 +131,15 @@ namespace Terbium
 
             return resizeArea.Contains(mouseLocation);
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
