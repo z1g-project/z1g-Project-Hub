@@ -962,4 +962,48 @@ Public Class Form3
             SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0)
         End If
     End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+        'Terbium ContextMenu
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\Terbium\Terbium.exe") Then
+            Process.Start("C:\z1g Apps\Terbium\Terbium.exe")
+        Else
+            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe", "C:\z1g Apps\Terbium\Terbium-bootstrap.exe")
+            Process.Start("C:\z1g Apps\Terbium\Terbium-bootstrap.exe")
+        End If
+    End Sub
+
+    Private Sub UninstallToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UninstallToolStripMenuItem.Click
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Terbium\", True)
+    End Sub
+
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
+        Terbium_Settings.Show()
+    End Sub
+
+    Private Sub ResetToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ResetToolStripMenuItem.Click
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Terbium\Data\", True)
+    End Sub
+
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+        'Velocity ContextMenu
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\Velocity\velocity.exe") Then
+            Process.Start("C:\z1g Apps\Velocity\velocity.exe")
+        Else
+            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/velocity-bootstrap.exe", "C:\z1g Apps\Velocity\velocity-bootstrap.exe")
+            Process.Start("C:\z1g Apps\Velocity\velocity-bootstrap.exe")
+        End If
+    End Sub
+
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Velocity\", True)
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Velocity\Data\", True)
+    End Sub
+
+    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+        Velocity_Settings.Show()
+    End Sub
 End Class

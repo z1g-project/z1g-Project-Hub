@@ -56,14 +56,29 @@ namespace Terbium
 
             if (newestversion.Contains(currentversion))
             {
-                // Nothing Happens lol
+                if (File.Exists("C:/z1g apps/Terbium/Data/setupdone.DAT"))
+                {
+                    
+                }
+                else
+                {
+                    firstrun firstrun = new firstrun();
+                    firstrun.Show();
+                }
             }
             else
             {
                 getupdates getupdates = new getupdates();
                 getupdates.Show();
             }
-            chromiumWebBrowser1.Load("https://terbium-46q.pages.dev");
+            if (File.Exists("C:/z1g apps/Terbium/Data/verconf.DAT"))
+            {
+                chromiumWebBrowser1.Load("https://terbium-46q.pages.dev");
+            }
+            else
+            {
+                chromiumWebBrowser1.Load("https://terbium.johnglynn2.repl.co");
+            }
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)

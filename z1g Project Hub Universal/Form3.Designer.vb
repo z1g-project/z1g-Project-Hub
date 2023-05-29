@@ -22,6 +22,7 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -106,6 +107,11 @@ Partial Class Form3
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UninstallToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ResetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
@@ -125,6 +131,11 @@ Partial Class Form3
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -140,6 +151,7 @@ Partial Class Form3
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -148,6 +160,7 @@ Partial Class Form3
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -1069,6 +1082,7 @@ Partial Class Form3
         'Label20
         '
         Me.Label20.AutoSize = True
+        Me.Label20.ContextMenuStrip = Me.ContextMenuStrip2
         Me.Label20.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label20.Location = New System.Drawing.Point(301, 270)
         Me.Label20.Name = "Label20"
@@ -1079,12 +1093,53 @@ Partial Class Form3
         'Label21
         '
         Me.Label21.AutoSize = True
+        Me.Label21.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Label21.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label21.Location = New System.Drawing.Point(115, 270)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(65, 20)
         Me.Label21.TabIndex = 16
         Me.Label21.Text = "Terbium"
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.UninstallToolStripMenuItem, Me.SettingsToolStripMenuItem, Me.ResetToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(121, 92)
+        '
+        'OpenToolStripMenuItem
+        '
+        Me.OpenToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.OpenToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
+        Me.OpenToolStripMenuItem.Text = "Open"
+        '
+        'UninstallToolStripMenuItem
+        '
+        Me.UninstallToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.UninstallToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.UninstallToolStripMenuItem.Name = "UninstallToolStripMenuItem"
+        Me.UninstallToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
+        Me.UninstallToolStripMenuItem.Text = "Uninstall"
+        '
+        'SettingsToolStripMenuItem
+        '
+        Me.SettingsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.SettingsToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
+        '
+        'ResetToolStripMenuItem
+        '
+        Me.ResetToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ResetToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ResetToolStripMenuItem.Name = "ResetToolStripMenuItem"
+        Me.ResetToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
+        Me.ResetToolStripMenuItem.Text = "Reset"
         '
         'PictureBox5
         '
@@ -1108,6 +1163,7 @@ Partial Class Form3
         '
         'PictureBox7
         '
+        Me.PictureBox7.ContextMenuStrip = Me.ContextMenuStrip2
         Me.PictureBox7.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.velocity
         Me.PictureBox7.Location = New System.Drawing.Point(257, 128)
         Me.PictureBox7.Name = "PictureBox7"
@@ -1118,6 +1174,7 @@ Partial Class Form3
         '
         'PictureBox8
         '
+        Me.PictureBox8.ContextMenuStrip = Me.ContextMenuStrip1
         Me.PictureBox8.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.terbium
         Me.PictureBox8.Location = New System.Drawing.Point(70, 128)
         Me.PictureBox8.Name = "PictureBox8"
@@ -1279,6 +1336,46 @@ Partial Class Form3
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "Welcome to the z1g Hub!"
         '
+        'ContextMenuStrip2
+        '
+        Me.ContextMenuStrip2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4})
+        Me.ContextMenuStrip2.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.ContextMenuStrip2.Size = New System.Drawing.Size(121, 92)
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ToolStripMenuItem1.ForeColor = System.Drawing.Color.White
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(120, 22)
+        Me.ToolStripMenuItem1.Text = "Open"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ToolStripMenuItem2.ForeColor = System.Drawing.Color.White
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(120, 22)
+        Me.ToolStripMenuItem2.Text = "Uninstall"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ToolStripMenuItem3.ForeColor = System.Drawing.Color.White
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(120, 22)
+        Me.ToolStripMenuItem3.Text = "Settings"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ToolStripMenuItem4.ForeColor = System.Drawing.Color.White
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(120, 22)
+        Me.ToolStripMenuItem4.Text = "Reset"
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -1316,6 +1413,7 @@ Partial Class Form3
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1324,6 +1422,7 @@ Partial Class Form3
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1430,4 +1529,14 @@ Partial Class Form3
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label27 As Label
     Friend WithEvents Label28 As Label
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UninstallToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ResetToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ContextMenuStrip2 As ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
 End Class
