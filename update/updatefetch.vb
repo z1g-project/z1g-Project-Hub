@@ -21,9 +21,8 @@ Public Class updatefetch
                 Me.Hide()
                 Form1.Hide()
             Else
-                Me.Close()
-                My.Computer.FileSystem.DeleteFile("C:/z1g apps/temp/update.exe")
-                My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/latest/update.exe", "C:/z1g apps/temp/update.exe")
+                Form4.Show()
+                Me.Hide()
             End If
             Timer1.Stop()
             ProgressBar1.Value = 0
