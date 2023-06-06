@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CefSharp.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,13 +20,13 @@ namespace Terbium
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            File.Create("C:/z1g apps/Terbium/Data/verconf.DAT");
+            //File.Create("C:/z1g apps/Terbium/Data/verconf.DAT"); (Deprecated)
             File.Create("C:/z1g apps/Terbium/Data/setupdone.DAT");
         }
 
         private void PictureBox3_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Label5_Click(object sender, EventArgs e)
@@ -36,6 +37,7 @@ namespace Terbium
         private void PictureBox2_Click(object sender, EventArgs e)
         {
             File.Create("C:/z1g apps/Terbium/Data/verconf.DAT");
+            
         }
 
         private void Label3_Click(object sender, EventArgs e)

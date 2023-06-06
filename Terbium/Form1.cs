@@ -37,29 +37,43 @@ namespace Terbium
             InitializeComponent();
             InitializeCefSharp();
 
+            DateTime startTime = DateTime.Now; // Store the start time
+
             rpcClient = new DiscordRpcClient("1115687781998547066");
             rpcClient.Logger = new ConsoleLogger() { Level = LogLevel.Info };
             rpcClient.Initialize();
 
-            // Set the RPC presence
-            var presence = new RichPresence()
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 1000; // Update presence every 1 second
+            timer.Tick += (sender, e) => UpdatePresence();
+            timer.Start();
+
+            // Method to update the RPC presence
+            void UpdatePresence()
             {
-                Details = "Using Terbium WebOS by the z1g Project",
-                State = "Idle",
-                Assets = new Assets()
+                TimeSpan elapsedTime = DateTime.Now - startTime;
+                string elapsedTimeString = elapsedTime.ToString(@"hh\:mm\:ss"); // Format the elapsed time as HH:MM:SS
+
+                var presence = new RichPresence()
                 {
-                    LargeImageKey = "terbium",
-                    LargeImageText = "Terbium",
-                    SmallImageKey = "z1g",
-                    SmallImageText = "Discord RPC"
-                },
-                Buttons = new[]
-                {
-                new DiscordRPC.Button { Label = "Download", Url = "https://z1g-project.johnglynn2.repl.co/z1g-hub/" },
-                new DiscordRPC.Button { Label = "View Repository", Url = "https://github.com/z1g-project/z1g-project-hub" }
+                    Details = "Using Terbium WebOS by the z1g Project",
+                    State = elapsedTimeString,
+                    Assets = new Assets()
+                    {
+                        LargeImageKey = "terbium",
+                        LargeImageText = "Terbium Logo",
+                        SmallImageKey = "z1g",
+                        SmallImageText = "z1g Project Logo"
+                    },
+                    Buttons = new[]
+                    {
+            new DiscordRPC.Button { Label = "Download", Url = "https://z1g-project.johnglynn2.repl.co/z1g-hub/" },
+            new DiscordRPC.Button { Label = "View Repository", Url = "https://github.com/z1g-project/z1g-project-hub" }
+        }
+                };
+                rpcClient.SetPresence(presence);
             }
-            };
-            rpcClient.SetPresence(presence);
+
         }
 
         protected override void OnFormClosed(FormClosedEventArgs e)
@@ -95,12 +109,13 @@ namespace Terbium
             {
                 if (File.Exists("C:/z1g apps/Terbium/Data/setupdone.DAT"))
                 {
-                    
+
                 }
                 else
                 {
                     firstrun firstrun = new firstrun();
                     firstrun.Show();
+                    chromiumWebBrowser1.Load("about:blank");
                 }
             }
             else
@@ -186,7 +201,14 @@ namespace Terbium
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Normal; // Restore the window if it's maximized
+            }
+            else
+            {
+                WindowState = FormWindowState.Maximized; // Maximize the window if it's not already maximized
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
