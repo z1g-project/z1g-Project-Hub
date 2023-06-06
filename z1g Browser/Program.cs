@@ -1,4 +1,4 @@
-namespace Terbium
+namespace z1g_Browser
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Terbium
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new form1());
+            Application.Run(new Form1());
         }
     }
 }

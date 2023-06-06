@@ -20,6 +20,7 @@ namespace Terbium
         private void Button1_Click(object sender, EventArgs e)
         {
             File.Create("C:/z1g apps/Terbium/Data/verconf.DAT");
+            File.Create("C:/z1g apps/Terbium/Data/setupdone.DAT");
         }
 
         private void PictureBox3_Click(object sender, EventArgs e)

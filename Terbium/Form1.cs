@@ -1,12 +1,16 @@
 using CefSharp;
+using CefSharp.DevTools.IO;
 using CefSharp.WinForms;
+using DiscordRPC;
+using DiscordRPC.Logging;
 using System;
+using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Terbium
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HT_CAPTION = 0x2;
@@ -23,19 +27,52 @@ namespace Terbium
         private const int WM_NCHITTEST = 0x0084;
         private const int RESIZE_HANDLE_SIZE = 10;
 
+        private DiscordRpcClient rpcClient;
+
         private bool isResizing = false;
         private Point lastMousePos;
 
-        public Form1()
+        public form1()
         {
             InitializeComponent();
             InitializeCefSharp();
+
+            rpcClient = new DiscordRpcClient("1115687781998547066");
+            rpcClient.Logger = new ConsoleLogger() { Level = LogLevel.Info };
+            rpcClient.Initialize();
+
+            // Set the RPC presence
+            var presence = new RichPresence()
+            {
+                Details = "Using Terbium WebOS by the z1g Project",
+                State = "Idle",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "terbium",
+                    LargeImageText = "Terbium",
+                    SmallImageKey = "z1g",
+                    SmallImageText = "Discord RPC"
+                },
+                Buttons = new[]
+                {
+                new DiscordRPC.Button { Label = "Download", Url = "https://z1g-project.johnglynn2.repl.co/z1g-hub/" },
+                new DiscordRPC.Button { Label = "View Repository", Url = "https://github.com/z1g-project/z1g-project-hub" }
+            }
+            };
+            rpcClient.SetPresence(presence);
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            base.OnFormClosed(e);
+
+            rpcClient.Dispose();
         }
 
         private void InitializeCefSharp()
         {
             CefSettings settings = new CefSettings();
-            settings.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 z1g Browser/113.0.1722.64";
+            settings.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 z1g Browser/114.0.1722.64";
             string path = ("C:\\z1g Apps\\Terbium\\Data\\");
             settings.RemoteDebuggingPort = 8080;
             settings.CachePath = path;
@@ -77,7 +114,7 @@ namespace Terbium
             }
             else
             {
-                chromiumWebBrowser1.Load("https://terbium.johnglynn2.repl.co");
+                chromiumWebBrowser1.Load("https://terbium--johnglynn2.repl.co");
             }
         }
 
@@ -145,6 +182,28 @@ namespace Terbium
                 RESIZE_HANDLE_SIZE);
 
             return resizeArea.Contains(mouseLocation);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            settings settings = new settings();
+            settings.Show();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Cef.Shutdown();
+            this.Close();
         }
     }
 }
