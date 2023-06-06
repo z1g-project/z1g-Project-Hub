@@ -80,15 +80,16 @@ Public Class Form1
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ProgressBar1.Increment("10")
         If ProgressBar1.Value = 100 Then
-            If My.Computer.FileSystem.FileExists("C:/z1g-apps/Terbium/Terbium.zip") Then
-                My.Computer.FileSystem.DeleteFile("C:/z1g-apps/Terbium/Terbium.zip")
-                My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/apps/terbium/client.zip", "C:/z1g-apps/Terbium/Terbium.zip")
-                ZipFile.ExtractToDirectory("C:/z1g-apps/Terbium/Terbium.zip", "C:/z1g-apps/Terbium/")
-                My.Computer.FileSystem.DeleteFile("C:/z1g-apps/Terbium/Terbium.zip")
+            If My.Computer.FileSystem.FileExists("C:/z1g apps/Terbium/Terbium.zip") Then
+                My.Computer.FileSystem.DeleteFile("C:/z1g apps/Terbium/Terbium.zip")
+                My.Computer.FileSystem.RenameDirectory("C:/z1g apps/Terbium/", "C:/z1g apps/Terbium.old/")
+                My.Computer.Network.DownloadFile("https://dl2.johnglynn2.repl.co/terbium/terbium.zip", "C:/z1g apps/Terbium/Terbium.zip")
+                ZipFile.ExtractToDirectory("C:/z1g apps/Terbium/Terbium.zip", "C:/z1g apps/Terbium/")
+                My.Computer.FileSystem.DeleteFile("C:/z1g apps/Terbium/Terbium.zip")
             Else
-                My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/apps/terbium/client.zip", "C:/z1g-apps/Terbium/Terbium.zip")
-                ZipFile.ExtractToDirectory("C:/z1g-apps/Terbium/Terbium.zip", "C:/z1g-apps/Terbium/")
-                My.Computer.FileSystem.DeleteFile("C:/z1g-apps/Terbium/Terbium.zip")
+                My.Computer.Network.DownloadFile("https://dl2.johnglynn2.repl.co/terbium/terbium.zip", "C:/z1g apps/Terbium/Terbium.zip")
+                ZipFile.ExtractToDirectory("C:/z1g apps/Terbium/Terbium.zip", "C:/z1g apps/Terbium/")
+                My.Computer.FileSystem.DeleteFile("C:/z1g apps/Terbium/Terbium.zip")
             End If
         End If
     End Sub
