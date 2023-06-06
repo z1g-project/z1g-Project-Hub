@@ -16,11 +16,11 @@ Public Class Form3
         If ProgressBar1.Value = 25 Then
             If My.Computer.FileSystem.FileExists("C:/Users/Public/z1g-project/temp/client.zip") Then
                 My.Computer.FileSystem.DeleteFile("C:/Users/Public/z1g-project/temp/client.zip")
-                My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/v1.2.5/client.zip", "C:/Users/Public/z1g-project/temp/client.zip")
+                My.Computer.Network.DownloadFile("https://dl2.johnglynn2.repl.co/v1.2.5/client.zip", "C:/Users/Public/z1g-project/temp/client.zip")
                 ZipFile.ExtractToDirectory("C:/Users/Public/z1g-project/temp/client.zip", "C:/Users/Public/z1g-project/")
                 My.Computer.FileSystem.DeleteFile("C:/Users/Public/z1g-project/temp/client.zip")
             Else
-                My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/v1.2.5/z1g-project-hub.zip", "C:/Users/Public/z1g-project/temp/client.zip")
+                My.Computer.Network.DownloadFile("https://dl2.johnglynn2.repl.co/v1.2.5/client.zip", "C:/Users/Public/z1g-project/temp/client.zip")
                 ZipFile.ExtractToDirectory("C:/Users/Public/z1g-project/temp/client.zip", "C:/Users/Public/z1g-project/")
                 My.Computer.FileSystem.DeleteFile("C:/Users/Public/z1g-project/temp/client.zip")
             End If
