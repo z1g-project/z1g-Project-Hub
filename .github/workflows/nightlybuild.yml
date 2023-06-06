@@ -2,13 +2,12 @@ name: Nightly Build
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches:
+      - '*'
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
@@ -31,7 +30,7 @@ jobs:
         env:
           COMMIT_HASH: ${{ github.sha }}
           TAG_NAME: ${{ github.ref }}
-          NIGHTLY_BUILD_VERSION: ${{ format('nightly-{0:MMddyy-HHmm}-{1}', github.event.repository.pushed_at, github.sha) }}
+          NIGHTLY_BUILD_VERSION: ${{ format('nightly-{0:yyyyMMdd-HHmm}-{1}', github.event.repository.pushed_at, github.sha) }}
         run: |
           dotnet publish --configuration Release --output publish/
           cd publish/
