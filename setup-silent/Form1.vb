@@ -18,16 +18,16 @@ Public Class Form1
 
             End If
             Dim shortcutPath As String = Environment.GetFolderPath(Environment.SpecialFolder.StartMenu) & "\z1g-project-hub.lnk"
-                Dim targetPath As String = "C:/Users/Public/z1g-project/z1g-project-hub.exe"
+            Dim targetPath As String = "C:/Users/Public/z1g-project/z1g Project Hub Universal.exe"
 
-                Dim shellLink As New ShellLink()
+            Dim shellLink As New ShellLink()
                 shellLink.TargetPath = targetPath
             shellLink.WorkingDirectory = "C:/Users/Public/z1g-project/"
 
             shellLink.Description = "The all new and Reformed z1g Hub App!"
             shellLink.Save(shortcutPath)
-            Process.Start("C:/Users/Public/z1g-project/z1g-project-hub.exe")
-                Me.Close()
+            Process.Start("C:/Users/Public/z1g-project/z1g Project Hub Universal.exe")
+            Me.Close()
             Else
                 Me.Close()
             My.Computer.FileSystem.DeleteFile("C:\Users\Public\z1g-project\update.exe")
