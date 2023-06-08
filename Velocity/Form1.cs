@@ -3,6 +3,7 @@ using CefSharp.WinForms;
 using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using Velocity;
 
 namespace Terbium
 {
@@ -35,7 +36,7 @@ namespace Terbium
         private void InitializeCefSharp()
         {
             CefSettings settings = new CefSettings();
-            settings.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 z1g Browser/113.0.1722.64";
+            settings.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 z1g Browser/114.0.1722.64";
             string path = ("C:\\z1g Apps\\Velocity\\Data\\");
             settings.RemoteDebuggingPort = 8080;
             settings.CachePath = path;
@@ -140,6 +141,24 @@ namespace Terbium
         private void Button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                WindowState = FormWindowState.Normal; // Restore the window if it's maximized
+            }
+            else
+            {
+                WindowState = FormWindowState.Maximized; // Maximize the window if it's not already maximized
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            settings settings = new settings();
+            settings.Show();
         }
     }
 }

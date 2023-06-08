@@ -1,6 +1,7 @@
 ﻿Imports System.IO.Compression
 Imports IWshRuntimeLibrary
 Imports System.IO
+Imports System.ComponentModel.DataAnnotations
 
 Public Class Form3
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -38,7 +39,7 @@ Public Class Form3
                 My.Computer.FileSystem.DeleteFile("C:/Users/Public/z1g-project/temp/client.zip")
             End If
         End If
-            If ProgressBar1.Value = 50 Then
+        If ProgressBar1.Value = 50 Then
             Label2.Text = "Installing..."
             Try
                 'Skip over Legacy Download Shortcut Feature My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/z1g-Project-Hub.lnk", "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\z1g Project Hub.lnk")
@@ -60,6 +61,9 @@ Public Class Form3
                 My.Computer.FileSystem.MoveFile("C:/Users/Public/z1g-project.old/acciscreated.dat", "C:/Users/Public/z1g-project/acciscreated.dat")
                 My.Computer.FileSystem.MoveFile("C:/Users/Public/z1g-project.old/username.dat", "C:/Users/Public/z1g-project/username.dat")
                 My.Computer.FileSystem.MoveFile("C:/Users/Public/z1g-project.old/password.dat", "C:/Users/Public/z1g-project/password.dat")
+                Dim updateexists As New System.IO.StreamWriter("C:/Users/Public/z1g-project/migrated.Dat")
+                updateexists.WriteLine("isMigrated=True")
+                updateexists.Close()
             Else
                 Console.WriteLine("No OLD Directory was found. Skiping Migration")
             End If

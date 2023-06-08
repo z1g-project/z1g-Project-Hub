@@ -21,6 +21,12 @@ Public Class Form1
                 Form3.Show()
                 Me.Hide()
             Else
+                If My.Computer.FileSystem.FileExists("C:/Users/Public/z1g-project/migrated.Dat") Then
+                    Welcomeback.show
+                    Me.Hide()
+                Else
+                    'Nothing Happens lol
+                End If
                 Form2.Show()
                 Me.Hide()
             End If
