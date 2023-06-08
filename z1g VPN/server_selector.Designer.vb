@@ -55,6 +55,7 @@ Partial Class server_selector
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.Button7 = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panel1.SuspendLayout()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -230,9 +231,9 @@ Partial Class server_selector
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label10.Location = New System.Drawing.Point(90, 228)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(93, 20)
+        Me.Label10.Size = New System.Drawing.Size(110, 20)
         Me.Label10.TabIndex = 57
-        Me.Label10.Text = "US New York"
+        Me.Label10.Text = "US Los Angeles"
         '
         'PictureBox4
         '
@@ -259,9 +260,9 @@ Partial Class server_selector
         Me.Label12.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label12.Location = New System.Drawing.Point(90, 282)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(93, 20)
+        Me.Label12.Size = New System.Drawing.Size(77, 20)
         Me.Label12.TabIndex = 60
-        Me.Label12.Text = "US New York"
+        Me.Label12.Text = "US Florida"
         '
         'PictureBox5
         '
@@ -288,9 +289,9 @@ Partial Class server_selector
         Me.Label14.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label14.Location = New System.Drawing.Point(90, 336)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(93, 20)
+        Me.Label14.Size = New System.Drawing.Size(112, 20)
         Me.Label14.TabIndex = 63
-        Me.Label14.Text = "US New York"
+        Me.Label14.Text = "MX Mexico City"
         '
         'PictureBox6
         '
@@ -317,9 +318,9 @@ Partial Class server_selector
         Me.Label16.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label16.Location = New System.Drawing.Point(90, 390)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(93, 20)
+        Me.Label16.Size = New System.Drawing.Size(84, 20)
         Me.Label16.TabIndex = 66
-        Me.Label16.Text = "US New York"
+        Me.Label16.Text = "CA Toronto"
         '
         'PictureBox7
         '
@@ -346,9 +347,9 @@ Partial Class server_selector
         Me.Label18.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label18.Location = New System.Drawing.Point(90, 445)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(93, 20)
+        Me.Label18.Size = New System.Drawing.Size(100, 20)
         Me.Label18.TabIndex = 69
-        Me.Label18.Text = "US New York"
+        Me.Label18.Text = "CA Vancouver"
         '
         'PictureBox8
         '
@@ -375,9 +376,9 @@ Partial Class server_selector
         Me.Label20.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label20.Location = New System.Drawing.Point(90, 494)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(93, 20)
+        Me.Label20.Size = New System.Drawing.Size(81, 20)
         Me.Label20.TabIndex = 72
-        Me.Label20.Text = "US New York"
+        Me.Label20.Text = "EU London"
         '
         'PictureBox9
         '
@@ -389,12 +390,26 @@ Partial Class server_selector
         Me.PictureBox9.TabIndex = 71
         Me.PictureBox9.TabStop = False
         '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.Button7.FlatAppearance.BorderSize = 0
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button7.Location = New System.Drawing.Point(401, 88)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(83, 30)
+        Me.Button7.TabIndex = 74
+        Me.Button7.Text = "Refresh"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
         'server_selector
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(496, 545)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.PictureBox9)
@@ -477,4 +492,5 @@ Partial Class server_selector
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents Button7 As Button
 End Class
