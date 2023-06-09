@@ -1,8 +1,10 @@
-﻿Imports System.IO
+﻿Imports System.Configuration
+Imports System.IO
 Imports System.Net.NetworkInformation
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
+Imports IWshRuntimeLibrary
 
 Public Class server_selector
     Private Const WM_NCLBUTTONDOWN As Integer = &HA1
@@ -352,5 +354,51 @@ Public Class server_selector
         PerformPing6("vancouver.ca")
         PerformPing7("ukl2-auto-tcp.ptoserver.com")
         Me.Cursor = Cursors.Default
+    End Sub
+
+    Private selectedServer As String = ""
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        ' Handle the click event for PictureBox3
+        SelectServer("US New York")
+        SaveSelectedServer(selectedServer)
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+        ' Handle the click event for Label5
+        SelectServer("US New York")
+        SaveSelectedServer(selectedServer)
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+        ' Handle the click event for Label6
+        SelectServer("US New York")
+        SaveSelectedServer(selectedServer)
+    End Sub
+
+    Private Sub SelectServer(serverName As String)
+        ' Update the label to display the selected server
+        Label5.Text = "Selected Server: " & serverName
+
+        ' Get the ping for the selected server
+        'Dim ping As Integer = GetPing(serverName)
+
+        ' Update the label to display the ping
+        'Label6.Text = "Ping: " & pingtime & "ms"
+
+        ' Update the image based on the ping range
+        'PictureBox3.ImageLocation = (ping)
+        PerformPing("usny2-auto-udp.ptoserver.com")
+    End Sub
+
+    Private Sub SaveSelectedServer(serverName As String)
+        ' Get the application settings
+        Dim settings = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).AppSettings.Settings
+
+        ' Update the selected server value in the application settings
+        settings("SelectedServer").Value = serverName
+
+        ' Save the changes
+        ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).Save(ConfigurationSaveMode.Modified)
     End Sub
 End Class
