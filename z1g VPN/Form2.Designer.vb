@@ -122,9 +122,11 @@ Partial Class Form2
         '
         'PictureBox3
         '
+        Me.PictureBox3.Image = Global.z1g_VPN.My.Resources.Resources.connect_removebg_preview
         Me.PictureBox3.Location = New System.Drawing.Point(120, 138)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(266, 222)
+        Me.PictureBox3.Size = New System.Drawing.Size(266, 251)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 43
         Me.PictureBox3.TabStop = False
         '
