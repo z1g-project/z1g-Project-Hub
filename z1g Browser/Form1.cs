@@ -6,6 +6,9 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Reflection.Emit;
 using System.Runtime.InteropServices;
+using Microsoft.VisualBasic.Devices;
+using System.Net;
+using CefSharp.Handler;
 
 namespace z1g_Browser
 {
@@ -31,12 +34,19 @@ namespace z1g_Browser
             else
             {
                 CefSettings settings = new CefSettings();
-                settings.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) z1g Browser/114.1.4.0 Safari/537.36 z1g Browser/114.1.4.0";
-                string path = ("C://z1g Apps//z1g Browser//Data//");
+                settings.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 z1g Browser/114.1.4.0";
+                string path = "C://z1g Apps//z1g Browser//Data//";
                 settings.RemoteDebuggingPort = 8080;
                 settings.CachePath = path;
+                settings.CefCommandLineArgs.Add("enable-system-flash", "1");
+                settings.CefCommandLineArgs.Add("allow-file-access-from-files", "1");
+
+                string extensionPath = "C://z1g Apps//z1g Browser//Extensions";
+                settings.CefCommandLineArgs.Add("load-extension", extensionPath);
+
                 Cef.Initialize(settings);
             }
+
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
@@ -68,9 +78,74 @@ namespace z1g_Browser
         private void button8_Click(object sender, EventArgs e)
         {
             chromiumWebBrowser1.Load(comboBox1.Text);
-            if (comboBox1.Text.Equals("https://terbium-46q.pages.dev"))
+            if (comboBox1.Text.Equals("https://terbium-46q.pages.dev/") || comboBox1.Text.Contains("https://terbium-46q.pages.dev"))
             {
-                
+                applauncher applauncher = new applauncher();
+                applauncher.label1.Text = "Would you like to Launch Terbium?";
+                applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
+                if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe")) 
+                {
+                    applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
+                }
+                else
+                {
+                    string fileUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe";
+                    string savePath = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+
+                    using (WebClient client = new WebClient())
+                    {
+                        client.DownloadFile(fileUrl, savePath);
+                    }
+
+                    applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+                }
+                applauncher.Show();
+            }
+            if (comboBox1.Text.Equals("https://terbium.johnglynn2.repl.co") || comboBox1.Text.Contains("https://terbium.johnglynn2.repl.co"))
+            {
+                applauncher applauncher = new applauncher();
+                applauncher.label1.Text = "Would you like to Launch Terbium?";
+                applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
+                if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe"))
+                {
+                    applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
+                }
+                else
+                {
+                    string fileUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe";
+                    string savePath = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+
+                    using (WebClient client = new WebClient())
+                    {
+                        client.DownloadFile(fileUrl, savePath);
+                    }
+
+                    applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+                }
+                applauncher.Show();
+            }
+            if (comboBox1.Text.Equals("https://velocity.radon.games") || comboBox1.Text.Contains("https://velocity.radon.games"))
+            {
+                applauncher applauncher = new applauncher();
+                applauncher.label1.Text = "Would you like to Launch Velocity?";
+                applauncher.label2.Text = "It appears that your trying to access Velocity which can be \r\ninstalled or opened from your computer.";
+                if (File.Exists("C:\\z1g Apps\\Velocity\\Velocity.exe"))
+                {
+                    applauncher.textBox1.Text = "C:\\z1g Apps\\Velocity\\Velocity.exe";
+                }
+                else
+                {
+                    string fileUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/velocity-bootstrap.exe";
+                    string savePath = "C:\\z1g Apps\\Velocity\\velocity-bootstrap.exe";
+
+                    using (WebClient client = new WebClient())
+                    {
+                        client.DownloadFile(fileUrl, savePath);
+                    }
+
+                    applauncher.textBox1.Text = "C:\\z1g Apps\\Velocity\\velocity-bootstrap.exe";
+                }
+                applauncher.Show();
             }
         }
 
@@ -105,6 +180,76 @@ namespace z1g_Browser
                 {
                     label1.ForeColor = Color.Red;
                     label1.Text = "🔓 Un-Secure";
+                }
+
+                if (comboBox1.Text.Equals("https://terbium-46q.pages.dev/") || comboBox1.Text.Contains("https://terbium-46q.pages.dev"))
+                {
+                    applauncher applauncher = new applauncher();
+                    applauncher.label1.Text = "Would you like to Launch Terbium?";
+                    applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
+                    if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe"))
+                    {
+                        applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
+                    }
+                    else
+                    {
+                        string fileUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe";
+                        string savePath = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+
+                        using (WebClient client = new WebClient())
+                        {
+                            client.DownloadFile(fileUrl, savePath);
+                        }
+
+                        applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+                    }
+                    applauncher.Show();
+                }
+                if (comboBox1.Text.Equals("https://terbium.johnglynn2.repl.co") || comboBox1.Text.Contains("https://terbium.johnglynn2.repl.co"))
+                {
+                    applauncher applauncher = new applauncher();
+                    applauncher.label1.Text = "Would you like to Launch Terbium?";
+                    applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
+                    if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe"))
+                    {
+                        applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
+                    }
+                    else
+                    {
+                        string fileUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe";
+                        string savePath = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+
+                        using (WebClient client = new WebClient())
+                        {
+                            client.DownloadFile(fileUrl, savePath);
+                        }
+
+                        applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+                    }
+                    applauncher.Show();
+                }
+                if (comboBox1.Text.Equals("https://velocity.radon.games") || comboBox1.Text.Contains("https://velocity.radon.games"))
+                {
+                    applauncher applauncher = new applauncher();
+                    applauncher.label1.Text = "Would you like to Launch Velocity?";
+                    applauncher.label2.Text = "It appears that your trying to access Velocity which can be \r\ninstalled or opened from your computer.";
+                    if (File.Exists("C:\\z1g Apps\\Velocity\\Velocity.exe"))
+                    {
+                        applauncher.textBox1.Text = "C:\\z1g Apps\\Velocity\\Velocity.exe";
+                    }
+                    else
+                    {
+                        string fileUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/velocity-bootstrap.exe";
+                        string savePath = "C:\\z1g Apps\\Velocity\\velocity-bootstrap.exe";
+
+                        using (WebClient client = new WebClient())
+                        {
+                            client.DownloadFile(fileUrl, savePath);
+                        }
+
+                        applauncher.textBox1.Text = "C:\\z1g Apps\\Velocity\\velocity-bootstrap.exe";
+                    }
+                    applauncher.Show();
                 }
             }));
         }

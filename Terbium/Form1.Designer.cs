@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -37,12 +38,20 @@
             this.Button2 = new System.Windows.Forms.Button();
             this.Label9 = new System.Windows.Forms.Label();
             this.chromiumWebBrowser1 = new CefSharp.WinForms.ChromiumWebBrowser();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.forwardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.inspectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.ContextMenuStrip = this.contextMenuStrip1;
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -142,10 +151,65 @@
             this.chromiumWebBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.chromiumWebBrowser1.ContextMenuStrip = this.contextMenuStrip1;
             this.chromiumWebBrowser1.Location = new System.Drawing.Point(0, 29);
             this.chromiumWebBrowser1.Name = "chromiumWebBrowser1";
             this.chromiumWebBrowser1.Size = new System.Drawing.Size(1028, 635);
             this.chromiumWebBrowser1.TabIndex = 1;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backToolStripMenuItem,
+            this.forwardToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.inspectToolStripMenuItem,
+            this.resetSessionToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(145, 98);
+            // 
+            // backToolStripMenuItem
+            // 
+            this.backToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.backToolStripMenuItem.Image = global::Terbium.Properties.Resources.wm_back_removebg_preview;
+            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.backToolStripMenuItem.Text = "Back";
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
+            // 
+            // forwardToolStripMenuItem
+            // 
+            this.forwardToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.forwardToolStripMenuItem.Image = global::Terbium.Properties.Resources.forward_removebg_preview;
+            this.forwardToolStripMenuItem.Name = "forwardToolStripMenuItem";
+            this.forwardToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.forwardToolStripMenuItem.Text = "Forward";
+            this.forwardToolStripMenuItem.Click += new System.EventHandler(this.forwardToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.ForeColor = System.Drawing.Color.White;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(141, 6);
+            // 
+            // inspectToolStripMenuItem
+            // 
+            this.inspectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.inspectToolStripMenuItem.Image = global::Terbium.Properties.Resources.z1g;
+            this.inspectToolStripMenuItem.Name = "inspectToolStripMenuItem";
+            this.inspectToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.inspectToolStripMenuItem.Text = "Inspect";
+            this.inspectToolStripMenuItem.Click += new System.EventHandler(this.inspectToolStripMenuItem_Click);
+            // 
+            // resetSessionToolStripMenuItem
+            // 
+            this.resetSessionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.resetSessionToolStripMenuItem.Image = global::Terbium.Properties.Resources.terbium;
+            this.resetSessionToolStripMenuItem.Name = "resetSessionToolStripMenuItem";
+            this.resetSessionToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.resetSessionToolStripMenuItem.Text = "Reset Session";
+            this.resetSessionToolStripMenuItem.Click += new System.EventHandler(this.resetSessionToolStripMenuItem_Click);
             // 
             // form1
             // 
@@ -165,6 +229,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -179,5 +244,11 @@
         private CefSharp.WinForms.ChromiumWebBrowser chromiumWebBrowser1;
         internal Button button1;
         internal Button button4;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem backToolStripMenuItem;
+        private ToolStripMenuItem forwardToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripMenuItem inspectToolStripMenuItem;
+        private ToolStripMenuItem resetSessionToolStripMenuItem;
     }
 }

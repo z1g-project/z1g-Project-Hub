@@ -27,6 +27,12 @@ namespace Terbium
         private const int WM_NCHITTEST = 0x0084;
         private const int RESIZE_HANDLE_SIZE = 10;
 
+        //private Color applicationBackColor;
+        //private Color titleBarBackColor;
+        //private Color defaultFontColor;
+        //private Color defaultTitleBarFontColor;
+        //private Font defaultFont;
+
         private DiscordRpcClient rpcClient;
 
         private bool isResizing = false;
@@ -36,6 +42,14 @@ namespace Terbium
         {
             InitializeComponent();
             InitializeCefSharp();
+            LoadDefaultSettings();
+
+            int formWidth = Properties.Settings.Default.FormWidth;
+            int formHeight = Properties.Settings.Default.FormHeight;
+
+            // Set the width and height of the form
+            this.Width = formWidth;
+            this.Height = formHeight;
 
             DateTime startTime = DateTime.Now; // Store the start time
 
@@ -81,6 +95,46 @@ namespace Terbium
             base.OnFormClosed(e);
 
             rpcClient.Dispose();
+        }
+
+        private void LoadDefaultSettings()
+        {
+            // Load default settings or values from the Properties.Settings.Default
+            //applicationBackColor = Properties.Settings.Default.ApplicationBackColor;
+            //titleBarBackColor = Properties.Settings.Default.TitleBarBackColor;
+            //defaultFontColor = Properties.Settings.Default.DefaultFontColor;
+            //defaultTitleBarFontColor = Properties.Settings.Default.DefaultTitleBarFontColor;
+            //defaultFont = Properties.Settings.Default.DefaultFont;
+
+            // Apply the loaded settings
+            //ApplySettings();
+        }
+
+        //private void ApplySettings()
+        //{
+        //    this.BackColor = applicationBackColor;
+        //    UpdateTitleBarBackgroundColor();
+        //    this.ForeColor = defaultFontColor;
+        //    UpdateTitleBarFontColor();
+        //    this.Font = defaultFont;
+        //}
+
+        private void UpdateTitleBarBackgroundColor()
+        {
+            // Custom method to update title bar background color
+            // You need to handle the title bar background color update based on the UI framework you're using
+
+            // Example code for WinForms:
+            // NativeMethods.SetWindowCompositionAttribute(this.Handle, NativeMethods.WCA_ACCENT_POLICY, new NativeMethods.AccentPolicy { AccentState = NativeMethods.AccentState.ACCENT_ENABLE_TRANSPARENTGRADIENT });
+        }
+
+        private void UpdateTitleBarFontColor()
+        {
+            // Custom method to update title bar font color
+            // You need to handle the title bar font color update based on the UI framework you're using
+
+            // Example code for WinForms:
+            // this.TitleBar.ForeColor = defaultTitleBarFontColor;
         }
 
         private void InitializeCefSharp()
@@ -226,6 +280,26 @@ namespace Terbium
         {
             Cef.Shutdown();
             this.Close();
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.Back();
+        }
+
+        private void forwardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.Forward();
+        }
+
+        private void inspectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Feature isn't ready yet. Check the source here: https://github.com/z1g-project/Terbium");
+        }
+
+        private void resetSessionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.Refresh();
         }
     }
 }

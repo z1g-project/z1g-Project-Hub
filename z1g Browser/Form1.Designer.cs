@@ -196,7 +196,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(190, 10);
+            this.label1.Location = new System.Drawing.Point(176, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 15);
             this.label1.TabIndex = 4;
@@ -330,8 +330,8 @@
         private Button button4;
         private Button button1;
         private TabPage tabPage1;
-        private TabControl tabControl1;
-        private CefSharp.WinForms.ChromiumWebBrowser chromiumWebBrowser1;
         internal Button button9;
+        public CefSharp.WinForms.ChromiumWebBrowser chromiumWebBrowser1;
+        public TabControl tabControl1;
     }
 }

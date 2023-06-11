@@ -20,6 +20,8 @@ Public Class Form2
         PerformPing("usny2-auto-udp.ptoserver.com")
         Dim selectedServer As String = GetSelectedServer()
 
+        Label4.Visible = False
+
         ' Display the selected server and its ping
         DisplaySelectedServer(selectedServer)
     End Sub
@@ -128,4 +130,56 @@ Public Class Form2
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         server_selector.Show()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub pictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        ' Set the VPN server details
+        Dim vpnServer As String = "usny2-auto-udp.ptoserver.com"
+        Dim usernamePath As String = "C:\z1g Apps\z1g VPN\username.txt"
+        Dim passwordPath As String = "C:\z1g Apps\z1g VPN\password.txt"
+
+        ' Read the username from the text file
+        Dim username As String = ReadTextFile(usernamePath)
+
+        ' Read the password from the text file
+        Dim password As String = ReadTextFile(passwordPath)
+
+        ' Connect to the VPN server (implementation depends on your VPN library or API)
+        Dim isConnected As Boolean = ConnectToVpnServer(vpnServer, username, password)
+
+        If isConnected Then
+            ' VPN connection successful
+            Label4.Visible = True
+            ' Other actions you want to perform when connected
+        Else
+            ' VPN connection failed
+            ' Handle the failure scenario (e.g., show an error message)
+        End If
+    End Sub
+
+    Private Function ReadTextFile(filePath As String) As String
+        ' Read the contents of a text file and return the content as a string
+        ' Replace this with your actual implementation or use a file reading library of your choice
+        ' Return the file contents as a string
+
+        ' Example implementation:
+        Dim fileContent As String = System.IO.File.ReadAllText(filePath)
+        Return fileContent
+    End Function
+
+    Private Function ConnectToVpnServer(vpnServer As String, username As String, password As String) As Boolean
+        ' Implementation of connecting to the VPN server using your VPN library or API
+        ' Replace this with your actual implementation
+        ' Return True if the connection is successful, False otherwise
+        ' Example:
+        ' YourVpnLibrary.Connect(vpnServer, username, password)
+        ' Return YourVpnLibrary.IsConnected()
+        ' Note: The actual implementation may vary depending on the VPN library or API you are using
+
+        ' For testing purposes, assume the connection is successful
+        Return True
+    End Function
 End Class

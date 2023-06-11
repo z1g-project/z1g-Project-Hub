@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO.Compression;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -115,5 +117,59 @@ namespace Terbium
             }
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int formWidth = int.Parse(textBox1.Text);
+            int formHeight = int.Parse(textBox2.Text);
+
+            Properties.Settings.Default.FormWidth = formWidth;
+            Properties.Settings.Default.FormHeight = formHeight;
+            Properties.Settings.Default.Save();
+        }
+
+        private void settings_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = Properties.Settings.Default.FormWidth.ToString();
+            textBox2.Text = Properties.Settings.Default.FormHeight.ToString();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Directory.Delete("C:\\z1g Apps\\Terbium\\Data\\");
+            MessageBox.Show("Your cache located in: C:\\z1g Apps\\Terbium\\Data\\ has been cleared. Terbium will now restart to apply the changes.");
+            Process.Start(":\\z1g Apps\\Terbium\\Terbium.exe");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            // Create a SaveFileDialog to choose the destination for the zip file
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "ZIP files (*.zip)|*.zip";
+            saveFileDialog.FileName = "TerbiumData.zip";
+            saveFileDialog.InitialDirectory = "C:\\";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string sourceFolder = @"C:\z1g Apps\Terbium\Data";
+                string destinationZipFile = saveFileDialog.FileName;
+
+                // Create a new zip file
+                ZipFile.CreateFromDirectory(sourceFolder, destinationZipFile);
+                MessageBox.Show("Successfully Exported Cache to: " + destinationZipFile);
+            }
+        }
+
+
     }
 }

@@ -11,9 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CefSharp.Common.NETCore" Version="113.1.40" />
-    <PackageReference Include="cefsharp.winforms.netcore" Version="113.1.40" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1774.30" />
+    <PackageReference Include="CefSharp.Common.NETCore" Version="114.2.100" />
+    <PackageReference Include="cefsharp.winforms.netcore" Version="114.2.100" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +28,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="chromiumembeddedframework.runtime.win-arm64" Version="114.2.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="chromiumembeddedframework.runtime.win-x64" Version="114.2.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="chromiumembeddedframework.runtime.win-x86" Version="114.2.10" />
   </ItemGroup>
 
 </Project>

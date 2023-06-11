@@ -1,0 +1,34 @@
+name: Create Nightly Tag
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run at midnight every day
+
+jobs:
+  create_tag:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%m-%d-%Y')"
+
+      - name: Download changelogs
+        id: changelogs
+        run: |
+          curl -o changelogs.md https://cdn.z1g-project.repl.co/z1g-hub/client/nightlychangelogs.md
+          echo "::set-output name=changelogs::$(cat changelogs.md)"
+
+      - name: Create tag
+        run: |
+          echo "z1g-hub-nightly-${{ steps.date.outputs.date }}" > tag.txt
+          git tag -a -F tag.txt "z1g-hub-nightly-${{ steps.date.outputs.date }}"
+          git push --tags
