@@ -1,9 +1,10 @@
-name: Create Nightly Tag
+name: Nightly Builds
 
 on:
   push:
     branches:
       - main
+      - 'refs/tags/nightly*'
   schedule:
     - cron: '0 0 * * *' # Run at midnight every day
 
@@ -35,3 +36,4 @@ jobs:
           echo "z1g-hub-nightly-${{ steps.date.outputs.date }}" > tag.txt
           git tag -a -F tag.txt "z1g-hub-nightly-${{ steps.date.outputs.date }}"
           git push --tags
+
