@@ -68,7 +68,7 @@ namespace Terbium
 
                 var presence = new RichPresence()
                 {
-                    Details = "Using Terbium WebOS by the z1g Project",
+                    Details = "Using Velocity Browser (velocity.radon.games) by the z1g Project",
                     State = elapsedTimeString,
                     Assets = new Assets()
                     {
@@ -79,9 +79,9 @@ namespace Terbium
                     },
                     Buttons = new[]
                     {
-            new DiscordRPC.Button { Label = "Download", Url = "https://z1g-project.johnglynn2.repl.co/z1g-hub/" },
-            new DiscordRPC.Button { Label = "View Repository", Url = "https://github.com/z1g-project/z1g-project-hub" }
-        }
+                        new DiscordRPC.Button { Label = "Download", Url = "https://z1g-project.johnglynn2.repl.co/z1g-hub/" },
+                        new DiscordRPC.Button { Label = "View Repository", Url = "https://github.com/z1g-project/z1g-project-hub" }
+                    }
                 };
                 rpcClient.SetPresence(presence);
             }
@@ -99,27 +99,29 @@ namespace Terbium
             Cef.Initialize(settings);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
-            System.Net.HttpWebRequest request = (System.Net.HttpWebRequest)System.Net.HttpWebRequest.Create("https://cdn.z1g-project.repl.co/z1g-hub/client/velocity-ver.txt");
-            System.Net.HttpWebResponse response = (System.Net.HttpWebResponse)request.GetResponse();
-
-            System.IO.StreamReader sr = new System.IO.StreamReader(response.GetResponseStream());
-
-            string newestversion = sr.ReadToEnd();
-            string currentversion = Application.ProductVersion;
-
-            if (newestversion.Contains(currentversion))
+            using (HttpClient httpClient = new HttpClient())
             {
-                // Nothing Happens lol
+                HttpResponseMessage response = await httpClient.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/client/velocity-ver.txt");
+                response.EnsureSuccessStatusCode();
+                string newestVersion = await response.Content.ReadAsStringAsync();
+                string currentVersion = Application.ProductVersion;
+
+                if (!newestVersion.Contains(currentVersion))
+                {
+                    // Nothing Happens lol
+                }
+                else
+                {
+                    getupdates getupdates = new getupdates();
+                    getupdates.Show();
+                }
             }
-            else
-            {
-                getupdates getupdates = new getupdates();
-                getupdates.Show();
-            }
+
             chromiumWebBrowser1.Load("https://velocity.radon.games");
         }
+
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {

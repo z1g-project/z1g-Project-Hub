@@ -1,4 +1,5 @@
 ﻿Imports System.Windows
+Imports System.Net.Http
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -22,10 +23,10 @@ Public Class Form1
                 Me.Hide()
             Else
                 If My.Computer.FileSystem.FileExists("C:/Users/Public/z1g-project/migrated.Dat") Then
-                    Welcomeback.show
+                    welcomeback.Show()
                     Me.Hide()
                 Else
-                    'Nothing Happens lol
+                    ' Nothing Happens lol
                 End If
                 Form2.Show()
                 Me.Hide()

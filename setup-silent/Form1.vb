@@ -1,37 +1,37 @@
 ﻿Imports System.Runtime.InteropServices
 Imports System.Runtime.InteropServices.ComTypes
 Imports System.Text
+Imports System.Net.Http
+Imports System.Net
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim request As System.Net.HttpWebRequest = System.Net.HttpWebRequest.Create("https://cdn.z1g-project.repl.co/z1g-hub/client/currentversion.txt")
-        Dim response As System.Net.HttpWebResponse = request.GetResponse
+        Dim httpClient As New HttpClient()
+        Dim newestVersion As String = httpClient.GetStringAsync("https://cdn.z1g-project.repl.co/z1g-hub/client/currentversion.txt").Result
+        Dim currentVersion As String = Application.ProductVersion
 
-        Dim sr As System.IO.StreamReader = New System.IO.StreamReader(response.GetResponseStream)
-
-        Dim newestversion As String = sr.ReadToEnd
-        Dim currentversion As String = Application.ProductVersion
-        If newestversion.Contains(currentversion) Then
+        If Not newestVersion.Contains(currentVersion) Then
             If My.Computer.FileSystem.FileExists("C:/Users/Public/z1g-project/z1g-project-hub.exe") Then
-                My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/archives/1.2.0/z1g-project-hub.zip", "C:/Users/Public/z1g-project/z1g-project-hub.exe")
-            Else
-
+                Dim webClient As New WebClient()
+                webClient.DownloadFileAsync(New Uri("https://cdn.z1g-project.repl.co/z1g-hub/archives/1.2.0/z1g-project-hub.zip"), "C:/Users/Public/z1g-project/z1g-project-hub.exe")
             End If
+
             Dim shortcutPath As String = Environment.GetFolderPath(Environment.SpecialFolder.StartMenu) & "\z1g-project-hub.lnk"
             Dim targetPath As String = "C:/Users/Public/z1g-project/z1g Project Hub Universal.exe"
 
             Dim shellLink As New ShellLink()
-                shellLink.TargetPath = targetPath
+            shellLink.TargetPath = targetPath
             shellLink.WorkingDirectory = "C:/Users/Public/z1g-project/"
-
             shellLink.Description = "The all new and Reformed z1g Hub App!"
             shellLink.Save(shortcutPath)
+
             Process.Start("C:/Users/Public/z1g-project/z1g Project Hub Universal.exe")
             Me.Close()
-            Else
-                Me.Close()
+        Else
+            Me.Close()
             My.Computer.FileSystem.DeleteFile("C:\Users\Public\z1g-project\update.exe")
-            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/latest/update.exe", "C:\Users\Public\z1g-project\update.exe")
+            Dim webClient As New WebClient()
+            webClient.DownloadFileAsync(New Uri("https://cdn.z1g-project.repl.co/z1g-hub/latest/update.exe"), "C:\Users\Public\z1g-project\update.exe")
         End If
     End Sub
 

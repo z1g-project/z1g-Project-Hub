@@ -4,6 +4,8 @@ using CefSharp.WinForms;
 using DiscordRPC;
 using DiscordRPC.Logging;
 using System;
+using System.IO;
+using System.Net;
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -22,19 +24,11 @@ namespace Terbium
         private static extern bool ReleaseCapture();
 
         // Resize Code
-
         private const int HTBOTTOMRIGHT = 17;
         private const int WM_NCHITTEST = 0x0084;
         private const int RESIZE_HANDLE_SIZE = 10;
 
-        //private Color applicationBackColor;
-        //private Color titleBarBackColor;
-        //private Color defaultFontColor;
-        //private Color defaultTitleBarFontColor;
-        //private Font defaultFont;
-
         private DiscordRpcClient rpcClient;
-
         private bool isResizing = false;
         private Point lastMousePos;
 
@@ -81,60 +75,36 @@ namespace Terbium
                     },
                     Buttons = new[]
                     {
-            new DiscordRPC.Button { Label = "Download", Url = "https://z1g-project.johnglynn2.repl.co/z1g-hub/" },
-            new DiscordRPC.Button { Label = "View Repository", Url = "https://github.com/z1g-project/z1g-project-hub" }
-        }
+                        new DiscordRPC.Button { Label = "Download", Url = "https://z1g-project.johnglynn2.repl.co/z1g-hub/" },
+                        new DiscordRPC.Button { Label = "View Repository", Url = "https://github.com/z1g-project/z1g-project-hub" }
+                    }
                 };
                 rpcClient.SetPresence(presence);
             }
-
         }
 
         protected override void OnFormClosed(FormClosedEventArgs e)
         {
             base.OnFormClosed(e);
-
             rpcClient.Dispose();
         }
 
         private void LoadDefaultSettings()
         {
             // Load default settings or values from the Properties.Settings.Default
-            //applicationBackColor = Properties.Settings.Default.ApplicationBackColor;
-            //titleBarBackColor = Properties.Settings.Default.TitleBarBackColor;
-            //defaultFontColor = Properties.Settings.Default.DefaultFontColor;
-            //defaultTitleBarFontColor = Properties.Settings.Default.DefaultTitleBarFontColor;
-            //defaultFont = Properties.Settings.Default.DefaultFont;
-
             // Apply the loaded settings
-            //ApplySettings();
         }
-
-        //private void ApplySettings()
-        //{
-        //    this.BackColor = applicationBackColor;
-        //    UpdateTitleBarBackgroundColor();
-        //    this.ForeColor = defaultFontColor;
-        //    UpdateTitleBarFontColor();
-        //    this.Font = defaultFont;
-        //}
 
         private void UpdateTitleBarBackgroundColor()
         {
             // Custom method to update title bar background color
             // You need to handle the title bar background color update based on the UI framework you're using
-
-            // Example code for WinForms:
-            // NativeMethods.SetWindowCompositionAttribute(this.Handle, NativeMethods.WCA_ACCENT_POLICY, new NativeMethods.AccentPolicy { AccentState = NativeMethods.AccentState.ACCENT_ENABLE_TRANSPARENTGRADIENT });
         }
 
         private void UpdateTitleBarFontColor()
         {
             // Custom method to update title bar font color
             // You need to handle the title bar font color update based on the UI framework you're using
-
-            // Example code for WinForms:
-            // this.TitleBar.ForeColor = defaultTitleBarFontColor;
         }
 
         private void InitializeCefSharp()
@@ -149,42 +119,45 @@ namespace Terbium
             Cef.Initialize(settings);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
-            System.Net.HttpWebRequest request = (System.Net.HttpWebRequest)System.Net.HttpWebRequest.Create("https://cdn.z1g-project.repl.co/z1g-hub/client/terbium-ver.txt");
-            System.Net.HttpWebResponse response = (System.Net.HttpWebResponse)request.GetResponse();
+            string url = "";
+            string terbiumVerUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/terbium-ver.txt";
+            string terbiumHomePage = "https://terbium-46q.pages.dev";
+            string terbiumFallbackPage = "https://terbium--johnglynn2.repl.co";
+            string setupDoneFile = "C:/z1g apps/Terbium/Data/setupdone.DAT";
+            string verConfFile = "C:/z1g apps/Terbium/Data/verconf.DAT";
 
-            System.IO.StreamReader sr = new System.IO.StreamReader(response.GetResponseStream());
-
-            string newestversion = sr.ReadToEnd();
-            string currentversion = Application.ProductVersion;
-
-            if (newestversion.Contains(currentversion))
+            try
             {
-                if (File.Exists("C:/z1g apps/Terbium/Data/setupdone.DAT"))
+                using (HttpClient client = new HttpClient())
                 {
+                    string newestVersion = await client.GetStringAsync(terbiumVerUrl);
+                    string currentVersion = Application.ProductVersion;
 
+                    if (newestVersion.Contains(currentVersion))
+                    {
+                        if (!File.Exists(setupDoneFile))
+                        {
+                            firstrun firstrun = new firstrun();
+                            firstrun.Show();
+                            chromiumWebBrowser1.Load("about:blank");
+                        }
+                    }
+                    else
+                    {
+                        getupdates getupdates = new getupdates();
+                        getupdates.Show();
+                    }
                 }
-                else
-                {
-                    firstrun firstrun = new firstrun();
-                    firstrun.Show();
-                    chromiumWebBrowser1.Load("about:blank");
-                }
             }
-            else
+            catch (Exception ex)
             {
-                getupdates getupdates = new getupdates();
-                getupdates.Show();
+                MessageBox.Show("An error occurred while checking for updates: " + ex.Message);
+                url = File.Exists(verConfFile) ? terbiumHomePage : terbiumFallbackPage;
             }
-            if (File.Exists("C:/z1g apps/Terbium/Data/verconf.DAT"))
-            {
-                chromiumWebBrowser1.Load("https://terbium-46q.pages.dev");
-            }
-            else
-            {
-                chromiumWebBrowser1.Load("https://terbium--johnglynn2.repl.co");
-            }
+
+            chromiumWebBrowser1.Load(url);
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
