@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using Microsoft.VisualBasic.Devices;
 using System.Net;
 using CefSharp.Handler;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace z1g_Browser
 {
@@ -147,6 +148,29 @@ namespace z1g_Browser
                 }
                 applauncher.Show();
             }
+            if (comboBox1.Text.Equals("https://z1g-project.repl.co/z1g-hub/launch") || comboBox1.Text.Contains("https://z1g-project.repl.co/z1g-hub/launch"))
+            {
+                applauncher applauncher = new applauncher();
+                applauncher.label1.Text = "Would you like to Launch z1g Hub?";
+                applauncher.label2.Text = "It appears that your trying to access z1g Hub which can be \r\ninstalled or opened from your computer.";
+                if (File.Exists("C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe"))
+                {
+                    applauncher.textBox1.Text = "C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe";
+                }
+                else
+                {
+                    string fileUrl = "http://err404";
+                    string savePath = "C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe";
+
+                    using (WebClient client = new WebClient())
+                    {
+                        client.DownloadFile(fileUrl, savePath);
+                    }
+
+                    applauncher.textBox1.Text = "C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe";
+                }
+                applauncher.Show();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -248,6 +272,29 @@ namespace z1g_Browser
                         }
 
                         applauncher.textBox1.Text = "C:\\z1g Apps\\Velocity\\velocity-bootstrap.exe";
+                    }
+                    applauncher.Show();
+                }
+                if (comboBox1.Text.Equals("https://z1g-project.repl.co/z1g-hub/launch") || comboBox1.Text.Contains("https://z1g-project.repl.co/z1g-hub/launch"))
+                {
+                    applauncher applauncher = new applauncher();
+                    applauncher.label1.Text = "Would you like to Launch z1g Hub?";
+                    applauncher.label2.Text = "It appears that your trying to access z1g Hub which can be \r\ninstalled or opened from your computer.";
+                    if (File.Exists("C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe"))
+                    {
+                        applauncher.textBox1.Text = "C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe";
+                    }
+                    else
+                    {
+                        string fileUrl = "http://err404";
+                        string savePath = "C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe";
+
+                        using (WebClient client = new WebClient())
+                        {
+                            client.DownloadFile(fileUrl, savePath);
+                        }
+
+                        applauncher.textBox1.Text = "C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe";
                     }
                     applauncher.Show();
                 }

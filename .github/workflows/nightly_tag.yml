@@ -25,16 +25,25 @@ jobs:
         id: date
         run: echo "::set-output name=date::$(date +'%m-%d-%Y')"
 
-      - name: Download changelogs
-        id: changelogs
+      - name: Build z1g Project Hub Universal
+        run: dotnet build path/to/your/project.csproj --configuration Release
+
+      - name: Publish z1g Project Hub Universal
+        run: dotnet publish path/to/your/project.csproj --configuration Release --output ./publish
+
+      - name: Create ZIP file
         run: |
-          curl -o changelogs.md https://cdn.z1g-project.repl.co/z1g-hub/client/nightlychangelogs.md
-          echo "::set-output name=changelogs::$(cat changelogs.md)"
-          echo "Downloaded changelogs:"
-          cat changelogs.md
+          7z a -tzip z1g-project-hub.zip ./publish/*
+          mv z1g-project-hub.zip compiled-zips/
 
       - name: Create tag
         run: |
           echo "z1g-hub-nightly-${{ steps.date.outputs.date }}" > tag.txt
           git tag -a -F tag.txt "z1g-hub-nightly-${{ steps.date.outputs.date }}"
           git push --tags
+
+      - name: Upload compiled ZIP
+        uses: actions/upload-artifact@v2
+        with:
+          name: compiled-zip
+          path: compiled-zips/z1g-project-hub.zip
