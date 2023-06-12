@@ -4,7 +4,6 @@ Imports System.Net.NetworkInformation
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
-Imports IWshRuntimeLibrary
 
 Public Class server_selector
     Private Const WM_NCLBUTTONDOWN As Integer = &HA1
