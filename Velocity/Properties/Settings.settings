@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Velocity.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FormWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1028</Value>
+    </Setting>
+    <Setting Name="FormHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">664</Value>
+    </Setting>
+    <Setting Name="ApplicationBackColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">24,24,24</Value>
+    </Setting>
+    <Setting Name="TitleBarBackColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">24,24,24</Value>
+    </Setting>
+    <Setting Name="DefualtFontColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">24,24,24</Value>
+    </Setting>
+    <Setting Name="DefualtTitleBarFontColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">24,24,24</Value>
+    </Setting>
+    <Setting Name="DefualtFont" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Segoe UI, 9pt</Value>
+    </Setting>
+    <Setting Name="Height" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1028</Value>
+    </Setting>
+    <Setting Name="Width" Type="System.String" Scope="User">
+      <Value Profile="(Default)">664</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form3
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form3
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
@@ -42,6 +42,32 @@ Partial Class Form3
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Label78 = New System.Windows.Forms.Label()
+        Me.Label79 = New System.Windows.Forms.Label()
+        Me.Label80 = New System.Windows.Forms.Label()
+        Me.Label81 = New System.Windows.Forms.Label()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.Label74 = New System.Windows.Forms.Label()
+        Me.Label75 = New System.Windows.Forms.Label()
+        Me.Label76 = New System.Windows.Forms.Label()
+        Me.Label77 = New System.Windows.Forms.Label()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.Label70 = New System.Windows.Forms.Label()
+        Me.Label71 = New System.Windows.Forms.Label()
+        Me.Label72 = New System.Windows.Forms.Label()
+        Me.Label73 = New System.Windows.Forms.Label()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.Label67 = New System.Windows.Forms.Label()
+        Me.Label68 = New System.Windows.Forms.Label()
+        Me.Label69 = New System.Windows.Forms.Label()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.Label61 = New System.Windows.Forms.Label()
         Me.Label62 = New System.Windows.Forms.Label()
         Me.Label63 = New System.Windows.Forms.Label()
@@ -106,6 +132,11 @@ Partial Class Form3
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
+        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -131,11 +162,6 @@ Partial Class Form3
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -143,6 +169,12 @@ Partial Class Form3
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel9.SuspendLayout()
         CType(Me.articleimg4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.articleimg3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -151,6 +183,7 @@ Partial Class Form3
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip2.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -160,7 +193,6 @@ Partial Class Form3
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ContextMenuStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -237,7 +269,7 @@ Partial Class Form3
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(221, 17)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Version 1.2.5u (Arch Valley Universal)"
+        Me.Label3.Text = "Version 1.3.0u (Arch Valley Universal)"
         '
         'Label2
         '
@@ -405,6 +437,8 @@ Partial Class Form3
         '
         'Panel7
         '
+        Me.Panel7.Controls.Add(Me.Panel8)
+        Me.Panel7.Controls.Add(Me.Panel9)
         Me.Panel7.Controls.Add(Me.Label61)
         Me.Panel7.Controls.Add(Me.Label62)
         Me.Panel7.Controls.Add(Me.Label63)
@@ -434,6 +468,289 @@ Partial Class Form3
         Me.Panel7.Size = New System.Drawing.Size(828, 641)
         Me.Panel7.TabIndex = 39
         '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.Label78)
+        Me.Panel8.Controls.Add(Me.Label79)
+        Me.Panel8.Controls.Add(Me.Label80)
+        Me.Panel8.Controls.Add(Me.Label81)
+        Me.Panel8.Controls.Add(Me.PictureBox18)
+        Me.Panel8.Controls.Add(Me.Label74)
+        Me.Panel8.Controls.Add(Me.Label75)
+        Me.Panel8.Controls.Add(Me.Label76)
+        Me.Panel8.Controls.Add(Me.Label77)
+        Me.Panel8.Controls.Add(Me.PictureBox17)
+        Me.Panel8.Controls.Add(Me.Label70)
+        Me.Panel8.Controls.Add(Me.Label71)
+        Me.Panel8.Controls.Add(Me.Label72)
+        Me.Panel8.Controls.Add(Me.Label73)
+        Me.Panel8.Controls.Add(Me.PictureBox15)
+        Me.Panel8.Controls.Add(Me.Label66)
+        Me.Panel8.Controls.Add(Me.Label67)
+        Me.Panel8.Controls.Add(Me.Label68)
+        Me.Panel8.Controls.Add(Me.Label69)
+        Me.Panel8.Controls.Add(Me.PictureBox14)
+        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel8.Location = New System.Drawing.Point(0, 97)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(808, 544)
+        Me.Panel8.TabIndex = 47
+        '
+        'Label78
+        '
+        Me.Label78.AutoSize = True
+        Me.Label78.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label78.Location = New System.Drawing.Point(218, 491)
+        Me.Label78.Name = "Label78"
+        Me.Label78.Size = New System.Drawing.Size(111, 17)
+        Me.Label78.TabIndex = 47
+        Me.Label78.Text = "Source: Loading..."
+        '
+        'Label79
+        '
+        Me.Label79.AutoSize = True
+        Me.Label79.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label79.Location = New System.Drawing.Point(679, 410)
+        Me.Label79.Name = "Label79"
+        Me.Label79.Size = New System.Drawing.Size(106, 17)
+        Me.Label79.TabIndex = 46
+        Me.Label79.Text = "Released: {DATE}"
+        '
+        'Label80
+        '
+        Me.Label80.AutoSize = True
+        Me.Label80.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label80.Location = New System.Drawing.Point(226, 457)
+        Me.Label80.Name = "Label80"
+        Me.Label80.Size = New System.Drawing.Size(64, 17)
+        Me.Label80.TabIndex = 45
+        Me.Label80.Text = "Loading..."
+        '
+        'Label81
+        '
+        Me.Label81.AutoSize = True
+        Me.Label81.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label81.Location = New System.Drawing.Point(212, 416)
+        Me.Label81.Name = "Label81"
+        Me.Label81.Size = New System.Drawing.Size(95, 25)
+        Me.Label81.TabIndex = 44
+        Me.Label81.Text = "Loading..."
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.Location = New System.Drawing.Point(60, 410)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(133, 98)
+        Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox18.TabIndex = 43
+        Me.PictureBox18.TabStop = False
+        '
+        'Label74
+        '
+        Me.Label74.AutoSize = True
+        Me.Label74.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label74.Location = New System.Drawing.Point(218, 354)
+        Me.Label74.Name = "Label74"
+        Me.Label74.Size = New System.Drawing.Size(111, 17)
+        Me.Label74.TabIndex = 42
+        Me.Label74.Text = "Source: Loading..."
+        '
+        'Label75
+        '
+        Me.Label75.AutoSize = True
+        Me.Label75.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label75.Location = New System.Drawing.Point(679, 273)
+        Me.Label75.Name = "Label75"
+        Me.Label75.Size = New System.Drawing.Size(106, 17)
+        Me.Label75.TabIndex = 41
+        Me.Label75.Text = "Released: {DATE}"
+        '
+        'Label76
+        '
+        Me.Label76.AutoSize = True
+        Me.Label76.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label76.Location = New System.Drawing.Point(226, 320)
+        Me.Label76.Name = "Label76"
+        Me.Label76.Size = New System.Drawing.Size(64, 17)
+        Me.Label76.TabIndex = 40
+        Me.Label76.Text = "Loading..."
+        '
+        'Label77
+        '
+        Me.Label77.AutoSize = True
+        Me.Label77.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label77.Location = New System.Drawing.Point(212, 279)
+        Me.Label77.Name = "Label77"
+        Me.Label77.Size = New System.Drawing.Size(95, 25)
+        Me.Label77.TabIndex = 39
+        Me.Label77.Text = "Loading..."
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.Location = New System.Drawing.Point(60, 273)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(133, 98)
+        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox17.TabIndex = 38
+        Me.PictureBox17.TabStop = False
+        '
+        'Label70
+        '
+        Me.Label70.AutoSize = True
+        Me.Label70.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label70.Location = New System.Drawing.Point(220, 225)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(111, 17)
+        Me.Label70.TabIndex = 37
+        Me.Label70.Text = "Source: Loading..."
+        '
+        'Label71
+        '
+        Me.Label71.AutoSize = True
+        Me.Label71.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label71.Location = New System.Drawing.Point(679, 144)
+        Me.Label71.Name = "Label71"
+        Me.Label71.Size = New System.Drawing.Size(106, 17)
+        Me.Label71.TabIndex = 36
+        Me.Label71.Text = "Released: {DATE}"
+        '
+        'Label72
+        '
+        Me.Label72.AutoSize = True
+        Me.Label72.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label72.Location = New System.Drawing.Point(228, 191)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(64, 17)
+        Me.Label72.TabIndex = 35
+        Me.Label72.Text = "Loading..."
+        '
+        'Label73
+        '
+        Me.Label73.AutoSize = True
+        Me.Label73.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label73.Location = New System.Drawing.Point(214, 150)
+        Me.Label73.Name = "Label73"
+        Me.Label73.Size = New System.Drawing.Size(95, 25)
+        Me.Label73.TabIndex = 34
+        Me.Label73.Text = "Loading..."
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Location = New System.Drawing.Point(62, 144)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(133, 98)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox15.TabIndex = 33
+        Me.PictureBox15.TabStop = False
+        '
+        'Label66
+        '
+        Me.Label66.AutoSize = True
+        Me.Label66.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label66.Location = New System.Drawing.Point(212, 94)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(111, 17)
+        Me.Label66.TabIndex = 32
+        Me.Label66.Text = "Source: Loading..."
+        '
+        'Label67
+        '
+        Me.Label67.AutoSize = True
+        Me.Label67.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label67.Location = New System.Drawing.Point(679, 19)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(106, 17)
+        Me.Label67.TabIndex = 31
+        Me.Label67.Text = "Released: {DATE}"
+        '
+        'Label68
+        '
+        Me.Label68.AutoSize = True
+        Me.Label68.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label68.Location = New System.Drawing.Point(220, 60)
+        Me.Label68.Name = "Label68"
+        Me.Label68.Size = New System.Drawing.Size(64, 17)
+        Me.Label68.TabIndex = 30
+        Me.Label68.Text = "Loading..."
+        '
+        'Label69
+        '
+        Me.Label69.AutoSize = True
+        Me.Label69.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label69.Location = New System.Drawing.Point(206, 19)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(95, 25)
+        Me.Label69.TabIndex = 29
+        Me.Label69.Text = "Loading..."
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.Location = New System.Drawing.Point(62, 13)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(133, 98)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox14.TabIndex = 28
+        Me.PictureBox14.TabStop = False
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.Panel9.Controls.Add(Me.Panel11)
+        Me.Panel9.Controls.Add(Me.Panel10)
+        Me.Panel9.Controls.Add(Me.Button9)
+        Me.Panel9.Controls.Add(Me.Button8)
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel9.Location = New System.Drawing.Point(808, 0)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(20, 641)
+        Me.Panel9.TabIndex = 46
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.Color.Teal
+        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel11.Location = New System.Drawing.Point(0, 305)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(20, 311)
+        Me.Panel11.TabIndex = 51
+        '
+        'Panel10
+        '
+        Me.Panel10.BackColor = System.Drawing.Color.Teal
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel10.Location = New System.Drawing.Point(0, 25)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(20, 280)
+        Me.Panel10.TabIndex = 50
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.Button9.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Button9.FlatAppearance.BorderSize = 0
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button9.Location = New System.Drawing.Point(0, 616)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(20, 25)
+        Me.Button9.TabIndex = 49
+        Me.Button9.Text = "D"
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.Button8.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button8.FlatAppearance.BorderSize = 0
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button8.Location = New System.Drawing.Point(0, 0)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(20, 25)
+        Me.Button8.TabIndex = 48
+        Me.Button8.Text = "^"
+        Me.Button8.UseVisualStyleBackColor = False
+        '
         'Label61
         '
         Me.Label61.AutoSize = True
@@ -448,7 +765,7 @@ Partial Class Form3
         '
         Me.Label62.AutoSize = True
         Me.Label62.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label62.Location = New System.Drawing.Point(679, 490)
+        Me.Label62.Location = New System.Drawing.Point(666, 490)
         Me.Label62.Name = "Label62"
         Me.Label62.Size = New System.Drawing.Size(106, 17)
         Me.Label62.TabIndex = 42
@@ -497,7 +814,7 @@ Partial Class Form3
         '
         Me.Label58.AutoSize = True
         Me.Label58.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label58.Location = New System.Drawing.Point(679, 359)
+        Me.Label58.Location = New System.Drawing.Point(666, 359)
         Me.Label58.Name = "Label58"
         Me.Label58.Size = New System.Drawing.Size(106, 17)
         Me.Label58.TabIndex = 37
@@ -546,7 +863,7 @@ Partial Class Form3
         '
         Me.Label54.AutoSize = True
         Me.Label54.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label54.Location = New System.Drawing.Point(679, 235)
+        Me.Label54.Location = New System.Drawing.Point(666, 235)
         Me.Label54.Name = "Label54"
         Me.Label54.Size = New System.Drawing.Size(106, 17)
         Me.Label54.TabIndex = 32
@@ -587,7 +904,7 @@ Partial Class Form3
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button7.Location = New System.Drawing.Point(733, 18)
+        Me.Button7.Location = New System.Drawing.Point(711, 18)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(83, 30)
         Me.Button7.TabIndex = 28
@@ -608,7 +925,7 @@ Partial Class Form3
         '
         Me.Label51.AutoSize = True
         Me.Label51.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label51.Location = New System.Drawing.Point(679, 110)
+        Me.Label51.Location = New System.Drawing.Point(666, 110)
         Me.Label51.Name = "Label51"
         Me.Label51.Size = New System.Drawing.Size(106, 17)
         Me.Label51.TabIndex = 26
@@ -1090,6 +1407,46 @@ Partial Class Form3
         Me.Label20.TabIndex = 17
         Me.Label20.Text = "Velocity"
         '
+        'ContextMenuStrip2
+        '
+        Me.ContextMenuStrip2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4})
+        Me.ContextMenuStrip2.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.ContextMenuStrip2.Size = New System.Drawing.Size(121, 92)
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ToolStripMenuItem1.ForeColor = System.Drawing.Color.White
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(120, 22)
+        Me.ToolStripMenuItem1.Text = "Open"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ToolStripMenuItem2.ForeColor = System.Drawing.Color.White
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(120, 22)
+        Me.ToolStripMenuItem2.Text = "Uninstall"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ToolStripMenuItem3.ForeColor = System.Drawing.Color.White
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(120, 22)
+        Me.ToolStripMenuItem3.Text = "Settings"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.ToolStripMenuItem4.ForeColor = System.Drawing.Color.White
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(120, 22)
+        Me.ToolStripMenuItem4.Text = "Reset"
+        '
         'Label21
         '
         Me.Label21.AutoSize = True
@@ -1336,46 +1693,6 @@ Partial Class Form3
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "Welcome to the z1g Hub!"
         '
-        'ContextMenuStrip2
-        '
-        Me.ContextMenuStrip2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4})
-        Me.ContextMenuStrip2.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ContextMenuStrip2.Size = New System.Drawing.Size(121, 92)
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ToolStripMenuItem1.ForeColor = System.Drawing.Color.White
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(120, 22)
-        Me.ToolStripMenuItem1.Text = "Open"
-        '
-        'ToolStripMenuItem2
-        '
-        Me.ToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ToolStripMenuItem2.ForeColor = System.Drawing.Color.White
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(120, 22)
-        Me.ToolStripMenuItem2.Text = "Uninstall"
-        '
-        'ToolStripMenuItem3
-        '
-        Me.ToolStripMenuItem3.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ToolStripMenuItem3.ForeColor = System.Drawing.Color.White
-        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(120, 22)
-        Me.ToolStripMenuItem3.Text = "Settings"
-        '
-        'ToolStripMenuItem4
-        '
-        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ToolStripMenuItem4.ForeColor = System.Drawing.Color.White
-        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(120, 22)
-        Me.ToolStripMenuItem4.Text = "Reset"
-        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -1405,6 +1722,13 @@ Partial Class Form3
         Me.Panel6.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel9.ResumeLayout(False)
         CType(Me.articleimg4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.articleimg3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1413,6 +1737,7 @@ Partial Class Form3
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip2.ResumeLayout(False)
         Me.ContextMenuStrip1.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1422,7 +1747,6 @@ Partial Class Form3
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ContextMenuStrip2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1539,4 +1863,30 @@ Partial Class Form3
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents Label78 As Label
+    Friend WithEvents Label79 As Label
+    Friend WithEvents Label80 As Label
+    Friend WithEvents Label81 As Label
+    Friend WithEvents PictureBox18 As PictureBox
+    Friend WithEvents Label74 As Label
+    Friend WithEvents Label75 As Label
+    Friend WithEvents Label76 As Label
+    Friend WithEvents Label77 As Label
+    Friend WithEvents PictureBox17 As PictureBox
+    Friend WithEvents Label70 As Label
+    Friend WithEvents Label71 As Label
+    Friend WithEvents Label72 As Label
+    Friend WithEvents Label73 As Label
+    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents Label66 As Label
+    Friend WithEvents Label67 As Label
+    Friend WithEvents Label68 As Label
+    Friend WithEvents Label69 As Label
+    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Panel11 As Panel
 End Class

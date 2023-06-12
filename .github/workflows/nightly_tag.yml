@@ -36,4 +36,3 @@ jobs:
           echo "z1g-hub-nightly-${{ steps.date.outputs.date }}" > tag.txt
           git tag -a -F tag.txt "z1g-hub-nightly-${{ steps.date.outputs.date }}"
           git push --tags
-

@@ -1,9 +1,14 @@
 using CefSharp;
 using CefSharp.WinForms;
+using DiscordRPC.Logging;
+using DiscordRPC;
 using System;
+using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Velocity;
+using Velocity.Properties;
+using System.Windows.Forms.PropertyGridInternal;
 
 namespace Terbium
 {
@@ -27,10 +32,59 @@ namespace Terbium
         private bool isResizing = false;
         private Point lastMousePos;
 
+        private DiscordRpcClient rpcClient;
+
         public Form1()
         {
             InitializeComponent();
             InitializeCefSharp();
+
+            // Accessing the FormWidth setting
+            //int formWidth = Properties.Settings.Default.FormWidth;
+
+            // Accessing the FormHeight setting
+            //int formHeight = Properties.Settings.Default.FormHeight;
+
+            // Set the width and height of the form
+            //this.Width = formWidth;
+            //this.Height = formHeight;
+
+            DateTime startTime = DateTime.Now; // Store the start time
+
+            rpcClient = new DiscordRpcClient("1115687781998547066");
+            rpcClient.Logger = new ConsoleLogger() { Level = LogLevel.Info };
+            rpcClient.Initialize();
+
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 1000; // Update presence every 1 second
+            timer.Tick += (sender, e) => UpdatePresence();
+            timer.Start();
+
+            // Method to update the RPC presence
+            void UpdatePresence()
+            {
+                TimeSpan elapsedTime = DateTime.Now - startTime;
+                string elapsedTimeString = elapsedTime.ToString(@"hh\:mm\:ss"); // Format the elapsed time as HH:MM:SS
+
+                var presence = new RichPresence()
+                {
+                    Details = "Using Terbium WebOS by the z1g Project",
+                    State = elapsedTimeString,
+                    Assets = new Assets()
+                    {
+                        LargeImageKey = "velocity",
+                        LargeImageText = "Velocity Logo",
+                        SmallImageKey = "z1g",
+                        SmallImageText = "z1g Project Logo"
+                    },
+                    Buttons = new[]
+                    {
+            new DiscordRPC.Button { Label = "Download", Url = "https://z1g-project.johnglynn2.repl.co/z1g-hub/" },
+            new DiscordRPC.Button { Label = "View Repository", Url = "https://github.com/z1g-project/z1g-project-hub" }
+        }
+                };
+                rpcClient.SetPresence(presence);
+            }
         }
 
         private void InitializeCefSharp()

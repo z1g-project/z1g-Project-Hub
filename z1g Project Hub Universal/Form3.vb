@@ -63,22 +63,676 @@ Public Class Form3
         Label9.Text = "App Manager"
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Async Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Panel3.Visible = True
         Panel4.Visible = True
         Panel5.Visible = True
-        Panel7.Visible = True
         Panel6.Visible = True
+        Panel7.Visible = True
+        Panel8.Visible = False
+        Panel11.Visible = False
         Label9.Text = "Feed [Beta]"
+        Try
+            Button7.Enabled = False
+            Using client As New HttpClient()
+                ' Make a request to the CDN URL and retrieve the article data
+                Dim response As HttpResponseMessage = Await client.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/news/welcome.json")
+                Dim response2 As HttpResponseMessage = Await client.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/news/tnnews.json")
+                Dim response3 As HttpResponseMessage = Await client.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/news/tnnews2.json")
+                Dim response4 As HttpResponseMessage = Await client.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/news/z1gnews.json")
+
+                ' Check if the request was successful
+                If response.IsSuccessStatusCode Then
+                    ' Read the response content as a string
+                    Dim articleData As String = Await response.Content.ReadAsStringAsync()
+
+                    ' Parse the article data (assuming it's in JSON format)
+                    Dim article As JObject = JObject.Parse(articleData)
+
+                    ' Extract the required data from the article object
+                    Dim imageUrl As String = String.Empty
+                    If article.TryGetValue("image", imageUrl) Then
+                        ' The "image" property exists, assign its value to the imageUrl variable
+                        ' Set the ImageLocation property of PictureBox to the imageUrl
+                        PictureBox12.ImageLocation = imageUrl
+                    Else
+                        ' The "image" property is missing, handle it accordingly
+                        ' You might want to set a default image or display an error message
+                        MessageBox.Show("Image URL Not Available.")
+                        Button7.Enabled = True
+                        Return
+                    End If
+                    Dim title As String = String.Empty
+                    If article.TryGetValue("title", title) Then
+                        ' The "title" property exists, assign its value to the title variable
+                        ' Proceed with displaying the title
+                        Label49.Text = title
+                    Else
+                        ' The "title" property is missing, handle it accordingly
+                        ' You might want to set a default title or display an error message
+                        Label49.Text = "Title Not Available"
+                    End If
+
+                    Dim description As String = String.Empty
+                    If article.TryGetValue("description", description) Then
+                        ' The "description" property exists, assign its value to the description variable
+                        ' Proceed with displaying the description
+                        Label50.Text = description
+                    Else
+                        ' The "description" property is missing, handle it accordingly
+                        ' You might want to set a default description or display an error message
+                        Label50.Text = "Description Not Available"
+                    End If
+
+                    Dim datePublished As String = String.Empty
+                    If article.TryGetValue("datePublished", datePublished) Then
+                        ' The "datePublished" property exists, assign its value to the datePublished variable
+                        ' Proceed with displaying the datePublished
+                        Label51.Text = datePublished
+                    Else
+                        ' The "datePublished" property is missing, handle it accordingly
+                        ' You might want to set a default datePublished or display an error message
+                        Label51.Text = "Date Not Available"
+                    End If
+
+                    Dim source As String = String.Empty
+                    If article.TryGetValue("source", source) Then
+                        ' The "source" property exists, assign its value to the source variable
+                        ' Proceed with displaying the source
+                        Label52.Text = source
+                    Else
+                        ' The "source" property is missing, handle it accordingly
+                        ' You might want to set a default source or display an error message
+                        Label52.Text = "Source Not Available"
+                    End If
+
+
+                    ' Display the data in the appropriate controls
+                    PictureBox12.Load(imageUrl)
+                    Label49.Text = title
+                    Label50.Text = description
+                    Label51.Text = "Released: " + datePublished
+                    Label52.Text = "Source: " + source
+                    Button7.Enabled = True
+                Else
+                    ' Handle the case when the request fails
+                    MessageBox.Show("Failed to retrieve the article data.")
+                    Button7.Enabled = True
+                End If
+                If response2.IsSuccessStatusCode Then
+                    ' Read the response content as a string
+                    Dim articleData2 As String = Await response2.Content.ReadAsStringAsync()
+
+                    ' Parse the article data (assuming it's in JSON format)
+                    Dim article2 As JObject = JObject.Parse(articleData2)
+
+                    ' Extract the required data from the article object
+                    Dim imageUrl2 As String = String.Empty
+                    If article2.TryGetValue("image", imageUrl2) Then
+                        ' The "image" property exists, assign its value to the imageUrl variable
+                        ' Set the ImageLocation property of PictureBox to the imageUrl
+                        PictureBox13.ImageLocation = imageUrl2
+                    Else
+                        ' The "image" property is missing, handle it accordingly
+                        ' You might want to set a default image or display an error message
+                        MessageBox.Show("Image URL Not Available.")
+                        Button7.Enabled = True
+                        Return
+                    End If
+                    Dim title2 As String = String.Empty
+                    If article2.TryGetValue("title", title2) Then
+                        ' The "title" property exists, assign its value to the title variable
+                        ' Proceed with displaying the title
+                        Label56.Text = title2
+                    Else
+                        ' The "title" property is missing, handle it accordingly
+                        ' You might want to set a default title or display an error message
+                        Label56.Text = "Title Not Available"
+                    End If
+
+                    Dim description2 As String = String.Empty
+                    If article2.TryGetValue("description", description2) Then
+                        ' The "description" property exists, assign its value to the description variable
+                        ' Proceed with displaying the description
+                        Label55.Text = description2
+                    Else
+                        ' The "description" property is missing, handle it accordingly
+                        ' You might want to set a default description or display an error message
+                        Label55.Text = "Description Not Available"
+                    End If
+
+                    Dim datePublished2 As String = String.Empty
+                    If article2.TryGetValue("datePublished", datePublished2) Then
+                        ' The "datePublished" property exists, assign its value to the datePublished variable
+                        ' Proceed with displaying the datePublished
+                        Label54.Text = "Released: " + datePublished2
+                    Else
+                        ' The "datePublished" property is missing, handle it accordingly
+                        ' You might want to set a default datePublished or display an error message
+                        Label54.Text = "Date Not Available"
+                    End If
+
+                    Dim source2 As String = String.Empty
+                    If article2.TryGetValue("source", source2) Then
+                        ' The "source" property exists, assign its value to the source variable
+                        ' Proceed with displaying the source
+                        Label53.Text = "Source: " + source2
+                    Else
+                        ' The "source" property is missing, handle it accordingly
+                        ' You might want to set a default source or display an error message
+                        Label53.Text = "Source Not Available"
+                    End If
+
+
+                    ' Display the data in the appropriate controls
+                    PictureBox13.Load(imageUrl2)
+                    Label56.Text = title2
+                    Label55.Text = description2
+                    Label54.Text = "Released: " + datePublished2
+                    Label53.Text = "Source: " + source2
+                    Button7.Enabled = True
+                Else
+                    ' Handle the case when the request fails
+                    MessageBox.Show("Failed to retrieve the article data.")
+                    Button7.Enabled = True
+                End If
+                If response3.IsSuccessStatusCode Then
+                    ' Read the response content as a string
+                    Dim articleData3 As String = Await response3.Content.ReadAsStringAsync()
+
+                    ' Parse the article data (assuming it's in JSON format)
+                    Dim article3 As JObject = JObject.Parse(articleData3)
+
+                    ' Extract the required data from the article object
+                    Dim imageUrl3 As String = String.Empty
+                    If article3.TryGetValue("image", imageUrl3) Then
+                        ' The "image" property exists, assign its value to the imageUrl variable
+                        ' Set the ImageLocation property of PictureBox to the imageUrl
+                        articleimg3.ImageLocation = imageUrl3
+                    Else
+                        ' The "image" property is missing, handle it accordingly
+                        ' You might want to set a default image or display an error message
+                        MessageBox.Show("Image URL Not Available.")
+                        Button7.Enabled = True
+                        Return
+                    End If
+                    Dim title3 As String = String.Empty
+                    If article3.TryGetValue("title", title3) Then
+                        ' The "title" property exists, assign its value to the title variable
+                        ' Proceed with displaying the title
+                        Label60.Text = title3
+                    Else
+                        ' The "title" property is missing, handle it accordingly
+                        ' You might want to set a default title or display an error message
+                        Label60.Text = "Title Not Available"
+                    End If
+
+                    Dim description3 As String = String.Empty
+                    If article3.TryGetValue("description", description3) Then
+                        ' The "description" property exists, assign its value to the description variable
+                        ' Proceed with displaying the description
+                        Label59.Text = description3
+                    Else
+                        ' The "description" property is missing, handle it accordingly
+                        ' You might want to set a default description or display an error message
+                        Label59.Text = "Description Not Available"
+                    End If
+
+                    Dim datePublished3 As String = String.Empty
+                    If article3.TryGetValue("datePublished", datePublished3) Then
+                        ' The "datePublished" property exists, assign its value to the datePublished variable
+                        ' Proceed with displaying the datePublished
+                        Label58.Text = "Released: " + datePublished3
+                    Else
+                        ' The "datePublished" property is missing, handle it accordingly
+                        ' You might want to set a default datePublished or display an error message
+                        Label58.Text = "Date Not Available"
+                    End If
+
+                    Dim source3 As String = String.Empty
+                    If article3.TryGetValue("source", source3) Then
+                        ' The "source" property exists, assign its value to the source variable
+                        ' Proceed with displaying the source
+                        Label57.Text = "Source: " + source3
+                    Else
+                        ' The "source" property is missing, handle it accordingly
+                        ' You might want to set a default source or display an error message
+                        Label57.Text = "Source Not Available"
+                    End If
+
+
+                    ' Display the data in the appropriate controls
+                    articleimg3.Load(imageUrl3)
+                    Label60.Text = title3
+                    Label59.Text = description3
+                    Label58.Text = "Released: " + datePublished3
+                    Label57.Text = "Source: " + source3
+                    Button7.Enabled = True
+                Else
+                    ' Handle the case when the request fails
+                    MessageBox.Show("Failed to retrieve the article data.")
+                    Button7.Enabled = True
+                End If
+                If response4.IsSuccessStatusCode Then
+                    ' Read the response content as a string
+                    Dim articleData4 As String = Await response4.Content.ReadAsStringAsync()
+
+                    ' Parse the article data (assuming it's in JSON format)
+                    Dim article4 As JObject = JObject.Parse(articleData4)
+
+                    ' Extract the required data from the article object
+                    Dim imageUrl4 As String = String.Empty
+                    If article4.TryGetValue("image", imageUrl4) Then
+                        ' The "image" property exists, assign its value to the imageUrl variable
+                        ' Set the ImageLocation property of PictureBox to the imageUrl
+                        articleimg4.ImageLocation = imageUrl4
+                    Else
+                        ' The "image" property is missing, handle it accordingly
+                        ' You might want to set a default image or display an error message
+                        MessageBox.Show("Image URL Not Available.")
+                        Button7.Enabled = True
+                        Return
+                    End If
+                    Dim title4 As String = String.Empty
+                    If article4.TryGetValue("title", title4) Then
+                        ' The "title" property exists, assign its value to the title variable
+                        ' Proceed with displaying the title
+                        Label64.Text = title4
+                    Else
+                        ' The "title" property is missing, handle it accordingly
+                        ' You might want to set a default title or display an error message
+                        Label64.Text = "Title Not Available"
+                    End If
+
+                    Dim description4 As String = String.Empty
+                    If article4.TryGetValue("description", description4) Then
+                        ' The "description" property exists, assign its value to the description variable
+                        ' Proceed with displaying the description
+                        Label63.Text = description4
+                    Else
+                        ' The "description" property is missing, handle it accordingly
+                        ' You might want to set a default description or display an error message
+                        Label63.Text = "Description Not Available"
+                    End If
+
+                    Dim datePublished4 As String = String.Empty
+                    If article4.TryGetValue("datePublished", datePublished4) Then
+                        ' The "datePublished" property exists, assign its value to the datePublished variable
+                        ' Proceed with displaying the datePublished
+                        Label62.Text = "Released: " + datePublished4
+                    Else
+                        ' The "datePublished" property is missing, handle it accordingly
+                        ' You might want to set a default datePublished or display an error message
+                        Label62.Text = "Date Not Available"
+                    End If
+
+                    Dim source4 As String = String.Empty
+                    If article4.TryGetValue("source", source4) Then
+                        ' The "source" property exists, assign its value to the source variable
+                        ' Proceed with displaying the source
+                        Label61.Text = "Source: " + source4
+                    Else
+                        ' The "source" property is missing, handle it accordingly
+                        ' You might want to set a default source or display an error message
+                        Label61.Text = "Source Not Available"
+                    End If
+
+
+                    ' Display the data in the appropriate controls
+                    articleimg4.Load(imageUrl4)
+                    Label64.Text = title4
+                    Label63.Text = description4
+                    Label62.Text = "Released: " + datePublished4
+                    Label61.Text = "Source: " + source4
+                    Button7.Enabled = True
+                Else
+                    ' Handle the case when the request fails
+                    MessageBox.Show("Failed to retrieve the article data.")
+                    Button7.Enabled = True
+                End If
+
+            End Using
+        Catch ex As Exception
+            ' Handle any exceptions that occur during the process
+            MessageBox.Show("An error occurred: " & ex.Message)
+            Button7.Enabled = True
+        End Try
     End Sub
 
-    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+    Private Async Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
         Panel3.Visible = True
         Panel4.Visible = True
         Panel5.Visible = True
-        Panel7.Visible = True
         Panel6.Visible = True
+        Panel7.Visible = True
+        Panel8.Visible = False
+        Panel11.Visible = False
         Label9.Text = "Feed [Beta]"
+        Try
+            Button7.Enabled = False
+            Using client As New HttpClient()
+                ' Make a request to the CDN URL and retrieve the article data
+                Dim response As HttpResponseMessage = Await client.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/news/welcome.json")
+                Dim response2 As HttpResponseMessage = Await client.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/news/tnnews.json")
+                Dim response3 As HttpResponseMessage = Await client.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/news/tnnews2.json")
+                Dim response4 As HttpResponseMessage = Await client.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/news/z1gnews.json")
+
+                ' Check if the request was successful
+                If response.IsSuccessStatusCode Then
+                    ' Read the response content as a string
+                    Dim articleData As String = Await response.Content.ReadAsStringAsync()
+
+                    ' Parse the article data (assuming it's in JSON format)
+                    Dim article As JObject = JObject.Parse(articleData)
+
+                    ' Extract the required data from the article object
+                    Dim imageUrl As String = String.Empty
+                    If article.TryGetValue("image", imageUrl) Then
+                        ' The "image" property exists, assign its value to the imageUrl variable
+                        ' Set the ImageLocation property of PictureBox to the imageUrl
+                        PictureBox12.ImageLocation = imageUrl
+                    Else
+                        ' The "image" property is missing, handle it accordingly
+                        ' You might want to set a default image or display an error message
+                        MessageBox.Show("Image URL Not Available.")
+                        Button7.Enabled = True
+                        Return
+                    End If
+                    Dim title As String = String.Empty
+                    If article.TryGetValue("title", title) Then
+                        ' The "title" property exists, assign its value to the title variable
+                        ' Proceed with displaying the title
+                        Label49.Text = title
+                    Else
+                        ' The "title" property is missing, handle it accordingly
+                        ' You might want to set a default title or display an error message
+                        Label49.Text = "Title Not Available"
+                    End If
+
+                    Dim description As String = String.Empty
+                    If article.TryGetValue("description", description) Then
+                        ' The "description" property exists, assign its value to the description variable
+                        ' Proceed with displaying the description
+                        Label50.Text = description
+                    Else
+                        ' The "description" property is missing, handle it accordingly
+                        ' You might want to set a default description or display an error message
+                        Label50.Text = "Description Not Available"
+                    End If
+
+                    Dim datePublished As String = String.Empty
+                    If article.TryGetValue("datePublished", datePublished) Then
+                        ' The "datePublished" property exists, assign its value to the datePublished variable
+                        ' Proceed with displaying the datePublished
+                        Label51.Text = datePublished
+                    Else
+                        ' The "datePublished" property is missing, handle it accordingly
+                        ' You might want to set a default datePublished or display an error message
+                        Label51.Text = "Date Not Available"
+                    End If
+
+                    Dim source As String = String.Empty
+                    If article.TryGetValue("source", source) Then
+                        ' The "source" property exists, assign its value to the source variable
+                        ' Proceed with displaying the source
+                        Label52.Text = source
+                    Else
+                        ' The "source" property is missing, handle it accordingly
+                        ' You might want to set a default source or display an error message
+                        Label52.Text = "Source Not Available"
+                    End If
+
+
+                    ' Display the data in the appropriate controls
+                    PictureBox12.Load(imageUrl)
+                    Label49.Text = title
+                    Label50.Text = description
+                    Label51.Text = "Released: " + datePublished
+                    Label52.Text = "Source: " + source
+                    Button7.Enabled = True
+                Else
+                    ' Handle the case when the request fails
+                    MessageBox.Show("Failed to retrieve the article data.")
+                    Button7.Enabled = True
+                End If
+                If response2.IsSuccessStatusCode Then
+                    ' Read the response content as a string
+                    Dim articleData2 As String = Await response2.Content.ReadAsStringAsync()
+
+                    ' Parse the article data (assuming it's in JSON format)
+                    Dim article2 As JObject = JObject.Parse(articleData2)
+
+                    ' Extract the required data from the article object
+                    Dim imageUrl2 As String = String.Empty
+                    If article2.TryGetValue("image", imageUrl2) Then
+                        ' The "image" property exists, assign its value to the imageUrl variable
+                        ' Set the ImageLocation property of PictureBox to the imageUrl
+                        PictureBox13.ImageLocation = imageUrl2
+                    Else
+                        ' The "image" property is missing, handle it accordingly
+                        ' You might want to set a default image or display an error message
+                        MessageBox.Show("Image URL Not Available.")
+                        Button7.Enabled = True
+                        Return
+                    End If
+                    Dim title2 As String = String.Empty
+                    If article2.TryGetValue("title", title2) Then
+                        ' The "title" property exists, assign its value to the title variable
+                        ' Proceed with displaying the title
+                        Label56.Text = title2
+                    Else
+                        ' The "title" property is missing, handle it accordingly
+                        ' You might want to set a default title or display an error message
+                        Label56.Text = "Title Not Available"
+                    End If
+
+                    Dim description2 As String = String.Empty
+                    If article2.TryGetValue("description", description2) Then
+                        ' The "description" property exists, assign its value to the description variable
+                        ' Proceed with displaying the description
+                        Label55.Text = description2
+                    Else
+                        ' The "description" property is missing, handle it accordingly
+                        ' You might want to set a default description or display an error message
+                        Label55.Text = "Description Not Available"
+                    End If
+
+                    Dim datePublished2 As String = String.Empty
+                    If article2.TryGetValue("datePublished", datePublished2) Then
+                        ' The "datePublished" property exists, assign its value to the datePublished variable
+                        ' Proceed with displaying the datePublished
+                        Label54.Text = "Released: " + datePublished2
+                    Else
+                        ' The "datePublished" property is missing, handle it accordingly
+                        ' You might want to set a default datePublished or display an error message
+                        Label54.Text = "Date Not Available"
+                    End If
+
+                    Dim source2 As String = String.Empty
+                    If article2.TryGetValue("source", source2) Then
+                        ' The "source" property exists, assign its value to the source variable
+                        ' Proceed with displaying the source
+                        Label53.Text = "Source: " + source2
+                    Else
+                        ' The "source" property is missing, handle it accordingly
+                        ' You might want to set a default source or display an error message
+                        Label53.Text = "Source Not Available"
+                    End If
+
+
+                    ' Display the data in the appropriate controls
+                    PictureBox13.Load(imageUrl2)
+                    Label56.Text = title2
+                    Label55.Text = description2
+                    Label54.Text = "Released: " + datePublished2
+                    Label53.Text = "Source: " + source2
+                    Button7.Enabled = True
+                Else
+                    ' Handle the case when the request fails
+                    MessageBox.Show("Failed to retrieve the article data.")
+                    Button7.Enabled = True
+                End If
+                If response3.IsSuccessStatusCode Then
+                    ' Read the response content as a string
+                    Dim articleData3 As String = Await response3.Content.ReadAsStringAsync()
+
+                    ' Parse the article data (assuming it's in JSON format)
+                    Dim article3 As JObject = JObject.Parse(articleData3)
+
+                    ' Extract the required data from the article object
+                    Dim imageUrl3 As String = String.Empty
+                    If article3.TryGetValue("image", imageUrl3) Then
+                        ' The "image" property exists, assign its value to the imageUrl variable
+                        ' Set the ImageLocation property of PictureBox to the imageUrl
+                        articleimg3.ImageLocation = imageUrl3
+                    Else
+                        ' The "image" property is missing, handle it accordingly
+                        ' You might want to set a default image or display an error message
+                        MessageBox.Show("Image URL Not Available.")
+                        Button7.Enabled = True
+                        Return
+                    End If
+                    Dim title3 As String = String.Empty
+                    If article3.TryGetValue("title", title3) Then
+                        ' The "title" property exists, assign its value to the title variable
+                        ' Proceed with displaying the title
+                        Label60.Text = title3
+                    Else
+                        ' The "title" property is missing, handle it accordingly
+                        ' You might want to set a default title or display an error message
+                        Label60.Text = "Title Not Available"
+                    End If
+
+                    Dim description3 As String = String.Empty
+                    If article3.TryGetValue("description", description3) Then
+                        ' The "description" property exists, assign its value to the description variable
+                        ' Proceed with displaying the description
+                        Label59.Text = description3
+                    Else
+                        ' The "description" property is missing, handle it accordingly
+                        ' You might want to set a default description or display an error message
+                        Label59.Text = "Description Not Available"
+                    End If
+
+                    Dim datePublished3 As String = String.Empty
+                    If article3.TryGetValue("datePublished", datePublished3) Then
+                        ' The "datePublished" property exists, assign its value to the datePublished variable
+                        ' Proceed with displaying the datePublished
+                        Label58.Text = "Released: " + datePublished3
+                    Else
+                        ' The "datePublished" property is missing, handle it accordingly
+                        ' You might want to set a default datePublished or display an error message
+                        Label58.Text = "Date Not Available"
+                    End If
+
+                    Dim source3 As String = String.Empty
+                    If article3.TryGetValue("source", source3) Then
+                        ' The "source" property exists, assign its value to the source variable
+                        ' Proceed with displaying the source
+                        Label57.Text = "Source: " + source3
+                    Else
+                        ' The "source" property is missing, handle it accordingly
+                        ' You might want to set a default source or display an error message
+                        Label57.Text = "Source Not Available"
+                    End If
+
+
+                    ' Display the data in the appropriate controls
+                    articleimg3.Load(imageUrl3)
+                    Label60.Text = title3
+                    Label59.Text = description3
+                    Label58.Text = "Released: " + datePublished3
+                    Label57.Text = "Source: " + source3
+                    Button7.Enabled = True
+                Else
+                    ' Handle the case when the request fails
+                    MessageBox.Show("Failed to retrieve the article data.")
+                    Button7.Enabled = True
+                End If
+                If response4.IsSuccessStatusCode Then
+                    ' Read the response content as a string
+                    Dim articleData4 As String = Await response4.Content.ReadAsStringAsync()
+
+                    ' Parse the article data (assuming it's in JSON format)
+                    Dim article4 As JObject = JObject.Parse(articleData4)
+
+                    ' Extract the required data from the article object
+                    Dim imageUrl4 As String = String.Empty
+                    If article4.TryGetValue("image", imageUrl4) Then
+                        ' The "image" property exists, assign its value to the imageUrl variable
+                        ' Set the ImageLocation property of PictureBox to the imageUrl
+                        articleimg4.ImageLocation = imageUrl4
+                    Else
+                        ' The "image" property is missing, handle it accordingly
+                        ' You might want to set a default image or display an error message
+                        MessageBox.Show("Image URL Not Available.")
+                        Button7.Enabled = True
+                        Return
+                    End If
+                    Dim title4 As String = String.Empty
+                    If article4.TryGetValue("title", title4) Then
+                        ' The "title" property exists, assign its value to the title variable
+                        ' Proceed with displaying the title
+                        Label64.Text = title4
+                    Else
+                        ' The "title" property is missing, handle it accordingly
+                        ' You might want to set a default title or display an error message
+                        Label64.Text = "Title Not Available"
+                    End If
+
+                    Dim description4 As String = String.Empty
+                    If article4.TryGetValue("description", description4) Then
+                        ' The "description" property exists, assign its value to the description variable
+                        ' Proceed with displaying the description
+                        Label63.Text = description4
+                    Else
+                        ' The "description" property is missing, handle it accordingly
+                        ' You might want to set a default description or display an error message
+                        Label63.Text = "Description Not Available"
+                    End If
+
+                    Dim datePublished4 As String = String.Empty
+                    If article4.TryGetValue("datePublished", datePublished4) Then
+                        ' The "datePublished" property exists, assign its value to the datePublished variable
+                        ' Proceed with displaying the datePublished
+                        Label62.Text = "Released: " + datePublished4
+                    Else
+                        ' The "datePublished" property is missing, handle it accordingly
+                        ' You might want to set a default datePublished or display an error message
+                        Label62.Text = "Date Not Available"
+                    End If
+
+                    Dim source4 As String = String.Empty
+                    If article4.TryGetValue("source", source4) Then
+                        ' The "source" property exists, assign its value to the source variable
+                        ' Proceed with displaying the source
+                        Label61.Text = "Source: " + source4
+                    Else
+                        ' The "source" property is missing, handle it accordingly
+                        ' You might want to set a default source or display an error message
+                        Label61.Text = "Source Not Available"
+                    End If
+
+
+                    ' Display the data in the appropriate controls
+                    articleimg4.Load(imageUrl4)
+                    Label64.Text = title4
+                    Label63.Text = description4
+                    Label62.Text = "Released: " + datePublished4
+                    Label61.Text = "Source: " + source4
+                    Button7.Enabled = True
+                Else
+                    ' Handle the case when the request fails
+                    MessageBox.Show("Failed to retrieve the article data.")
+                    Button7.Enabled = True
+                End If
+
+            End Using
+        Catch ex As Exception
+            ' Handle any exceptions that occur during the process
+            MessageBox.Show("An error occurred: " & ex.Message)
+            Button7.Enabled = True
+        End Try
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
@@ -112,6 +766,8 @@ Public Class Form3
         Panel5.Visible = True
         Panel6.Visible = True
         Panel7.Visible = True
+        Panel8.Visible = False
+        Panel11.Visible = False
         Label9.Text = "Feed [Beta]"
         Try
             Button7.Enabled = False
@@ -1004,5 +1660,35 @@ Public Class Form3
 
     Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
         Velocity_Settings.Show()
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Panel8.Visible = False
+        Panel11.Visible = False
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Panel8.Visible = True
+        Panel11.Visible = True
+    End Sub
+
+    Private Sub Panel10_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel10.MouseDown
+        Panel8.Visible = True
+        Panel11.Visible = True
+    End Sub
+
+    Private Sub Panel11_MouseUp(sender As Object, e As MouseEventArgs) Handles Panel11.MouseUp
+        Panel8.Visible = False
+        Panel11.Visible = False
+    End Sub
+
+    Private Sub Panel10_MouseUp(sender As Object, e As MouseEventArgs) Handles Panel10.MouseUp
+        Panel8.Visible = False
+        Panel11.Visible = False
+    End Sub
+
+    Private Sub Panel11_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel11.MouseDown
+        Panel8.Visible = True
+        Panel11.Visible = True
     End Sub
 End Class

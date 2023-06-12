@@ -376,7 +376,7 @@ Partial Class Settings
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(205, 20)
         Me.Label16.TabIndex = 24
-        Me.Label16.Text = "v1.2.5u (Arch Valley Universal)"
+        Me.Label16.Text = "v1.3.0u (Arch Valley Universal)"
         '
         'Label14
         '
