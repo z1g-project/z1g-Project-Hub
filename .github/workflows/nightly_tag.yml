@@ -2,9 +2,9 @@ name: Nightly Builds
 
 on:
   push:
-    branches:
-      - main
-      - 'refs/tags/nightly*'
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
   schedule:
     - cron: '0 0 * * *' # Run at midnight every day
 
