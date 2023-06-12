@@ -18,29 +18,19 @@ Public Class Form2
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Form1.Hide()
         PerformPing("usny2-auto-udp.ptoserver.com")
-        Dim selectedServer As String = GetSelectedServer()
 
         Label4.Visible = False
 
         ' Display the selected server and its ping
-        DisplaySelectedServer(selectedServer)
+        DisplaySelectedServer()
     End Sub
 
-    Private Function GetSelectedServer() As String
-        ' Get the selected server from the application settings
-        Dim settings = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).AppSettings.Settings
-        Dim selectedServer As String = settings("SelectedServer").Value
-
-        Return selectedServer
-    End Function
-
-
-    Public Sub DisplaySelectedServer(serverName As String)
+    Public Sub DisplaySelectedServer()
         ' Update the label to display the selected server
-        Label3.Text = "Selected Server: " & serverName
+        Label3.Text = "Selected Server: N/A"
 
         ' Get the ping for the selected server
-        Dim ping As Integer = GetServerPing(serverName)
+        Dim ping As Integer = GetServerPing("usny2-auto-udp.ptoserver.com")
 
         ' Update the label to display the ping
         Label3.Text = "Ping: " & ping & "ms"
@@ -179,7 +169,7 @@ Public Class Form2
         ' Return YourVpnLibrary.IsConnected()
         ' Note: The actual implementation may vary depending on the VPN library or API you are using
 
-        ' For testing purposes, assume the connection is successful
+        ' For testing purposes, let's assume the connection is successful
         Return True
     End Function
 End Class
