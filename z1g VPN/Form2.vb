@@ -28,10 +28,10 @@ Public Class Form2
 
     Private Function GetSelectedServer() As String
         ' Get the selected server from the application settings
-        'Dim settings = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).AppSettings.Settings
-        'Dim selectedServer As String = settings("SelectedServer").Value
+        Dim settings = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).AppSettings.Settings
+        Dim selectedServer As String = settings("SelectedServer").Value
 
-        'Return selectedServer
+        Return selectedServer
     End Function
 
 
