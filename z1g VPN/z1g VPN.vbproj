@@ -16,12 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Interop.IWshRuntimeLibrary">
-      <HintPath>..\update\obj\Debug\net6.0-windows\Interop.IWshRuntimeLibrary.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="My Project\Application.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
