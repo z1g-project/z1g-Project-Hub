@@ -30,6 +30,8 @@ jobs:
         run: |
           curl -o changelogs.md https://cdn.z1g-project.repl.co/z1g-hub/client/nightlychangelogs.md
           echo "::set-output name=changelogs::$(cat changelogs.md)"
+          echo "Downloaded changelogs:"
+          cat changelogs.md
 
       - name: Create tag
         run: |
