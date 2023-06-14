@@ -510,7 +510,7 @@ Partial Class Form3
         '
         Me.Label79.AutoSize = True
         Me.Label79.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label79.Location = New System.Drawing.Point(679, 410)
+        Me.Label79.Location = New System.Drawing.Point(663, 410)
         Me.Label79.Name = "Label79"
         Me.Label79.Size = New System.Drawing.Size(106, 17)
         Me.Label79.TabIndex = 46
@@ -559,7 +559,7 @@ Partial Class Form3
         '
         Me.Label75.AutoSize = True
         Me.Label75.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label75.Location = New System.Drawing.Point(679, 273)
+        Me.Label75.Location = New System.Drawing.Point(663, 273)
         Me.Label75.Name = "Label75"
         Me.Label75.Size = New System.Drawing.Size(106, 17)
         Me.Label75.TabIndex = 41
@@ -608,7 +608,7 @@ Partial Class Form3
         '
         Me.Label71.AutoSize = True
         Me.Label71.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label71.Location = New System.Drawing.Point(679, 144)
+        Me.Label71.Location = New System.Drawing.Point(663, 144)
         Me.Label71.Name = "Label71"
         Me.Label71.Size = New System.Drawing.Size(106, 17)
         Me.Label71.TabIndex = 36
@@ -657,7 +657,7 @@ Partial Class Form3
         '
         Me.Label67.AutoSize = True
         Me.Label67.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label67.Location = New System.Drawing.Point(679, 19)
+        Me.Label67.Location = New System.Drawing.Point(663, 19)
         Me.Label67.Name = "Label67"
         Me.Label67.Size = New System.Drawing.Size(106, 17)
         Me.Label67.TabIndex = 31

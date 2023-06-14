@@ -84,6 +84,7 @@ namespace z1g_Browser
                 applauncher applauncher = new applauncher();
                 applauncher.label1.Text = "Would you like to Launch Terbium?";
                 applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
+                chromiumWebBrowser1.Back();
                 if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe")) 
                 {
                     applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
@@ -107,6 +108,7 @@ namespace z1g_Browser
                 applauncher applauncher = new applauncher();
                 applauncher.label1.Text = "Would you like to Launch Terbium?";
                 applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
+                chromiumWebBrowser1.Back();
                 if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe"))
                 {
                     applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
@@ -130,6 +132,7 @@ namespace z1g_Browser
                 applauncher applauncher = new applauncher();
                 applauncher.label1.Text = "Would you like to Launch Velocity?";
                 applauncher.label2.Text = "It appears that your trying to access Velocity which can be \r\ninstalled or opened from your computer.";
+                chromiumWebBrowser1.Back();
                 if (File.Exists("C:\\z1g Apps\\Velocity\\Velocity.exe"))
                 {
                     applauncher.textBox1.Text = "C:\\z1g Apps\\Velocity\\Velocity.exe";
@@ -153,6 +156,7 @@ namespace z1g_Browser
                 applauncher applauncher = new applauncher();
                 applauncher.label1.Text = "Would you like to Launch z1g Hub?";
                 applauncher.label2.Text = "It appears that your trying to access z1g Hub which can be \r\ninstalled or opened from your computer.";
+                chromiumWebBrowser1.Back();
                 if (File.Exists("C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe"))
                 {
                     applauncher.textBox1.Text = "C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe";
@@ -211,6 +215,7 @@ namespace z1g_Browser
                     applauncher applauncher = new applauncher();
                     applauncher.label1.Text = "Would you like to Launch Terbium?";
                     applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
+                    chromiumWebBrowser1.Back();
                     if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe"))
                     {
                         applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
@@ -234,6 +239,7 @@ namespace z1g_Browser
                     applauncher applauncher = new applauncher();
                     applauncher.label1.Text = "Would you like to Launch Terbium?";
                     applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
+                    chromiumWebBrowser1.Back();
                     if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe"))
                     {
                         applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
@@ -257,6 +263,7 @@ namespace z1g_Browser
                     applauncher applauncher = new applauncher();
                     applauncher.label1.Text = "Would you like to Launch Velocity?";
                     applauncher.label2.Text = "It appears that your trying to access Velocity which can be \r\ninstalled or opened from your computer.";
+                    chromiumWebBrowser1.Back();
                     if (File.Exists("C:\\z1g Apps\\Velocity\\Velocity.exe"))
                     {
                         applauncher.textBox1.Text = "C:\\z1g Apps\\Velocity\\Velocity.exe";
@@ -280,6 +287,7 @@ namespace z1g_Browser
                     applauncher applauncher = new applauncher();
                     applauncher.label1.Text = "Would you like to Launch z1g Hub?";
                     applauncher.label2.Text = "It appears that your trying to access z1g Hub which can be \r\ninstalled or opened from your computer.";
+                    chromiumWebBrowser1.Back();
                     if (File.Exists("C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe"))
                     {
                         applauncher.textBox1.Text = "C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe";
