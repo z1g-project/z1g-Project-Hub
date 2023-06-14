@@ -2044,6 +2044,7 @@ Public Class Form3
         Panel5.Visible = False
         Panel6.Visible = False
         Panel7.Visible = False
+        profile_panel.Visible = False
         Dim getuser As New System.IO.StreamReader(My.Settings.savelocation + "username.dat")
         Label2.Text = getuser.ReadToEnd
     End Sub
@@ -2055,11 +2056,9 @@ Public Class Form3
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim getpassword As New System.IO.StreamReader(My.Settings.savelocation + "password.dat")
-        TextBox2.Text = getpassword.ReadToEnd
+        'TextBox2.Text = getpassword.ReadToEnd
 
         If TextBox2.Text = getpassword.ReadToEnd Then
-            Label31.Visible = True
-        Else
             Panel6.Visible = True
             Label43.Text = My.Computer.Name
 
@@ -2075,10 +2074,10 @@ Public Class Form3
             Else
                 Label44.Text = "No IPv4 address found"
             End If
-
             Label45.Text = DateTime.Now.ToString("HH:mm:ss MM/dd/yyyy")
+        Else
+            Label31.Visible = True
         End If
-
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -2946,5 +2945,13 @@ Public Class Form3
     Private Sub Panel11_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel11.MouseDown
         Panel8.Visible = True
         Panel11.Visible = True
+    End Sub
+
+    Private Sub PictureBox19_Click(sender As Object, e As EventArgs) Handles PictureBox19.Click
+        If profile_panel.Visible = True Then
+            profile_panel.Visible = False
+        Else
+            profile_panel.Visible = True
+        End If
     End Sub
 End Class

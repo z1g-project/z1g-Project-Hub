@@ -77,33 +77,29 @@ Public Class Settings
         Panel5.Visible = False
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+    Private Async Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ProgressBar1.Increment(10)
         If ProgressBar1.Value = 100 Then
-            CheckForUpdateAsync()
+            Dim response As HttpResponseMessage = Await httpClient.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/client/currentversion.txt")
+            Dim newestVersion As String = Await response.Content.ReadAsStringAsync()
+            Dim currentVersion As String = Application.ProductVersion
+
+            If newestVersion.Contains(currentVersion) Then
+                PictureBox1.Image = My.Resources.z1g
+                Label16.Text = "You're up to date!"
+                Button3.Enabled = True
+            Else
+                PictureBox1.Image = My.Resources.z1g
+                Label16.Text = "Restart the z1g Project Hub to update!"
+                Button4.Text = "Restart"
+                Button4.Visible = True
+                Timer2.Start()
+            End If
+
+            Timer1.Stop()
+            ProgressBar1.Value = 0
+            Button4.Enabled = True
         End If
-    End Sub
-
-    Private Async Sub CheckForUpdateAsync()
-        Dim response As HttpResponseMessage = Await httpClient.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/client/currentversion.txt")
-        Dim newestVersion As String = Await response.Content.ReadAsStringAsync()
-        Dim currentVersion As String = Application.ProductVersion
-
-        If newestVersion.Contains(currentVersion) Then
-            PictureBox1.Image = My.Resources.z1g
-            Label16.Text = "You're up to date!"
-            Button3.Enabled = True
-        Else
-            PictureBox1.Image = My.Resources.z1g
-            Label16.Text = "Restart the z1g Project Hub to update!"
-            Button4.Text = "Restart"
-            Button4.Visible = True
-            Timer2.Start()
-        End If
-
-        Timer1.Stop()
-        ProgressBar1.Value = 0
-        Button4.Enabled = True
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
@@ -122,5 +118,13 @@ Public Class Settings
             notifengine.Label48.Text = "Update is ready"
             notifengine.Label47.Text = "Visit Settings to finish the update"
         End If
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Timer1.Start()
+        ProgressBar1.Value = 0
+        PictureBox1.Image = My.Resources.WindowsLoading
+        Label16.Text = "Checking for Updates..."
+        Button4.Enabled = False
     End Sub
 End Class

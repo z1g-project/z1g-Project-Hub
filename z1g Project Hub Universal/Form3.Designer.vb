@@ -22,1733 +22,1874 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Label78 = New System.Windows.Forms.Label()
-        Me.Label79 = New System.Windows.Forms.Label()
-        Me.Label80 = New System.Windows.Forms.Label()
-        Me.Label81 = New System.Windows.Forms.Label()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.Label74 = New System.Windows.Forms.Label()
-        Me.Label75 = New System.Windows.Forms.Label()
-        Me.Label76 = New System.Windows.Forms.Label()
-        Me.Label77 = New System.Windows.Forms.Label()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.Label70 = New System.Windows.Forms.Label()
-        Me.Label71 = New System.Windows.Forms.Label()
-        Me.Label72 = New System.Windows.Forms.Label()
-        Me.Label73 = New System.Windows.Forms.Label()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.Label66 = New System.Windows.Forms.Label()
-        Me.Label67 = New System.Windows.Forms.Label()
-        Me.Label68 = New System.Windows.Forms.Label()
-        Me.Label69 = New System.Windows.Forms.Label()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Label61 = New System.Windows.Forms.Label()
-        Me.Label62 = New System.Windows.Forms.Label()
-        Me.Label63 = New System.Windows.Forms.Label()
-        Me.Label64 = New System.Windows.Forms.Label()
-        Me.articleimg4 = New System.Windows.Forms.PictureBox()
-        Me.Label57 = New System.Windows.Forms.Label()
-        Me.Label58 = New System.Windows.Forms.Label()
-        Me.Label59 = New System.Windows.Forms.Label()
-        Me.Label60 = New System.Windows.Forms.Label()
-        Me.articleimg3 = New System.Windows.Forms.PictureBox()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.Label55 = New System.Windows.Forms.Label()
-        Me.Label56 = New System.Windows.Forms.Label()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.Label50 = New System.Windows.Forms.Label()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.Label47 = New System.Windows.Forms.Label()
-        Me.Label48 = New System.Windows.Forms.Label()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.Label45 = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label65 = New System.Windows.Forms.Label()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UninstallToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ResetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel8.SuspendLayout()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel9.SuspendLayout()
-        CType(Me.articleimg4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.articleimg3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ContextMenuStrip2.SuspendLayout()
-        Me.ContextMenuStrip1.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(245, 688)
-        Me.Panel1.TabIndex = 0
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 13.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(75, 626)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(81, 25)
-        Me.Label8.TabIndex = 5
-        Me.Label8.Text = "Settings"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 13.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.Location = New System.Drawing.Point(41, 300)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(106, 25)
-        Me.Label7.TabIndex = 4
-        Me.Label7.Text = "Feed [Beta]"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 13.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(41, 259)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(159, 25)
-        Me.Label6.TabIndex = 4
-        Me.Label6.Text = "Account Manager"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 13.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(41, 215)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(125, 25)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "App Manager"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 13.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(41, 172)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(62, 25)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Home"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(12, 662)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(221, 17)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Version 1.3.0u (Arch Valley Universal)"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(62, 74)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(105, 21)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "%username%"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(37, 29)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(158, 45)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Welcome"
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Button3)
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Controls.Add(Me.Label9)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(245, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(828, 47)
-        Me.Panel2.TabIndex = 1
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button3.Location = New System.Drawing.Point(781, 12)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(35, 23)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "X"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(740, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(35, 23)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "-"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.Location = New System.Drawing.Point(18, 15)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(56, 21)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = "Home"
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Controls.Add(Me.TextBox1)
-        Me.Panel3.Controls.Add(Me.Label16)
-        Me.Panel3.Controls.Add(Me.Label17)
-        Me.Panel3.Controls.Add(Me.Label15)
-        Me.Panel3.Controls.Add(Me.Label14)
-        Me.Panel3.Controls.Add(Me.Label13)
-        Me.Panel3.Controls.Add(Me.Label12)
-        Me.Panel3.Controls.Add(Me.PictureBox4)
-        Me.Panel3.Controls.Add(Me.PictureBox3)
-        Me.Panel3.Controls.Add(Me.PictureBox2)
-        Me.Panel3.Controls.Add(Me.PictureBox1)
-        Me.Panel3.Controls.Add(Me.Label11)
-        Me.Panel3.Controls.Add(Me.Label10)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(245, 47)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(828, 641)
-        Me.Panel3.TabIndex = 2
-        '
-        'Panel4
-        '
-        Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Controls.Add(Me.Label65)
-        Me.Panel4.Controls.Add(Me.PictureBox16)
-        Me.Panel4.Controls.Add(Me.Label26)
-        Me.Panel4.Controls.Add(Me.PictureBox11)
-        Me.Panel4.Controls.Add(Me.Label25)
-        Me.Panel4.Controls.Add(Me.PictureBox10)
-        Me.Panel4.Controls.Add(Me.Label24)
-        Me.Panel4.Controls.Add(Me.PictureBox9)
-        Me.Panel4.Controls.Add(Me.Label18)
-        Me.Panel4.Controls.Add(Me.Label19)
-        Me.Panel4.Controls.Add(Me.Label20)
-        Me.Panel4.Controls.Add(Me.Label21)
-        Me.Panel4.Controls.Add(Me.PictureBox5)
-        Me.Panel4.Controls.Add(Me.PictureBox6)
-        Me.Panel4.Controls.Add(Me.PictureBox7)
-        Me.Panel4.Controls.Add(Me.PictureBox8)
-        Me.Panel4.Controls.Add(Me.Label22)
-        Me.Panel4.Controls.Add(Me.Label23)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(0, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(828, 641)
-        Me.Panel4.TabIndex = 13
-        '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.Panel6)
-        Me.Panel5.Controls.Add(Me.Label32)
-        Me.Panel5.Controls.Add(Me.Label31)
-        Me.Panel5.Controls.Add(Me.Button4)
-        Me.Panel5.Controls.Add(Me.Label29)
-        Me.Panel5.Controls.Add(Me.TextBox2)
-        Me.Panel5.Controls.Add(Me.Button1)
-        Me.Panel5.Controls.Add(Me.Label30)
-        Me.Panel5.Controls.Add(Me.TextBox3)
-        Me.Panel5.Controls.Add(Me.Label27)
-        Me.Panel5.Controls.Add(Me.Label28)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(828, 641)
-        Me.Panel5.TabIndex = 29
-        '
-        'Panel6
-        '
-        Me.Panel6.Controls.Add(Me.Panel7)
-        Me.Panel6.Controls.Add(Me.Label46)
-        Me.Panel6.Controls.Add(Me.Label45)
-        Me.Panel6.Controls.Add(Me.Label44)
-        Me.Panel6.Controls.Add(Me.Label43)
-        Me.Panel6.Controls.Add(Me.Label42)
-        Me.Panel6.Controls.Add(Me.Label41)
-        Me.Panel6.Controls.Add(Me.Label40)
-        Me.Panel6.Controls.Add(Me.Button6)
-        Me.Panel6.Controls.Add(Me.Label39)
-        Me.Panel6.Controls.Add(Me.CheckBox2)
-        Me.Panel6.Controls.Add(Me.CheckBox1)
-        Me.Panel6.Controls.Add(Me.Label38)
-        Me.Panel6.Controls.Add(Me.Label37)
-        Me.Panel6.Controls.Add(Me.Label33)
-        Me.Panel6.Controls.Add(Me.TextBox4)
-        Me.Panel6.Controls.Add(Me.Button5)
-        Me.Panel6.Controls.Add(Me.Label34)
-        Me.Panel6.Controls.Add(Me.TextBox5)
-        Me.Panel6.Controls.Add(Me.Label35)
-        Me.Panel6.Controls.Add(Me.Label36)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(828, 641)
-        Me.Panel6.TabIndex = 22
-        '
-        'Panel7
-        '
-        Me.Panel7.Controls.Add(Me.Panel8)
-        Me.Panel7.Controls.Add(Me.Panel9)
-        Me.Panel7.Controls.Add(Me.Label61)
-        Me.Panel7.Controls.Add(Me.Label62)
-        Me.Panel7.Controls.Add(Me.Label63)
-        Me.Panel7.Controls.Add(Me.Label64)
-        Me.Panel7.Controls.Add(Me.articleimg4)
-        Me.Panel7.Controls.Add(Me.Label57)
-        Me.Panel7.Controls.Add(Me.Label58)
-        Me.Panel7.Controls.Add(Me.Label59)
-        Me.Panel7.Controls.Add(Me.Label60)
-        Me.Panel7.Controls.Add(Me.articleimg3)
-        Me.Panel7.Controls.Add(Me.Label53)
-        Me.Panel7.Controls.Add(Me.Label54)
-        Me.Panel7.Controls.Add(Me.Label55)
-        Me.Panel7.Controls.Add(Me.Label56)
-        Me.Panel7.Controls.Add(Me.PictureBox13)
-        Me.Panel7.Controls.Add(Me.Button7)
-        Me.Panel7.Controls.Add(Me.Label52)
-        Me.Panel7.Controls.Add(Me.Label51)
-        Me.Panel7.Controls.Add(Me.Label50)
-        Me.Panel7.Controls.Add(Me.Label49)
-        Me.Panel7.Controls.Add(Me.PictureBox12)
-        Me.Panel7.Controls.Add(Me.Label47)
-        Me.Panel7.Controls.Add(Me.Label48)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel7.Location = New System.Drawing.Point(0, 0)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(828, 641)
-        Me.Panel7.TabIndex = 39
-        '
-        'Panel8
-        '
-        Me.Panel8.Controls.Add(Me.Label78)
-        Me.Panel8.Controls.Add(Me.Label79)
-        Me.Panel8.Controls.Add(Me.Label80)
-        Me.Panel8.Controls.Add(Me.Label81)
-        Me.Panel8.Controls.Add(Me.PictureBox18)
-        Me.Panel8.Controls.Add(Me.Label74)
-        Me.Panel8.Controls.Add(Me.Label75)
-        Me.Panel8.Controls.Add(Me.Label76)
-        Me.Panel8.Controls.Add(Me.Label77)
-        Me.Panel8.Controls.Add(Me.PictureBox17)
-        Me.Panel8.Controls.Add(Me.Label70)
-        Me.Panel8.Controls.Add(Me.Label71)
-        Me.Panel8.Controls.Add(Me.Label72)
-        Me.Panel8.Controls.Add(Me.Label73)
-        Me.Panel8.Controls.Add(Me.PictureBox15)
-        Me.Panel8.Controls.Add(Me.Label66)
-        Me.Panel8.Controls.Add(Me.Label67)
-        Me.Panel8.Controls.Add(Me.Label68)
-        Me.Panel8.Controls.Add(Me.Label69)
-        Me.Panel8.Controls.Add(Me.PictureBox14)
-        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel8.Location = New System.Drawing.Point(0, 97)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(808, 544)
-        Me.Panel8.TabIndex = 47
-        '
-        'Label78
-        '
-        Me.Label78.AutoSize = True
-        Me.Label78.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label78.Location = New System.Drawing.Point(218, 491)
-        Me.Label78.Name = "Label78"
-        Me.Label78.Size = New System.Drawing.Size(111, 17)
-        Me.Label78.TabIndex = 47
-        Me.Label78.Text = "Source: Loading..."
-        '
-        'Label79
-        '
-        Me.Label79.AutoSize = True
-        Me.Label79.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label79.Location = New System.Drawing.Point(663, 410)
-        Me.Label79.Name = "Label79"
-        Me.Label79.Size = New System.Drawing.Size(106, 17)
-        Me.Label79.TabIndex = 46
-        Me.Label79.Text = "Released: {DATE}"
-        '
-        'Label80
-        '
-        Me.Label80.AutoSize = True
-        Me.Label80.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label80.Location = New System.Drawing.Point(226, 457)
-        Me.Label80.Name = "Label80"
-        Me.Label80.Size = New System.Drawing.Size(64, 17)
-        Me.Label80.TabIndex = 45
-        Me.Label80.Text = "Loading..."
-        '
-        'Label81
-        '
-        Me.Label81.AutoSize = True
-        Me.Label81.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label81.Location = New System.Drawing.Point(212, 416)
-        Me.Label81.Name = "Label81"
-        Me.Label81.Size = New System.Drawing.Size(95, 25)
-        Me.Label81.TabIndex = 44
-        Me.Label81.Text = "Loading..."
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.Location = New System.Drawing.Point(60, 410)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(133, 98)
-        Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox18.TabIndex = 43
-        Me.PictureBox18.TabStop = False
-        '
-        'Label74
-        '
-        Me.Label74.AutoSize = True
-        Me.Label74.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label74.Location = New System.Drawing.Point(218, 354)
-        Me.Label74.Name = "Label74"
-        Me.Label74.Size = New System.Drawing.Size(111, 17)
-        Me.Label74.TabIndex = 42
-        Me.Label74.Text = "Source: Loading..."
-        '
-        'Label75
-        '
-        Me.Label75.AutoSize = True
-        Me.Label75.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label75.Location = New System.Drawing.Point(663, 273)
-        Me.Label75.Name = "Label75"
-        Me.Label75.Size = New System.Drawing.Size(106, 17)
-        Me.Label75.TabIndex = 41
-        Me.Label75.Text = "Released: {DATE}"
-        '
-        'Label76
-        '
-        Me.Label76.AutoSize = True
-        Me.Label76.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label76.Location = New System.Drawing.Point(226, 320)
-        Me.Label76.Name = "Label76"
-        Me.Label76.Size = New System.Drawing.Size(64, 17)
-        Me.Label76.TabIndex = 40
-        Me.Label76.Text = "Loading..."
-        '
-        'Label77
-        '
-        Me.Label77.AutoSize = True
-        Me.Label77.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label77.Location = New System.Drawing.Point(212, 279)
-        Me.Label77.Name = "Label77"
-        Me.Label77.Size = New System.Drawing.Size(95, 25)
-        Me.Label77.TabIndex = 39
-        Me.Label77.Text = "Loading..."
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.Location = New System.Drawing.Point(60, 273)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(133, 98)
-        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox17.TabIndex = 38
-        Me.PictureBox17.TabStop = False
-        '
-        'Label70
-        '
-        Me.Label70.AutoSize = True
-        Me.Label70.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label70.Location = New System.Drawing.Point(220, 225)
-        Me.Label70.Name = "Label70"
-        Me.Label70.Size = New System.Drawing.Size(111, 17)
-        Me.Label70.TabIndex = 37
-        Me.Label70.Text = "Source: Loading..."
-        '
-        'Label71
-        '
-        Me.Label71.AutoSize = True
-        Me.Label71.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label71.Location = New System.Drawing.Point(663, 144)
-        Me.Label71.Name = "Label71"
-        Me.Label71.Size = New System.Drawing.Size(106, 17)
-        Me.Label71.TabIndex = 36
-        Me.Label71.Text = "Released: {DATE}"
-        '
-        'Label72
-        '
-        Me.Label72.AutoSize = True
-        Me.Label72.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label72.Location = New System.Drawing.Point(228, 191)
-        Me.Label72.Name = "Label72"
-        Me.Label72.Size = New System.Drawing.Size(64, 17)
-        Me.Label72.TabIndex = 35
-        Me.Label72.Text = "Loading..."
-        '
-        'Label73
-        '
-        Me.Label73.AutoSize = True
-        Me.Label73.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label73.Location = New System.Drawing.Point(214, 150)
-        Me.Label73.Name = "Label73"
-        Me.Label73.Size = New System.Drawing.Size(95, 25)
-        Me.Label73.TabIndex = 34
-        Me.Label73.Text = "Loading..."
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.Location = New System.Drawing.Point(62, 144)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(133, 98)
-        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox15.TabIndex = 33
-        Me.PictureBox15.TabStop = False
-        '
-        'Label66
-        '
-        Me.Label66.AutoSize = True
-        Me.Label66.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label66.Location = New System.Drawing.Point(212, 94)
-        Me.Label66.Name = "Label66"
-        Me.Label66.Size = New System.Drawing.Size(111, 17)
-        Me.Label66.TabIndex = 32
-        Me.Label66.Text = "Source: Loading..."
-        '
-        'Label67
-        '
-        Me.Label67.AutoSize = True
-        Me.Label67.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label67.Location = New System.Drawing.Point(663, 19)
-        Me.Label67.Name = "Label67"
-        Me.Label67.Size = New System.Drawing.Size(106, 17)
-        Me.Label67.TabIndex = 31
-        Me.Label67.Text = "Released: {DATE}"
-        '
-        'Label68
-        '
-        Me.Label68.AutoSize = True
-        Me.Label68.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label68.Location = New System.Drawing.Point(220, 60)
-        Me.Label68.Name = "Label68"
-        Me.Label68.Size = New System.Drawing.Size(64, 17)
-        Me.Label68.TabIndex = 30
-        Me.Label68.Text = "Loading..."
-        '
-        'Label69
-        '
-        Me.Label69.AutoSize = True
-        Me.Label69.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label69.Location = New System.Drawing.Point(206, 19)
-        Me.Label69.Name = "Label69"
-        Me.Label69.Size = New System.Drawing.Size(95, 25)
-        Me.Label69.TabIndex = 29
-        Me.Label69.Text = "Loading..."
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.Location = New System.Drawing.Point(62, 13)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(133, 98)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox14.TabIndex = 28
-        Me.PictureBox14.TabStop = False
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Panel9.Controls.Add(Me.Panel11)
-        Me.Panel9.Controls.Add(Me.Panel10)
-        Me.Panel9.Controls.Add(Me.Button9)
-        Me.Panel9.Controls.Add(Me.Button8)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel9.Location = New System.Drawing.Point(808, 0)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(20, 641)
-        Me.Panel9.TabIndex = 46
-        '
-        'Panel11
-        '
-        Me.Panel11.BackColor = System.Drawing.Color.Teal
-        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel11.Location = New System.Drawing.Point(0, 305)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(20, 311)
-        Me.Panel11.TabIndex = 51
-        '
-        'Panel10
-        '
-        Me.Panel10.BackColor = System.Drawing.Color.Teal
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel10.Location = New System.Drawing.Point(0, 25)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(20, 280)
-        Me.Panel10.TabIndex = 50
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Button9.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button9.Location = New System.Drawing.Point(0, 616)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(20, 25)
-        Me.Button9.TabIndex = 49
-        Me.Button9.Text = "D"
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button8.Location = New System.Drawing.Point(0, 0)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(20, 25)
-        Me.Button8.TabIndex = 48
-        Me.Button8.Text = "^"
-        Me.Button8.UseVisualStyleBackColor = False
-        '
-        'Label61
-        '
-        Me.Label61.AutoSize = True
-        Me.Label61.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label61.Location = New System.Drawing.Point(218, 571)
-        Me.Label61.Name = "Label61"
-        Me.Label61.Size = New System.Drawing.Size(111, 17)
-        Me.Label61.TabIndex = 43
-        Me.Label61.Text = "Source: Loading..."
-        '
-        'Label62
-        '
-        Me.Label62.AutoSize = True
-        Me.Label62.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label62.Location = New System.Drawing.Point(666, 490)
-        Me.Label62.Name = "Label62"
-        Me.Label62.Size = New System.Drawing.Size(106, 17)
-        Me.Label62.TabIndex = 42
-        Me.Label62.Text = "Released: {DATE}"
-        '
-        'Label63
-        '
-        Me.Label63.AutoSize = True
-        Me.Label63.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label63.Location = New System.Drawing.Point(226, 537)
-        Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(64, 17)
-        Me.Label63.TabIndex = 41
-        Me.Label63.Text = "Loading..."
-        '
-        'Label64
-        '
-        Me.Label64.AutoSize = True
-        Me.Label64.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label64.Location = New System.Drawing.Point(212, 496)
-        Me.Label64.Name = "Label64"
-        Me.Label64.Size = New System.Drawing.Size(95, 25)
-        Me.Label64.TabIndex = 40
-        Me.Label64.Text = "Loading..."
-        '
-        'articleimg4
-        '
-        Me.articleimg4.Location = New System.Drawing.Point(60, 490)
-        Me.articleimg4.Name = "articleimg4"
-        Me.articleimg4.Size = New System.Drawing.Size(133, 98)
-        Me.articleimg4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.articleimg4.TabIndex = 39
-        Me.articleimg4.TabStop = False
-        '
-        'Label57
-        '
-        Me.Label57.AutoSize = True
-        Me.Label57.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label57.Location = New System.Drawing.Point(218, 440)
-        Me.Label57.Name = "Label57"
-        Me.Label57.Size = New System.Drawing.Size(111, 17)
-        Me.Label57.TabIndex = 38
-        Me.Label57.Text = "Source: Loading..."
-        '
-        'Label58
-        '
-        Me.Label58.AutoSize = True
-        Me.Label58.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label58.Location = New System.Drawing.Point(666, 359)
-        Me.Label58.Name = "Label58"
-        Me.Label58.Size = New System.Drawing.Size(106, 17)
-        Me.Label58.TabIndex = 37
-        Me.Label58.Text = "Released: {DATE}"
-        '
-        'Label59
-        '
-        Me.Label59.AutoSize = True
-        Me.Label59.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label59.Location = New System.Drawing.Point(226, 406)
-        Me.Label59.Name = "Label59"
-        Me.Label59.Size = New System.Drawing.Size(64, 17)
-        Me.Label59.TabIndex = 36
-        Me.Label59.Text = "Loading..."
-        '
-        'Label60
-        '
-        Me.Label60.AutoSize = True
-        Me.Label60.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label60.Location = New System.Drawing.Point(212, 365)
-        Me.Label60.Name = "Label60"
-        Me.Label60.Size = New System.Drawing.Size(95, 25)
-        Me.Label60.TabIndex = 35
-        Me.Label60.Text = "Loading..."
-        '
-        'articleimg3
-        '
-        Me.articleimg3.Location = New System.Drawing.Point(60, 359)
-        Me.articleimg3.Name = "articleimg3"
-        Me.articleimg3.Size = New System.Drawing.Size(133, 98)
-        Me.articleimg3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.articleimg3.TabIndex = 34
-        Me.articleimg3.TabStop = False
-        '
-        'Label53
-        '
-        Me.Label53.AutoSize = True
-        Me.Label53.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label53.Location = New System.Drawing.Point(218, 316)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(111, 17)
-        Me.Label53.TabIndex = 33
-        Me.Label53.Text = "Source: Loading..."
-        '
-        'Label54
-        '
-        Me.Label54.AutoSize = True
-        Me.Label54.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label54.Location = New System.Drawing.Point(666, 235)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(106, 17)
-        Me.Label54.TabIndex = 32
-        Me.Label54.Text = "Released: {DATE}"
-        '
-        'Label55
-        '
-        Me.Label55.AutoSize = True
-        Me.Label55.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label55.Location = New System.Drawing.Point(226, 282)
-        Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(64, 17)
-        Me.Label55.TabIndex = 31
-        Me.Label55.Text = "Loading..."
-        '
-        'Label56
-        '
-        Me.Label56.AutoSize = True
-        Me.Label56.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label56.Location = New System.Drawing.Point(212, 241)
-        Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(95, 25)
-        Me.Label56.TabIndex = 30
-        Me.Label56.Text = "Loading..."
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.Location = New System.Drawing.Point(60, 235)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(133, 98)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox13.TabIndex = 29
-        Me.PictureBox13.TabStop = False
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button7.Location = New System.Drawing.Point(711, 18)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(83, 30)
-        Me.Button7.TabIndex = 28
-        Me.Button7.Text = "Refresh"
-        Me.Button7.UseVisualStyleBackColor = False
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label52.Location = New System.Drawing.Point(218, 191)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(111, 17)
-        Me.Label52.TabIndex = 27
-        Me.Label52.Text = "Source: Loading..."
-        '
-        'Label51
-        '
-        Me.Label51.AutoSize = True
-        Me.Label51.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label51.Location = New System.Drawing.Point(666, 110)
-        Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(106, 17)
-        Me.Label51.TabIndex = 26
-        Me.Label51.Text = "Released: {DATE}"
-        '
-        'Label50
-        '
-        Me.Label50.AutoSize = True
-        Me.Label50.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label50.Location = New System.Drawing.Point(226, 157)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(64, 17)
-        Me.Label50.TabIndex = 25
-        Me.Label50.Text = "Loading..."
-        '
-        'Label49
-        '
-        Me.Label49.AutoSize = True
-        Me.Label49.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label49.Location = New System.Drawing.Point(212, 116)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(95, 25)
-        Me.Label49.TabIndex = 24
-        Me.Label49.Text = "Loading..."
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.Location = New System.Drawing.Point(60, 110)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(133, 98)
-        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox12.TabIndex = 23
-        Me.PictureBox12.TabStop = False
-        '
-        'Label47
-        '
-        Me.Label47.AutoSize = True
-        Me.Label47.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label47.Location = New System.Drawing.Point(393, 69)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(75, 21)
-        Me.Label47.TabIndex = 22
-        Me.Label47.Text = "Trending"
-        '
-        'Label48
-        '
-        Me.Label48.AutoSize = True
-        Me.Label48.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label48.Location = New System.Drawing.Point(351, 27)
-        Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(163, 37)
-        Me.Label48.TabIndex = 21
-        Me.Label48.Text = "Feed (Beta)"
-        '
-        'Label46
-        '
-        Me.Label46.AutoSize = True
-        Me.Label46.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label46.Location = New System.Drawing.Point(180, 608)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(522, 21)
-        Me.Label46.TabIndex = 38
-        Me.Label46.Text = "z1g Project does not sell your data and all data is securly encrypted"
-        '
-        'Label45
-        '
-        Me.Label45.AutoSize = True
-        Me.Label45.Location = New System.Drawing.Point(663, 295)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(83, 15)
-        Me.Label45.TabIndex = 37
-        Me.Label45.Text = "%getlocaltime"
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(351, 295)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(27, 15)
-        Me.Label44.TabIndex = 36
-        Me.Label44.Text = "%ip"
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.Location = New System.Drawing.Point(85, 295)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(60, 15)
-        Me.Label43.TabIndex = 35
-        Me.Label43.Text = "%pcname"
-        '
-        'Label42
-        '
-        Me.Label42.AutoSize = True
-        Me.Label42.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label42.Location = New System.Drawing.Point(663, 257)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(113, 20)
-        Me.Label42.TabIndex = 34
-        Me.Label42.Text = "Last Login Time"
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label41.Location = New System.Drawing.Point(351, 257)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(141, 20)
-        Me.Label41.TabIndex = 33
-        Me.Label41.Text = "Location/IP Address"
-        '
-        'Label40
-        '
-        Me.Label40.AutoSize = True
-        Me.Label40.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label40.Location = New System.Drawing.Point(72, 257)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(70, 20)
-        Me.Label40.TabIndex = 32
-        Me.Label40.Text = "PC Name"
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Location = New System.Drawing.Point(704, 211)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(90, 32)
-        Me.Button6.TabIndex = 31
-        Me.Button6.Text = "Refresh"
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Label39
-        '
-        Me.Label39.AutoSize = True
-        Me.Label39.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label39.Location = New System.Drawing.Point(52, 211)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(150, 21)
-        Me.Label39.TabIndex = 30
-        Me.Label39.Text = "Logged in Sessions"
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox2.Location = New System.Drawing.Point(649, 97)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(65, 19)
-        Me.CheckBox2.TabIndex = 29
-        Me.CheckBox2.Text = "Enabled"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Checked = True
-        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Location = New System.Drawing.Point(507, 97)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(117, 19)
-        Me.CheckBox1.TabIndex = 28
-        Me.CheckBox1.Text = "Disabled [Defualt]"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'Label38
-        '
-        Me.Label38.AutoSize = True
-        Me.Label38.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label38.Location = New System.Drawing.Point(53, 148)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(151, 21)
-        Me.Label38.TabIndex = 27
-        Me.Label38.Text = "Change Credentials"
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label37.Location = New System.Drawing.Point(52, 95)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(37, 21)
-        Me.Label37.TabIndex = 26
-        Me.Label37.Text = "2FA"
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label33.Location = New System.Drawing.Point(316, 165)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(60, 15)
-        Me.Label33.TabIndex = 25
-        Me.Label33.Text = "Password:"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox4.ForeColor = System.Drawing.Color.White
-        Me.TextBox4.Location = New System.Drawing.Point(382, 162)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox4.Size = New System.Drawing.Size(286, 22)
-        Me.TextBox4.TabIndex = 24
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Location = New System.Drawing.Point(679, 138)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(97, 42)
-        Me.Button5.TabIndex = 23
-        Me.Button5.Text = "Update"
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label34.Location = New System.Drawing.Point(313, 133)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(63, 15)
-        Me.Label34.TabIndex = 22
-        Me.Label34.Text = "Username:"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox5.ForeColor = System.Drawing.Color.White
-        Me.TextBox5.Location = New System.Drawing.Point(382, 132)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(286, 22)
-        Me.TextBox5.TabIndex = 21
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label35.Location = New System.Drawing.Point(399, 56)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(66, 21)
-        Me.Label35.TabIndex = 20
-        Me.Label35.Text = "General"
-        '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label36.Location = New System.Drawing.Point(319, 14)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(244, 37)
-        Me.Label36.TabIndex = 19
-        Me.Label36.Text = "Account Manager"
-        '
-        'Label32
-        '
-        Me.Label32.AutoSize = True
-        Me.Label32.Font = New System.Drawing.Font("Segoe UI Emoji", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label32.ForeColor = System.Drawing.Color.Yellow
-        Me.Label32.Location = New System.Drawing.Point(342, 252)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(221, 17)
-        Me.Label32.TabIndex = 21
-        Me.Label32.Text = "⚠️ Incorrect Username or Password"
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(230, 212)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(442, 15)
-        Me.Label31.TabIndex = 20
-        Me.Label31.Text = "*Note some functionality might not work since the account manager is still in bet" &
-    "a"
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(594, 160)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(97, 38)
-        Me.Button4.TabIndex = 19
-        Me.Button4.Text = "Reset Password"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label29.Location = New System.Drawing.Point(199, 162)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(96, 25)
-        Me.Label29.TabIndex = 18
-        Me.Label29.Text = "Password:"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox2.ForeColor = System.Drawing.Color.White
-        Me.TextBox2.Location = New System.Drawing.Point(301, 160)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(286, 33)
-        Me.TextBox2.TabIndex = 17
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(594, 116)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(97, 38)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Sign in"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label30.Location = New System.Drawing.Point(192, 123)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(103, 25)
-        Me.Label30.TabIndex = 15
-        Me.Label30.Text = "Username:"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox3.ForeColor = System.Drawing.Color.White
-        Me.TextBox3.Location = New System.Drawing.Point(301, 121)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(286, 33)
-        Me.TextBox3.TabIndex = 14
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label27.Location = New System.Drawing.Point(319, 64)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(240, 21)
-        Me.Label27.TabIndex = 13
-        Me.Label27.Text = "Sign in to manage your account"
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label28.Location = New System.Drawing.Point(319, 27)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(244, 37)
-        Me.Label28.TabIndex = 12
-        Me.Label28.Text = "Account Manager"
-        '
-        'Label65
-        '
-        Me.Label65.AutoSize = True
-        Me.Label65.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label65.Location = New System.Drawing.Point(641, 455)
-        Me.Label65.Name = "Label65"
-        Me.Label65.Size = New System.Drawing.Size(113, 20)
-        Me.Label65.TabIndex = 28
-        Me.Label65.Text = "Coming Soon..."
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
-        Me.PictureBox16.Location = New System.Drawing.Point(622, 313)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox16.TabIndex = 27
-        Me.PictureBox16.TabStop = False
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label26.Location = New System.Drawing.Point(298, 455)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(73, 20)
-        Me.Label26.TabIndex = 25
-        Me.Label26.Text = "Blurred X"
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.bx
-        Me.PictureBox11.Location = New System.Drawing.Point(257, 313)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox11.TabIndex = 24
-        Me.PictureBox11.TabStop = False
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label25.Location = New System.Drawing.Point(457, 455)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(108, 20)
-        Me.Label25.TabIndex = 23
-        Me.Label25.Text = "Blurred's Vault"
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources._128
-        Me.PictureBox10.Location = New System.Drawing.Point(438, 313)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox10.TabIndex = 22
-        Me.PictureBox10.TabStop = False
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label24.Location = New System.Drawing.Point(111, 455)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(74, 20)
-        Me.Label24.TabIndex = 21
-        Me.Label24.Text = "BruhProx"
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.uv
-        Me.PictureBox9.Location = New System.Drawing.Point(70, 313)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox9.TabIndex = 20
-        Me.PictureBox9.TabStop = False
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label18.Location = New System.Drawing.Point(663, 270)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(66, 20)
-        Me.Label18.TabIndex = 19
-        Me.Label18.Text = "z1g VPN"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label19.Location = New System.Drawing.Point(470, 270)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(93, 20)
-        Me.Label19.TabIndex = 18
-        Me.Label19.Text = "z1g X Center"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.ContextMenuStrip = Me.ContextMenuStrip2
-        Me.Label20.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label20.Location = New System.Drawing.Point(301, 270)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(63, 20)
-        Me.Label20.TabIndex = 17
-        Me.Label20.Text = "Velocity"
-        '
-        'ContextMenuStrip2
-        '
-        Me.ContextMenuStrip2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4})
-        Me.ContextMenuStrip2.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ContextMenuStrip2.Size = New System.Drawing.Size(121, 92)
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ToolStripMenuItem1.ForeColor = System.Drawing.Color.White
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(120, 22)
-        Me.ToolStripMenuItem1.Text = "Open"
-        '
-        'ToolStripMenuItem2
-        '
-        Me.ToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ToolStripMenuItem2.ForeColor = System.Drawing.Color.White
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(120, 22)
-        Me.ToolStripMenuItem2.Text = "Uninstall"
-        '
-        'ToolStripMenuItem3
-        '
-        Me.ToolStripMenuItem3.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ToolStripMenuItem3.ForeColor = System.Drawing.Color.White
-        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(120, 22)
-        Me.ToolStripMenuItem3.Text = "Settings"
-        '
-        'ToolStripMenuItem4
-        '
-        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ToolStripMenuItem4.ForeColor = System.Drawing.Color.White
-        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(120, 22)
-        Me.ToolStripMenuItem4.Text = "Reset"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.Label21.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label21.Location = New System.Drawing.Point(115, 270)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(65, 20)
-        Me.Label21.TabIndex = 16
-        Me.Label21.Text = "Terbium"
-        '
-        'ContextMenuStrip1
-        '
-        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.UninstallToolStripMenuItem, Me.SettingsToolStripMenuItem, Me.ResetToolStripMenuItem})
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(121, 92)
-        '
-        'OpenToolStripMenuItem
-        '
-        Me.OpenToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.OpenToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
-        Me.OpenToolStripMenuItem.Text = "Open"
-        '
-        'UninstallToolStripMenuItem
-        '
-        Me.UninstallToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.UninstallToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.UninstallToolStripMenuItem.Name = "UninstallToolStripMenuItem"
-        Me.UninstallToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
-        Me.UninstallToolStripMenuItem.Text = "Uninstall"
-        '
-        'SettingsToolStripMenuItem
-        '
-        Me.SettingsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.SettingsToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
-        Me.SettingsToolStripMenuItem.Text = "Settings"
-        '
-        'ResetToolStripMenuItem
-        '
-        Me.ResetToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ResetToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.ResetToolStripMenuItem.Name = "ResetToolStripMenuItem"
-        Me.ResetToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
-        Me.ResetToolStripMenuItem.Text = "Reset"
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
-        Me.PictureBox5.Location = New System.Drawing.Point(622, 128)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 15
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
-        Me.PictureBox6.Location = New System.Drawing.Point(438, 128)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 14
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.ContextMenuStrip = Me.ContextMenuStrip2
-        Me.PictureBox7.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.velocity
-        Me.PictureBox7.Location = New System.Drawing.Point(257, 128)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox7.TabIndex = 13
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.PictureBox8.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.terbium
-        Me.PictureBox8.Location = New System.Drawing.Point(70, 128)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox8.TabIndex = 12
-        Me.PictureBox8.TabStop = False
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label22.Location = New System.Drawing.Point(367, 80)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(110, 21)
-        Me.Label22.TabIndex = 11
-        Me.Label22.Text = "Avalible Apps"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label23.Location = New System.Drawing.Point(329, 40)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(192, 37)
-        Me.Label23.TabIndex = 10
-        Me.Label23.Text = "App Manager"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.TextBox1.ForeColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(50, 370)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox1.Size = New System.Drawing.Size(734, 259)
-        Me.TextBox1.TabIndex = 12
-        Me.TextBox1.Text = resources.GetString("TextBox1.Text")
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label16.Location = New System.Drawing.Point(328, 337)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(163, 21)
-        Me.Label16.TabIndex = 11
-        Me.Label16.Text = "View the Changelogs"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label17.Location = New System.Drawing.Point(292, 301)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(236, 30)
-        Me.Label17.TabIndex = 10
-        Me.Label17.Text = "Whats new in z1g Hub"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label15.Location = New System.Drawing.Point(638, 261)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(120, 20)
-        Me.Label15.TabIndex = 9
-        Me.Label15.Text = "z1g Hub Tutorial"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label14.Location = New System.Drawing.Point(442, 261)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(154, 20)
-        Me.Label14.TabIndex = 8
-        Me.Label14.Text = "Try out Beta Features"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.Location = New System.Drawing.Point(249, 261)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(183, 20)
-        Me.Label13.TabIndex = 7
-        Me.Label13.Text = "Check the z1g Feed [Beta]"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.Location = New System.Drawing.Point(86, 261)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(125, 20)
-        Me.Label12.TabIndex = 6
-        Me.Label12.Text = "Install Basic Apps"
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.z1g
-        Me.PictureBox4.Location = New System.Drawing.Point(626, 119)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 5
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.beta_features
-        Me.PictureBox3.Location = New System.Drawing.Point(442, 119)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 4
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.feed
-        Me.PictureBox2.Location = New System.Drawing.Point(261, 119)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 3
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.z1g_Project_Hub_Universal.My.Resources.Resources.downloadicon
-        Me.PictureBox1.Location = New System.Drawing.Point(74, 119)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(150, 130)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.Location = New System.Drawing.Point(371, 71)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(94, 21)
-        Me.Label11.TabIndex = 1
-        Me.Label11.Text = "Get Started"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.Location = New System.Drawing.Point(249, 14)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(343, 37)
-        Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Welcome to the z1g Hub!"
-        '
-        'Form3
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1073, 688)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
-        Me.ForeColor = System.Drawing.Color.White
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "Form3"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "z1g Project Hub"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel8.PerformLayout()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel9.ResumeLayout(False)
-        CType(Me.articleimg4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.articleimg3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ContextMenuStrip2.ResumeLayout(False)
-        Me.ContextMenuStrip1.ResumeLayout(False)
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-
+        components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form3))
+        Panel1 = New Panel()
+        Label8 = New Label()
+        Label7 = New Label()
+        Label6 = New Label()
+        Label5 = New Label()
+        Label4 = New Label()
+        Label3 = New Label()
+        Label2 = New Label()
+        Label1 = New Label()
+        Panel2 = New Panel()
+        PictureBox19 = New PictureBox()
+        Button10 = New Button()
+        Button3 = New Button()
+        Button2 = New Button()
+        Label9 = New Label()
+        profile_panel = New Panel()
+        Panel3 = New Panel()
+        Panel4 = New Panel()
+        Panel5 = New Panel()
+        Panel6 = New Panel()
+        Panel7 = New Panel()
+        Panel8 = New Panel()
+        Label78 = New Label()
+        Label79 = New Label()
+        Label80 = New Label()
+        Label81 = New Label()
+        PictureBox18 = New PictureBox()
+        Label74 = New Label()
+        Label75 = New Label()
+        Label76 = New Label()
+        Label77 = New Label()
+        PictureBox17 = New PictureBox()
+        Label70 = New Label()
+        Label71 = New Label()
+        Label72 = New Label()
+        Label73 = New Label()
+        PictureBox15 = New PictureBox()
+        Label66 = New Label()
+        Label67 = New Label()
+        Label68 = New Label()
+        Label69 = New Label()
+        PictureBox14 = New PictureBox()
+        Panel9 = New Panel()
+        Panel11 = New Panel()
+        Panel10 = New Panel()
+        Button9 = New Button()
+        Button8 = New Button()
+        Label61 = New Label()
+        Label62 = New Label()
+        Label63 = New Label()
+        Label64 = New Label()
+        articleimg4 = New PictureBox()
+        Label57 = New Label()
+        Label58 = New Label()
+        Label59 = New Label()
+        Label60 = New Label()
+        articleimg3 = New PictureBox()
+        Label53 = New Label()
+        Label54 = New Label()
+        Label55 = New Label()
+        Label56 = New Label()
+        PictureBox13 = New PictureBox()
+        Button7 = New Button()
+        Label52 = New Label()
+        Label51 = New Label()
+        Label50 = New Label()
+        Label49 = New Label()
+        PictureBox12 = New PictureBox()
+        Label47 = New Label()
+        Label48 = New Label()
+        Label46 = New Label()
+        Label45 = New Label()
+        Label44 = New Label()
+        Label43 = New Label()
+        Label42 = New Label()
+        Label41 = New Label()
+        Label40 = New Label()
+        Button6 = New Button()
+        Label39 = New Label()
+        CheckBox2 = New CheckBox()
+        CheckBox1 = New CheckBox()
+        Label38 = New Label()
+        Label37 = New Label()
+        Label33 = New Label()
+        TextBox4 = New TextBox()
+        Button5 = New Button()
+        Label34 = New Label()
+        TextBox5 = New TextBox()
+        Label35 = New Label()
+        Label36 = New Label()
+        Label32 = New Label()
+        Label31 = New Label()
+        Button4 = New Button()
+        Label29 = New Label()
+        TextBox2 = New TextBox()
+        Button1 = New Button()
+        Label30 = New Label()
+        TextBox3 = New TextBox()
+        Label27 = New Label()
+        Label28 = New Label()
+        Label65 = New Label()
+        PictureBox16 = New PictureBox()
+        Label26 = New Label()
+        PictureBox11 = New PictureBox()
+        Label25 = New Label()
+        PictureBox10 = New PictureBox()
+        Label24 = New Label()
+        PictureBox9 = New PictureBox()
+        Label18 = New Label()
+        Label19 = New Label()
+        Label20 = New Label()
+        ContextMenuStrip2 = New ContextMenuStrip(components)
+        ToolStripMenuItem1 = New ToolStripMenuItem()
+        ToolStripMenuItem2 = New ToolStripMenuItem()
+        ToolStripMenuItem3 = New ToolStripMenuItem()
+        ToolStripMenuItem4 = New ToolStripMenuItem()
+        Label21 = New Label()
+        ContextMenuStrip1 = New ContextMenuStrip(components)
+        OpenToolStripMenuItem = New ToolStripMenuItem()
+        UninstallToolStripMenuItem = New ToolStripMenuItem()
+        SettingsToolStripMenuItem = New ToolStripMenuItem()
+        ResetToolStripMenuItem = New ToolStripMenuItem()
+        PictureBox5 = New PictureBox()
+        PictureBox6 = New PictureBox()
+        PictureBox7 = New PictureBox()
+        PictureBox8 = New PictureBox()
+        Label22 = New Label()
+        Label23 = New Label()
+        TextBox1 = New TextBox()
+        Label16 = New Label()
+        Label17 = New Label()
+        Label15 = New Label()
+        Label14 = New Label()
+        Label13 = New Label()
+        Label12 = New Label()
+        PictureBox4 = New PictureBox()
+        PictureBox3 = New PictureBox()
+        PictureBox2 = New PictureBox()
+        PictureBox1 = New PictureBox()
+        Label11 = New Label()
+        Label10 = New Label()
+        Label82 = New Label()
+        PictureBox20 = New PictureBox()
+        Label83 = New Label()
+        PictureBox21 = New PictureBox()
+        Label84 = New Label()
+        Label85 = New Label()
+        Label86 = New Label()
+        LinkLabel1 = New LinkLabel()
+        Panel1.SuspendLayout()
+        Panel2.SuspendLayout()
+        CType(PictureBox19, ComponentModel.ISupportInitialize).BeginInit()
+        profile_panel.SuspendLayout()
+        Panel3.SuspendLayout()
+        Panel4.SuspendLayout()
+        Panel5.SuspendLayout()
+        Panel6.SuspendLayout()
+        Panel7.SuspendLayout()
+        Panel8.SuspendLayout()
+        CType(PictureBox18, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox17, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox15, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox14, ComponentModel.ISupportInitialize).BeginInit()
+        Panel9.SuspendLayout()
+        CType(articleimg4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(articleimg3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox13, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox12, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox16, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
+        ContextMenuStrip2.SuspendLayout()
+        ContextMenuStrip1.SuspendLayout()
+        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox20, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox21, ComponentModel.ISupportInitialize).BeginInit()
+        SuspendLayout()
+        ' 
+        ' Panel1
+        ' 
+        Panel1.Controls.Add(Label8)
+        Panel1.Controls.Add(Label7)
+        Panel1.Controls.Add(Label6)
+        Panel1.Controls.Add(Label5)
+        Panel1.Controls.Add(Label4)
+        Panel1.Controls.Add(Label3)
+        Panel1.Controls.Add(Label2)
+        Panel1.Controls.Add(Label1)
+        Panel1.Dock = DockStyle.Left
+        Panel1.Location = New Point(0, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(245, 688)
+        Panel1.TabIndex = 0
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI Semibold", 13.5F, FontStyle.Bold, GraphicsUnit.Point)
+        Label8.Location = New Point(75, 626)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(81, 25)
+        Label8.TabIndex = 5
+        Label8.Text = "Settings"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI Semibold", 13.5F, FontStyle.Bold, GraphicsUnit.Point)
+        Label7.Location = New Point(41, 300)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(106, 25)
+        Label7.TabIndex = 4
+        Label7.Text = "Feed [Beta]"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI Semibold", 13.5F, FontStyle.Bold, GraphicsUnit.Point)
+        Label6.Location = New Point(41, 259)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(159, 25)
+        Label6.TabIndex = 4
+        Label6.Text = "Account Manager"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI Semibold", 13.5F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.Location = New Point(41, 215)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(125, 25)
+        Label5.TabIndex = 4
+        Label5.Text = "App Manager"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI Semibold", 13.5F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.Location = New Point(41, 172)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(62, 25)
+        Label4.TabIndex = 3
+        Label4.Text = "Home"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Location = New Point(12, 662)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(221, 17)
+        Label3.TabIndex = 2
+        Label3.Text = "Version 1.3.0u (Arch Valley Universal)"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Location = New Point(62, 74)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(105, 21)
+        Label2.TabIndex = 1
+        Label2.Text = "%username%"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(37, 29)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(158, 45)
+        Label1.TabIndex = 0
+        Label1.Text = "Welcome"
+        ' 
+        ' Panel2
+        ' 
+        Panel2.Controls.Add(PictureBox19)
+        Panel2.Controls.Add(Button10)
+        Panel2.Controls.Add(Button3)
+        Panel2.Controls.Add(Button2)
+        Panel2.Controls.Add(Label9)
+        Panel2.Dock = DockStyle.Top
+        Panel2.Location = New Point(245, 0)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(828, 47)
+        Panel2.TabIndex = 1
+        ' 
+        ' PictureBox19
+        ' 
+        PictureBox19.Image = My.Resources.Resources.usericn_removebg_preview
+        PictureBox19.Location = New Point(663, 8)
+        PictureBox19.Name = "PictureBox19"
+        PictureBox19.Size = New Size(39, 31)
+        PictureBox19.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox19.TabIndex = 12
+        PictureBox19.TabStop = False
+        ' 
+        ' Button10
+        ' 
+        Button10.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        Button10.FlatAppearance.BorderSize = 0
+        Button10.FlatStyle = FlatStyle.Flat
+        Button10.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button10.Location = New Point(743, 12)
+        Button10.Name = "Button10"
+        Button10.Size = New Size(35, 23)
+        Button10.TabIndex = 11
+        Button10.Text = "[]"
+        Button10.UseVisualStyleBackColor = False
+        ' 
+        ' Button3
+        ' 
+        Button3.BackColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
+        Button3.FlatAppearance.BorderSize = 0
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.Location = New Point(781, 12)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(35, 23)
+        Button3.TabIndex = 10
+        Button3.Text = "X"
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.Location = New Point(705, 12)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(35, 23)
+        Button2.TabIndex = 9
+        Button2.Text = "-"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label9.Location = New Point(18, 15)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(56, 21)
+        Label9.TabIndex = 0
+        Label9.Text = "Home"
+        ' 
+        ' profile_panel
+        ' 
+        profile_panel.Controls.Add(LinkLabel1)
+        profile_panel.Controls.Add(Label86)
+        profile_panel.Controls.Add(Label85)
+        profile_panel.Controls.Add(Label84)
+        profile_panel.Controls.Add(PictureBox21)
+        profile_panel.Controls.Add(Label83)
+        profile_panel.Controls.Add(PictureBox20)
+        profile_panel.Controls.Add(Label82)
+        profile_panel.Location = New Point(457, -6)
+        profile_panel.Name = "profile_panel"
+        profile_panel.Size = New Size(245, 204)
+        profile_panel.TabIndex = 48
+        ' 
+        ' Panel3
+        ' 
+        Panel3.Controls.Add(Panel4)
+        Panel3.Controls.Add(TextBox1)
+        Panel3.Controls.Add(Label16)
+        Panel3.Controls.Add(Label17)
+        Panel3.Controls.Add(Label15)
+        Panel3.Controls.Add(Label14)
+        Panel3.Controls.Add(Label13)
+        Panel3.Controls.Add(Label12)
+        Panel3.Controls.Add(PictureBox4)
+        Panel3.Controls.Add(PictureBox3)
+        Panel3.Controls.Add(PictureBox2)
+        Panel3.Controls.Add(PictureBox1)
+        Panel3.Controls.Add(Label11)
+        Panel3.Controls.Add(Label10)
+        Panel3.Dock = DockStyle.Fill
+        Panel3.Location = New Point(245, 47)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(828, 641)
+        Panel3.TabIndex = 2
+        ' 
+        ' Panel4
+        ' 
+        Panel4.Controls.Add(Panel5)
+        Panel4.Controls.Add(Label65)
+        Panel4.Controls.Add(PictureBox16)
+        Panel4.Controls.Add(Label26)
+        Panel4.Controls.Add(PictureBox11)
+        Panel4.Controls.Add(Label25)
+        Panel4.Controls.Add(PictureBox10)
+        Panel4.Controls.Add(Label24)
+        Panel4.Controls.Add(PictureBox9)
+        Panel4.Controls.Add(Label18)
+        Panel4.Controls.Add(Label19)
+        Panel4.Controls.Add(Label20)
+        Panel4.Controls.Add(Label21)
+        Panel4.Controls.Add(PictureBox5)
+        Panel4.Controls.Add(PictureBox6)
+        Panel4.Controls.Add(PictureBox7)
+        Panel4.Controls.Add(PictureBox8)
+        Panel4.Controls.Add(Label22)
+        Panel4.Controls.Add(Label23)
+        Panel4.Dock = DockStyle.Fill
+        Panel4.Location = New Point(0, 0)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(828, 641)
+        Panel4.TabIndex = 13
+        ' 
+        ' Panel5
+        ' 
+        Panel5.Controls.Add(Panel6)
+        Panel5.Controls.Add(Label32)
+        Panel5.Controls.Add(Label31)
+        Panel5.Controls.Add(Button4)
+        Panel5.Controls.Add(Label29)
+        Panel5.Controls.Add(TextBox2)
+        Panel5.Controls.Add(Button1)
+        Panel5.Controls.Add(Label30)
+        Panel5.Controls.Add(TextBox3)
+        Panel5.Controls.Add(Label27)
+        Panel5.Controls.Add(Label28)
+        Panel5.Dock = DockStyle.Fill
+        Panel5.Location = New Point(0, 0)
+        Panel5.Name = "Panel5"
+        Panel5.Size = New Size(828, 641)
+        Panel5.TabIndex = 29
+        ' 
+        ' Panel6
+        ' 
+        Panel6.Controls.Add(Panel7)
+        Panel6.Controls.Add(Label46)
+        Panel6.Controls.Add(Label45)
+        Panel6.Controls.Add(Label44)
+        Panel6.Controls.Add(Label43)
+        Panel6.Controls.Add(Label42)
+        Panel6.Controls.Add(Label41)
+        Panel6.Controls.Add(Label40)
+        Panel6.Controls.Add(Button6)
+        Panel6.Controls.Add(Label39)
+        Panel6.Controls.Add(CheckBox2)
+        Panel6.Controls.Add(CheckBox1)
+        Panel6.Controls.Add(Label38)
+        Panel6.Controls.Add(Label37)
+        Panel6.Controls.Add(Label33)
+        Panel6.Controls.Add(TextBox4)
+        Panel6.Controls.Add(Button5)
+        Panel6.Controls.Add(Label34)
+        Panel6.Controls.Add(TextBox5)
+        Panel6.Controls.Add(Label35)
+        Panel6.Controls.Add(Label36)
+        Panel6.Dock = DockStyle.Fill
+        Panel6.Location = New Point(0, 0)
+        Panel6.Name = "Panel6"
+        Panel6.Size = New Size(828, 641)
+        Panel6.TabIndex = 22
+        ' 
+        ' Panel7
+        ' 
+        Panel7.Controls.Add(profile_panel)
+        Panel7.Controls.Add(Panel8)
+        Panel7.Controls.Add(Panel9)
+        Panel7.Controls.Add(Label61)
+        Panel7.Controls.Add(Label62)
+        Panel7.Controls.Add(Label63)
+        Panel7.Controls.Add(Label64)
+        Panel7.Controls.Add(articleimg4)
+        Panel7.Controls.Add(Label57)
+        Panel7.Controls.Add(Label58)
+        Panel7.Controls.Add(Label59)
+        Panel7.Controls.Add(Label60)
+        Panel7.Controls.Add(articleimg3)
+        Panel7.Controls.Add(Label53)
+        Panel7.Controls.Add(Label54)
+        Panel7.Controls.Add(Label55)
+        Panel7.Controls.Add(Label56)
+        Panel7.Controls.Add(PictureBox13)
+        Panel7.Controls.Add(Button7)
+        Panel7.Controls.Add(Label52)
+        Panel7.Controls.Add(Label51)
+        Panel7.Controls.Add(Label50)
+        Panel7.Controls.Add(Label49)
+        Panel7.Controls.Add(PictureBox12)
+        Panel7.Controls.Add(Label47)
+        Panel7.Controls.Add(Label48)
+        Panel7.Dock = DockStyle.Fill
+        Panel7.Location = New Point(0, 0)
+        Panel7.Name = "Panel7"
+        Panel7.Size = New Size(828, 641)
+        Panel7.TabIndex = 39
+        ' 
+        ' Panel8
+        ' 
+        Panel8.Controls.Add(Label78)
+        Panel8.Controls.Add(Label79)
+        Panel8.Controls.Add(Label80)
+        Panel8.Controls.Add(Label81)
+        Panel8.Controls.Add(PictureBox18)
+        Panel8.Controls.Add(Label74)
+        Panel8.Controls.Add(Label75)
+        Panel8.Controls.Add(Label76)
+        Panel8.Controls.Add(Label77)
+        Panel8.Controls.Add(PictureBox17)
+        Panel8.Controls.Add(Label70)
+        Panel8.Controls.Add(Label71)
+        Panel8.Controls.Add(Label72)
+        Panel8.Controls.Add(Label73)
+        Panel8.Controls.Add(PictureBox15)
+        Panel8.Controls.Add(Label66)
+        Panel8.Controls.Add(Label67)
+        Panel8.Controls.Add(Label68)
+        Panel8.Controls.Add(Label69)
+        Panel8.Controls.Add(PictureBox14)
+        Panel8.Dock = DockStyle.Bottom
+        Panel8.Location = New Point(0, 97)
+        Panel8.Name = "Panel8"
+        Panel8.Size = New Size(808, 544)
+        Panel8.TabIndex = 47
+        ' 
+        ' Label78
+        ' 
+        Label78.AutoSize = True
+        Label78.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label78.Location = New Point(218, 491)
+        Label78.Name = "Label78"
+        Label78.Size = New Size(111, 17)
+        Label78.TabIndex = 47
+        Label78.Text = "Source: Loading..."
+        ' 
+        ' Label79
+        ' 
+        Label79.AutoSize = True
+        Label79.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label79.Location = New Point(663, 410)
+        Label79.Name = "Label79"
+        Label79.Size = New Size(106, 17)
+        Label79.TabIndex = 46
+        Label79.Text = "Released: {DATE}"
+        ' 
+        ' Label80
+        ' 
+        Label80.AutoSize = True
+        Label80.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label80.Location = New Point(226, 457)
+        Label80.Name = "Label80"
+        Label80.Size = New Size(64, 17)
+        Label80.TabIndex = 45
+        Label80.Text = "Loading..."
+        ' 
+        ' Label81
+        ' 
+        Label81.AutoSize = True
+        Label81.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label81.Location = New Point(212, 416)
+        Label81.Name = "Label81"
+        Label81.Size = New Size(95, 25)
+        Label81.TabIndex = 44
+        Label81.Text = "Loading..."
+        ' 
+        ' PictureBox18
+        ' 
+        PictureBox18.Location = New Point(60, 410)
+        PictureBox18.Name = "PictureBox18"
+        PictureBox18.Size = New Size(133, 98)
+        PictureBox18.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox18.TabIndex = 43
+        PictureBox18.TabStop = False
+        ' 
+        ' Label74
+        ' 
+        Label74.AutoSize = True
+        Label74.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label74.Location = New Point(218, 354)
+        Label74.Name = "Label74"
+        Label74.Size = New Size(111, 17)
+        Label74.TabIndex = 42
+        Label74.Text = "Source: Loading..."
+        ' 
+        ' Label75
+        ' 
+        Label75.AutoSize = True
+        Label75.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label75.Location = New Point(663, 273)
+        Label75.Name = "Label75"
+        Label75.Size = New Size(106, 17)
+        Label75.TabIndex = 41
+        Label75.Text = "Released: {DATE}"
+        ' 
+        ' Label76
+        ' 
+        Label76.AutoSize = True
+        Label76.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label76.Location = New Point(226, 320)
+        Label76.Name = "Label76"
+        Label76.Size = New Size(64, 17)
+        Label76.TabIndex = 40
+        Label76.Text = "Loading..."
+        ' 
+        ' Label77
+        ' 
+        Label77.AutoSize = True
+        Label77.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label77.Location = New Point(212, 279)
+        Label77.Name = "Label77"
+        Label77.Size = New Size(95, 25)
+        Label77.TabIndex = 39
+        Label77.Text = "Loading..."
+        ' 
+        ' PictureBox17
+        ' 
+        PictureBox17.Location = New Point(60, 273)
+        PictureBox17.Name = "PictureBox17"
+        PictureBox17.Size = New Size(133, 98)
+        PictureBox17.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox17.TabIndex = 38
+        PictureBox17.TabStop = False
+        ' 
+        ' Label70
+        ' 
+        Label70.AutoSize = True
+        Label70.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label70.Location = New Point(220, 225)
+        Label70.Name = "Label70"
+        Label70.Size = New Size(111, 17)
+        Label70.TabIndex = 37
+        Label70.Text = "Source: Loading..."
+        ' 
+        ' Label71
+        ' 
+        Label71.AutoSize = True
+        Label71.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label71.Location = New Point(663, 144)
+        Label71.Name = "Label71"
+        Label71.Size = New Size(106, 17)
+        Label71.TabIndex = 36
+        Label71.Text = "Released: {DATE}"
+        ' 
+        ' Label72
+        ' 
+        Label72.AutoSize = True
+        Label72.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label72.Location = New Point(228, 191)
+        Label72.Name = "Label72"
+        Label72.Size = New Size(64, 17)
+        Label72.TabIndex = 35
+        Label72.Text = "Loading..."
+        ' 
+        ' Label73
+        ' 
+        Label73.AutoSize = True
+        Label73.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label73.Location = New Point(214, 150)
+        Label73.Name = "Label73"
+        Label73.Size = New Size(95, 25)
+        Label73.TabIndex = 34
+        Label73.Text = "Loading..."
+        ' 
+        ' PictureBox15
+        ' 
+        PictureBox15.Location = New Point(62, 144)
+        PictureBox15.Name = "PictureBox15"
+        PictureBox15.Size = New Size(133, 98)
+        PictureBox15.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox15.TabIndex = 33
+        PictureBox15.TabStop = False
+        ' 
+        ' Label66
+        ' 
+        Label66.AutoSize = True
+        Label66.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label66.Location = New Point(212, 94)
+        Label66.Name = "Label66"
+        Label66.Size = New Size(111, 17)
+        Label66.TabIndex = 32
+        Label66.Text = "Source: Loading..."
+        ' 
+        ' Label67
+        ' 
+        Label67.AutoSize = True
+        Label67.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label67.Location = New Point(663, 19)
+        Label67.Name = "Label67"
+        Label67.Size = New Size(106, 17)
+        Label67.TabIndex = 31
+        Label67.Text = "Released: {DATE}"
+        ' 
+        ' Label68
+        ' 
+        Label68.AutoSize = True
+        Label68.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label68.Location = New Point(220, 60)
+        Label68.Name = "Label68"
+        Label68.Size = New Size(64, 17)
+        Label68.TabIndex = 30
+        Label68.Text = "Loading..."
+        ' 
+        ' Label69
+        ' 
+        Label69.AutoSize = True
+        Label69.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label69.Location = New Point(206, 19)
+        Label69.Name = "Label69"
+        Label69.Size = New Size(95, 25)
+        Label69.TabIndex = 29
+        Label69.Text = "Loading..."
+        ' 
+        ' PictureBox14
+        ' 
+        PictureBox14.Location = New Point(62, 13)
+        PictureBox14.Name = "PictureBox14"
+        PictureBox14.Size = New Size(133, 98)
+        PictureBox14.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox14.TabIndex = 28
+        PictureBox14.TabStop = False
+        ' 
+        ' Panel9
+        ' 
+        Panel9.BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
+        Panel9.Controls.Add(Panel11)
+        Panel9.Controls.Add(Panel10)
+        Panel9.Controls.Add(Button9)
+        Panel9.Controls.Add(Button8)
+        Panel9.Dock = DockStyle.Right
+        Panel9.Location = New Point(808, 0)
+        Panel9.Name = "Panel9"
+        Panel9.Size = New Size(20, 641)
+        Panel9.TabIndex = 46
+        ' 
+        ' Panel11
+        ' 
+        Panel11.BackColor = Color.Teal
+        Panel11.Dock = DockStyle.Top
+        Panel11.Location = New Point(0, 305)
+        Panel11.Name = "Panel11"
+        Panel11.Size = New Size(20, 311)
+        Panel11.TabIndex = 51
+        ' 
+        ' Panel10
+        ' 
+        Panel10.BackColor = Color.Teal
+        Panel10.Dock = DockStyle.Top
+        Panel10.Location = New Point(0, 25)
+        Panel10.Name = "Panel10"
+        Panel10.Size = New Size(20, 280)
+        Panel10.TabIndex = 50
+        ' 
+        ' Button9
+        ' 
+        Button9.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        Button9.Dock = DockStyle.Bottom
+        Button9.FlatAppearance.BorderSize = 0
+        Button9.FlatStyle = FlatStyle.Flat
+        Button9.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Button9.Location = New Point(0, 616)
+        Button9.Name = "Button9"
+        Button9.Size = New Size(20, 25)
+        Button9.TabIndex = 49
+        Button9.Text = "D"
+        Button9.UseVisualStyleBackColor = False
+        ' 
+        ' Button8
+        ' 
+        Button8.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        Button8.Dock = DockStyle.Top
+        Button8.FlatAppearance.BorderSize = 0
+        Button8.FlatStyle = FlatStyle.Flat
+        Button8.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Button8.Location = New Point(0, 0)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(20, 25)
+        Button8.TabIndex = 48
+        Button8.Text = "^"
+        Button8.UseVisualStyleBackColor = False
+        ' 
+        ' Label61
+        ' 
+        Label61.AutoSize = True
+        Label61.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label61.Location = New Point(218, 571)
+        Label61.Name = "Label61"
+        Label61.Size = New Size(111, 17)
+        Label61.TabIndex = 43
+        Label61.Text = "Source: Loading..."
+        ' 
+        ' Label62
+        ' 
+        Label62.AutoSize = True
+        Label62.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label62.Location = New Point(666, 490)
+        Label62.Name = "Label62"
+        Label62.Size = New Size(106, 17)
+        Label62.TabIndex = 42
+        Label62.Text = "Released: {DATE}"
+        ' 
+        ' Label63
+        ' 
+        Label63.AutoSize = True
+        Label63.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label63.Location = New Point(226, 537)
+        Label63.Name = "Label63"
+        Label63.Size = New Size(64, 17)
+        Label63.TabIndex = 41
+        Label63.Text = "Loading..."
+        ' 
+        ' Label64
+        ' 
+        Label64.AutoSize = True
+        Label64.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label64.Location = New Point(212, 496)
+        Label64.Name = "Label64"
+        Label64.Size = New Size(95, 25)
+        Label64.TabIndex = 40
+        Label64.Text = "Loading..."
+        ' 
+        ' articleimg4
+        ' 
+        articleimg4.Location = New Point(60, 490)
+        articleimg4.Name = "articleimg4"
+        articleimg4.Size = New Size(133, 98)
+        articleimg4.SizeMode = PictureBoxSizeMode.StretchImage
+        articleimg4.TabIndex = 39
+        articleimg4.TabStop = False
+        ' 
+        ' Label57
+        ' 
+        Label57.AutoSize = True
+        Label57.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label57.Location = New Point(218, 440)
+        Label57.Name = "Label57"
+        Label57.Size = New Size(111, 17)
+        Label57.TabIndex = 38
+        Label57.Text = "Source: Loading..."
+        ' 
+        ' Label58
+        ' 
+        Label58.AutoSize = True
+        Label58.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label58.Location = New Point(666, 359)
+        Label58.Name = "Label58"
+        Label58.Size = New Size(106, 17)
+        Label58.TabIndex = 37
+        Label58.Text = "Released: {DATE}"
+        ' 
+        ' Label59
+        ' 
+        Label59.AutoSize = True
+        Label59.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label59.Location = New Point(226, 406)
+        Label59.Name = "Label59"
+        Label59.Size = New Size(64, 17)
+        Label59.TabIndex = 36
+        Label59.Text = "Loading..."
+        ' 
+        ' Label60
+        ' 
+        Label60.AutoSize = True
+        Label60.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label60.Location = New Point(212, 365)
+        Label60.Name = "Label60"
+        Label60.Size = New Size(95, 25)
+        Label60.TabIndex = 35
+        Label60.Text = "Loading..."
+        ' 
+        ' articleimg3
+        ' 
+        articleimg3.Location = New Point(60, 359)
+        articleimg3.Name = "articleimg3"
+        articleimg3.Size = New Size(133, 98)
+        articleimg3.SizeMode = PictureBoxSizeMode.StretchImage
+        articleimg3.TabIndex = 34
+        articleimg3.TabStop = False
+        ' 
+        ' Label53
+        ' 
+        Label53.AutoSize = True
+        Label53.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label53.Location = New Point(218, 316)
+        Label53.Name = "Label53"
+        Label53.Size = New Size(111, 17)
+        Label53.TabIndex = 33
+        Label53.Text = "Source: Loading..."
+        ' 
+        ' Label54
+        ' 
+        Label54.AutoSize = True
+        Label54.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label54.Location = New Point(666, 235)
+        Label54.Name = "Label54"
+        Label54.Size = New Size(106, 17)
+        Label54.TabIndex = 32
+        Label54.Text = "Released: {DATE}"
+        ' 
+        ' Label55
+        ' 
+        Label55.AutoSize = True
+        Label55.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label55.Location = New Point(226, 282)
+        Label55.Name = "Label55"
+        Label55.Size = New Size(64, 17)
+        Label55.TabIndex = 31
+        Label55.Text = "Loading..."
+        ' 
+        ' Label56
+        ' 
+        Label56.AutoSize = True
+        Label56.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label56.Location = New Point(212, 241)
+        Label56.Name = "Label56"
+        Label56.Size = New Size(95, 25)
+        Label56.TabIndex = 30
+        Label56.Text = "Loading..."
+        ' 
+        ' PictureBox13
+        ' 
+        PictureBox13.Location = New Point(60, 235)
+        PictureBox13.Name = "PictureBox13"
+        PictureBox13.Size = New Size(133, 98)
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.TabIndex = 29
+        PictureBox13.TabStop = False
+        ' 
+        ' Button7
+        ' 
+        Button7.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button7.FlatAppearance.BorderSize = 0
+        Button7.FlatStyle = FlatStyle.Flat
+        Button7.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button7.Location = New Point(711, 18)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(83, 30)
+        Button7.TabIndex = 28
+        Button7.Text = "Refresh"
+        Button7.UseVisualStyleBackColor = False
+        ' 
+        ' Label52
+        ' 
+        Label52.AutoSize = True
+        Label52.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label52.Location = New Point(218, 191)
+        Label52.Name = "Label52"
+        Label52.Size = New Size(111, 17)
+        Label52.TabIndex = 27
+        Label52.Text = "Source: Loading..."
+        ' 
+        ' Label51
+        ' 
+        Label51.AutoSize = True
+        Label51.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label51.Location = New Point(666, 110)
+        Label51.Name = "Label51"
+        Label51.Size = New Size(106, 17)
+        Label51.TabIndex = 26
+        Label51.Text = "Released: {DATE}"
+        ' 
+        ' Label50
+        ' 
+        Label50.AutoSize = True
+        Label50.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label50.Location = New Point(226, 157)
+        Label50.Name = "Label50"
+        Label50.Size = New Size(64, 17)
+        Label50.TabIndex = 25
+        Label50.Text = "Loading..."
+        ' 
+        ' Label49
+        ' 
+        Label49.AutoSize = True
+        Label49.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label49.Location = New Point(212, 116)
+        Label49.Name = "Label49"
+        Label49.Size = New Size(95, 25)
+        Label49.TabIndex = 24
+        Label49.Text = "Loading..."
+        ' 
+        ' PictureBox12
+        ' 
+        PictureBox12.Location = New Point(60, 110)
+        PictureBox12.Name = "PictureBox12"
+        PictureBox12.Size = New Size(133, 98)
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.TabIndex = 23
+        PictureBox12.TabStop = False
+        ' 
+        ' Label47
+        ' 
+        Label47.AutoSize = True
+        Label47.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label47.Location = New Point(393, 69)
+        Label47.Name = "Label47"
+        Label47.Size = New Size(75, 21)
+        Label47.TabIndex = 22
+        Label47.Text = "Trending"
+        ' 
+        ' Label48
+        ' 
+        Label48.AutoSize = True
+        Label48.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label48.Location = New Point(351, 27)
+        Label48.Name = "Label48"
+        Label48.Size = New Size(163, 37)
+        Label48.TabIndex = 21
+        Label48.Text = "Feed (Beta)"
+        ' 
+        ' Label46
+        ' 
+        Label46.AutoSize = True
+        Label46.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label46.Location = New Point(180, 608)
+        Label46.Name = "Label46"
+        Label46.Size = New Size(522, 21)
+        Label46.TabIndex = 38
+        Label46.Text = "z1g Project does not sell your data and all data is securly encrypted"
+        ' 
+        ' Label45
+        ' 
+        Label45.AutoSize = True
+        Label45.Location = New Point(663, 295)
+        Label45.Name = "Label45"
+        Label45.Size = New Size(83, 15)
+        Label45.TabIndex = 37
+        Label45.Text = "%getlocaltime"
+        ' 
+        ' Label44
+        ' 
+        Label44.AutoSize = True
+        Label44.Location = New Point(351, 295)
+        Label44.Name = "Label44"
+        Label44.Size = New Size(27, 15)
+        Label44.TabIndex = 36
+        Label44.Text = "%ip"
+        ' 
+        ' Label43
+        ' 
+        Label43.AutoSize = True
+        Label43.Location = New Point(85, 295)
+        Label43.Name = "Label43"
+        Label43.Size = New Size(60, 15)
+        Label43.TabIndex = 35
+        Label43.Text = "%pcname"
+        ' 
+        ' Label42
+        ' 
+        Label42.AutoSize = True
+        Label42.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label42.Location = New Point(663, 257)
+        Label42.Name = "Label42"
+        Label42.Size = New Size(113, 20)
+        Label42.TabIndex = 34
+        Label42.Text = "Last Login Time"
+        ' 
+        ' Label41
+        ' 
+        Label41.AutoSize = True
+        Label41.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label41.Location = New Point(351, 257)
+        Label41.Name = "Label41"
+        Label41.Size = New Size(141, 20)
+        Label41.TabIndex = 33
+        Label41.Text = "Location/IP Address"
+        ' 
+        ' Label40
+        ' 
+        Label40.AutoSize = True
+        Label40.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label40.Location = New Point(72, 257)
+        Label40.Name = "Label40"
+        Label40.Size = New Size(70, 20)
+        Label40.TabIndex = 32
+        Label40.Text = "PC Name"
+        ' 
+        ' Button6
+        ' 
+        Button6.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button6.FlatAppearance.BorderSize = 0
+        Button6.FlatStyle = FlatStyle.Flat
+        Button6.Location = New Point(704, 211)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(90, 32)
+        Button6.TabIndex = 31
+        Button6.Text = "Refresh"
+        Button6.UseVisualStyleBackColor = False
+        ' 
+        ' Label39
+        ' 
+        Label39.AutoSize = True
+        Label39.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label39.Location = New Point(52, 211)
+        Label39.Name = "Label39"
+        Label39.Size = New Size(150, 21)
+        Label39.TabIndex = 30
+        Label39.Text = "Logged in Sessions"
+        ' 
+        ' CheckBox2
+        ' 
+        CheckBox2.AutoSize = True
+        CheckBox2.FlatStyle = FlatStyle.Flat
+        CheckBox2.Location = New Point(649, 97)
+        CheckBox2.Name = "CheckBox2"
+        CheckBox2.Size = New Size(65, 19)
+        CheckBox2.TabIndex = 29
+        CheckBox2.Text = "Enabled"
+        CheckBox2.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBox1
+        ' 
+        CheckBox1.AutoSize = True
+        CheckBox1.Checked = True
+        CheckBox1.CheckState = CheckState.Checked
+        CheckBox1.FlatStyle = FlatStyle.Flat
+        CheckBox1.Location = New Point(507, 97)
+        CheckBox1.Name = "CheckBox1"
+        CheckBox1.Size = New Size(117, 19)
+        CheckBox1.TabIndex = 28
+        CheckBox1.Text = "Disabled [Defualt]"
+        CheckBox1.UseVisualStyleBackColor = True
+        ' 
+        ' Label38
+        ' 
+        Label38.AutoSize = True
+        Label38.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label38.Location = New Point(53, 148)
+        Label38.Name = "Label38"
+        Label38.Size = New Size(151, 21)
+        Label38.TabIndex = 27
+        Label38.Text = "Change Credentials"
+        ' 
+        ' Label37
+        ' 
+        Label37.AutoSize = True
+        Label37.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label37.Location = New Point(52, 95)
+        Label37.Name = "Label37"
+        Label37.Size = New Size(37, 21)
+        Label37.TabIndex = 26
+        Label37.Text = "2FA"
+        ' 
+        ' Label33
+        ' 
+        Label33.AutoSize = True
+        Label33.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label33.Location = New Point(316, 165)
+        Label33.Name = "Label33"
+        Label33.Size = New Size(60, 15)
+        Label33.TabIndex = 25
+        Label33.Text = "Password:"
+        ' 
+        ' TextBox4
+        ' 
+        TextBox4.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        TextBox4.BorderStyle = BorderStyle.FixedSingle
+        TextBox4.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox4.ForeColor = Color.White
+        TextBox4.Location = New Point(382, 162)
+        TextBox4.Name = "TextBox4"
+        TextBox4.PasswordChar = "*"c
+        TextBox4.Size = New Size(286, 22)
+        TextBox4.TabIndex = 24
+        ' 
+        ' Button5
+        ' 
+        Button5.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button5.FlatAppearance.BorderSize = 0
+        Button5.FlatStyle = FlatStyle.Flat
+        Button5.Location = New Point(679, 138)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(97, 42)
+        Button5.TabIndex = 23
+        Button5.Text = "Update"
+        Button5.UseVisualStyleBackColor = False
+        ' 
+        ' Label34
+        ' 
+        Label34.AutoSize = True
+        Label34.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Label34.Location = New Point(313, 133)
+        Label34.Name = "Label34"
+        Label34.Size = New Size(63, 15)
+        Label34.TabIndex = 22
+        Label34.Text = "Username:"
+        ' 
+        ' TextBox5
+        ' 
+        TextBox5.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        TextBox5.BorderStyle = BorderStyle.FixedSingle
+        TextBox5.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox5.ForeColor = Color.White
+        TextBox5.Location = New Point(382, 132)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(286, 22)
+        TextBox5.TabIndex = 21
+        ' 
+        ' Label35
+        ' 
+        Label35.AutoSize = True
+        Label35.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label35.Location = New Point(399, 56)
+        Label35.Name = "Label35"
+        Label35.Size = New Size(66, 21)
+        Label35.TabIndex = 20
+        Label35.Text = "General"
+        ' 
+        ' Label36
+        ' 
+        Label36.AutoSize = True
+        Label36.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label36.Location = New Point(319, 14)
+        Label36.Name = "Label36"
+        Label36.Size = New Size(244, 37)
+        Label36.TabIndex = 19
+        Label36.Text = "Account Manager"
+        ' 
+        ' Label32
+        ' 
+        Label32.AutoSize = True
+        Label32.Font = New Font("Segoe UI Emoji", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label32.ForeColor = Color.Yellow
+        Label32.Location = New Point(342, 252)
+        Label32.Name = "Label32"
+        Label32.Size = New Size(221, 17)
+        Label32.TabIndex = 21
+        Label32.Text = "⚠️ Incorrect Username or Password"
+        ' 
+        ' Label31
+        ' 
+        Label31.AutoSize = True
+        Label31.Location = New Point(230, 212)
+        Label31.Name = "Label31"
+        Label31.Size = New Size(442, 15)
+        Label31.TabIndex = 20
+        Label31.Text = "*Note some functionality might not work since the account manager is still in beta"
+        ' 
+        ' Button4
+        ' 
+        Button4.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button4.FlatAppearance.BorderSize = 0
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.Location = New Point(594, 160)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(97, 38)
+        Button4.TabIndex = 19
+        Button4.Text = "Reset Password"
+        Button4.UseVisualStyleBackColor = False
+        ' 
+        ' Label29
+        ' 
+        Label29.AutoSize = True
+        Label29.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label29.Location = New Point(199, 162)
+        Label29.Name = "Label29"
+        Label29.Size = New Size(96, 25)
+        Label29.TabIndex = 18
+        Label29.Text = "Password:"
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        TextBox2.BorderStyle = BorderStyle.FixedSingle
+        TextBox2.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox2.ForeColor = Color.White
+        TextBox2.Location = New Point(301, 160)
+        TextBox2.Name = "TextBox2"
+        TextBox2.PasswordChar = "*"c
+        TextBox2.Size = New Size(286, 33)
+        TextBox2.TabIndex = 17
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Location = New Point(594, 116)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(97, 38)
+        Button1.TabIndex = 16
+        Button1.Text = "Sign in"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Label30
+        ' 
+        Label30.AutoSize = True
+        Label30.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label30.Location = New Point(192, 123)
+        Label30.Name = "Label30"
+        Label30.Size = New Size(103, 25)
+        Label30.TabIndex = 15
+        Label30.Text = "Username:"
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        TextBox3.BorderStyle = BorderStyle.FixedSingle
+        TextBox3.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox3.ForeColor = Color.White
+        TextBox3.Location = New Point(301, 121)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(286, 33)
+        TextBox3.TabIndex = 14
+        ' 
+        ' Label27
+        ' 
+        Label27.AutoSize = True
+        Label27.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label27.Location = New Point(319, 64)
+        Label27.Name = "Label27"
+        Label27.Size = New Size(240, 21)
+        Label27.TabIndex = 13
+        Label27.Text = "Sign in to manage your account"
+        ' 
+        ' Label28
+        ' 
+        Label28.AutoSize = True
+        Label28.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label28.Location = New Point(319, 27)
+        Label28.Name = "Label28"
+        Label28.Size = New Size(244, 37)
+        Label28.TabIndex = 12
+        Label28.Text = "Account Manager"
+        ' 
+        ' Label65
+        ' 
+        Label65.AutoSize = True
+        Label65.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label65.Location = New Point(641, 455)
+        Label65.Name = "Label65"
+        Label65.Size = New Size(113, 20)
+        Label65.TabIndex = 28
+        Label65.Text = "Coming Soon..."
+        ' 
+        ' PictureBox16
+        ' 
+        PictureBox16.Image = My.Resources.Resources.z1g
+        PictureBox16.Location = New Point(622, 313)
+        PictureBox16.Name = "PictureBox16"
+        PictureBox16.Size = New Size(150, 130)
+        PictureBox16.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox16.TabIndex = 27
+        PictureBox16.TabStop = False
+        ' 
+        ' Label26
+        ' 
+        Label26.AutoSize = True
+        Label26.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label26.Location = New Point(298, 455)
+        Label26.Name = "Label26"
+        Label26.Size = New Size(73, 20)
+        Label26.TabIndex = 25
+        Label26.Text = "Blurred X"
+        ' 
+        ' PictureBox11
+        ' 
+        PictureBox11.Image = My.Resources.Resources.bx
+        PictureBox11.Location = New Point(257, 313)
+        PictureBox11.Name = "PictureBox11"
+        PictureBox11.Size = New Size(150, 130)
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.TabIndex = 24
+        PictureBox11.TabStop = False
+        ' 
+        ' Label25
+        ' 
+        Label25.AutoSize = True
+        Label25.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label25.Location = New Point(457, 455)
+        Label25.Name = "Label25"
+        Label25.Size = New Size(108, 20)
+        Label25.TabIndex = 23
+        Label25.Text = "Blurred's Vault"
+        ' 
+        ' PictureBox10
+        ' 
+        PictureBox10.Image = My.Resources.Resources._128
+        PictureBox10.Location = New Point(438, 313)
+        PictureBox10.Name = "PictureBox10"
+        PictureBox10.Size = New Size(150, 130)
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.TabIndex = 22
+        PictureBox10.TabStop = False
+        ' 
+        ' Label24
+        ' 
+        Label24.AutoSize = True
+        Label24.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label24.Location = New Point(111, 455)
+        Label24.Name = "Label24"
+        Label24.Size = New Size(74, 20)
+        Label24.TabIndex = 21
+        Label24.Text = "BruhProx"
+        ' 
+        ' PictureBox9
+        ' 
+        PictureBox9.Image = My.Resources.Resources.uv
+        PictureBox9.Location = New Point(70, 313)
+        PictureBox9.Name = "PictureBox9"
+        PictureBox9.Size = New Size(150, 130)
+        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox9.TabIndex = 20
+        PictureBox9.TabStop = False
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label18.Location = New Point(663, 270)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(66, 20)
+        Label18.TabIndex = 19
+        Label18.Text = "z1g VPN"
+        ' 
+        ' Label19
+        ' 
+        Label19.AutoSize = True
+        Label19.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label19.Location = New Point(470, 270)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(93, 20)
+        Label19.TabIndex = 18
+        Label19.Text = "z1g X Center"
+        ' 
+        ' Label20
+        ' 
+        Label20.AutoSize = True
+        Label20.ContextMenuStrip = ContextMenuStrip2
+        Label20.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label20.Location = New Point(301, 270)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(63, 20)
+        Label20.TabIndex = 17
+        Label20.Text = "Velocity"
+        ' 
+        ' ContextMenuStrip2
+        ' 
+        ContextMenuStrip2.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        ContextMenuStrip2.Items.AddRange(New ToolStripItem() {ToolStripMenuItem1, ToolStripMenuItem2, ToolStripMenuItem3, ToolStripMenuItem4})
+        ContextMenuStrip2.Name = "ContextMenuStrip1"
+        ContextMenuStrip2.RenderMode = ToolStripRenderMode.System
+        ContextMenuStrip2.Size = New Size(121, 92)
+        ' 
+        ' ToolStripMenuItem1
+        ' 
+        ToolStripMenuItem1.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        ToolStripMenuItem1.ForeColor = Color.White
+        ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        ToolStripMenuItem1.Size = New Size(120, 22)
+        ToolStripMenuItem1.Text = "Open"
+        ' 
+        ' ToolStripMenuItem2
+        ' 
+        ToolStripMenuItem2.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        ToolStripMenuItem2.ForeColor = Color.White
+        ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        ToolStripMenuItem2.Size = New Size(120, 22)
+        ToolStripMenuItem2.Text = "Uninstall"
+        ' 
+        ' ToolStripMenuItem3
+        ' 
+        ToolStripMenuItem3.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        ToolStripMenuItem3.ForeColor = Color.White
+        ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        ToolStripMenuItem3.Size = New Size(120, 22)
+        ToolStripMenuItem3.Text = "Settings"
+        ' 
+        ' ToolStripMenuItem4
+        ' 
+        ToolStripMenuItem4.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        ToolStripMenuItem4.ForeColor = Color.White
+        ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        ToolStripMenuItem4.Size = New Size(120, 22)
+        ToolStripMenuItem4.Text = "Reset"
+        ' 
+        ' Label21
+        ' 
+        Label21.AutoSize = True
+        Label21.ContextMenuStrip = ContextMenuStrip1
+        Label21.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label21.Location = New Point(115, 270)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(65, 20)
+        Label21.TabIndex = 16
+        Label21.Text = "Terbium"
+        ' 
+        ' ContextMenuStrip1
+        ' 
+        ContextMenuStrip1.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        ContextMenuStrip1.Items.AddRange(New ToolStripItem() {OpenToolStripMenuItem, UninstallToolStripMenuItem, SettingsToolStripMenuItem, ResetToolStripMenuItem})
+        ContextMenuStrip1.Name = "ContextMenuStrip1"
+        ContextMenuStrip1.RenderMode = ToolStripRenderMode.System
+        ContextMenuStrip1.Size = New Size(121, 92)
+        ' 
+        ' OpenToolStripMenuItem
+        ' 
+        OpenToolStripMenuItem.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        OpenToolStripMenuItem.ForeColor = Color.White
+        OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        OpenToolStripMenuItem.Size = New Size(120, 22)
+        OpenToolStripMenuItem.Text = "Open"
+        ' 
+        ' UninstallToolStripMenuItem
+        ' 
+        UninstallToolStripMenuItem.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        UninstallToolStripMenuItem.ForeColor = Color.White
+        UninstallToolStripMenuItem.Name = "UninstallToolStripMenuItem"
+        UninstallToolStripMenuItem.Size = New Size(120, 22)
+        UninstallToolStripMenuItem.Text = "Uninstall"
+        ' 
+        ' SettingsToolStripMenuItem
+        ' 
+        SettingsToolStripMenuItem.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        SettingsToolStripMenuItem.ForeColor = Color.White
+        SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        SettingsToolStripMenuItem.Size = New Size(120, 22)
+        SettingsToolStripMenuItem.Text = "Settings"
+        ' 
+        ' ResetToolStripMenuItem
+        ' 
+        ResetToolStripMenuItem.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        ResetToolStripMenuItem.ForeColor = Color.White
+        ResetToolStripMenuItem.Name = "ResetToolStripMenuItem"
+        ResetToolStripMenuItem.Size = New Size(120, 22)
+        ResetToolStripMenuItem.Text = "Reset"
+        ' 
+        ' PictureBox5
+        ' 
+        PictureBox5.Image = My.Resources.Resources.z1g
+        PictureBox5.Location = New Point(622, 128)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(150, 130)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox5.TabIndex = 15
+        PictureBox5.TabStop = False
+        ' 
+        ' PictureBox6
+        ' 
+        PictureBox6.Image = My.Resources.Resources.z1g
+        PictureBox6.Location = New Point(438, 128)
+        PictureBox6.Name = "PictureBox6"
+        PictureBox6.Size = New Size(150, 130)
+        PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox6.TabIndex = 14
+        PictureBox6.TabStop = False
+        ' 
+        ' PictureBox7
+        ' 
+        PictureBox7.ContextMenuStrip = ContextMenuStrip2
+        PictureBox7.Image = My.Resources.Resources.velocity
+        PictureBox7.Location = New Point(257, 128)
+        PictureBox7.Name = "PictureBox7"
+        PictureBox7.Size = New Size(150, 130)
+        PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox7.TabIndex = 13
+        PictureBox7.TabStop = False
+        ' 
+        ' PictureBox8
+        ' 
+        PictureBox8.ContextMenuStrip = ContextMenuStrip1
+        PictureBox8.Image = My.Resources.Resources.terbium
+        PictureBox8.Location = New Point(70, 128)
+        PictureBox8.Name = "PictureBox8"
+        PictureBox8.Size = New Size(150, 130)
+        PictureBox8.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox8.TabIndex = 12
+        PictureBox8.TabStop = False
+        ' 
+        ' Label22
+        ' 
+        Label22.AutoSize = True
+        Label22.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label22.Location = New Point(367, 80)
+        Label22.Name = "Label22"
+        Label22.Size = New Size(110, 21)
+        Label22.TabIndex = 11
+        Label22.Text = "Avalible Apps"
+        ' 
+        ' Label23
+        ' 
+        Label23.AutoSize = True
+        Label23.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label23.Location = New Point(329, 40)
+        Label23.Name = "Label23"
+        Label23.Size = New Size(192, 37)
+        Label23.TabIndex = 10
+        Label23.Text = "App Manager"
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        TextBox1.ForeColor = Color.White
+        TextBox1.Location = New Point(50, 370)
+        TextBox1.Multiline = True
+        TextBox1.Name = "TextBox1"
+        TextBox1.ReadOnly = True
+        TextBox1.ScrollBars = ScrollBars.Vertical
+        TextBox1.Size = New Size(734, 259)
+        TextBox1.TabIndex = 12
+        TextBox1.Text = resources.GetString("TextBox1.Text")
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label16.Location = New Point(328, 337)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(163, 21)
+        Label16.TabIndex = 11
+        Label16.Text = "View the Changelogs"
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label17.Location = New Point(292, 301)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(236, 30)
+        Label17.TabIndex = 10
+        Label17.Text = "Whats new in z1g Hub"
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label15.Location = New Point(638, 261)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(120, 20)
+        Label15.TabIndex = 9
+        Label15.Text = "z1g Hub Tutorial"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label14.Location = New Point(442, 261)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(154, 20)
+        Label14.TabIndex = 8
+        Label14.Text = "Try out Beta Features"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label13.Location = New Point(249, 261)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(183, 20)
+        Label13.TabIndex = 7
+        Label13.Text = "Check the z1g Feed [Beta]"
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label12.Location = New Point(86, 261)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(125, 20)
+        Label12.TabIndex = 6
+        Label12.Text = "Install Basic Apps"
+        ' 
+        ' PictureBox4
+        ' 
+        PictureBox4.Image = My.Resources.Resources.z1g
+        PictureBox4.Location = New Point(626, 119)
+        PictureBox4.Name = "PictureBox4"
+        PictureBox4.Size = New Size(150, 130)
+        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox4.TabIndex = 5
+        PictureBox4.TabStop = False
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.Image = My.Resources.Resources.beta_features
+        PictureBox3.Location = New Point(442, 119)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(150, 130)
+        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox3.TabIndex = 4
+        PictureBox3.TabStop = False
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = My.Resources.Resources.feed
+        PictureBox2.Location = New Point(261, 119)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(150, 130)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 3
+        PictureBox2.TabStop = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.downloadicon
+        PictureBox1.Location = New Point(74, 119)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(150, 130)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 2
+        PictureBox1.TabStop = False
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label11.Location = New Point(371, 71)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(94, 21)
+        Label11.TabIndex = 1
+        Label11.Text = "Get Started"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label10.Location = New Point(249, 14)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(343, 37)
+        Label10.TabIndex = 0
+        Label10.Text = "Welcome to the z1g Hub!"
+        ' 
+        ' Label82
+        ' 
+        Label82.AutoSize = True
+        Label82.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label82.Location = New Point(40, 3)
+        Label82.Name = "Label82"
+        Label82.Size = New Size(85, 17)
+        Label82.TabIndex = 0
+        Label82.Text = "z1g Accounts"
+        ' 
+        ' PictureBox20
+        ' 
+        PictureBox20.Image = My.Resources.Resources.z1g
+        PictureBox20.Location = New Point(3, 1)
+        PictureBox20.Name = "PictureBox20"
+        PictureBox20.Size = New Size(31, 23)
+        PictureBox20.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox20.TabIndex = 13
+        PictureBox20.TabStop = False
+        ' 
+        ' Label83
+        ' 
+        Label83.AutoSize = True
+        Label83.Location = New Point(191, 5)
+        Label83.Name = "Label83"
+        Label83.Size = New Size(51, 15)
+        Label83.TabIndex = 14
+        Label83.Text = "Sign out"
+        ' 
+        ' PictureBox21
+        ' 
+        PictureBox21.Image = My.Resources.Resources.usericn_removebg_preview
+        PictureBox21.Location = New Point(14, 32)
+        PictureBox21.Name = "PictureBox21"
+        PictureBox21.Size = New Size(57, 51)
+        PictureBox21.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox21.TabIndex = 15
+        PictureBox21.TabStop = False
+        ' 
+        ' Label84
+        ' 
+        Label84.AutoSize = True
+        Label84.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label84.Location = New Point(84, 36)
+        Label84.Name = "Label84"
+        Label84.Size = New Size(113, 21)
+        Label84.TabIndex = 16
+        Label84.Text = "%username%"
+        ' 
+        ' Label85
+        ' 
+        Label85.AutoSize = True
+        Label85.Location = New Point(95, 62)
+        Label85.Name = "Label85"
+        Label85.Size = New Size(106, 15)
+        Label85.TabIndex = 17
+        Label85.Text = "No Email Attached"
+        ' 
+        ' Label86
+        ' 
+        Label86.AutoSize = True
+        Label86.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label86.Location = New Point(70, 113)
+        Label86.Name = "Label86"
+        Label86.Size = New Size(116, 20)
+        Label86.TabIndex = 18
+        Label86.Text = "Linked Accounts"
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.ActiveLinkColor = Color.White
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        LinkLabel1.LinkColor = Color.White
+        LinkLabel1.Location = New Point(55, 86)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(154, 17)
+        LinkLabel1.TabIndex = 19
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Use another z1g Account"
+        LinkLabel1.VisitedLinkColor = Color.White
+        ' 
+        ' Form3
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
+        ClientSize = New Size(1073, 688)
+        Controls.Add(Panel3)
+        Controls.Add(Panel2)
+        Controls.Add(Panel1)
+        ForeColor = Color.White
+        FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        Name = "Form3"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "z1g Project Hub"
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
+        CType(PictureBox19, ComponentModel.ISupportInitialize).EndInit()
+        profile_panel.ResumeLayout(False)
+        profile_panel.PerformLayout()
+        Panel3.ResumeLayout(False)
+        Panel3.PerformLayout()
+        Panel4.ResumeLayout(False)
+        Panel4.PerformLayout()
+        Panel5.ResumeLayout(False)
+        Panel5.PerformLayout()
+        Panel6.ResumeLayout(False)
+        Panel6.PerformLayout()
+        Panel7.ResumeLayout(False)
+        Panel7.PerformLayout()
+        Panel8.ResumeLayout(False)
+        Panel8.PerformLayout()
+        CType(PictureBox18, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox17, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox15, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox14, ComponentModel.ISupportInitialize).EndInit()
+        Panel9.ResumeLayout(False)
+        CType(articleimg4, ComponentModel.ISupportInitialize).EndInit()
+        CType(articleimg3, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox13, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox12, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox16, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
+        ContextMenuStrip2.ResumeLayout(False)
+        ContextMenuStrip1.ResumeLayout(False)
+        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox20, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox21, ComponentModel.ISupportInitialize).EndInit()
+        ResumeLayout(False)
     End Sub
 
     Friend WithEvents Panel1 As Panel
@@ -1889,4 +2030,15 @@ Partial Class Form3
     Friend WithEvents Button9 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Panel11 As Panel
+    Friend WithEvents PictureBox19 As PictureBox
+    Friend WithEvents Button10 As Button
+    Friend WithEvents profile_panel As Panel
+    Friend WithEvents Label86 As Label
+    Friend WithEvents Label85 As Label
+    Friend WithEvents Label84 As Label
+    Friend WithEvents PictureBox21 As PictureBox
+    Friend WithEvents Label83 As Label
+    Friend WithEvents PictureBox20 As PictureBox
+    Friend WithEvents Label82 As Label
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class
