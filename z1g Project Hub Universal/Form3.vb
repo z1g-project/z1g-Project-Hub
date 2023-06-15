@@ -3023,4 +3023,12 @@ Public Class Form3
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         account_switcher.show
     End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        If WindowState = FormWindowState.Maximized Then
+            WindowState = FormWindowState.Normal
+        Else
+            WindowState = FormWindowState.Maximized
+        End If
+    End Sub
 End Class
