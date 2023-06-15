@@ -22,11 +22,11 @@ jobs:
     - name: Build z1g Project Hub Universal
       run: dotnet build "z1g Project Hub Universal\z1g Project Hub Universal.vbproj" --configuration Release
     - name: Build z1g Setup
-      run: dotnet build update/update.vbproj --no-restore
+      run: dotnet build "update/update.vbproj" --no-restore
     - name: Build Terbium
-      run: dotnet build Terbium/Terbium.csproj --no-restore
+      run: dotnet build "Terbium/Terbium.csproj" --no-restore
     - name: Build Velocity
-      run: dotnet build Velocity/velocity.csproj --no-restore
+      run: dotnet build "Velocity/velocity.csproj" --no-restore
     - name: Build z1g Browser
       run: dotnet build "z1g Browser/z1g Browser.csproj" --no-restore
     # Add more build steps for other projects as needed
