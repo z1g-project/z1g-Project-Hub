@@ -4,6 +4,10 @@ Imports Newtonsoft.Json.Linq
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
 Imports System.IO.Compression
 Imports System.Runtime.InteropServices
+Imports RestSharp
+Imports System.Net
+Imports System.IO
+Imports System.Net.Http.Headers
 
 Public Class Form3
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -2953,5 +2957,70 @@ Public Class Form3
         Else
             profile_panel.Visible = True
         End If
+    End Sub
+
+    Private Sub PictureBox22_Click(sender As Object, e As EventArgs) Handles PictureBox22.Click
+        AuthenticateWithReplit()
+    End Sub
+
+    Private Sub Label88_Click(sender As Object, e As EventArgs) Handles Label88.Click
+        AuthenticateWithReplit()
+    End Sub
+
+    Private Sub Label87_Click(sender As Object, e As EventArgs) Handles Label87.Click
+        AuthenticateWithReplit()
+    End Sub
+
+    Private Async Sub AuthenticateWithReplit()
+        Using client As New HttpClient()
+            Dim response As HttpResponseMessage = Await client.PostAsync("https://replit.com/auth/z1g-hub", Nothing)
+
+            Dim responseContent As String = Await response.Content.ReadAsStringAsync()
+            MsgBox("Response Content: " & responseContent)
+
+            If response.IsSuccessStatusCode Then
+                ' Authentication successful, retrieve username and profile picture
+                Dim headers As HttpResponseHeaders = response.Headers
+                Dim username As String = headers.GetValues("username").FirstOrDefault()
+                Dim profilePictureUrl As String = headers.GetValues("profile-picture-url").FirstOrDefault()
+
+                ' Update the UI elements with the retrieved data
+                Label87.Text = username
+
+                Dim imageBytes As Byte() = Await client.GetByteArrayAsync(profilePictureUrl)
+                Using ms As New MemoryStream(imageBytes)
+                    PictureBox22.Image = Image.FromStream(ms)
+                End Using
+
+                ' Save the data in the application
+                ' You can use application settings or any other data storage mechanism of your choice
+
+                ' Example using application settings:
+                My.Settings.replusername = username
+                My.Settings.replpfp = profilePictureUrl
+                My.Settings.Save()
+                MsgBox("Authentication successful")
+            Else
+                ' Authentication failed or encountered an error
+                ' Handle the error condition accordingly
+                MsgBox("Authentication failed or encountered an error. Status code: " & response.StatusCode)
+            End If
+        End Using
+    End Sub
+
+    Private Sub PictureBox23_Click(sender As Object, e As EventArgs) Handles PictureBox23.Click
+
+    End Sub
+
+    Private Sub Label90_Click(sender As Object, e As EventArgs) Handles Label90.Click
+
+    End Sub
+
+    Private Sub Label89_Click(sender As Object, e As EventArgs) Handles Label89.Click
+
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        account_switcher.show
     End Sub
 End Class

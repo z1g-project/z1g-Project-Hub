@@ -26,7 +26,7 @@ jobs:
         run: echo "::set-output name=date::$(date +'%m-%d-%Y')"
 
       - name: Build z1g Project Hub Universal
-        run: dotnet build z1g Project Hub Universal\z1g Project Hub Universal.vbproj --configuration Release
+        run: dotnet build =z1g Project Hub Universal\z1g Project Hub Universal.vbproj --configuration Release
 
       - name: Publish z1g Project Hub Universal
         run: dotnet publish z1g Project Hub Universal\z1g Project Hub Universal.vbproj --configuration Release --output ./publish

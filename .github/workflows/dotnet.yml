@@ -1,6 +1,3 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
 name: .NET
 
 on:
@@ -11,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
@@ -23,7 +19,17 @@ jobs:
         msbuild-version: 17.0.x  # Specify the version of MSBuild here
     - name: Restore dependencies
       run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
+    - name: Build z1g Hub
+      run: dotnet build z1g Project Hub Universal/z1g Project Hub Universal.vbproj --no-restore
+    - name: Build z1g Setup
+      run: dotnet build update/update.vbproj --no-restore
+    - name: Build Terbium
+      run: dotnet build Terbium/Terbium.csproj --no-restore
+    - name: Build Velocity
+      run: dotnet build Velocity/velocity.csproj --no-restore
+    - name: Build z1g Browser
+      run: dotnet build z1g Browser/z1g Browser.csproj --no-restore
+    # Add more build steps for other projects as needed
     - name: Test
       run: dotnet test --no-build --verbosity normal
+

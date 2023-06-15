@@ -25,6 +25,21 @@ Partial Class Form3
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form3))
         Panel1 = New Panel()
+        profile_panel = New Panel()
+        Label89 = New Label()
+        Label90 = New Label()
+        PictureBox23 = New PictureBox()
+        Label87 = New Label()
+        Label88 = New Label()
+        PictureBox22 = New PictureBox()
+        LinkLabel1 = New LinkLabel()
+        Label86 = New Label()
+        Label85 = New Label()
+        Label84 = New Label()
+        PictureBox21 = New PictureBox()
+        Label83 = New Label()
+        PictureBox20 = New PictureBox()
+        Label82 = New Label()
         Label8 = New Label()
         Label7 = New Label()
         Label6 = New Label()
@@ -39,7 +54,6 @@ Partial Class Form3
         Button3 = New Button()
         Button2 = New Button()
         Label9 = New Label()
-        profile_panel = New Panel()
         Panel3 = New Panel()
         Panel4 = New Panel()
         Panel5 = New Panel()
@@ -165,18 +179,14 @@ Partial Class Form3
         PictureBox1 = New PictureBox()
         Label11 = New Label()
         Label10 = New Label()
-        Label82 = New Label()
-        PictureBox20 = New PictureBox()
-        Label83 = New Label()
-        PictureBox21 = New PictureBox()
-        Label84 = New Label()
-        Label85 = New Label()
-        Label86 = New Label()
-        LinkLabel1 = New LinkLabel()
         Panel1.SuspendLayout()
+        profile_panel.SuspendLayout()
+        CType(PictureBox23, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox22, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox21, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox20, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
         CType(PictureBox19, ComponentModel.ISupportInitialize).BeginInit()
-        profile_panel.SuspendLayout()
         Panel3.SuspendLayout()
         Panel4.SuspendLayout()
         Panel5.SuspendLayout()
@@ -206,12 +216,11 @@ Partial Class Form3
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox20, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox21, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
+        Panel1.Controls.Add(profile_panel)
         Panel1.Controls.Add(Label8)
         Panel1.Controls.Add(Label7)
         Panel1.Controls.Add(Label6)
@@ -225,6 +234,167 @@ Partial Class Form3
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(245, 688)
         Panel1.TabIndex = 0
+        ' 
+        ' profile_panel
+        ' 
+        profile_panel.Controls.Add(Label89)
+        profile_panel.Controls.Add(Label90)
+        profile_panel.Controls.Add(PictureBox23)
+        profile_panel.Controls.Add(Label87)
+        profile_panel.Controls.Add(Label88)
+        profile_panel.Controls.Add(PictureBox22)
+        profile_panel.Controls.Add(LinkLabel1)
+        profile_panel.Controls.Add(Label86)
+        profile_panel.Controls.Add(Label85)
+        profile_panel.Controls.Add(Label84)
+        profile_panel.Controls.Add(PictureBox21)
+        profile_panel.Controls.Add(Label83)
+        profile_panel.Controls.Add(PictureBox20)
+        profile_panel.Controls.Add(Label82)
+        profile_panel.Location = New Point(0, 103)
+        profile_panel.Name = "profile_panel"
+        profile_panel.Size = New Size(245, 255)
+        profile_panel.TabIndex = 48
+        ' 
+        ' Label89
+        ' 
+        Label89.AutoSize = True
+        Label89.Location = New Point(95, 222)
+        Label89.Name = "Label89"
+        Label89.Size = New Size(106, 15)
+        Label89.TabIndex = 25
+        Label89.Text = "No Email Attached"
+        ' 
+        ' Label90
+        ' 
+        Label90.AutoSize = True
+        Label90.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label90.Location = New Point(84, 196)
+        Label90.Name = "Label90"
+        Label90.Size = New Size(62, 21)
+        Label90.TabIndex = 24
+        Label90.Text = "Github"
+        ' 
+        ' PictureBox23
+        ' 
+        PictureBox23.Image = My.Resources.Resources.usericn_removebg_preview
+        PictureBox23.Location = New Point(14, 192)
+        PictureBox23.Name = "PictureBox23"
+        PictureBox23.Size = New Size(57, 51)
+        PictureBox23.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox23.TabIndex = 23
+        PictureBox23.TabStop = False
+        ' 
+        ' Label87
+        ' 
+        Label87.AutoSize = True
+        Label87.Location = New Point(95, 164)
+        Label87.Name = "Label87"
+        Label87.Size = New Size(106, 15)
+        Label87.TabIndex = 22
+        Label87.Text = "No Email Attached"
+        ' 
+        ' Label88
+        ' 
+        Label88.AutoSize = True
+        Label88.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label88.Location = New Point(84, 138)
+        Label88.Name = "Label88"
+        Label88.Size = New Size(55, 21)
+        Label88.TabIndex = 21
+        Label88.Text = "Replit"
+        ' 
+        ' PictureBox22
+        ' 
+        PictureBox22.Image = My.Resources.Resources.usericn_removebg_preview
+        PictureBox22.Location = New Point(14, 134)
+        PictureBox22.Name = "PictureBox22"
+        PictureBox22.Size = New Size(57, 51)
+        PictureBox22.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox22.TabIndex = 20
+        PictureBox22.TabStop = False
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.ActiveLinkColor = Color.White
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        LinkLabel1.LinkColor = Color.White
+        LinkLabel1.Location = New Point(55, 86)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(154, 17)
+        LinkLabel1.TabIndex = 19
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Use another z1g Account"
+        LinkLabel1.VisitedLinkColor = Color.White
+        ' 
+        ' Label86
+        ' 
+        Label86.AutoSize = True
+        Label86.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label86.Location = New Point(70, 113)
+        Label86.Name = "Label86"
+        Label86.Size = New Size(116, 20)
+        Label86.TabIndex = 18
+        Label86.Text = "Linked Accounts"
+        ' 
+        ' Label85
+        ' 
+        Label85.AutoSize = True
+        Label85.Location = New Point(95, 62)
+        Label85.Name = "Label85"
+        Label85.Size = New Size(106, 15)
+        Label85.TabIndex = 17
+        Label85.Text = "No Email Attached"
+        ' 
+        ' Label84
+        ' 
+        Label84.AutoSize = True
+        Label84.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label84.Location = New Point(84, 36)
+        Label84.Name = "Label84"
+        Label84.Size = New Size(113, 21)
+        Label84.TabIndex = 16
+        Label84.Text = "%username%"
+        ' 
+        ' PictureBox21
+        ' 
+        PictureBox21.Image = My.Resources.Resources.usericn_removebg_preview
+        PictureBox21.Location = New Point(14, 32)
+        PictureBox21.Name = "PictureBox21"
+        PictureBox21.Size = New Size(57, 51)
+        PictureBox21.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox21.TabIndex = 15
+        PictureBox21.TabStop = False
+        ' 
+        ' Label83
+        ' 
+        Label83.AutoSize = True
+        Label83.Location = New Point(191, 5)
+        Label83.Name = "Label83"
+        Label83.Size = New Size(51, 15)
+        Label83.TabIndex = 14
+        Label83.Text = "Sign out"
+        ' 
+        ' PictureBox20
+        ' 
+        PictureBox20.Image = My.Resources.Resources.z1g
+        PictureBox20.Location = New Point(3, 1)
+        PictureBox20.Name = "PictureBox20"
+        PictureBox20.Size = New Size(31, 23)
+        PictureBox20.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox20.TabIndex = 13
+        PictureBox20.TabStop = False
+        ' 
+        ' Label82
+        ' 
+        Label82.AutoSize = True
+        Label82.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label82.Location = New Point(40, 3)
+        Label82.Name = "Label82"
+        Label82.Size = New Size(85, 17)
+        Label82.TabIndex = 0
+        Label82.Text = "z1g Accounts"
         ' 
         ' Label8
         ' 
@@ -378,21 +548,6 @@ Partial Class Form3
         Label9.TabIndex = 0
         Label9.Text = "Home"
         ' 
-        ' profile_panel
-        ' 
-        profile_panel.Controls.Add(LinkLabel1)
-        profile_panel.Controls.Add(Label86)
-        profile_panel.Controls.Add(Label85)
-        profile_panel.Controls.Add(Label84)
-        profile_panel.Controls.Add(PictureBox21)
-        profile_panel.Controls.Add(Label83)
-        profile_panel.Controls.Add(PictureBox20)
-        profile_panel.Controls.Add(Label82)
-        profile_panel.Location = New Point(457, -6)
-        profile_panel.Name = "profile_panel"
-        profile_panel.Size = New Size(245, 204)
-        profile_panel.TabIndex = 48
-        ' 
         ' Panel3
         ' 
         Panel3.Controls.Add(Panel4)
@@ -492,7 +647,6 @@ Partial Class Form3
         ' 
         ' Panel7
         ' 
-        Panel7.Controls.Add(profile_panel)
         Panel7.Controls.Add(Panel8)
         Panel7.Controls.Add(Panel9)
         Panel7.Controls.Add(Label61)
@@ -1748,88 +1902,6 @@ Partial Class Form3
         Label10.TabIndex = 0
         Label10.Text = "Welcome to the z1g Hub!"
         ' 
-        ' Label82
-        ' 
-        Label82.AutoSize = True
-        Label82.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label82.Location = New Point(40, 3)
-        Label82.Name = "Label82"
-        Label82.Size = New Size(85, 17)
-        Label82.TabIndex = 0
-        Label82.Text = "z1g Accounts"
-        ' 
-        ' PictureBox20
-        ' 
-        PictureBox20.Image = My.Resources.Resources.z1g
-        PictureBox20.Location = New Point(3, 1)
-        PictureBox20.Name = "PictureBox20"
-        PictureBox20.Size = New Size(31, 23)
-        PictureBox20.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox20.TabIndex = 13
-        PictureBox20.TabStop = False
-        ' 
-        ' Label83
-        ' 
-        Label83.AutoSize = True
-        Label83.Location = New Point(191, 5)
-        Label83.Name = "Label83"
-        Label83.Size = New Size(51, 15)
-        Label83.TabIndex = 14
-        Label83.Text = "Sign out"
-        ' 
-        ' PictureBox21
-        ' 
-        PictureBox21.Image = My.Resources.Resources.usericn_removebg_preview
-        PictureBox21.Location = New Point(14, 32)
-        PictureBox21.Name = "PictureBox21"
-        PictureBox21.Size = New Size(57, 51)
-        PictureBox21.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox21.TabIndex = 15
-        PictureBox21.TabStop = False
-        ' 
-        ' Label84
-        ' 
-        Label84.AutoSize = True
-        Label84.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label84.Location = New Point(84, 36)
-        Label84.Name = "Label84"
-        Label84.Size = New Size(113, 21)
-        Label84.TabIndex = 16
-        Label84.Text = "%username%"
-        ' 
-        ' Label85
-        ' 
-        Label85.AutoSize = True
-        Label85.Location = New Point(95, 62)
-        Label85.Name = "Label85"
-        Label85.Size = New Size(106, 15)
-        Label85.TabIndex = 17
-        Label85.Text = "No Email Attached"
-        ' 
-        ' Label86
-        ' 
-        Label86.AutoSize = True
-        Label86.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label86.Location = New Point(70, 113)
-        Label86.Name = "Label86"
-        Label86.Size = New Size(116, 20)
-        Label86.TabIndex = 18
-        Label86.Text = "Linked Accounts"
-        ' 
-        ' LinkLabel1
-        ' 
-        LinkLabel1.ActiveLinkColor = Color.White
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(55, 86)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(154, 17)
-        LinkLabel1.TabIndex = 19
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Use another z1g Account"
-        LinkLabel1.VisitedLinkColor = Color.White
-        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -1847,11 +1919,15 @@ Partial Class Form3
         Text = "z1g Project Hub"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
+        profile_panel.ResumeLayout(False)
+        profile_panel.PerformLayout()
+        CType(PictureBox23, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox22, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox21, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox20, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         CType(PictureBox19, ComponentModel.ISupportInitialize).EndInit()
-        profile_panel.ResumeLayout(False)
-        profile_panel.PerformLayout()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
         Panel4.ResumeLayout(False)
@@ -1887,8 +1963,6 @@ Partial Class Form3
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox20, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox21, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -2041,4 +2115,10 @@ Partial Class Form3
     Friend WithEvents PictureBox20 As PictureBox
     Friend WithEvents Label82 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Label89 As Label
+    Friend WithEvents Label90 As Label
+    Friend WithEvents PictureBox23 As PictureBox
+    Friend WithEvents Label87 As Label
+    Friend WithEvents Label88 As Label
+    Friend WithEvents PictureBox22 As PictureBox
 End Class

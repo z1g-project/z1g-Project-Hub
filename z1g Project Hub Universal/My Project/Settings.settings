@@ -8,5 +8,11 @@
     <Setting Name="applocation" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\z1g-apps\</Value>
     </Setting>
+    <Setting Name="replusername" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="replpfp" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
