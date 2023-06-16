@@ -20,6 +20,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%m-%d-%Y')"
@@ -34,17 +35,20 @@ jobs:
         run: |
           7z a -tzip z1g-project-hub.zip ./publish/*
           mv z1g-project-hub.zip compiled-zips/
+
       - name: Create tag
         run: |
           echo "z1g-hub-nightly-${{ steps.date.outputs.date }}" > tag.txt
           git tag -a -F tag.txt "z1g-hub-nightly-${{ steps.date.outputs.date }}"
           git push --tags
+
       - name: Create ZIP file
         run: |
-        7z a -tzip compiled-zips/z1g-project-hub.zip "z1g Project Hub Universal/bin/Release/*"
-        7z a -tzip compiled-zips/z1g-project-hub.zip "Terbium/bin/Release/*"
-        7z a -tzip compiled-zips/z1g-project-hub.zip "Velocity/bin/Release/*"
-        7z a -tzip compiled-zips/z1g-project-hub.zip "z1g Browser/bin/Release/*"
+          7z a -tzip compiled-zips/z1g-project-hub.zip "z1g Project Hub Universal/bin/Release/*"
+          7z a -tzip compiled-zips/z1g-project-hub.zip "Terbium/bin/Release/*"
+          7z a -tzip compiled-zips/z1g-project-hub.zip "Velocity/bin/Release/*"
+          7z a -tzip compiled-zips/z1g-project-hub.zip "z1g Browser/bin/Release/*"
+
       - name: Upload compiled ZIP
         uses: actions/upload-artifact@v2
         with:
