@@ -11,6 +11,8 @@
     <Company>z1g Project</Company>
     <Version>1.2.5.0</Version>
     <ApplicationIcon>z1g.ico</ApplicationIcon>
+    <!-- Add the following line to use the .NET Framework version of MSBuild -->
+    <UseWPF>false</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>

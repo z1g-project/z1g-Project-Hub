@@ -33,7 +33,16 @@ Partial Class Settings
         Label4 = New Label()
         Label2 = New Label()
         Panel1 = New Panel()
+        CheckBox1 = New CheckBox()
+        Button6 = New Button()
+        Button8 = New Button()
+        Label26 = New Label()
+        button5 = New Button()
+        textBox2 = New TextBox()
         Label8 = New Label()
+        Label24 = New Label()
+        textBox1 = New TextBox()
+        Label25 = New Label()
         Label3 = New Label()
         Panel2 = New Panel()
         Panel3 = New Panel()
@@ -170,22 +179,130 @@ Partial Class Settings
         ' 
         ' Panel1
         ' 
+        Panel1.Controls.Add(CheckBox1)
+        Panel1.Controls.Add(Button6)
+        Panel1.Controls.Add(Button8)
+        Panel1.Controls.Add(Label26)
+        Panel1.Controls.Add(button5)
+        Panel1.Controls.Add(textBox2)
         Panel1.Controls.Add(Label8)
+        Panel1.Controls.Add(Label24)
+        Panel1.Controls.Add(textBox1)
+        Panel1.Controls.Add(Label25)
         Panel1.Controls.Add(Label3)
         Panel1.Location = New Point(176, 41)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(625, 504)
         Panel1.TabIndex = 19
         ' 
+        ' CheckBox1
+        ' 
+        CheckBox1.AutoSize = True
+        CheckBox1.Checked = True
+        CheckBox1.CheckState = CheckState.Checked
+        CheckBox1.FlatStyle = FlatStyle.Flat
+        CheckBox1.Location = New Point(87, 177)
+        CheckBox1.Name = "CheckBox1"
+        CheckBox1.Size = New Size(145, 19)
+        CheckBox1.TabIndex = 63
+        CheckBox1.Text = "Start Window Centered"
+        CheckBox1.UseVisualStyleBackColor = True
+        ' 
+        ' Button6
+        ' 
+        Button6.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        Button6.FlatAppearance.BorderSize = 0
+        Button6.FlatStyle = FlatStyle.Flat
+        Button6.Location = New Point(487, 133)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(97, 32)
+        Button6.TabIndex = 62
+        Button6.Text = "Export as .zip"
+        Button6.UseVisualStyleBackColor = False
+        ' 
+        ' Button8
+        ' 
+        Button8.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        Button8.FlatAppearance.BorderSize = 0
+        Button8.FlatStyle = FlatStyle.Flat
+        Button8.Location = New Point(384, 133)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(97, 32)
+        Button8.TabIndex = 61
+        Button8.Text = "Clear"
+        Button8.UseVisualStyleBackColor = False
+        ' 
+        ' Label26
+        ' 
+        Label26.AutoSize = True
+        Label26.Font = New Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point)
+        Label26.Location = New Point(404, 98)
+        Label26.Name = "Label26"
+        Label26.Size = New Size(167, 25)
+        Label26.TabIndex = 60
+        Label26.Text = "Application Cache"
+        ' 
+        ' button5
+        ' 
+        button5.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        button5.FlatAppearance.BorderSize = 0
+        button5.FlatStyle = FlatStyle.Flat
+        button5.Location = New Point(117, 202)
+        button5.Name = "button5"
+        button5.Size = New Size(97, 32)
+        button5.TabIndex = 59
+        button5.Text = "Apply"
+        button5.UseVisualStyleBackColor = False
+        ' 
+        ' textBox2
+        ' 
+        textBox2.BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
+        textBox2.ForeColor = Color.White
+        textBox2.Location = New Point(87, 148)
+        textBox2.Name = "textBox2"
+        textBox2.Size = New Size(163, 23)
+        textBox2.TabIndex = 58
+        textBox2.Text = "688"
+        ' 
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
-        Label8.Location = New Point(241, 222)
+        Label8.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label8.Location = New Point(27, 147)
         Label8.Name = "Label8"
-        Label8.Size = New Size(174, 32)
-        Label8.TabIndex = 22
-        Label8.Text = "Coming soon!"
+        Label8.Size = New Size(57, 20)
+        Label8.TabIndex = 57
+        Label8.Text = "Height:"
+        ' 
+        ' Label24
+        ' 
+        Label24.AutoSize = True
+        Label24.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label24.Location = New Point(32, 118)
+        Label24.Name = "Label24"
+        Label24.Size = New Size(52, 20)
+        Label24.TabIndex = 56
+        Label24.Text = "Width:"
+        ' 
+        ' textBox1
+        ' 
+        textBox1.BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
+        textBox1.ForeColor = Color.White
+        textBox1.Location = New Point(87, 119)
+        textBox1.Name = "textBox1"
+        textBox1.Size = New Size(163, 23)
+        textBox1.TabIndex = 55
+        textBox1.Text = "1073"
+        ' 
+        ' Label25
+        ' 
+        Label25.AutoSize = True
+        Label25.Font = New Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point)
+        Label25.Location = New Point(100, 78)
+        Label25.Name = "Label25"
+        Label25.Size = New Size(121, 25)
+        Label25.TabIndex = 54
+        Label25.Text = "Window Size"
         ' 
         ' Label3
         ' 
@@ -599,7 +716,6 @@ Partial Class Settings
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label9 As Label
     Friend WithEvents ComboBox1 As ComboBox
@@ -636,4 +752,14 @@ Partial Class Settings
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Timer2 As Timer
     Friend WithEvents ProgressBar3 As ProgressBar
+    Friend WithEvents button5 As Button
+    Private WithEvents textBox2 As TextBox
+    Private WithEvents Label8 As Label
+    Private WithEvents Label24 As Label
+    Private WithEvents textBox1 As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Label26 As Label
+    Friend WithEvents CheckBox1 As CheckBox
 End Class

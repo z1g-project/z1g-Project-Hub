@@ -21,8 +21,8 @@ jobs:
       run: dotnet restore
     - name: Build z1g Project Hub Universal
       run: dotnet build "z1g Project Hub Universal/z1g Project Hub Universal.vbproj" --configuration Release --no-restore
-    #- name: Build z1g Setup
-    #  run: dotnet build "update/update.vbproj" --configuration Release --no-restore
+    - name: Build z1g Setup
+      run: dotnet build "update/update.vbproj" --configuration Release --no-restore
     # Removed for Updates
     - name: Build Terbium
       run: dotnet build Terbium/Terbium.csproj --no-restore

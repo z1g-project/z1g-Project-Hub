@@ -678,6 +678,7 @@ Partial Class Form3
         Panel7.Controls.Add(PictureBox12)
         Panel7.Controls.Add(Label47)
         Panel7.Controls.Add(Label48)
+        Panel7.Dock = DockStyle.Fill
         Panel7.Location = New Point(0, 0)
         Panel7.Name = "Panel7"
         Panel7.Size = New Size(828, 641)
@@ -1186,7 +1187,7 @@ Partial Class Form3
         ' 
         ' Label47
         ' 
-        Label47.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        Label47.Anchor = AnchorStyles.Top
         Label47.AutoSize = True
         Label47.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label47.Location = New Point(393, 69)
@@ -1197,7 +1198,7 @@ Partial Class Form3
         ' 
         ' Label48
         ' 
-        Label48.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        Label48.Anchor = AnchorStyles.Top
         Label48.AutoSize = True
         Label48.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label48.Location = New Point(351, 27)
@@ -1208,6 +1209,7 @@ Partial Class Form3
         ' 
         ' Label46
         ' 
+        Label46.Anchor = AnchorStyles.Bottom
         Label46.AutoSize = True
         Label46.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label46.Location = New Point(180, 608)
@@ -1218,6 +1220,7 @@ Partial Class Form3
         ' 
         ' Label45
         ' 
+        Label45.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Label45.AutoSize = True
         Label45.Location = New Point(663, 295)
         Label45.Name = "Label45"
@@ -1227,6 +1230,7 @@ Partial Class Form3
         ' 
         ' Label44
         ' 
+        Label44.Anchor = AnchorStyles.Top
         Label44.AutoSize = True
         Label44.Location = New Point(351, 295)
         Label44.Name = "Label44"
@@ -1245,6 +1249,7 @@ Partial Class Form3
         ' 
         ' Label42
         ' 
+        Label42.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Label42.AutoSize = True
         Label42.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label42.Location = New Point(663, 257)
@@ -1255,6 +1260,7 @@ Partial Class Form3
         ' 
         ' Label41
         ' 
+        Label41.Anchor = AnchorStyles.Top
         Label41.AutoSize = True
         Label41.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label41.Location = New Point(351, 257)
@@ -1275,6 +1281,7 @@ Partial Class Form3
         ' 
         ' Button6
         ' 
+        Button6.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Button6.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
         Button6.FlatAppearance.BorderSize = 0
         Button6.FlatStyle = FlatStyle.Flat
@@ -1297,6 +1304,7 @@ Partial Class Form3
         ' 
         ' CheckBox2
         ' 
+        CheckBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         CheckBox2.AutoSize = True
         CheckBox2.FlatStyle = FlatStyle.Flat
         CheckBox2.Location = New Point(649, 97)
@@ -1308,6 +1316,7 @@ Partial Class Form3
         ' 
         ' CheckBox1
         ' 
+        CheckBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         CheckBox1.AutoSize = True
         CheckBox1.Checked = True
         CheckBox1.CheckState = CheckState.Checked
@@ -1341,6 +1350,7 @@ Partial Class Form3
         ' 
         ' Label33
         ' 
+        Label33.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Label33.AutoSize = True
         Label33.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label33.Location = New Point(316, 165)
@@ -1351,6 +1361,7 @@ Partial Class Form3
         ' 
         ' TextBox4
         ' 
+        TextBox4.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox4.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
         TextBox4.BorderStyle = BorderStyle.FixedSingle
         TextBox4.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
@@ -1363,6 +1374,7 @@ Partial Class Form3
         ' 
         ' Button5
         ' 
+        Button5.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Button5.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
         Button5.FlatAppearance.BorderSize = 0
         Button5.FlatStyle = FlatStyle.Flat
@@ -1375,6 +1387,7 @@ Partial Class Form3
         ' 
         ' Label34
         ' 
+        Label34.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Label34.AutoSize = True
         Label34.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label34.Location = New Point(313, 133)
@@ -1385,6 +1398,7 @@ Partial Class Form3
         ' 
         ' TextBox5
         ' 
+        TextBox5.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox5.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
         TextBox5.BorderStyle = BorderStyle.FixedSingle
         TextBox5.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
@@ -1396,6 +1410,7 @@ Partial Class Form3
         ' 
         ' Label35
         ' 
+        Label35.Anchor = AnchorStyles.Top
         Label35.AutoSize = True
         Label35.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label35.Location = New Point(399, 56)
@@ -1406,6 +1421,7 @@ Partial Class Form3
         ' 
         ' Label36
         ' 
+        Label36.Anchor = AnchorStyles.Top
         Label36.AutoSize = True
         Label36.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label36.Location = New Point(319, 14)
@@ -1416,6 +1432,7 @@ Partial Class Form3
         ' 
         ' Label32
         ' 
+        Label32.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         Label32.AutoSize = True
         Label32.Font = New Font("Segoe UI Emoji", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
         Label32.ForeColor = Color.Yellow
@@ -1427,6 +1444,7 @@ Partial Class Form3
         ' 
         ' Label31
         ' 
+        Label31.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
         Label31.AutoSize = True
         Label31.Location = New Point(230, 212)
         Label31.Name = "Label31"
@@ -1436,6 +1454,7 @@ Partial Class Form3
         ' 
         ' Button4
         ' 
+        Button4.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Button4.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
         Button4.FlatAppearance.BorderSize = 0
         Button4.FlatStyle = FlatStyle.Flat
@@ -1458,6 +1477,7 @@ Partial Class Form3
         ' 
         ' TextBox2
         ' 
+        TextBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox2.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
         TextBox2.BorderStyle = BorderStyle.FixedSingle
         TextBox2.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
@@ -1470,6 +1490,7 @@ Partial Class Form3
         ' 
         ' Button1
         ' 
+        Button1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Button1.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
@@ -1492,6 +1513,7 @@ Partial Class Form3
         ' 
         ' TextBox3
         ' 
+        TextBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox3.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
         TextBox3.BorderStyle = BorderStyle.FixedSingle
         TextBox3.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
@@ -1503,6 +1525,7 @@ Partial Class Form3
         ' 
         ' Label27
         ' 
+        Label27.Anchor = AnchorStyles.Top
         Label27.AutoSize = True
         Label27.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label27.Location = New Point(319, 64)
@@ -1513,6 +1536,7 @@ Partial Class Form3
         ' 
         ' Label28
         ' 
+        Label28.Anchor = AnchorStyles.Top
         Label28.AutoSize = True
         Label28.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label28.Location = New Point(319, 27)
@@ -1523,6 +1547,7 @@ Partial Class Form3
         ' 
         ' Label65
         ' 
+        Label65.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         Label65.AutoSize = True
         Label65.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label65.Location = New Point(641, 455)
@@ -1533,16 +1558,18 @@ Partial Class Form3
         ' 
         ' PictureBox16
         ' 
+        PictureBox16.Anchor = AnchorStyles.Top
         PictureBox16.Image = My.Resources.Resources.z1g
         PictureBox16.Location = New Point(622, 313)
         PictureBox16.Name = "PictureBox16"
-        PictureBox16.Size = New Size(150, 130)
+        PictureBox16.Size = New Size(150, 139)
         PictureBox16.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox16.TabIndex = 27
         PictureBox16.TabStop = False
         ' 
         ' Label26
         ' 
+        Label26.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         Label26.AutoSize = True
         Label26.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label26.Location = New Point(298, 455)
@@ -1553,16 +1580,18 @@ Partial Class Form3
         ' 
         ' PictureBox11
         ' 
+        PictureBox11.Anchor = AnchorStyles.Top
         PictureBox11.Image = My.Resources.Resources.bx
         PictureBox11.Location = New Point(257, 313)
         PictureBox11.Name = "PictureBox11"
-        PictureBox11.Size = New Size(150, 130)
+        PictureBox11.Size = New Size(150, 139)
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.TabIndex = 24
         PictureBox11.TabStop = False
         ' 
         ' Label25
         ' 
+        Label25.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         Label25.AutoSize = True
         Label25.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label25.Location = New Point(457, 455)
@@ -1573,16 +1602,18 @@ Partial Class Form3
         ' 
         ' PictureBox10
         ' 
+        PictureBox10.Anchor = AnchorStyles.Top
         PictureBox10.Image = My.Resources.Resources._128
         PictureBox10.Location = New Point(438, 313)
         PictureBox10.Name = "PictureBox10"
-        PictureBox10.Size = New Size(150, 130)
+        PictureBox10.Size = New Size(150, 139)
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox10.TabIndex = 22
         PictureBox10.TabStop = False
         ' 
         ' Label24
         ' 
+        Label24.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         Label24.AutoSize = True
         Label24.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label24.Location = New Point(111, 455)
@@ -1593,16 +1624,18 @@ Partial Class Form3
         ' 
         ' PictureBox9
         ' 
+        PictureBox9.Anchor = AnchorStyles.Top
         PictureBox9.Image = My.Resources.Resources.uv
         PictureBox9.Location = New Point(70, 313)
         PictureBox9.Name = "PictureBox9"
-        PictureBox9.Size = New Size(150, 130)
+        PictureBox9.Size = New Size(150, 139)
         PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox9.TabIndex = 20
         PictureBox9.TabStop = False
         ' 
         ' Label18
         ' 
+        Label18.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         Label18.AutoSize = True
         Label18.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label18.Location = New Point(663, 270)
@@ -1613,6 +1646,7 @@ Partial Class Form3
         ' 
         ' Label19
         ' 
+        Label19.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         Label19.AutoSize = True
         Label19.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label19.Location = New Point(470, 270)
@@ -1623,6 +1657,7 @@ Partial Class Form3
         ' 
         ' Label20
         ' 
+        Label20.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         Label20.AutoSize = True
         Label20.ContextMenuStrip = ContextMenuStrip2
         Label20.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
@@ -1674,6 +1709,7 @@ Partial Class Form3
         ' 
         ' Label21
         ' 
+        Label21.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         Label21.AutoSize = True
         Label21.ContextMenuStrip = ContextMenuStrip1
         Label21.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
@@ -1725,48 +1761,53 @@ Partial Class Form3
         ' 
         ' PictureBox5
         ' 
+        PictureBox5.Anchor = AnchorStyles.Top
         PictureBox5.Image = My.Resources.Resources.z1g
         PictureBox5.Location = New Point(622, 128)
         PictureBox5.Name = "PictureBox5"
-        PictureBox5.Size = New Size(150, 130)
+        PictureBox5.Size = New Size(150, 139)
         PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox5.TabIndex = 15
         PictureBox5.TabStop = False
         ' 
         ' PictureBox6
         ' 
+        PictureBox6.Anchor = AnchorStyles.Top
         PictureBox6.Image = My.Resources.Resources.z1g
         PictureBox6.Location = New Point(438, 128)
         PictureBox6.Name = "PictureBox6"
-        PictureBox6.Size = New Size(150, 130)
+        PictureBox6.Size = New Size(150, 139)
         PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox6.TabIndex = 14
         PictureBox6.TabStop = False
         ' 
         ' PictureBox7
         ' 
+        PictureBox7.Anchor = AnchorStyles.Top
         PictureBox7.ContextMenuStrip = ContextMenuStrip2
         PictureBox7.Image = My.Resources.Resources.velocity
         PictureBox7.Location = New Point(257, 128)
         PictureBox7.Name = "PictureBox7"
-        PictureBox7.Size = New Size(150, 130)
+        PictureBox7.Size = New Size(150, 139)
         PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox7.TabIndex = 13
         PictureBox7.TabStop = False
         ' 
         ' PictureBox8
         ' 
+        PictureBox8.Anchor = AnchorStyles.Top
         PictureBox8.ContextMenuStrip = ContextMenuStrip1
         PictureBox8.Image = My.Resources.Resources.terbium
         PictureBox8.Location = New Point(70, 128)
         PictureBox8.Name = "PictureBox8"
-        PictureBox8.Size = New Size(150, 130)
+        PictureBox8.Size = New Size(150, 139)
         PictureBox8.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox8.TabIndex = 12
         PictureBox8.TabStop = False
         ' 
         ' Label22
         ' 
+        Label22.Anchor = AnchorStyles.Top
         Label22.AutoSize = True
         Label22.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label22.Location = New Point(367, 80)
@@ -1777,6 +1818,7 @@ Partial Class Form3
         ' 
         ' Label23
         ' 
+        Label23.Anchor = AnchorStyles.Top
         Label23.AutoSize = True
         Label23.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label23.Location = New Point(329, 40)
@@ -1787,6 +1829,7 @@ Partial Class Form3
         ' 
         ' TextBox1
         ' 
+        TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TextBox1.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         TextBox1.ForeColor = Color.White
         TextBox1.Location = New Point(50, 370)
@@ -1800,6 +1843,7 @@ Partial Class Form3
         ' 
         ' Label16
         ' 
+        Label16.Anchor = AnchorStyles.Top
         Label16.AutoSize = True
         Label16.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label16.Location = New Point(328, 337)
@@ -1810,6 +1854,7 @@ Partial Class Form3
         ' 
         ' Label17
         ' 
+        Label17.Anchor = AnchorStyles.Top
         Label17.AutoSize = True
         Label17.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
         Label17.Location = New Point(292, 301)
@@ -1820,6 +1865,7 @@ Partial Class Form3
         ' 
         ' Label15
         ' 
+        Label15.Anchor = AnchorStyles.Top
         Label15.AutoSize = True
         Label15.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label15.Location = New Point(638, 261)
@@ -1830,6 +1876,7 @@ Partial Class Form3
         ' 
         ' Label14
         ' 
+        Label14.Anchor = AnchorStyles.Top
         Label14.AutoSize = True
         Label14.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label14.Location = New Point(442, 261)
@@ -1840,6 +1887,7 @@ Partial Class Form3
         ' 
         ' Label13
         ' 
+        Label13.Anchor = AnchorStyles.Top
         Label13.AutoSize = True
         Label13.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label13.Location = New Point(249, 261)
@@ -1850,6 +1898,7 @@ Partial Class Form3
         ' 
         ' Label12
         ' 
+        Label12.Anchor = AnchorStyles.Top
         Label12.AutoSize = True
         Label12.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label12.Location = New Point(86, 261)
@@ -1860,6 +1909,7 @@ Partial Class Form3
         ' 
         ' PictureBox4
         ' 
+        PictureBox4.Anchor = AnchorStyles.Top
         PictureBox4.Image = My.Resources.Resources.z1g
         PictureBox4.Location = New Point(626, 119)
         PictureBox4.Name = "PictureBox4"
@@ -1870,6 +1920,7 @@ Partial Class Form3
         ' 
         ' PictureBox3
         ' 
+        PictureBox3.Anchor = AnchorStyles.Top
         PictureBox3.Image = My.Resources.Resources.beta_features
         PictureBox3.Location = New Point(442, 119)
         PictureBox3.Name = "PictureBox3"
@@ -1880,6 +1931,7 @@ Partial Class Form3
         ' 
         ' PictureBox2
         ' 
+        PictureBox2.Anchor = AnchorStyles.Top
         PictureBox2.Image = My.Resources.Resources.feed
         PictureBox2.Location = New Point(261, 119)
         PictureBox2.Name = "PictureBox2"
@@ -1890,6 +1942,7 @@ Partial Class Form3
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.Anchor = AnchorStyles.Top
         PictureBox1.Image = My.Resources.Resources.downloadicon
         PictureBox1.Location = New Point(74, 119)
         PictureBox1.Name = "PictureBox1"
@@ -1900,6 +1953,7 @@ Partial Class Form3
         ' 
         ' Label11
         ' 
+        Label11.Anchor = AnchorStyles.Top
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label11.Location = New Point(371, 71)
@@ -1910,6 +1964,7 @@ Partial Class Form3
         ' 
         ' Label10
         ' 
+        Label10.Anchor = AnchorStyles.Top
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label10.Location = New Point(249, 14)

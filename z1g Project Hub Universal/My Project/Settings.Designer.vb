@@ -101,6 +101,42 @@ Namespace My
                 Me("replpfp") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1073")>  _
+        Public Property formWidth() As Integer
+            Get
+                Return CType(Me("formWidth"),Integer)
+            End Get
+            Set
+                Me("formWidth") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("688")>  _
+        Public Property formHeight() As Integer
+            Get
+                Return CType(Me("formHeight"),Integer)
+            End Get
+            Set
+                Me("formHeight") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("CenterScreen")>  _
+        Public Property windowPosition() As String
+            Get
+                Return CType(Me("windowPosition"),String)
+            End Get
+            Set
+                Me("windowPosition") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

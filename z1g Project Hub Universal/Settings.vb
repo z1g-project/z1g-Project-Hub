@@ -2,8 +2,22 @@
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
 Imports System.Net.Http
+Imports System.IO
+Imports System.IO.Compression
+Imports System.Runtime.InteropServices
 
 Public Class Settings
+    Private Const WM_NCLBUTTONDOWN As Integer = &HA1
+    Private Const HT_CAPTION As Integer = &H2
+
+    <DllImport("user32.dll")>
+    Private Shared Function SendMessage(hWnd As IntPtr, Msg As Integer, wParam As Integer, lParam As Integer) As Integer
+    End Function
+
+    <DllImport("user32.dll")>
+    Private Shared Function ReleaseCapture() As Boolean
+    End Function
+
     Private ReadOnly httpClient As HttpClient = New HttpClient()
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -126,5 +140,55 @@ Public Class Settings
         PictureBox1.Image = My.Resources.WindowsLoading
         Label16.Text = "Checking for Updates..."
         Button4.Enabled = False
+    End Sub
+
+    Private Sub Settings_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
+        If e.Button = MouseButtons.Left Then
+            ReleaseCapture()
+            SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0)
+        End If
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Directory.Delete(My.Settings.applocation)
+        MsgBox("Your cache located in: " + My.Settings.applocation + " has been cleared. z1g Hub will now restart to apply the changes.", MsgBoxStyle.Information, "Cache Cleared")
+        Process.Start(My.Settings.applocation + "z1g-project-hub-universal.exe")
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim saveFileDialog As SaveFileDialog = New SaveFileDialog()
+        saveFileDialog.Filter = "ZIP files (*.zip)|*.zip"
+        saveFileDialog.FileName = "z1gData.zip"
+        saveFileDialog.InitialDirectory = "C:\"
+
+        If saveFileDialog.ShowDialog() = DialogResult.OK Then
+            Dim sourceFolder As String = My.Settings.applocation
+            Dim destinationZipFile As String = saveFileDialog.FileName
+            ZipFile.CreateFromDirectory(sourceFolder, destinationZipFile)
+            MessageBox.Show("Successfully Exported Cache to: " & destinationZipFile)
+        End If
+    End Sub
+
+    Private Sub button5_Click(sender As Object, e As EventArgs) Handles button5.Click
+        Dim formWidth As Integer = Integer.Parse(textBox1.Text)
+        Dim formHeight As Integer = Integer.Parse(textBox2.Text)
+
+        My.Settings.FormWidth = formWidth
+        My.Settings.FormHeight = formHeight
+        My.Settings.Save()
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.CheckState = CheckState.Unchecked Then
+            ' Set the value of your setting to "CenterScreen" when CheckBox is checked
+            ' Replace "YourSetting" with the actual setting name or identifier
+            My.Settings.windowPosition = "Manual"
+            My.Settings.Save()
+        Else
+            ' Set the value of your setting to another value when CheckBox is unchecked
+            ' Replace "YourSetting" with the actual setting name or identifier
+            My.Settings.windowPosition = "CenterScreen"
+            My.Settings.Save()
+        End If
     End Sub
 End Class

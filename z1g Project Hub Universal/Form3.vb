@@ -2051,6 +2051,23 @@ Public Class Form3
         profile_panel.Visible = False
         Dim getuser As New System.IO.StreamReader(My.Settings.savelocation + "username.dat")
         Label2.Text = getuser.ReadToEnd
+        Label84.Text = getuser.ReadToEnd
+        getuser.Close()
+        Dim settingValue As String = My.Settings.windowPosition
+
+        If settingValue = "CenterScreen" Then
+            ' Set the form's StartPosition to CenterScreen
+            Me.StartPosition = FormStartPosition.CenterScreen
+            Settings.CheckBox1.CheckState = CheckState.Checked
+        Else
+            ' Uncheck CheckBox1 and manually position the form
+            Settings.CheckBox1.CheckState = CheckState.Unchecked
+            Me.StartPosition = FormStartPosition.Manual
+            Dim formWidth As Integer = My.Settings.formWidth
+            Dim formHeight As Integer = My.Settings.formHeight
+            Me.Width = formWidth
+            Me.Height = formHeight
+        End If
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click

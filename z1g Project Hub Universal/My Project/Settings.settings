@@ -14,5 +14,14 @@
     <Setting Name="replpfp" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="formWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1073</Value>
+    </Setting>
+    <Setting Name="formHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">688</Value>
+    </Setting>
+    <Setting Name="windowPosition" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CenterScreen</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
