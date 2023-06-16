@@ -31,18 +31,10 @@ jobs:
       - name: Publish z1g Project Hub Universal
         run: dotnet publish "z1g Project Hub Universal\z1g Project Hub Universal.vbproj" --configuration Release --output ./publish
 
-      - name: Build z1g Setup Launcher
-        run: dotnet build "z1g Setup\z1g Setup.vbproj" --configuration Release
-
-      - name: Publish z1g Setup Launcher
-        run: dotnet publish "z1g Setup\z1g Setup.vbproj" --configuration Release --output ./z1g-setup
-
       - name: Create ZIP file
         run: |
           7z a -tzip z1g-project-hub.zip ./publish/*
           mv z1g-project-hub.zip compiled-zips/
-          7z a -tzip compiled-zips/z1g-setup.zip "z1g Setup/*"
-          mv z1g-setup.zip compiled-zips/
 
       - name: Create tag
         run: |
@@ -55,8 +47,3 @@ jobs:
         with:
           name: compiled-zip
           path: compiled-zips/z1g-project-hub.zip
-      - name: Upload compiled Setup ZIP
-        uses: actions/upload-artifact@v2
-        with:
-          name: compiled-zip
-          path: compiled-zips/z1g-setup.zip
