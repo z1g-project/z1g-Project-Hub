@@ -1649,11 +1649,11 @@ Partial Class Form3
         Label19.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         Label19.AutoSize = True
         Label19.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label19.Location = New Point(470, 270)
+        Label19.Location = New Point(434, 270)
         Label19.Name = "Label19"
-        Label19.Size = New Size(93, 20)
+        Label19.Size = New Size(158, 20)
         Label19.TabIndex = 18
-        Label19.Text = "z1g X Center"
+        Label19.Text = "z1g Browser [Preview]"
         ' 
         ' Label20
         ' 

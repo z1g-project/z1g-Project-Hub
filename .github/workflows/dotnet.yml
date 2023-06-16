@@ -24,6 +24,8 @@ jobs:
     #- name: Build z1g Setup
     #  run: dotnet build "update/update.vbproj" --configuration Release --no-restore
     # Removed for Updates
+    - name: Build z1g Setup Launcher
+      run: dotnet build "z1g Setup/z1g Setup.vbproj" --no-restore
     - name: Build Terbium
       run: dotnet build Terbium/Terbium.csproj --no-restore
     - name: Build Velocity

@@ -1,18 +1,18 @@
 using CefSharp;
+using CefSharp.DevTools.IO;
 using CefSharp.WinForms;
-using DiscordRPC.Logging;
 using DiscordRPC;
+using DiscordRPC.Logging;
 using System;
+using System.IO;
+using System.Net;
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using Velocity;
-using Velocity.Properties;
-using System.Windows.Forms.PropertyGridInternal;
 
 namespace Terbium
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HT_CAPTION = 0x2;
@@ -24,34 +24,30 @@ namespace Terbium
         private static extern bool ReleaseCapture();
 
         // Resize Code
-
         private const int HTBOTTOMRIGHT = 17;
         private const int WM_NCHITTEST = 0x0084;
         private const int RESIZE_HANDLE_SIZE = 10;
 
+        private DiscordRpcClient rpcClient;
         private bool isResizing = false;
         private Point lastMousePos;
 
-        private DiscordRpcClient rpcClient;
-
-        public Form1()
+        public form1()
         {
             InitializeComponent();
             InitializeCefSharp();
+            LoadDefaultSettings();
 
-            // Accessing the FormWidth setting
-            //int formWidth = Properties.Settings.Default.FormWidth;
-
-            // Accessing the FormHeight setting
-            //int formHeight = Properties.Settings.Default.FormHeight;
+            int formWidth = Properties.Settings.Default.FormWidth;
+            int formHeight = Properties.Settings.Default.FormHeight;
 
             // Set the width and height of the form
-            //this.Width = formWidth;
-            //this.Height = formHeight;
+            this.Width = formWidth;
+            this.Height = formHeight;
 
             DateTime startTime = DateTime.Now; // Store the start time
 
-            rpcClient = new DiscordRpcClient("1119348050146631720");
+            rpcClient = new DiscordRpcClient("1119348810607501393");
             rpcClient.Logger = new ConsoleLogger() { Level = LogLevel.Info };
             rpcClient.Initialize();
 
@@ -68,12 +64,12 @@ namespace Terbium
 
                 var presence = new RichPresence()
                 {
-                    Details = "Using Velocity Browser (velocity.radon.games) by the z1g Project",
+                    Details = "Using BruhProx by the z1g Project",
                     State = elapsedTimeString,
                     Assets = new Assets()
                     {
-                        LargeImageKey = "velocity",
-                        LargeImageText = "Velocity Logo",
+                        LargeImageKey = "bruhprox",
+                        LargeImageText = "BruhProx Logo",
                         SmallImageKey = "z1g",
                         SmallImageText = "z1g Project Logo"
                     },
@@ -87,11 +83,35 @@ namespace Terbium
             }
         }
 
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            base.OnFormClosed(e);
+            rpcClient.Dispose();
+        }
+
+        private void LoadDefaultSettings()
+        {
+            // Load default settings or values from the Properties.Settings.Default
+            // Apply the loaded settings
+        }
+
+        private void UpdateTitleBarBackgroundColor()
+        {
+            // Custom method to update title bar background color
+            // You need to handle the title bar background color update based on the UI framework you're using
+        }
+
+        private void UpdateTitleBarFontColor()
+        {
+            // Custom method to update title bar font color
+            // You need to handle the title bar font color update based on the UI framework you're using
+        }
+
         private void InitializeCefSharp()
         {
             CefSettings settings = new CefSettings();
             settings.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 z1g Browser/114.0.1722.64";
-            string path = ("C:\\z1g Apps\\Velocity\\Data\\");
+            string path = ("C:\\z1g Apps\\BruhProx\\Data\\");
             settings.RemoteDebuggingPort = 8080;
             settings.CachePath = path;
 
@@ -101,27 +121,44 @@ namespace Terbium
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            using (HttpClient httpClient = new HttpClient())
-            {
-                HttpResponseMessage response = await httpClient.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/client/velocity-ver.txt");
-                response.EnsureSuccessStatusCode();
-                string newestVersion = await response.Content.ReadAsStringAsync();
-                string currentVersion = Application.ProductVersion;
+            string url = "";
+            string terbiumVerUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/terbium-ver.txt";
+            string terbiumHomePage = "https://bruhprox.pages.dev";
+            string terbiumFallbackPage = "https://bruhprox.glitch.me";
+            string setupDoneFile = "C:/z1g apps/BruhProx/Data/setupdone.DAT";
+            string verConfFile = "C:/z1g apps/BruhProx/Data/verconf.DAT";
 
-                if (!newestVersion.Contains(currentVersion))
+            try
+            {
+                using (HttpClient client = new HttpClient())
                 {
-                    // Nothing Happens lol
-                }
-                else
-                {
-                    getupdates getupdates = new getupdates();
-                    getupdates.Show();
+                    string newestVersion = await client.GetStringAsync(terbiumVerUrl);
+                    string currentVersion = Application.ProductVersion;
+
+                    if (newestVersion.Contains(currentVersion))
+                    {
+                        if (!File.Exists(setupDoneFile))
+                        {
+                            firstrun firstrun = new firstrun();
+                            firstrun.Show();
+                            chromiumWebBrowser1.Load("about:blank");
+                        }
+                    }
+                    else
+                    {
+                        getupdates getupdates = new getupdates();
+                        getupdates.Show();
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred while checking for updates: " + ex.Message);
+                url = File.Exists(verConfFile) ? terbiumHomePage : terbiumFallbackPage;
+            }
 
-            chromiumWebBrowser1.Load("https://velocity.radon.games");
+            chromiumWebBrowser1.Load(url);
         }
-
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -189,16 +226,6 @@ namespace Terbium
             return resizeArea.Contains(mouseLocation);
         }
 
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Maximized)
@@ -215,6 +242,37 @@ namespace Terbium
         {
             settings settings = new settings();
             settings.Show();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Cef.Shutdown();
+            this.Close();
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.Back();
+        }
+
+        private void forwardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.Forward();
+        }
+
+        private void inspectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Feature isn't ready yet. Check the source here: https://github.com/z1g-project/Terbium");
+        }
+
+        private void resetSessionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.Refresh();
         }
     }
 }

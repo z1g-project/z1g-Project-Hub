@@ -31,6 +31,12 @@ jobs:
       - name: Publish z1g Project Hub Universal
         run: dotnet publish "z1g Project Hub Universal\z1g Project Hub Universal.vbproj" --configuration Release --output ./publish
 
+      - name: Build z1g Setup Launcher
+        run: dotnet build "z1g Setup\z1g Setup.vbproj" --configuration Release
+
+      - name: Publish z1g Setup Launcher
+        run: dotnet publish "z1g Setup\z1g Setup.vbproj" --configuration Release --output ./publish
+
       - name: Create ZIP file
         run: |
           7z a -tzip z1g-project-hub.zip ./publish/*
@@ -44,10 +50,8 @@ jobs:
 
       - name: Create ZIP file
         run: |
-          7z a -tzip compiled-zips/z1g-project-hub.zip "z1g Project Hub Universal/bin/Release/*"
-          7z a -tzip compiled-zips/z1g-project-hub.zip "Terbium/bin/Release/*"
-          7z a -tzip compiled-zips/z1g-project-hub.zip "Velocity/bin/Release/*"
-          7z a -tzip compiled-zips/z1g-project-hub.zip "z1g Browser/bin/Release/*"
+          7z a -tzip compiled-zips/z1g-project-hub.zip "z1g Project Hub Universal/bin/Release/net6.0-windows/*"
+          7z a -tzip compiled-zips/z1g-project-hub.zip "z1g Setup/bin/Release/net6.0-windows/*"
 
       - name: Upload compiled ZIP
         uses: actions/upload-artifact@v2
