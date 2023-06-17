@@ -56,6 +56,7 @@ Partial Class Form3
         Label9 = New Label()
         Panel3 = New Panel()
         Panel4 = New Panel()
+        previewLabel = New Label()
         Panel5 = New Panel()
         Panel6 = New Panel()
         Panel7 = New Panel()
@@ -578,6 +579,7 @@ Partial Class Form3
         ' 
         ' Panel4
         ' 
+        Panel4.Controls.Add(previewLabel)
         Panel4.Controls.Add(Panel5)
         Panel4.Controls.Add(Label65)
         Panel4.Controls.Add(PictureBox16)
@@ -602,6 +604,15 @@ Partial Class Form3
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(828, 641)
         Panel4.TabIndex = 13
+        ' 
+        ' previewLabel
+        ' 
+        previewLabel.AutoSize = True
+        previewLabel.Location = New Point(523, 270)
+        previewLabel.Name = "previewLabel"
+        previewLabel.Size = New Size(69, 15)
+        previewLabel.TabIndex = 30
+        previewLabel.Text = "previewText"
         ' 
         ' Panel5
         ' 
@@ -1651,9 +1662,9 @@ Partial Class Form3
         Label19.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label19.Location = New Point(434, 270)
         Label19.Name = "Label19"
-        Label19.Size = New Size(158, 20)
+        Label19.Size = New Size(90, 20)
         Label19.TabIndex = 18
-        Label19.Text = "z1g Browser [Preview]"
+        Label19.Text = "z1g Browser"
         ' 
         ' Label20
         ' 
@@ -2192,4 +2203,5 @@ Partial Class Form3
     Friend WithEvents Label87 As Label
     Friend WithEvents Label88 As Label
     Friend WithEvents PictureBox22 As PictureBox
+    Friend WithEvents previewLabel As Label
 End Class

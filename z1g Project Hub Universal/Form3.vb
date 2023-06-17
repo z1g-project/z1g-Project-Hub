@@ -57,6 +57,7 @@ Public Class Form3
         Panel5.Visible = False
         Panel7.Visible = False
         Label9.Text = "App Manager"
+        previewLabel.Visible = True
     End Sub
 
     Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
@@ -65,6 +66,7 @@ Public Class Form3
         Panel5.Visible = False
         Panel7.Visible = False
         Label9.Text = "App Manager"
+        previewLabel.Visible = True
     End Sub
 
     Private Async Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
@@ -76,6 +78,7 @@ Public Class Form3
         Panel8.Visible = False
         Panel11.Visible = False
         Label9.Text = "Feed [Beta]"
+        previewLabel.Visible = False
         Try
             Button7.Enabled = False
             Using client As New HttpClient()
@@ -726,6 +729,7 @@ Public Class Form3
         Panel8.Visible = False
         Panel11.Visible = False
         Label9.Text = "Feed [Beta]"
+        previewLabel.Visible = False
         Try
             Button7.Enabled = False
             Using client As New HttpClient()
@@ -1373,6 +1377,7 @@ Public Class Form3
         Panel5.Visible = False
         Panel7.Visible = False
         Label9.Text = "Home"
+        previewLabel.Visible = False
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
@@ -1381,6 +1386,7 @@ Public Class Form3
         Panel5.Visible = False
         Panel7.Visible = False
         Label9.Text = "App Manager"
+        previewLabel.Visible = True
     End Sub
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
@@ -1390,6 +1396,7 @@ Public Class Form3
         Panel6.Visible = False
         Panel7.Visible = False
         Label9.Text = "Account Manager"
+        previewLabel.Visible = False
     End Sub
 
     Private Async Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
@@ -1401,6 +1408,7 @@ Public Class Form3
         Panel8.Visible = False
         Panel11.Visible = False
         Label9.Text = "Feed [Beta]"
+        previewLabel.Visible = False
         Try
             Button7.Enabled = False
             Using client As New HttpClient()
@@ -2053,6 +2061,14 @@ Public Class Form3
         Label2.Text = getuser.ReadToEnd
         Label84.Text = getuser.ReadToEnd
         getuser.Close()
+
+        previewLabel.Text = "Preview"
+
+        ' You can customize the appearance of the Label control to make it stand out as "Preview"
+        previewLabel.Font = New Font(previewLabel.Font.FontFamily, 9.75, FontStyle.Bold)
+        previewLabel.ForeColor = Color.Black
+        previewLabel.BackColor = Color.Yellow
+
         Dim settingValue As String = My.Settings.windowPosition
 
         If settingValue = "CenterScreen" Then
@@ -2858,13 +2874,31 @@ Public Class Form3
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
-        'z1g X
-        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+        'z1g Browser
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\z1g Browser\z1g Browser.exe") Then
+            Process.Start("C:\z1g Apps\z1g Browser\z1g Browser.exe")
+        Else
+            Me.Cursor = Cursors.WaitCursor
+            My.Computer.Network.DownloadFile("https://dl3.johnglynn2.repl.co/z1g-browser.zip", "C:\z1g Apps\z1g Browser\z1g Browser.zip")
+            ZipFile.ExtractToDirectory("C:\z1g Apps\z1g Browser\z1g Browser.zip", "C:\z1g Apps\z1g Browser\")
+            System.IO.Directory.CreateDirectory("C:\z1g Apps\z1g Browser\")
+            Process.Start("C:\z1g Apps\z1g Browser\z1g Browser.exe")
+            Me.Cursor = Cursors.Default
+        End If
     End Sub
 
     Private Sub Label19_Click(sender As Object, e As EventArgs) Handles Label19.Click
-        'z1g X
-        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+        'z1g Browser
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\z1g Browser\z1g Browser.exe") Then
+            Process.Start("C:\z1g Apps\z1g Browser\z1g Browser.exe")
+        Else
+            Me.Cursor = Cursors.WaitCursor
+            My.Computer.Network.DownloadFile("https://dl3.johnglynn2.repl.co/z1g-browser.zip", "C:\z1g Apps\z1g Browser\z1g Browser.zip")
+            ZipFile.ExtractToDirectory("C:\z1g Apps\z1g Browser\z1g Browser.zip", "C:\z1g Apps\z1g Browser\")
+            System.IO.Directory.CreateDirectory("C:\z1g Apps\z1g Browser\")
+            Process.Start("C:\z1g Apps\z1g Browser\z1g Browser.exe")
+            Me.Cursor = Cursors.Default
+        End If
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click

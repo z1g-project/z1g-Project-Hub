@@ -128,8 +128,8 @@ Public Class Form2
     Private Sub pictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         ' Set the VPN server details
         Dim vpnServer As String = "usny2-auto-udp.ptoserver.com"
-        Dim usernamePath As String = "C:\z1g Apps\z1g VPN\username.txt"
-        Dim passwordPath As String = "C:\z1g Apps\z1g VPN\password.txt"
+        Dim usernamePath As String = "C:\z1g Apps\z1g VPN\email.dat"
+        Dim passwordPath As String = "C:\z1g Apps\z1g VPN\password.dat"
 
         ' Read the username from the text file
         Dim username As String = ReadTextFile(usernamePath)

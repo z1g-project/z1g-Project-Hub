@@ -33,8 +33,8 @@ jobs:
 
       - name: Create ZIP file
         run: |
-          7z a -tzip z1g-project-hub.zip ./publish/*
-          mv z1g-project-hub.zip compiled-zips/
+          7z a -tzip compiled-zips/z1g-project-hub.zip ./publish/*
+          mv compiled-zips/z1g-project-hub.zip compiled-zips/
 
       - name: Create tag
         run: |
