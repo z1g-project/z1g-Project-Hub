@@ -42,8 +42,25 @@ jobs:
           git tag -a -F tag.txt "z1g-hub-nightly-${{ steps.date.outputs.date }}"
           git push --tags
 
-      - name: Upload compiled ZIP
-        uses: actions/upload-artifact@v2
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: compiled-zip
-          path: compiled-zips/z1g-project-hub.zip
+          tag_name: "z1g-hub-nightly-${{ steps.date.outputs.date }}"
+          release_name: "z1g Hub Nightly Build - ${{ steps.date.outputs.date }}"
+          draft: false
+          prerelease: false
+          body: |
+            $(cat nightlychangelogs.md)
+
+      - name: Upload compiled ZIP
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: compiled-zips/z1g-project-hub.zip
+          asset_name: "z1g-project-hub.zip"
+          asset_content_type: application/zip
