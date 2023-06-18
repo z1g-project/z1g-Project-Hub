@@ -43,12 +43,23 @@ jobs:
           git tag -a -F tag.txt "z1g-hub-nightly-${{ steps.date.outputs.date }}"
           git push origin "z1g-hub-nightly-${{ steps.date.outputs.date }}"
 
-      - name: Upload compiled ZIP as tag asset
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: "z1g-hub-nightly-${{ steps.date.outputs.date }}"
+          release_name: "Nightly Build - ${{ steps.date.outputs.date }}"
+          draft: false
+          prerelease: false
+
+      - name: Upload compiled ZIP as release asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: https://uploads.github.com/repos/${{ github.repository }}/releases/${{ steps.create_tag.outputs.id }}/assets{?name,label}
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: compiled-zips/z1g-project-hub.zip
           asset_name: z1g-project-hub.zip
           asset_content_type: application/zip
@@ -59,9 +70,14 @@ jobs:
           changelog=$(cat nightlychangelogs.md)
           echo "::set-output name=changelog::$changelog"
 
-      - name: Update tag description with changelog
-        run: |
-          git fetch --tags
-          tag_sha=$(git rev-list -n 1 "z1g-hub-nightly-${{ steps.date.outputs.date }}")
-          git tag -a -f -m "${{ steps.changelog.outputs.changelog }}" "${{ steps.date.outputs.date }}" $tag_sha
-          git push --tags
+      - name: Update release description with changelog
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const changelog = `Release Changelog:\n\n${{ steps.changelog.outputs.changelog }}`;
+            github.repos.updateRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: ${{ steps.create_release.outputs.id }},
+              body: changelog
+            });

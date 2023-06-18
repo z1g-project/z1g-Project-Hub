@@ -23,5 +23,8 @@
     <Setting Name="DefualtFont" Type="System.String" Scope="User">
       <Value Profile="(Default)">Segoe UI, 9pt</Value>
     </Setting>
+    <Setting Name="versionurl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://terbium-46q.pages.dev</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

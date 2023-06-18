@@ -1,4 +1,5 @@
-﻿using Markdig;
+﻿using CefSharp;
+using Markdig;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,7 +41,7 @@ namespace Terbium
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Button4_Click(object sender, EventArgs e)
@@ -65,16 +66,24 @@ namespace Terbium
 
         private void getupdates_Load(object sender, EventArgs e)
         {
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://cdn.z1g-project.repl.co/z1g-hub/client/velocity-changelog.md");
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            StreamReader reader = new StreamReader(response.GetResponseStream());
-            string markdownText = reader.ReadToEnd();
+            string markdownUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/velocity-changelog.md";
+            string backgroundColor = "#181818"; // Replace with your desired background color
+            string fontName = "Segoe UI"; // Replace with your desired font name
+            string textColor = "#FFFFFF"; // Replace with your desired text color
 
-            // Convert markdown to HTML
-            string htmlText = Markdown.ToHtml(markdownText);
+            using (WebClient client = new WebClient())
+            {
+                string markdownText = client.DownloadString(markdownUrl);
 
-            // Set the HTML text to the textbox
-            textBox1.Text = htmlText;
+                // Convert Markdown to HTML
+                string htmlText = Markdown.ToHtml(markdownText);
+
+                // Inject custom CSS to modify the background color, font, and text color
+                string styledHtmlText = $"<html><head><style>body {{ background-color: {backgroundColor}; font-family: '{fontName}', sans-serif; color: {textColor}; }}</style></head><body>{htmlText}</body></html>";
+
+                // Set the HTML text to the ChromiumWebBrowser control
+                chromiumWebBrowser1.LoadHtml(styledHtmlText, markdownUrl);
+            }
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)

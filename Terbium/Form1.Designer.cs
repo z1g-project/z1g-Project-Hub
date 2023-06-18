@@ -28,210 +28,201 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form1));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Button3 = new System.Windows.Forms.Button();
-            this.Button2 = new System.Windows.Forms.Button();
-            this.Label9 = new System.Windows.Forms.Label();
-            this.chromiumWebBrowser1 = new CefSharp.WinForms.ChromiumWebBrowser();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.forwardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.inspectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            backToolStripMenuItem = new ToolStripMenuItem();
+            forwardToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            inspectToolStripMenuItem = new ToolStripMenuItem();
+            resetSessionToolStripMenuItem = new ToolStripMenuItem();
+            button4 = new Button();
+            button1 = new Button();
+            pictureBox1 = new PictureBox();
+            Button3 = new Button();
+            Button2 = new Button();
+            Label9 = new Label();
+            chromiumWebBrowser1 = new CefSharp.WinForms.ChromiumWebBrowser();
+            panel1.SuspendLayout();
+            contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.ContextMenuStrip = this.contextMenuStrip1;
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.Button3);
-            this.panel1.Controls.Add(this.Button2);
-            this.panel1.Controls.Add(this.Label9);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1028, 29);
-            this.panel1.TabIndex = 0;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(874, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(35, 23);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "⚙️";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(952, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "[]";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Terbium.Properties.Resources.terbium;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Button3
-            // 
-            this.Button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button3.FlatAppearance.BorderSize = 0;
-            this.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button3.Location = new System.Drawing.Point(990, 3);
-            this.Button3.Name = "Button3";
-            this.Button3.Size = new System.Drawing.Size(35, 23);
-            this.Button3.TabIndex = 13;
-            this.Button3.Text = "X";
-            this.Button3.UseVisualStyleBackColor = false;
-            this.Button3.Click += new System.EventHandler(this.Button3_Click);
-            // 
-            // Button2
-            // 
-            this.Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.Button2.FlatAppearance.BorderSize = 0;
-            this.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button2.Location = new System.Drawing.Point(915, 3);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(35, 23);
-            this.Button2.TabIndex = 12;
-            this.Button2.Text = "-";
-            this.Button2.UseVisualStyleBackColor = false;
-            this.Button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // Label9
-            // 
-            this.Label9.AutoSize = true;
-            this.Label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Label9.Location = new System.Drawing.Point(39, 5);
-            this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(73, 21);
-            this.Label9.TabIndex = 11;
-            this.Label9.Text = "Terbium";
-            // 
-            // chromiumWebBrowser1
-            // 
-            this.chromiumWebBrowser1.ActivateBrowserOnCreation = false;
-            this.chromiumWebBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.chromiumWebBrowser1.ContextMenuStrip = this.contextMenuStrip1;
-            this.chromiumWebBrowser1.Location = new System.Drawing.Point(0, 29);
-            this.chromiumWebBrowser1.Name = "chromiumWebBrowser1";
-            this.chromiumWebBrowser1.Size = new System.Drawing.Size(1028, 635);
-            this.chromiumWebBrowser1.TabIndex = 1;
+            panel1.ContextMenuStrip = contextMenuStrip1;
+            panel1.Controls.Add(button4);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(Button3);
+            panel1.Controls.Add(Button2);
+            panel1.Controls.Add(Label9);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1028, 29);
+            panel1.TabIndex = 0;
+            panel1.MouseDown += panel1_MouseDown;
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.backToolStripMenuItem,
-            this.forwardToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.inspectToolStripMenuItem,
-            this.resetSessionToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(145, 98);
+            contextMenuStrip1.BackColor = Color.FromArgb(34, 34, 34);
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { backToolStripMenuItem, forwardToolStripMenuItem, toolStripSeparator1, inspectToolStripMenuItem, resetSessionToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(145, 98);
             // 
             // backToolStripMenuItem
             // 
-            this.backToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.backToolStripMenuItem.Image = global::Terbium.Properties.Resources.wm_back_removebg_preview;
-            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.backToolStripMenuItem.Text = "Back";
-            this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
+            backToolStripMenuItem.ForeColor = Color.White;
+            backToolStripMenuItem.Image = Properties.Resources.wm_back_removebg_preview;
+            backToolStripMenuItem.Name = "backToolStripMenuItem";
+            backToolStripMenuItem.Size = new Size(144, 22);
+            backToolStripMenuItem.Text = "Back";
+            backToolStripMenuItem.Click += backToolStripMenuItem_Click;
             // 
             // forwardToolStripMenuItem
             // 
-            this.forwardToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.forwardToolStripMenuItem.Image = global::Terbium.Properties.Resources.forward_removebg_preview;
-            this.forwardToolStripMenuItem.Name = "forwardToolStripMenuItem";
-            this.forwardToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.forwardToolStripMenuItem.Text = "Forward";
-            this.forwardToolStripMenuItem.Click += new System.EventHandler(this.forwardToolStripMenuItem_Click);
+            forwardToolStripMenuItem.ForeColor = Color.White;
+            forwardToolStripMenuItem.Image = Properties.Resources.forward_removebg_preview;
+            forwardToolStripMenuItem.Name = "forwardToolStripMenuItem";
+            forwardToolStripMenuItem.Size = new Size(144, 22);
+            forwardToolStripMenuItem.Text = "Forward";
+            forwardToolStripMenuItem.Click += forwardToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.ForeColor = System.Drawing.Color.White;
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(141, 6);
+            toolStripSeparator1.ForeColor = Color.White;
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(141, 6);
             // 
             // inspectToolStripMenuItem
             // 
-            this.inspectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.inspectToolStripMenuItem.Image = global::Terbium.Properties.Resources.z1g;
-            this.inspectToolStripMenuItem.Name = "inspectToolStripMenuItem";
-            this.inspectToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.inspectToolStripMenuItem.Text = "Inspect";
-            this.inspectToolStripMenuItem.Click += new System.EventHandler(this.inspectToolStripMenuItem_Click);
+            inspectToolStripMenuItem.ForeColor = Color.White;
+            inspectToolStripMenuItem.Image = Properties.Resources.z1g;
+            inspectToolStripMenuItem.Name = "inspectToolStripMenuItem";
+            inspectToolStripMenuItem.Size = new Size(144, 22);
+            inspectToolStripMenuItem.Text = "Inspect";
+            inspectToolStripMenuItem.Click += inspectToolStripMenuItem_Click;
             // 
             // resetSessionToolStripMenuItem
             // 
-            this.resetSessionToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.resetSessionToolStripMenuItem.Image = global::Terbium.Properties.Resources.terbium;
-            this.resetSessionToolStripMenuItem.Name = "resetSessionToolStripMenuItem";
-            this.resetSessionToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.resetSessionToolStripMenuItem.Text = "Reset Session";
-            this.resetSessionToolStripMenuItem.Click += new System.EventHandler(this.resetSessionToolStripMenuItem_Click);
+            resetSessionToolStripMenuItem.ForeColor = Color.White;
+            resetSessionToolStripMenuItem.Image = Properties.Resources.terbium;
+            resetSessionToolStripMenuItem.Name = "resetSessionToolStripMenuItem";
+            resetSessionToolStripMenuItem.Size = new Size(144, 22);
+            resetSessionToolStripMenuItem.Text = "Reset Session";
+            resetSessionToolStripMenuItem.Click += resetSessionToolStripMenuItem_Click;
+            // 
+            // button4
+            // 
+            button4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button4.BackColor = Color.FromArgb(45, 45, 45);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button4.Location = new Point(874, 3);
+            button4.Name = "button4";
+            button4.Size = new Size(35, 23);
+            button4.TabIndex = 13;
+            button4.Text = "⚙️";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.BackColor = Color.FromArgb(45, 45, 45);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(952, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(35, 23);
+            button1.TabIndex = 15;
+            button1.Text = "[]";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.terbium;
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(30, 24);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
+            // 
+            // Button3
+            // 
+            Button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            Button3.BackColor = Color.FromArgb(64, 0, 0);
+            Button3.FlatAppearance.BorderSize = 0;
+            Button3.FlatStyle = FlatStyle.Flat;
+            Button3.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Button3.Location = new Point(990, 3);
+            Button3.Name = "Button3";
+            Button3.Size = new Size(35, 23);
+            Button3.TabIndex = 13;
+            Button3.Text = "X";
+            Button3.UseVisualStyleBackColor = false;
+            Button3.Click += Button3_Click;
+            // 
+            // Button2
+            // 
+            Button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            Button2.BackColor = Color.FromArgb(45, 45, 45);
+            Button2.FlatAppearance.BorderSize = 0;
+            Button2.FlatStyle = FlatStyle.Flat;
+            Button2.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Button2.Location = new Point(915, 3);
+            Button2.Name = "Button2";
+            Button2.Size = new Size(35, 23);
+            Button2.TabIndex = 12;
+            Button2.Text = "-";
+            Button2.UseVisualStyleBackColor = false;
+            Button2.Click += Button2_Click;
+            // 
+            // Label9
+            // 
+            Label9.AutoSize = true;
+            Label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Label9.Location = new Point(39, 5);
+            Label9.Name = "Label9";
+            Label9.Size = new Size(73, 21);
+            Label9.TabIndex = 11;
+            Label9.Text = "Terbium";
+            // 
+            // chromiumWebBrowser1
+            // 
+            chromiumWebBrowser1.ActivateBrowserOnCreation = false;
+            chromiumWebBrowser1.Dock = DockStyle.Fill;
+            chromiumWebBrowser1.Location = new Point(0, 29);
+            chromiumWebBrowser1.Name = "chromiumWebBrowser1";
+            chromiumWebBrowser1.Size = new Size(1028, 635);
+            chromiumWebBrowser1.TabIndex = 1;
             // 
             // form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.ClientSize = new System.Drawing.Size(1028, 664);
-            this.Controls.Add(this.chromiumWebBrowser1);
-            this.Controls.Add(this.panel1);
-            this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Terbium";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(24, 24, 24);
+            ClientSize = new Size(1028, 664);
+            Controls.Add(chromiumWebBrowser1);
+            Controls.Add(panel1);
+            ForeColor = Color.White;
+            FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Terbium";
+            Load += Form1_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -241,7 +232,6 @@
         internal Button Button3;
         internal Button Button2;
         internal Label Label9;
-        private CefSharp.WinForms.ChromiumWebBrowser chromiumWebBrowser1;
         internal Button button1;
         internal Button button4;
         private ContextMenuStrip contextMenuStrip1;
@@ -250,5 +240,6 @@
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripMenuItem inspectToolStripMenuItem;
         private ToolStripMenuItem resetSessionToolStripMenuItem;
+        private CefSharp.WinForms.ChromiumWebBrowser chromiumWebBrowser1;
     }
 }

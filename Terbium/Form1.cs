@@ -121,12 +121,9 @@ namespace Terbium
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            string url = "";
+            chromiumWebBrowser1.Load(Properties.Settings.Default.versionurl);
             string terbiumVerUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/terbium-ver.txt";
-            string terbiumHomePage = "https://terbium-46q.pages.dev";
-            string terbiumFallbackPage = "https://terbium--johnglynn2.repl.co";
             string setupDoneFile = "C:/z1g apps/Terbium/Data/setupdone.DAT";
-            string verConfFile = "C:/z1g apps/Terbium/Data/verconf.DAT";
 
             try
             {
@@ -142,22 +139,21 @@ namespace Terbium
                             firstrun firstrun = new firstrun();
                             firstrun.Show();
                             chromiumWebBrowser1.Load("about:blank");
+                            return; // Stop execution after showing the firstrun form
                         }
                     }
                     else
                     {
                         getupdates getupdates = new getupdates();
                         getupdates.Show();
+                        return; // Stop execution after showing the getupdates form
                     }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred while checking for updates: " + ex.Message);
-                url = File.Exists(verConfFile) ? terbiumHomePage : terbiumFallbackPage;
             }
-
-            chromiumWebBrowser1.Load(url);
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
