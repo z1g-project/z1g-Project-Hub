@@ -191,4 +191,15 @@ Public Class Settings
             My.Settings.Save()
         End If
     End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim formWidth As Integer = Integer.Parse("1073")
+        Dim formHeight As Integer = Integer.Parse("688")
+
+        My.Settings.formWidth = formWidth
+        My.Settings.formHeight = formHeight
+        My.Settings.Save()
+        textBox1.Text = formWidth
+        textBox2.Text = formHeight
+    End Sub
 End Class

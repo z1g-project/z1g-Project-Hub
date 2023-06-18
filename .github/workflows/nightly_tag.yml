@@ -37,6 +37,7 @@ jobs:
           mv compiled-zips/z1g-project-hub.zip compiled-zips/
 
       - name: Create tag
+        id: create_tag
         run: |
           echo "z1g-hub-nightly-${{ steps.date.outputs.date }}" > tag.txt
           git tag -a -F tag.txt "z1g-hub-nightly-${{ steps.date.outputs.date }}"

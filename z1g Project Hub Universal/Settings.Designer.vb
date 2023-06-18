@@ -33,6 +33,7 @@ Partial Class Settings
         Label4 = New Label()
         Label2 = New Label()
         Panel1 = New Panel()
+        Button9 = New Button()
         CheckBox1 = New CheckBox()
         Button6 = New Button()
         Button8 = New Button()
@@ -179,6 +180,7 @@ Partial Class Settings
         ' 
         ' Panel1
         ' 
+        Panel1.Controls.Add(Button9)
         Panel1.Controls.Add(CheckBox1)
         Panel1.Controls.Add(Button6)
         Panel1.Controls.Add(Button8)
@@ -194,6 +196,18 @@ Partial Class Settings
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(625, 504)
         Panel1.TabIndex = 19
+        ' 
+        ' Button9
+        ' 
+        Button9.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        Button9.FlatAppearance.BorderSize = 0
+        Button9.FlatStyle = FlatStyle.Flat
+        Button9.Location = New Point(166, 202)
+        Button9.Name = "Button9"
+        Button9.Size = New Size(97, 32)
+        Button9.TabIndex = 64
+        Button9.Text = "Reset"
+        Button9.UseVisualStyleBackColor = False
         ' 
         ' CheckBox1
         ' 
@@ -247,7 +261,7 @@ Partial Class Settings
         button5.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
         button5.FlatAppearance.BorderSize = 0
         button5.FlatStyle = FlatStyle.Flat
-        button5.Location = New Point(117, 202)
+        button5.Location = New Point(63, 202)
         button5.Name = "button5"
         button5.Size = New Size(97, 32)
         button5.TabIndex = 59
@@ -762,4 +776,5 @@ Partial Class Settings
     Friend WithEvents Button8 As Button
     Friend WithEvents Label26 As Label
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Button9 As Button
 End Class
