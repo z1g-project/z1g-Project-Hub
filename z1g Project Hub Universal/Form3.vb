@@ -8,6 +8,8 @@ Imports RestSharp
 Imports System.Net
 Imports System.IO
 Imports System.Net.Http.Headers
+Imports Microsoft.WindowsAPICodePack.Shell
+Imports Microsoft.WindowsAPICodePack.Shell.PropertySystem
 
 Public Class Form3
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -57,7 +59,6 @@ Public Class Form3
         Panel5.Visible = False
         Panel7.Visible = False
         Label9.Text = "App Manager"
-        previewLabel.Visible = True
     End Sub
 
     Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
@@ -66,7 +67,6 @@ Public Class Form3
         Panel5.Visible = False
         Panel7.Visible = False
         Label9.Text = "App Manager"
-        previewLabel.Visible = True
     End Sub
 
     Private Async Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
@@ -78,7 +78,6 @@ Public Class Form3
         Panel8.Visible = False
         Panel11.Visible = False
         Label9.Text = "Feed [Beta]"
-        previewLabel.Visible = False
         Try
             Button7.Enabled = False
             Using client As New HttpClient()
@@ -729,7 +728,6 @@ Public Class Form3
         Panel8.Visible = False
         Panel11.Visible = False
         Label9.Text = "Feed [Beta]"
-        previewLabel.Visible = False
         Try
             Button7.Enabled = False
             Using client As New HttpClient()
@@ -1377,7 +1375,6 @@ Public Class Form3
         Panel5.Visible = False
         Panel7.Visible = False
         Label9.Text = "Home"
-        previewLabel.Visible = False
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
@@ -1386,7 +1383,6 @@ Public Class Form3
         Panel5.Visible = False
         Panel7.Visible = False
         Label9.Text = "App Manager"
-        previewLabel.Visible = True
     End Sub
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
@@ -1396,7 +1392,6 @@ Public Class Form3
         Panel6.Visible = False
         Panel7.Visible = False
         Label9.Text = "Account Manager"
-        previewLabel.Visible = False
     End Sub
 
     Private Async Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
@@ -1408,7 +1403,6 @@ Public Class Form3
         Panel8.Visible = False
         Panel11.Visible = False
         Label9.Text = "Feed [Beta]"
-        previewLabel.Visible = False
         Try
             Button7.Enabled = False
             Using client As New HttpClient()
@@ -2061,14 +2055,7 @@ Public Class Form3
         Label2.Text = getuser.ReadToEnd
         Label84.Text = getuser.ReadToEnd
         getuser.Close()
-
-        previewLabel.Text = "Preview"
-
-        ' You can customize the appearance of the Label control to make it stand out as "Preview"
-        previewLabel.Font = New Font(previewLabel.Font.FontFamily, 9.75, FontStyle.Bold)
-        previewLabel.ForeColor = Color.Black
-        previewLabel.BackColor = Color.Yellow
-
+        picturebox24.visible = False
         Dim settingValue As String = My.Settings.windowPosition
 
         If settingValue = "CenterScreen" Then
@@ -2838,8 +2825,28 @@ Public Class Form3
         If My.Computer.FileSystem.FileExists("C:\z1g Apps\Terbium\Terbium.exe") Then
             Process.Start("C:\z1g Apps\Terbium\Terbium.exe")
         Else
-            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe", "C:\z1g Apps\Terbium\Terbium-bootstrap.exe")
-            Process.Start("C:\z1g Apps\Terbium\Terbium-bootstrap.exe")
+            PictureBox24.Visible = True
+            downloads.PictureBox1.Image = My.Resources.terbium
+            downloads.Label1.Text = "Terbium"
+            downloads.Label2.Text = "Downloading: 0 of 0mb"
+            Dim zipUrl As String = "https://tb-client.johnglynn2.repl.co/terbium.zip"
+            Dim zipPath As String = Path.Combine("C:\z1g Apps\Temp\", "terbium.zip")
+            Using client As New WebClient()
+                client.DownloadFile(zipUrl, zipPath)
+            End Using
+
+            ' Extract the zip file
+            Dim extractPath As String = Path.Combine("C:\z1g Apps\", "Terbium\")
+            If Directory.Exists(extractPath) Then
+                Directory.Delete(extractPath, True)
+            End If
+            ZipFile.ExtractToDirectory(zipPath, extractPath)
+
+            Dim createShortcutThread As New Threading.Thread(AddressOf CreateTerbiumShortcut)
+            createShortcutThread.Start()
+            Label21.Text = "Terbium (Downloading...)"
+            downloads.Label2.Text = "Installing: 0%"
+            downloads.Panel2.Visible = True
         End If
     End Sub
 
@@ -2848,8 +2855,28 @@ Public Class Form3
         If My.Computer.FileSystem.FileExists("C:\z1g Apps\Terbium\Terbium.exe") Then
             Process.Start("C:\z1g Apps\Terbium\Terbium.exe")
         Else
-            My.Computer.Network.DownloadFile("https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe", "C:\z1g Apps\Terbium\Terbium-bootstrap.exe")
-            Process.Start("C:\z1g Apps\Terbium\Terbium-bootstrap.exe")
+            PictureBox24.Visible = True
+            downloads.PictureBox1.Image = My.Resources.terbium
+            downloads.Label1.Text = "Terbium"
+            downloads.Label2.Text = "Downloading: 0 of 0mb"
+            Dim zipUrl As String = "https://tb-client.johnglynn2.repl.co/terbium.zip"
+            Dim zipPath As String = Path.Combine("C:\z1g Apps\Temp\", "terbium.zip")
+            Using client As New WebClient()
+                client.DownloadFile(zipUrl, zipPath)
+            End Using
+
+            ' Extract the zip file
+            Dim extractPath As String = Path.Combine("C:\z1g Apps\", "Terbium\")
+            If Directory.Exists(extractPath) Then
+                Directory.Delete(extractPath, True)
+            End If
+            ZipFile.ExtractToDirectory(zipPath, extractPath)
+
+            Dim createShortcutThread As New Threading.Thread(AddressOf CreateTerbiumShortcut)
+            createShortcutThread.Start()
+            Label21.Text = "Terbium (Downloading...)"
+            downloads.Label2.Text = "Installing: 0%"
+            downloads.Panel2.Visible = True
         End If
     End Sub
 
@@ -3081,5 +3108,52 @@ Public Class Form3
         Else
             WindowState = FormWindowState.Maximized
         End If
+    End Sub
+
+    Private Sub CreateTerbiumShortcut()
+        downloads.Panel3.Visible = True
+        downloads.Label2.Text = "Installing: 50%"
+        ' Specify the target executable and shortcut path
+        Dim targetPath As String = Path.Combine("C:\z1g Apps\Terbium\", "Terbium.exe")
+        Dim shortcutPath As String = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.CommonPrograms),
+            "Terbium.lnk"
+        )
+
+        ' Create a batch file content to create the shortcut
+        Dim batchContent As String = $"@echo off{Environment.NewLine}"
+        batchContent += $"echo Set oWS = WScript.CreateObject(""WScript.Shell"") > CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"echo sLinkFile = ""{shortcutPath}"" >> CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"echo Set oLink = oWS.CreateShortcut(sLinkFile) >> CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"echo oLink.TargetPath = ""{targetPath}"" >> CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"echo oLink.WorkingDirectory = ""{Path.GetDirectoryName(targetPath)}"" >> CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"echo oLink.Save >> CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"cscript CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"del CreateShortcut.vbs"
+
+        ' Write the batch file
+        Dim batchFilePath As String = Path.Combine(Path.GetTempPath(), "CreateShortcut.bat")
+        File.WriteAllText(batchFilePath, batchContent)
+
+        ' Run the batch file
+        Dim processStartInfo As New ProcessStartInfo(batchFilePath)
+        processStartInfo.CreateNoWindow = True
+        processStartInfo.UseShellExecute = False
+        Process.Start(processStartInfo)
+
+        downloads.Label2.Text = "Cleaning Up..."
+        ' Clean up the batch file
+        File.Delete(batchFilePath)
+        Process.Start("C:\z1g Apps\Terbium\Terbium.exe")
+        Label21.Text = "Terbium"
+        downloads.Panel3.Visible = False
+        downloads.Panel2.Visible = False
+        downloads.Hide()
+        PictureBox24.Visible = False
+    End Sub
+
+    Private Sub PictureBox24_Click(sender As Object, e As EventArgs) Handles PictureBox24.Click
+        downloads.Show()
+        Me.Hide()
     End Sub
 End Class

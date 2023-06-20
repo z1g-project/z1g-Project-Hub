@@ -56,7 +56,6 @@ Partial Class Form3
         Label9 = New Label()
         Panel3 = New Panel()
         Panel4 = New Panel()
-        previewLabel = New Label()
         Panel5 = New Panel()
         Panel6 = New Panel()
         Panel7 = New Panel()
@@ -180,6 +179,7 @@ Partial Class Form3
         PictureBox1 = New PictureBox()
         Label11 = New Label()
         Label10 = New Label()
+        PictureBox24 = New PictureBox()
         Panel1.SuspendLayout()
         profile_panel.SuspendLayout()
         CType(PictureBox23, ComponentModel.ISupportInitialize).BeginInit()
@@ -217,6 +217,7 @@ Partial Class Form3
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox24, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -481,6 +482,7 @@ Partial Class Form3
         ' 
         ' Panel2
         ' 
+        Panel2.Controls.Add(PictureBox24)
         Panel2.Controls.Add(PictureBox19)
         Panel2.Controls.Add(Button10)
         Panel2.Controls.Add(Button3)
@@ -579,7 +581,6 @@ Partial Class Form3
         ' 
         ' Panel4
         ' 
-        Panel4.Controls.Add(previewLabel)
         Panel4.Controls.Add(Panel5)
         Panel4.Controls.Add(Label65)
         Panel4.Controls.Add(PictureBox16)
@@ -604,15 +605,6 @@ Partial Class Form3
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(828, 641)
         Panel4.TabIndex = 13
-        ' 
-        ' previewLabel
-        ' 
-        previewLabel.AutoSize = True
-        previewLabel.Location = New Point(523, 270)
-        previewLabel.Name = "previewLabel"
-        previewLabel.Size = New Size(69, 15)
-        previewLabel.TabIndex = 30
-        previewLabel.Text = "previewText"
         ' 
         ' Panel5
         ' 
@@ -1984,6 +1976,17 @@ Partial Class Form3
         Label10.TabIndex = 0
         Label10.Text = "Welcome to the z1g Hub!"
         ' 
+        ' PictureBox24
+        ' 
+        PictureBox24.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        PictureBox24.Image = My.Resources.Resources.downloadicon
+        PictureBox24.Location = New Point(622, 8)
+        PictureBox24.Name = "PictureBox24"
+        PictureBox24.Size = New Size(39, 31)
+        PictureBox24.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox24.TabIndex = 48
+        PictureBox24.TabStop = False
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -2045,6 +2048,7 @@ Partial Class Form3
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox24, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -2203,5 +2207,5 @@ Partial Class Form3
     Friend WithEvents Label87 As Label
     Friend WithEvents Label88 As Label
     Friend WithEvents PictureBox22 As PictureBox
-    Friend WithEvents previewLabel As Label
+    Friend WithEvents PictureBox24 As PictureBox
 End Class
