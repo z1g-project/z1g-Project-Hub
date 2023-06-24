@@ -14,7 +14,10 @@ namespace Terbium
 {
     public partial class form1 : Form
     {
+        private overlayForm overlayForm;
+
         private const int WM_NCLBUTTONDOWN = 0xA1;
+        private const int WM_KEYDOWN = 0x0100;
         private const int HT_CAPTION = 0x2;
 
         [DllImport("user32.dll")]
@@ -270,5 +273,30 @@ namespace Terbium
         {
             chromiumWebBrowser1.Refresh();
         }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            // Check if Shift + Tab keys are pressed and the panel1 has focus
+            if (keyData == (Keys.Shift | Keys.Tab) && panel1.ContainsFocus)
+            {
+                if (overlayForm == null)
+                {
+                    // Create an instance of the overlay form
+                    overlayForm = new overlayForm();
+                    overlayForm.Owner = this;
+                    overlayForm.Show();
+                }
+                else
+                {
+                    // Close the overlay form if it's already open
+                    overlayForm.Close();
+                    overlayForm = null;
+                }
+                return true; // Prevent default handling of the key combination
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
     }
 }

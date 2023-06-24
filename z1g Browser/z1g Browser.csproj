@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="CefSharp.Common.NETCore" Version="114.2.100" />
-    <PackageReference Include="cefsharp.winforms.netcore" Version="114.2.100" />
+    <PackageReference Include="CefSharp.WinForms.NETCore" Version="114.2.100" />
   </ItemGroup>
 
   <ItemGroup>

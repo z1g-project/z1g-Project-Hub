@@ -55,6 +55,8 @@ Public Class Settings
         Panel3.Visible = False
         Panel4.Visible = False
         Panel5.Visible = False
+        textBox1.Text = My.Settings.formWidth
+        textBox2.Text = My.Settings.formHeight
         ComboBox1.Text = My.Settings.savelocation
         ComboBox2.Text = My.Settings.applocation
     End Sub

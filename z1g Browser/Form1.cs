@@ -85,7 +85,7 @@ namespace z1g_Browser
                 applauncher.label1.Text = "Would you like to Launch Terbium?";
                 applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
                 chromiumWebBrowser1.Back();
-                if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe")) 
+                if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe"))
                 {
                     applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
                 }
@@ -174,6 +174,35 @@ namespace z1g_Browser
                     applauncher.textBox1.Text = "C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe";
                 }
                 applauncher.Show();
+            }
+            if (comboBox1.Text.Equals("https://terbiumux.net") || comboBox1.Text.Contains("https://terbiumux.net"))
+            {
+                applauncher applauncher = new applauncher();
+                applauncher.label1.Text = "Would you like to Launch Terbium?";
+                applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
+                chromiumWebBrowser1.Back();
+                if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe"))
+                {
+                    applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
+                }
+                else
+                {
+                    string fileUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe";
+                    string savePath = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+
+                    using (WebClient client = new WebClient())
+                    {
+                        client.DownloadFile(fileUrl, savePath);
+                    }
+
+                    applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+                }
+                applauncher.Show();
+            }
+            if (comboBox1.Text.Equals("http://localhost:0000") || comboBox1.Text.Contains("http://localhost"))
+            {
+                label1.ForeColor = Color.LightGray;
+                label1.Text = "ℹ️ LocalHost";
             }
         }
 
@@ -305,6 +334,35 @@ namespace z1g_Browser
                         applauncher.textBox1.Text = "C:\\Users\\Public\\z1g-project\\z1g-project-hub-universal.exe";
                     }
                     applauncher.Show();
+                }
+                if (comboBox1.Text.Equals("https://terbiumux.net") || comboBox1.Text.Contains("https://terbiumux.net"))
+                {
+                    applauncher applauncher = new applauncher();
+                    applauncher.label1.Text = "Would you like to Launch Terbium?";
+                    applauncher.label2.Text = "It appears that your trying to access Terbium which can be \r\ninstalled or opened from your computer.";
+                    chromiumWebBrowser1.Back();
+                    if (File.Exists("C:\\z1g Apps\\Terbium\\Terbium.exe"))
+                    {
+                        applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\Terbium.exe";
+                    }
+                    else
+                    {
+                        string fileUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/Terbium-bootstrap.exe";
+                        string savePath = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+
+                        using (WebClient client = new WebClient())
+                        {
+                            client.DownloadFile(fileUrl, savePath);
+                        }
+
+                        applauncher.textBox1.Text = "C:\\z1g Apps\\Terbium\\terbium-bootstraper.exe";
+                    }
+                    applauncher.Show();
+                }
+                if (comboBox1.Text.Equals("http://localhost:0000") || comboBox1.Text.Contains("http://localhost"))
+                {
+                    label1.ForeColor = Color.LightGray;
+                    label1.Text = "ℹ️ LocalHost";
                 }
             }));
         }

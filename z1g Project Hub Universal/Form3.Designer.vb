@@ -25,6 +25,7 @@ Partial Class Form3
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form3))
         Panel1 = New Panel()
+        Label91 = New Label()
         profile_panel = New Panel()
         Label89 = New Label()
         Label90 = New Label()
@@ -49,6 +50,7 @@ Partial Class Form3
         Label2 = New Label()
         Label1 = New Label()
         Panel2 = New Panel()
+        PictureBox24 = New PictureBox()
         PictureBox19 = New PictureBox()
         Button10 = New Button()
         Button3 = New Button()
@@ -59,7 +61,57 @@ Partial Class Form3
         Panel5 = New Panel()
         Panel6 = New Panel()
         Panel7 = New Panel()
+        Panel12 = New Panel()
+        Panel13 = New Panel()
+        Button16 = New Button()
+        Button17 = New Button()
+        Label116 = New Label()
+        Label117 = New Label()
+        Label118 = New Label()
+        PictureBox34 = New PictureBox()
+        Panel15 = New Panel()
+        Label119 = New Label()
+        Button15 = New Button()
+        Button14 = New Button()
+        Label115 = New Label()
+        Label113 = New Label()
+        Label112 = New Label()
+        PictureBox33 = New PictureBox()
+        Panel14 = New Panel()
+        Label114 = New Label()
+        Label107 = New Label()
+        Label108 = New Label()
+        Label109 = New Label()
+        PictureBox32 = New PictureBox()
+        Label110 = New Label()
+        Label111 = New Label()
+        Label106 = New Label()
+        Label104 = New Label()
+        PictureBox30 = New PictureBox()
+        Label105 = New Label()
+        PictureBox31 = New PictureBox()
+        Label102 = New Label()
+        Label103 = New Label()
+        PictureBox29 = New PictureBox()
+        Button13 = New Button()
+        Button12 = New Button()
+        TextBox6 = New TextBox()
+        Label101 = New Label()
+        Label100 = New Label()
+        Label99 = New Label()
+        Label98 = New Label()
+        PictureBox28 = New PictureBox()
+        PictureBox27 = New PictureBox()
+        Label97 = New Label()
+        PictureBox26 = New PictureBox()
+        Label96 = New Label()
+        PictureBox25 = New PictureBox()
+        Label92 = New Label()
+        Label93 = New Label()
         Panel8 = New Panel()
+        Button11 = New Button()
+        Label94 = New Label()
+        Label95 = New Label()
         Label78 = New Label()
         Label79 = New Label()
         Label80 = New Label()
@@ -157,6 +209,7 @@ Partial Class Form3
         Label21 = New Label()
         ContextMenuStrip1 = New ContextMenuStrip(components)
         OpenToolStripMenuItem = New ToolStripMenuItem()
+        InformationToolStripMenuItem = New ToolStripMenuItem()
         UninstallToolStripMenuItem = New ToolStripMenuItem()
         SettingsToolStripMenuItem = New ToolStripMenuItem()
         ResetToolStripMenuItem = New ToolStripMenuItem()
@@ -179,7 +232,42 @@ Partial Class Form3
         PictureBox1 = New PictureBox()
         Label11 = New Label()
         Label10 = New Label()
-        PictureBox24 = New PictureBox()
+        Label120 = New Label()
+        PictureBox35 = New PictureBox()
+        PictureBox36 = New PictureBox()
+        Label121 = New Label()
+        PictureBox37 = New PictureBox()
+        PictureBox38 = New PictureBox()
+        PictureBox39 = New PictureBox()
+        Button18 = New Button()
+        Button19 = New Button()
+        PictureBox40 = New PictureBox()
+        PictureBox41 = New PictureBox()
+        Button20 = New Button()
+        Button21 = New Button()
+        PictureBox44 = New PictureBox()
+        Label122 = New Label()
+        PictureBox42 = New PictureBox()
+        Button22 = New Button()
+        Button23 = New Button()
+        PictureBox43 = New PictureBox()
+        PictureBox45 = New PictureBox()
+        PictureBox46 = New PictureBox()
+        Label123 = New Label()
+        PictureBox47 = New PictureBox()
+        Button24 = New Button()
+        Button25 = New Button()
+        PictureBox48 = New PictureBox()
+        PictureBox49 = New PictureBox()
+        PictureBox50 = New PictureBox()
+        Label124 = New Label()
+        Button26 = New Button()
+        Button27 = New Button()
+        Label125 = New Label()
+        Label126 = New Label()
+        PictureBox51 = New PictureBox()
+        Label127 = New Label()
+        Label128 = New Label()
         Panel1.SuspendLayout()
         profile_panel.SuspendLayout()
         CType(PictureBox23, ComponentModel.ISupportInitialize).BeginInit()
@@ -187,12 +275,27 @@ Partial Class Form3
         CType(PictureBox21, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox20, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
+        CType(PictureBox24, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox19, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
         Panel4.SuspendLayout()
         Panel5.SuspendLayout()
         Panel6.SuspendLayout()
         Panel7.SuspendLayout()
+        Panel12.SuspendLayout()
+        Panel13.SuspendLayout()
+        CType(PictureBox34, ComponentModel.ISupportInitialize).BeginInit()
+        Panel15.SuspendLayout()
+        CType(PictureBox33, ComponentModel.ISupportInitialize).BeginInit()
+        Panel14.SuspendLayout()
+        CType(PictureBox32, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox30, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox31, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox29, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox28, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox27, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox26, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox25, ComponentModel.ISupportInitialize).BeginInit()
         Panel8.SuspendLayout()
         CType(PictureBox18, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox17, ComponentModel.ISupportInitialize).BeginInit()
@@ -217,11 +320,28 @@ Partial Class Form3
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox24, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox35, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox36, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox37, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox38, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox39, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox40, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox41, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox44, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox42, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox43, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox45, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox46, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox47, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox48, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox49, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox50, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox51, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
+        Panel1.Controls.Add(Label91)
         Panel1.Controls.Add(profile_panel)
         Panel1.Controls.Add(Label8)
         Panel1.Controls.Add(Label7)
@@ -236,6 +356,16 @@ Partial Class Form3
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(245, 688)
         Panel1.TabIndex = 0
+        ' 
+        ' Label91
+        ' 
+        Label91.AutoSize = True
+        Label91.Font = New Font("Segoe UI Semibold", 13.5F, FontStyle.Bold, GraphicsUnit.Point)
+        Label91.Location = New Point(41, 342)
+        Label91.Name = "Label91"
+        Label91.Size = New Size(140, 25)
+        Label91.TabIndex = 49
+        Label91.Text = "z1g Suite [Beta]"
         ' 
         ' profile_panel
         ' 
@@ -494,6 +624,17 @@ Partial Class Form3
         Panel2.Size = New Size(828, 47)
         Panel2.TabIndex = 1
         ' 
+        ' PictureBox24
+        ' 
+        PictureBox24.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        PictureBox24.Image = My.Resources.Resources.downloadicon
+        PictureBox24.Location = New Point(622, 8)
+        PictureBox24.Name = "PictureBox24"
+        PictureBox24.Size = New Size(39, 31)
+        PictureBox24.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox24.TabIndex = 48
+        PictureBox24.TabStop = False
+        ' 
         ' PictureBox19
         ' 
         PictureBox19.Anchor = AnchorStyles.Top Or AnchorStyles.Right
@@ -656,6 +797,7 @@ Partial Class Form3
         ' 
         ' Panel7
         ' 
+        Panel7.Controls.Add(Panel12)
         Panel7.Controls.Add(Panel8)
         Panel7.Controls.Add(Panel9)
         Panel7.Controls.Add(Label61)
@@ -687,8 +829,585 @@ Partial Class Form3
         Panel7.Size = New Size(828, 641)
         Panel7.TabIndex = 39
         ' 
+        ' Panel12
+        ' 
+        Panel12.Controls.Add(Panel13)
+        Panel12.Controls.Add(Label106)
+        Panel12.Controls.Add(Label104)
+        Panel12.Controls.Add(PictureBox30)
+        Panel12.Controls.Add(Label105)
+        Panel12.Controls.Add(PictureBox31)
+        Panel12.Controls.Add(Label102)
+        Panel12.Controls.Add(Label103)
+        Panel12.Controls.Add(PictureBox29)
+        Panel12.Controls.Add(Button13)
+        Panel12.Controls.Add(Button12)
+        Panel12.Controls.Add(TextBox6)
+        Panel12.Controls.Add(Label101)
+        Panel12.Controls.Add(Label100)
+        Panel12.Controls.Add(Label99)
+        Panel12.Controls.Add(Label98)
+        Panel12.Controls.Add(PictureBox28)
+        Panel12.Controls.Add(PictureBox27)
+        Panel12.Controls.Add(Label97)
+        Panel12.Controls.Add(PictureBox26)
+        Panel12.Controls.Add(Label96)
+        Panel12.Controls.Add(PictureBox25)
+        Panel12.Controls.Add(Label92)
+        Panel12.Controls.Add(Label93)
+        Panel12.Dock = DockStyle.Fill
+        Panel12.Location = New Point(0, 0)
+        Panel12.Name = "Panel12"
+        Panel12.Size = New Size(808, 641)
+        Panel12.TabIndex = 49
+        ' 
+        ' Panel13
+        ' 
+        Panel13.Controls.Add(Label128)
+        Panel13.Controls.Add(Label127)
+        Panel13.Controls.Add(Label126)
+        Panel13.Controls.Add(PictureBox51)
+        Panel13.Controls.Add(Label125)
+        Panel13.Controls.Add(Button26)
+        Panel13.Controls.Add(Button27)
+        Panel13.Controls.Add(PictureBox47)
+        Panel13.Controls.Add(Button24)
+        Panel13.Controls.Add(Button25)
+        Panel13.Controls.Add(PictureBox48)
+        Panel13.Controls.Add(PictureBox49)
+        Panel13.Controls.Add(PictureBox50)
+        Panel13.Controls.Add(Label124)
+        Panel13.Controls.Add(PictureBox42)
+        Panel13.Controls.Add(Button22)
+        Panel13.Controls.Add(Button23)
+        Panel13.Controls.Add(PictureBox43)
+        Panel13.Controls.Add(PictureBox45)
+        Panel13.Controls.Add(PictureBox46)
+        Panel13.Controls.Add(Label123)
+        Panel13.Controls.Add(PictureBox41)
+        Panel13.Controls.Add(Button20)
+        Panel13.Controls.Add(Button21)
+        Panel13.Controls.Add(PictureBox44)
+        Panel13.Controls.Add(Label122)
+        Panel13.Controls.Add(PictureBox40)
+        Panel13.Controls.Add(Button19)
+        Panel13.Controls.Add(Button18)
+        Panel13.Controls.Add(PictureBox39)
+        Panel13.Controls.Add(PictureBox38)
+        Panel13.Controls.Add(PictureBox37)
+        Panel13.Controls.Add(Label121)
+        Panel13.Controls.Add(PictureBox36)
+        Panel13.Controls.Add(Label120)
+        Panel13.Controls.Add(PictureBox35)
+        Panel13.Controls.Add(Button16)
+        Panel13.Controls.Add(Button17)
+        Panel13.Controls.Add(Label116)
+        Panel13.Controls.Add(Label117)
+        Panel13.Controls.Add(Label118)
+        Panel13.Controls.Add(PictureBox34)
+        Panel13.Controls.Add(Panel15)
+        Panel13.Controls.Add(Button15)
+        Panel13.Controls.Add(Button14)
+        Panel13.Controls.Add(Label115)
+        Panel13.Controls.Add(Label113)
+        Panel13.Controls.Add(Label112)
+        Panel13.Controls.Add(PictureBox33)
+        Panel13.Controls.Add(Panel14)
+        Panel13.Controls.Add(Label107)
+        Panel13.Controls.Add(Label108)
+        Panel13.Controls.Add(Label109)
+        Panel13.Controls.Add(PictureBox32)
+        Panel13.Controls.Add(Label110)
+        Panel13.Controls.Add(Label111)
+        Panel13.Dock = DockStyle.Fill
+        Panel13.Location = New Point(0, 0)
+        Panel13.Name = "Panel13"
+        Panel13.Size = New Size(808, 641)
+        Panel13.TabIndex = 61
+        ' 
+        ' Button16
+        ' 
+        Button16.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button16.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button16.FlatAppearance.BorderSize = 0
+        Button16.FlatStyle = FlatStyle.Flat
+        Button16.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button16.Location = New Point(633, 196)
+        Button16.Name = "Button16"
+        Button16.Size = New Size(107, 29)
+        Button16.TabIndex = 80
+        Button16.Text = "Change Settings"
+        Button16.UseVisualStyleBackColor = False
+        ' 
+        ' Button17
+        ' 
+        Button17.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button17.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button17.FlatAppearance.BorderSize = 0
+        Button17.FlatStyle = FlatStyle.Flat
+        Button17.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button17.Location = New Point(553, 196)
+        Button17.Name = "Button17"
+        Button17.Size = New Size(74, 29)
+        Button17.TabIndex = 79
+        Button17.Text = "Reset"
+        Button17.UseVisualStyleBackColor = False
+        ' 
+        ' Label116
+        ' 
+        Label116.AutoSize = True
+        Label116.Location = New Point(391, 225)
+        Label116.Name = "Label116"
+        Label116.Size = New Size(153, 15)
+        Label116.TabIndex = 78
+        Label116.Text = "Defualt Server: US-East (NY)"
+        ' 
+        ' Label117
+        ' 
+        Label117.AutoSize = True
+        Label117.Location = New Point(150, 225)
+        Label117.Name = "Label117"
+        Label117.Size = New Size(66, 15)
+        Label117.TabIndex = 77
+        Label117.Text = "UnMetered"
+        ' 
+        ' Label118
+        ' 
+        Label118.Anchor = AnchorStyles.Top
+        Label118.AutoSize = True
+        Label118.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label118.Location = New Point(148, 164)
+        Label118.Name = "Label118"
+        Label118.Size = New Size(214, 30)
+        Label118.TabIndex = 76
+        Label118.Text = "z1g VPN Data Usage"
+        ' 
+        ' PictureBox34
+        ' 
+        PictureBox34.Image = My.Resources.Resources.z1g
+        PictureBox34.Location = New Point(41, 166)
+        PictureBox34.Name = "PictureBox34"
+        PictureBox34.Size = New Size(101, 75)
+        PictureBox34.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox34.TabIndex = 75
+        PictureBox34.TabStop = False
+        ' 
+        ' Panel15
+        ' 
+        Panel15.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Panel15.Controls.Add(Label119)
+        Panel15.Location = New Point(148, 200)
+        Panel15.Name = "Panel15"
+        Panel15.Size = New Size(396, 19)
+        Panel15.TabIndex = 74
+        ' 
+        ' Label119
+        ' 
+        Label119.AutoSize = True
+        Label119.Location = New Point(3, 2)
+        Label119.Name = "Label119"
+        Label119.Size = New Size(54, 15)
+        Label119.TabIndex = 71
+        Label119.Text = "0gb (0%)"
+        ' 
+        ' Button15
+        ' 
+        Button15.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button15.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button15.FlatAppearance.BorderSize = 0
+        Button15.FlatStyle = FlatStyle.Flat
+        Button15.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button15.Location = New Point(649, 105)
+        Button15.Name = "Button15"
+        Button15.Size = New Size(90, 29)
+        Button15.TabIndex = 73
+        Button15.Text = "Open Drive"
+        Button15.UseVisualStyleBackColor = False
+        ' 
+        ' Button14
+        ' 
+        Button14.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button14.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button14.FlatAppearance.BorderSize = 0
+        Button14.FlatStyle = FlatStyle.Flat
+        Button14.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button14.Location = New Point(553, 105)
+        Button14.Name = "Button14"
+        Button14.Size = New Size(90, 29)
+        Button14.TabIndex = 72
+        Button14.Text = "Clear Drive"
+        Button14.UseVisualStyleBackColor = False
+        ' 
+        ' Label115
+        ' 
+        Label115.AutoSize = True
+        Label115.Location = New Point(434, 134)
+        Label115.Name = "Label115"
+        Label115.Size = New Size(111, 15)
+        Label115.TabIndex = 71
+        Label115.Text = "Drive Status: Offline"
+        ' 
+        ' Label113
+        ' 
+        Label113.AutoSize = True
+        Label113.Location = New Point(150, 134)
+        Label113.Name = "Label113"
+        Label113.Size = New Size(91, 15)
+        Label113.TabIndex = 70
+        Label113.Text = "0gb out of 15gb"
+        ' 
+        ' Label112
+        ' 
+        Label112.Anchor = AnchorStyles.Top
+        Label112.AutoSize = True
+        Label112.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label112.Location = New Point(148, 73)
+        Label112.Name = "Label112"
+        Label112.Size = New Size(105, 30)
+        Label112.TabIndex = 69
+        Label112.Text = "z1g Drive"
+        ' 
+        ' PictureBox33
+        ' 
+        PictureBox33.Image = My.Resources.Resources.cloudstorage_removebg_preview
+        PictureBox33.Location = New Point(41, 75)
+        PictureBox33.Name = "PictureBox33"
+        PictureBox33.Size = New Size(101, 75)
+        PictureBox33.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox33.TabIndex = 68
+        PictureBox33.TabStop = False
+        ' 
+        ' Panel14
+        ' 
+        Panel14.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Panel14.Controls.Add(Label114)
+        Panel14.Location = New Point(148, 109)
+        Panel14.Name = "Panel14"
+        Panel14.Size = New Size(396, 19)
+        Panel14.TabIndex = 67
+        ' 
+        ' Label114
+        ' 
+        Label114.AutoSize = True
+        Label114.Location = New Point(3, 2)
+        Label114.Name = "Label114"
+        Label114.Size = New Size(23, 15)
+        Label114.TabIndex = 71
+        Label114.Text = "0%"
+        ' 
+        ' Label107
+        ' 
+        Label107.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label107.AutoSize = True
+        Label107.Location = New Point(679, 55)
+        Label107.Name = "Label107"
+        Label107.Size = New Size(106, 15)
+        Label107.TabIndex = 66
+        Label107.Text = "No Expiration Date"
+        ' 
+        ' Label108
+        ' 
+        Label108.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label108.AutoSize = True
+        Label108.Location = New Point(679, 36)
+        Label108.Name = "Label108"
+        Label108.Size = New Size(92, 15)
+        Label108.TabIndex = 65
+        Label108.Text = "No Subscription"
+        ' 
+        ' Label109
+        ' 
+        Label109.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label109.AutoSize = True
+        Label109.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label109.Location = New Point(679, 10)
+        Label109.Name = "Label109"
+        Label109.Size = New Size(113, 21)
+        Label109.TabIndex = 64
+        Label109.Text = "%username%"
+        ' 
+        ' PictureBox32
+        ' 
+        PictureBox32.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        PictureBox32.Image = My.Resources.Resources.usericn_removebg_preview
+        PictureBox32.Location = New Point(616, 15)
+        PictureBox32.Name = "PictureBox32"
+        PictureBox32.Size = New Size(57, 51)
+        PictureBox32.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox32.TabIndex = 63
+        PictureBox32.TabStop = False
+        ' 
+        ' Label110
+        ' 
+        Label110.Anchor = AnchorStyles.Top
+        Label110.AutoSize = True
+        Label110.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label110.Location = New Point(389, 60)
+        Label110.Name = "Label110"
+        Label110.Size = New Size(82, 21)
+        Label110.TabIndex = 62
+        Label110.Text = "Suite Hub"
+        ' 
+        ' Label111
+        ' 
+        Label111.Anchor = AnchorStyles.Top
+        Label111.AutoSize = True
+        Label111.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label111.Location = New Point(324, 18)
+        Label111.Name = "Label111"
+        Label111.Size = New Size(220, 37)
+        Label111.TabIndex = 61
+        Label111.Text = "z1g Suite (Beta)"
+        ' 
+        ' Label106
+        ' 
+        Label106.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label106.AutoSize = True
+        Label106.Location = New Point(674, 51)
+        Label106.Name = "Label106"
+        Label106.Size = New Size(106, 15)
+        Label106.TabIndex = 60
+        Label106.Text = "No Expiration Date"
+        ' 
+        ' Label104
+        ' 
+        Label104.AutoSize = True
+        Label104.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label104.Location = New Point(442, 499)
+        Label104.Name = "Label104"
+        Label104.Size = New Size(137, 21)
+        Label104.TabIndex = 59
+        Label104.Text = "z1g Suite Ultimate"
+        ' 
+        ' PictureBox30
+        ' 
+        PictureBox30.Image = My.Resources.Resources.z1g
+        PictureBox30.Location = New Point(430, 353)
+        PictureBox30.Name = "PictureBox30"
+        PictureBox30.Size = New Size(154, 140)
+        PictureBox30.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox30.TabIndex = 58
+        PictureBox30.TabStop = False
+        ' 
+        ' Label105
+        ' 
+        Label105.AutoSize = True
+        Label105.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label105.Location = New Point(249, 501)
+        Label105.Name = "Label105"
+        Label105.Size = New Size(140, 21)
+        Label105.TabIndex = 57
+        Label105.Text = "z1g Suite Standard"
+        ' 
+        ' PictureBox31
+        ' 
+        PictureBox31.Image = My.Resources.Resources.z1g
+        PictureBox31.Location = New Point(239, 353)
+        PictureBox31.Name = "PictureBox31"
+        PictureBox31.Size = New Size(154, 140)
+        PictureBox31.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox31.TabIndex = 56
+        PictureBox31.TabStop = False
+        ' 
+        ' Label102
+        ' 
+        Label102.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label102.AutoSize = True
+        Label102.Location = New Point(674, 32)
+        Label102.Name = "Label102"
+        Label102.Size = New Size(92, 15)
+        Label102.TabIndex = 55
+        Label102.Text = "No Subscription"
+        ' 
+        ' Label103
+        ' 
+        Label103.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label103.AutoSize = True
+        Label103.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label103.Location = New Point(674, 6)
+        Label103.Name = "Label103"
+        Label103.Size = New Size(113, 21)
+        Label103.TabIndex = 54
+        Label103.Text = "%username%"
+        ' 
+        ' PictureBox29
+        ' 
+        PictureBox29.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        PictureBox29.Image = My.Resources.Resources.usericn_removebg_preview
+        PictureBox29.Location = New Point(611, 11)
+        PictureBox29.Name = "PictureBox29"
+        PictureBox29.Size = New Size(57, 51)
+        PictureBox29.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox29.TabIndex = 53
+        PictureBox29.TabStop = False
+        ' 
+        ' Button13
+        ' 
+        Button13.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button13.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button13.FlatAppearance.BorderSize = 0
+        Button13.FlatStyle = FlatStyle.Flat
+        Button13.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button13.Location = New Point(626, 548)
+        Button13.Name = "Button13"
+        Button13.Size = New Size(95, 30)
+        Button13.TabIndex = 52
+        Button13.Text = "Purchase a Key"
+        Button13.UseVisualStyleBackColor = False
+        ' 
+        ' Button12
+        ' 
+        Button12.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button12.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button12.FlatAppearance.BorderSize = 0
+        Button12.FlatStyle = FlatStyle.Flat
+        Button12.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button12.Location = New Point(502, 548)
+        Button12.Name = "Button12"
+        Button12.Size = New Size(118, 30)
+        Button12.TabIndex = 51
+        Button12.Text = "Activate Subscription"
+        Button12.UseVisualStyleBackColor = False
+        ' 
+        ' TextBox6
+        ' 
+        TextBox6.BackColor = Color.FromArgb(CByte(45), CByte(45), CByte(45))
+        TextBox6.ForeColor = Color.White
+        TextBox6.Location = New Point(272, 553)
+        TextBox6.Multiline = True
+        TextBox6.Name = "TextBox6"
+        TextBox6.Size = New Size(224, 23)
+        TextBox6.TabIndex = 36
+        TextBox6.Text = "Enter Key Here"
+        ' 
+        ' Label101
+        ' 
+        Label101.AutoSize = True
+        Label101.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label101.Location = New Point(111, 554)
+        Label101.Name = "Label101"
+        Label101.Size = New Size(159, 17)
+        Label101.TabIndex = 35
+        Label101.Text = "Have a Key? Enter it Here:"
+        ' 
+        ' Label100
+        ' 
+        Label100.Anchor = AnchorStyles.Top
+        Label100.AutoSize = True
+        Label100.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label100.Location = New Point(339, 312)
+        Label100.Name = "Label100"
+        Label100.Size = New Size(153, 25)
+        Label100.TabIndex = 34
+        Label100.Text = "Purchasing Info"
+        ' 
+        ' Label99
+        ' 
+        Label99.AutoSize = True
+        Label99.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label99.Location = New Point(632, 243)
+        Label99.Name = "Label99"
+        Label99.Size = New Size(117, 21)
+        Label99.TabIndex = 32
+        Label99.Text = "Helps Fund US!"
+        ' 
+        ' Label98
+        ' 
+        Label98.AutoSize = True
+        Label98.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label98.Location = New Point(446, 243)
+        Label98.Name = "Label98"
+        Label98.Size = New Size(130, 42)
+        Label98.TabIndex = 31
+        Label98.Text = "Be Prioritized for " & vbCrLf & "  Beta Features"
+        ' 
+        ' PictureBox28
+        ' 
+        PictureBox28.Image = My.Resources.Resources.z1g
+        PictureBox28.Location = New Point(616, 95)
+        PictureBox28.Name = "PictureBox28"
+        PictureBox28.Size = New Size(154, 140)
+        PictureBox28.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox28.TabIndex = 30
+        PictureBox28.TabStop = False
+        ' 
+        ' PictureBox27
+        ' 
+        PictureBox27.Image = My.Resources.Resources.beta_features
+        PictureBox27.Location = New Point(431, 95)
+        PictureBox27.Name = "PictureBox27"
+        PictureBox27.Size = New Size(154, 140)
+        PictureBox27.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox27.TabIndex = 29
+        PictureBox27.TabStop = False
+        ' 
+        ' Label97
+        ' 
+        Label97.AutoSize = True
+        Label97.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label97.Location = New Point(226, 243)
+        Label97.Name = "Label97"
+        Label97.Size = New Size(180, 63)
+        Label97.TabIndex = 28
+        Label97.Text = "Auto Remove ads for all " & vbCrLf & "      apps and pages " & vbCrLf & "(z1g Services / Browser)" & vbCrLf
+        ' 
+        ' PictureBox26
+        ' 
+        PictureBox26.Image = My.Resources.Resources._stop
+        PictureBox26.Location = New Point(235, 95)
+        PictureBox26.Name = "PictureBox26"
+        PictureBox26.Size = New Size(154, 140)
+        PictureBox26.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox26.TabIndex = 27
+        PictureBox26.TabStop = False
+        ' 
+        ' Label96
+        ' 
+        Label96.AutoSize = True
+        Label96.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label96.Location = New Point(58, 243)
+        Label96.Name = "Label96"
+        Label96.Size = New Size(135, 42)
+        Label96.TabIndex = 26
+        Label96.Text = "   Get access to " & vbCrLf & "Exclusive Features"
+        ' 
+        ' PictureBox25
+        ' 
+        PictureBox25.Image = My.Resources.Resources.z1g
+        PictureBox25.Location = New Point(48, 95)
+        PictureBox25.Name = "PictureBox25"
+        PictureBox25.Size = New Size(154, 140)
+        PictureBox25.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox25.TabIndex = 25
+        PictureBox25.TabStop = False
+        ' 
+        ' Label92
+        ' 
+        Label92.Anchor = AnchorStyles.Top
+        Label92.AutoSize = True
+        Label92.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label92.Location = New Point(384, 56)
+        Label92.Name = "Label92"
+        Label92.Size = New Size(97, 21)
+        Label92.TabIndex = 24
+        Label92.Text = "Information"
+        ' 
+        ' Label93
+        ' 
+        Label93.Anchor = AnchorStyles.Top
+        Label93.AutoSize = True
+        Label93.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label93.Location = New Point(319, 14)
+        Label93.Name = "Label93"
+        Label93.Size = New Size(220, 37)
+        Label93.TabIndex = 23
+        Label93.Text = "z1g Suite (Beta)"
+        ' 
         ' Panel8
         ' 
+        Panel8.Controls.Add(Button11)
+        Panel8.Controls.Add(Label94)
+        Panel8.Controls.Add(Label95)
         Panel8.Controls.Add(Label78)
         Panel8.Controls.Add(Label79)
         Panel8.Controls.Add(Label80)
@@ -709,17 +1428,53 @@ Partial Class Form3
         Panel8.Controls.Add(Label68)
         Panel8.Controls.Add(Label69)
         Panel8.Controls.Add(PictureBox14)
-        Panel8.Dock = DockStyle.Bottom
-        Panel8.Location = New Point(0, 92)
+        Panel8.Dock = DockStyle.Fill
+        Panel8.Location = New Point(0, 0)
         Panel8.Name = "Panel8"
-        Panel8.Size = New Size(808, 549)
+        Panel8.Size = New Size(808, 641)
         Panel8.TabIndex = 47
+        ' 
+        ' Button11
+        ' 
+        Button11.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button11.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button11.FlatAppearance.BorderSize = 0
+        Button11.FlatStyle = FlatStyle.Flat
+        Button11.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button11.Location = New Point(702, 16)
+        Button11.Name = "Button11"
+        Button11.Size = New Size(83, 30)
+        Button11.TabIndex = 50
+        Button11.Text = "Refresh"
+        Button11.UseVisualStyleBackColor = False
+        ' 
+        ' Label94
+        ' 
+        Label94.Anchor = AnchorStyles.Top
+        Label94.AutoSize = True
+        Label94.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label94.Location = New Point(384, 67)
+        Label94.Name = "Label94"
+        Label94.Size = New Size(75, 21)
+        Label94.TabIndex = 49
+        Label94.Text = "Trending"
+        ' 
+        ' Label95
+        ' 
+        Label95.Anchor = AnchorStyles.Top
+        Label95.AutoSize = True
+        Label95.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label95.Location = New Point(342, 25)
+        Label95.Name = "Label95"
+        Label95.Size = New Size(163, 37)
+        Label95.TabIndex = 48
+        Label95.Text = "Feed (Beta)"
         ' 
         ' Label78
         ' 
         Label78.AutoSize = True
         Label78.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label78.Location = New Point(218, 491)
+        Label78.Location = New Point(216, 573)
         Label78.Name = "Label78"
         Label78.Size = New Size(111, 17)
         Label78.TabIndex = 47
@@ -730,7 +1485,7 @@ Partial Class Form3
         Label79.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Label79.AutoSize = True
         Label79.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label79.Location = New Point(643, 410)
+        Label79.Location = New Point(641, 492)
         Label79.Name = "Label79"
         Label79.Size = New Size(106, 17)
         Label79.TabIndex = 46
@@ -740,7 +1495,7 @@ Partial Class Form3
         ' 
         Label80.AutoSize = True
         Label80.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label80.Location = New Point(226, 457)
+        Label80.Location = New Point(224, 539)
         Label80.Name = "Label80"
         Label80.Size = New Size(64, 17)
         Label80.TabIndex = 45
@@ -750,7 +1505,7 @@ Partial Class Form3
         ' 
         Label81.AutoSize = True
         Label81.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label81.Location = New Point(212, 416)
+        Label81.Location = New Point(210, 498)
         Label81.Name = "Label81"
         Label81.Size = New Size(95, 25)
         Label81.TabIndex = 44
@@ -758,7 +1513,7 @@ Partial Class Form3
         ' 
         ' PictureBox18
         ' 
-        PictureBox18.Location = New Point(60, 410)
+        PictureBox18.Location = New Point(58, 492)
         PictureBox18.Name = "PictureBox18"
         PictureBox18.Size = New Size(133, 98)
         PictureBox18.SizeMode = PictureBoxSizeMode.StretchImage
@@ -769,7 +1524,7 @@ Partial Class Form3
         ' 
         Label74.AutoSize = True
         Label74.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label74.Location = New Point(218, 354)
+        Label74.Location = New Point(216, 436)
         Label74.Name = "Label74"
         Label74.Size = New Size(111, 17)
         Label74.TabIndex = 42
@@ -780,7 +1535,7 @@ Partial Class Form3
         Label75.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Label75.AutoSize = True
         Label75.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label75.Location = New Point(643, 273)
+        Label75.Location = New Point(641, 355)
         Label75.Name = "Label75"
         Label75.Size = New Size(106, 17)
         Label75.TabIndex = 41
@@ -790,7 +1545,7 @@ Partial Class Form3
         ' 
         Label76.AutoSize = True
         Label76.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label76.Location = New Point(226, 320)
+        Label76.Location = New Point(224, 402)
         Label76.Name = "Label76"
         Label76.Size = New Size(64, 17)
         Label76.TabIndex = 40
@@ -800,7 +1555,7 @@ Partial Class Form3
         ' 
         Label77.AutoSize = True
         Label77.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label77.Location = New Point(212, 279)
+        Label77.Location = New Point(210, 361)
         Label77.Name = "Label77"
         Label77.Size = New Size(95, 25)
         Label77.TabIndex = 39
@@ -808,7 +1563,7 @@ Partial Class Form3
         ' 
         ' PictureBox17
         ' 
-        PictureBox17.Location = New Point(60, 273)
+        PictureBox17.Location = New Point(58, 355)
         PictureBox17.Name = "PictureBox17"
         PictureBox17.Size = New Size(133, 98)
         PictureBox17.SizeMode = PictureBoxSizeMode.StretchImage
@@ -819,7 +1574,7 @@ Partial Class Form3
         ' 
         Label70.AutoSize = True
         Label70.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label70.Location = New Point(220, 225)
+        Label70.Location = New Point(218, 307)
         Label70.Name = "Label70"
         Label70.Size = New Size(111, 17)
         Label70.TabIndex = 37
@@ -830,7 +1585,7 @@ Partial Class Form3
         Label71.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Label71.AutoSize = True
         Label71.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label71.Location = New Point(643, 144)
+        Label71.Location = New Point(641, 226)
         Label71.Name = "Label71"
         Label71.Size = New Size(106, 17)
         Label71.TabIndex = 36
@@ -840,7 +1595,7 @@ Partial Class Form3
         ' 
         Label72.AutoSize = True
         Label72.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label72.Location = New Point(228, 191)
+        Label72.Location = New Point(226, 273)
         Label72.Name = "Label72"
         Label72.Size = New Size(64, 17)
         Label72.TabIndex = 35
@@ -850,7 +1605,7 @@ Partial Class Form3
         ' 
         Label73.AutoSize = True
         Label73.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label73.Location = New Point(214, 150)
+        Label73.Location = New Point(212, 232)
         Label73.Name = "Label73"
         Label73.Size = New Size(95, 25)
         Label73.TabIndex = 34
@@ -858,7 +1613,7 @@ Partial Class Form3
         ' 
         ' PictureBox15
         ' 
-        PictureBox15.Location = New Point(62, 144)
+        PictureBox15.Location = New Point(60, 226)
         PictureBox15.Name = "PictureBox15"
         PictureBox15.Size = New Size(133, 98)
         PictureBox15.SizeMode = PictureBoxSizeMode.StretchImage
@@ -869,7 +1624,7 @@ Partial Class Form3
         ' 
         Label66.AutoSize = True
         Label66.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label66.Location = New Point(212, 94)
+        Label66.Location = New Point(210, 176)
         Label66.Name = "Label66"
         Label66.Size = New Size(111, 17)
         Label66.TabIndex = 32
@@ -880,7 +1635,7 @@ Partial Class Form3
         Label67.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Label67.AutoSize = True
         Label67.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label67.Location = New Point(643, 19)
+        Label67.Location = New Point(641, 101)
         Label67.Name = "Label67"
         Label67.Size = New Size(106, 17)
         Label67.TabIndex = 31
@@ -890,7 +1645,7 @@ Partial Class Form3
         ' 
         Label68.AutoSize = True
         Label68.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label68.Location = New Point(220, 60)
+        Label68.Location = New Point(218, 142)
         Label68.Name = "Label68"
         Label68.Size = New Size(64, 17)
         Label68.TabIndex = 30
@@ -900,7 +1655,7 @@ Partial Class Form3
         ' 
         Label69.AutoSize = True
         Label69.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label69.Location = New Point(206, 19)
+        Label69.Location = New Point(204, 101)
         Label69.Name = "Label69"
         Label69.Size = New Size(95, 25)
         Label69.TabIndex = 29
@@ -908,7 +1663,7 @@ Partial Class Form3
         ' 
         ' PictureBox14
         ' 
-        PictureBox14.Location = New Point(62, 13)
+        PictureBox14.Location = New Point(60, 95)
         PictureBox14.Name = "PictureBox14"
         PictureBox14.Size = New Size(133, 98)
         PictureBox14.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1652,7 +2407,7 @@ Partial Class Form3
         Label19.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         Label19.AutoSize = True
         Label19.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label19.Location = New Point(434, 270)
+        Label19.Location = New Point(473, 270)
         Label19.Name = "Label19"
         Label19.Size = New Size(90, 20)
         Label19.TabIndex = 18
@@ -1725,25 +2480,32 @@ Partial Class Form3
         ' ContextMenuStrip1
         ' 
         ContextMenuStrip1.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
-        ContextMenuStrip1.Items.AddRange(New ToolStripItem() {OpenToolStripMenuItem, UninstallToolStripMenuItem, SettingsToolStripMenuItem, ResetToolStripMenuItem})
+        ContextMenuStrip1.Items.AddRange(New ToolStripItem() {OpenToolStripMenuItem, InformationToolStripMenuItem, UninstallToolStripMenuItem, SettingsToolStripMenuItem, ResetToolStripMenuItem})
         ContextMenuStrip1.Name = "ContextMenuStrip1"
         ContextMenuStrip1.RenderMode = ToolStripRenderMode.System
-        ContextMenuStrip1.Size = New Size(121, 92)
+        ContextMenuStrip1.Size = New Size(138, 114)
         ' 
         ' OpenToolStripMenuItem
         ' 
         OpenToolStripMenuItem.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         OpenToolStripMenuItem.ForeColor = Color.White
         OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        OpenToolStripMenuItem.Size = New Size(120, 22)
+        OpenToolStripMenuItem.Size = New Size(137, 22)
         OpenToolStripMenuItem.Text = "Open"
+        ' 
+        ' InformationToolStripMenuItem
+        ' 
+        InformationToolStripMenuItem.ForeColor = Color.White
+        InformationToolStripMenuItem.Name = "InformationToolStripMenuItem"
+        InformationToolStripMenuItem.Size = New Size(137, 22)
+        InformationToolStripMenuItem.Text = "Information"
         ' 
         ' UninstallToolStripMenuItem
         ' 
         UninstallToolStripMenuItem.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         UninstallToolStripMenuItem.ForeColor = Color.White
         UninstallToolStripMenuItem.Name = "UninstallToolStripMenuItem"
-        UninstallToolStripMenuItem.Size = New Size(120, 22)
+        UninstallToolStripMenuItem.Size = New Size(137, 22)
         UninstallToolStripMenuItem.Text = "Uninstall"
         ' 
         ' SettingsToolStripMenuItem
@@ -1751,7 +2513,7 @@ Partial Class Form3
         SettingsToolStripMenuItem.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         SettingsToolStripMenuItem.ForeColor = Color.White
         SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        SettingsToolStripMenuItem.Size = New Size(120, 22)
+        SettingsToolStripMenuItem.Size = New Size(137, 22)
         SettingsToolStripMenuItem.Text = "Settings"
         ' 
         ' ResetToolStripMenuItem
@@ -1759,7 +2521,7 @@ Partial Class Form3
         ResetToolStripMenuItem.BackColor = Color.FromArgb(CByte(24), CByte(24), CByte(24))
         ResetToolStripMenuItem.ForeColor = Color.White
         ResetToolStripMenuItem.Name = "ResetToolStripMenuItem"
-        ResetToolStripMenuItem.Size = New Size(120, 22)
+        ResetToolStripMenuItem.Size = New Size(137, 22)
         ResetToolStripMenuItem.Text = "Reset"
         ' 
         ' PictureBox5
@@ -1976,16 +2738,407 @@ Partial Class Form3
         Label10.TabIndex = 0
         Label10.Text = "Welcome to the z1g Hub!"
         ' 
-        ' PictureBox24
+        ' Label120
         ' 
-        PictureBox24.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        PictureBox24.Image = My.Resources.Resources.downloadicon
-        PictureBox24.Location = New Point(622, 8)
-        PictureBox24.Name = "PictureBox24"
-        PictureBox24.Size = New Size(39, 31)
-        PictureBox24.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox24.TabIndex = 48
-        PictureBox24.TabStop = False
+        Label120.Anchor = AnchorStyles.Top
+        Label120.AutoSize = True
+        Label120.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label120.Location = New Point(148, 251)
+        Label120.Name = "Label120"
+        Label120.Size = New Size(164, 30)
+        Label120.TabIndex = 82
+        Label120.Text = "App Extentions"
+        ' 
+        ' PictureBox35
+        ' 
+        PictureBox35.Image = My.Resources.Resources.downloadicon
+        PictureBox35.Location = New Point(41, 253)
+        PictureBox35.Name = "PictureBox35"
+        PictureBox35.Size = New Size(101, 75)
+        PictureBox35.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox35.TabIndex = 81
+        PictureBox35.TabStop = False
+        ' 
+        ' PictureBox36
+        ' 
+        PictureBox36.Image = My.Resources.Resources.terbium
+        PictureBox36.Location = New Point(154, 309)
+        PictureBox36.Name = "PictureBox36"
+        PictureBox36.Size = New Size(33, 26)
+        PictureBox36.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox36.TabIndex = 84
+        PictureBox36.TabStop = False
+        ' 
+        ' Label121
+        ' 
+        Label121.AutoSize = True
+        Label121.Font = New Font("Segoe UI Semibold", 10.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label121.Location = New Point(151, 286)
+        Label121.Name = "Label121"
+        Label121.Size = New Size(104, 20)
+        Label121.TabIndex = 85
+        Label121.Text = "UBlock Origin"
+        ' 
+        ' PictureBox37
+        ' 
+        PictureBox37.Image = My.Resources.Resources.velocity
+        PictureBox37.Location = New Point(193, 309)
+        PictureBox37.Name = "PictureBox37"
+        PictureBox37.Size = New Size(33, 26)
+        PictureBox37.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox37.TabIndex = 86
+        PictureBox37.TabStop = False
+        ' 
+        ' PictureBox38
+        ' 
+        PictureBox38.Image = My.Resources.Resources.uv
+        PictureBox38.Location = New Point(232, 309)
+        PictureBox38.Name = "PictureBox38"
+        PictureBox38.Size = New Size(33, 26)
+        PictureBox38.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox38.TabIndex = 87
+        PictureBox38.TabStop = False
+        ' 
+        ' PictureBox39
+        ' 
+        PictureBox39.Image = My.Resources.Resources.bx
+        PictureBox39.Location = New Point(270, 309)
+        PictureBox39.Name = "PictureBox39"
+        PictureBox39.Size = New Size(33, 26)
+        PictureBox39.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox39.TabIndex = 88
+        PictureBox39.TabStop = False
+        ' 
+        ' Button18
+        ' 
+        Button18.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button18.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button18.FlatAppearance.BorderSize = 0
+        Button18.FlatStyle = FlatStyle.Flat
+        Button18.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button18.Location = New Point(347, 277)
+        Button18.Name = "Button18"
+        Button18.Size = New Size(74, 29)
+        Button18.TabIndex = 89
+        Button18.Text = "Install"
+        Button18.UseVisualStyleBackColor = False
+        ' 
+        ' Button19
+        ' 
+        Button19.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button19.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button19.FlatAppearance.BorderSize = 0
+        Button19.FlatStyle = FlatStyle.Flat
+        Button19.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button19.Location = New Point(347, 307)
+        Button19.Name = "Button19"
+        Button19.Size = New Size(74, 29)
+        Button19.TabIndex = 90
+        Button19.Text = "Remove"
+        Button19.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox40
+        ' 
+        PictureBox40.Image = My.Resources.Resources.z1g
+        PictureBox40.Location = New Point(309, 309)
+        PictureBox40.Name = "PictureBox40"
+        PictureBox40.Size = New Size(33, 26)
+        PictureBox40.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox40.TabIndex = 91
+        PictureBox40.TabStop = False
+        ' 
+        ' PictureBox41
+        ' 
+        PictureBox41.Image = My.Resources.Resources.z1g
+        PictureBox41.Location = New Point(470, 308)
+        PictureBox41.Name = "PictureBox41"
+        PictureBox41.Size = New Size(33, 26)
+        PictureBox41.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox41.TabIndex = 99
+        PictureBox41.TabStop = False
+        ' 
+        ' Button20
+        ' 
+        Button20.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button20.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button20.FlatAppearance.BorderSize = 0
+        Button20.FlatStyle = FlatStyle.Flat
+        Button20.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button20.Location = New Point(632, 307)
+        Button20.Name = "Button20"
+        Button20.Size = New Size(74, 29)
+        Button20.TabIndex = 98
+        Button20.Text = "Remove"
+        Button20.UseVisualStyleBackColor = False
+        ' 
+        ' Button21
+        ' 
+        Button21.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button21.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button21.FlatAppearance.BorderSize = 0
+        Button21.FlatStyle = FlatStyle.Flat
+        Button21.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button21.Location = New Point(632, 277)
+        Button21.Name = "Button21"
+        Button21.Size = New Size(74, 29)
+        Button21.TabIndex = 97
+        Button21.Text = "Install"
+        Button21.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox44
+        ' 
+        PictureBox44.Image = My.Resources.Resources.velocity
+        PictureBox44.Location = New Point(434, 308)
+        PictureBox44.Name = "PictureBox44"
+        PictureBox44.Size = New Size(33, 26)
+        PictureBox44.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox44.TabIndex = 94
+        PictureBox44.TabStop = False
+        ' 
+        ' Label122
+        ' 
+        Label122.AutoSize = True
+        Label122.Font = New Font("Segoe UI Semibold", 10.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label122.Location = New Point(430, 286)
+        Label122.Name = "Label122"
+        Label122.Size = New Size(122, 20)
+        Label122.TabIndex = 93
+        Label122.Text = "Youtube Addons"
+        ' 
+        ' PictureBox42
+        ' 
+        PictureBox42.Image = My.Resources.Resources.z1g
+        PictureBox42.Location = New Point(270, 379)
+        PictureBox42.Name = "PictureBox42"
+        PictureBox42.Size = New Size(33, 26)
+        PictureBox42.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox42.TabIndex = 107
+        PictureBox42.TabStop = False
+        ' 
+        ' Button22
+        ' 
+        Button22.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button22.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button22.FlatAppearance.BorderSize = 0
+        Button22.FlatStyle = FlatStyle.Flat
+        Button22.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button22.Location = New Point(347, 376)
+        Button22.Name = "Button22"
+        Button22.Size = New Size(74, 29)
+        Button22.TabIndex = 106
+        Button22.Text = "Remove"
+        Button22.UseVisualStyleBackColor = False
+        ' 
+        ' Button23
+        ' 
+        Button23.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button23.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button23.FlatAppearance.BorderSize = 0
+        Button23.FlatStyle = FlatStyle.Flat
+        Button23.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button23.Location = New Point(347, 346)
+        Button23.Name = "Button23"
+        Button23.Size = New Size(74, 29)
+        Button23.TabIndex = 105
+        Button23.Text = "Install"
+        Button23.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox43
+        ' 
+        PictureBox43.Image = My.Resources.Resources.bx
+        PictureBox43.Location = New Point(231, 379)
+        PictureBox43.Name = "PictureBox43"
+        PictureBox43.Size = New Size(33, 26)
+        PictureBox43.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox43.TabIndex = 104
+        PictureBox43.TabStop = False
+        ' 
+        ' PictureBox45
+        ' 
+        PictureBox45.Image = My.Resources.Resources.uv
+        PictureBox45.Location = New Point(193, 379)
+        PictureBox45.Name = "PictureBox45"
+        PictureBox45.Size = New Size(33, 26)
+        PictureBox45.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox45.TabIndex = 103
+        PictureBox45.TabStop = False
+        ' 
+        ' PictureBox46
+        ' 
+        PictureBox46.Image = My.Resources.Resources.velocity
+        PictureBox46.Location = New Point(154, 379)
+        PictureBox46.Name = "PictureBox46"
+        PictureBox46.Size = New Size(33, 26)
+        PictureBox46.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox46.TabIndex = 102
+        PictureBox46.TabStop = False
+        ' 
+        ' Label123
+        ' 
+        Label123.AutoSize = True
+        Label123.Font = New Font("Segoe UI Semibold", 10.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label123.Location = New Point(151, 355)
+        Label123.Name = "Label123"
+        Label123.Size = New Size(109, 20)
+        Label123.TabIndex = 101
+        Label123.Text = "Custom Cursor"
+        ' 
+        ' PictureBox47
+        ' 
+        PictureBox47.Image = My.Resources.Resources.z1g
+        PictureBox47.Location = New Point(555, 379)
+        PictureBox47.Name = "PictureBox47"
+        PictureBox47.Size = New Size(33, 26)
+        PictureBox47.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox47.TabIndex = 114
+        PictureBox47.TabStop = False
+        ' 
+        ' Button24
+        ' 
+        Button24.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button24.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button24.FlatAppearance.BorderSize = 0
+        Button24.FlatStyle = FlatStyle.Flat
+        Button24.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button24.Location = New Point(632, 376)
+        Button24.Name = "Button24"
+        Button24.Size = New Size(74, 29)
+        Button24.TabIndex = 113
+        Button24.Text = "Remove"
+        Button24.UseVisualStyleBackColor = False
+        ' 
+        ' Button25
+        ' 
+        Button25.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button25.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button25.FlatAppearance.BorderSize = 0
+        Button25.FlatStyle = FlatStyle.Flat
+        Button25.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button25.Location = New Point(632, 346)
+        Button25.Name = "Button25"
+        Button25.Size = New Size(74, 29)
+        Button25.TabIndex = 112
+        Button25.Text = "Install"
+        Button25.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox48
+        ' 
+        PictureBox48.Image = My.Resources.Resources._128
+        PictureBox48.Location = New Point(516, 379)
+        PictureBox48.Name = "PictureBox48"
+        PictureBox48.Size = New Size(33, 26)
+        PictureBox48.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox48.TabIndex = 111
+        PictureBox48.TabStop = False
+        ' 
+        ' PictureBox49
+        ' 
+        PictureBox49.Image = My.Resources.Resources.velocity
+        PictureBox49.Location = New Point(478, 379)
+        PictureBox49.Name = "PictureBox49"
+        PictureBox49.Size = New Size(33, 26)
+        PictureBox49.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox49.TabIndex = 110
+        PictureBox49.TabStop = False
+        ' 
+        ' PictureBox50
+        ' 
+        PictureBox50.Image = My.Resources.Resources.terbium
+        PictureBox50.Location = New Point(439, 379)
+        PictureBox50.Name = "PictureBox50"
+        PictureBox50.Size = New Size(33, 26)
+        PictureBox50.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox50.TabIndex = 109
+        PictureBox50.TabStop = False
+        ' 
+        ' Label124
+        ' 
+        Label124.AutoSize = True
+        Label124.Font = New Font("Segoe UI Semibold", 10.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label124.Location = New Point(436, 355)
+        Label124.Name = "Label124"
+        Label124.Size = New Size(115, 20)
+        Label124.TabIndex = 108
+        Label124.Text = "Tampermonkey"
+        ' 
+        ' Button26
+        ' 
+        Button26.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button26.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button26.FlatAppearance.BorderSize = 0
+        Button26.FlatStyle = FlatStyle.Flat
+        Button26.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button26.Location = New Point(522, 416)
+        Button26.Name = "Button26"
+        Button26.Size = New Size(103, 29)
+        Button26.TabIndex = 116
+        Button26.Text = "Remove Extention"
+        Button26.UseVisualStyleBackColor = False
+        ' 
+        ' Button27
+        ' 
+        Button27.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button27.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button27.FlatAppearance.BorderSize = 0
+        Button27.FlatStyle = FlatStyle.Flat
+        Button27.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button27.Location = New Point(413, 416)
+        Button27.Name = "Button27"
+        Button27.Size = New Size(103, 29)
+        Button27.TabIndex = 115
+        Button27.Text = "Select Extention"
+        Button27.UseVisualStyleBackColor = False
+        ' 
+        ' Label125
+        ' 
+        Label125.AutoSize = True
+        Label125.Font = New Font("Segoe UI Semibold", 10.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label125.Location = New Point(242, 420)
+        Label125.Name = "Label125"
+        Label125.Size = New Size(165, 20)
+        Label125.TabIndex = 117
+        Label125.Text = "Install Other Extention:"
+        ' 
+        ' Label126
+        ' 
+        Label126.Anchor = AnchorStyles.Top
+        Label126.AutoSize = True
+        Label126.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Label126.Location = New Point(148, 453)
+        Label126.Name = "Label126"
+        Label126.Size = New Size(144, 30)
+        Label126.TabIndex = 119
+        Label126.Text = "Beta Features"
+        ' 
+        ' PictureBox51
+        ' 
+        PictureBox51.Image = My.Resources.Resources.beta_features
+        PictureBox51.Location = New Point(41, 455)
+        PictureBox51.Name = "PictureBox51"
+        PictureBox51.Size = New Size(101, 75)
+        PictureBox51.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox51.TabIndex = 118
+        PictureBox51.TabStop = False
+        ' 
+        ' Label127
+        ' 
+        Label127.AutoSize = True
+        Label127.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        Label127.Location = New Point(343, 548)
+        Label127.Name = "Label127"
+        Label127.Size = New Size(168, 32)
+        Label127.TabIndex = 120
+        Label127.Text = "Coming Soon"
+        ' 
+        ' Label128
+        ' 
+        Label128.AutoSize = True
+        Label128.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label128.Location = New Point(691, 612)
+        Label128.Name = "Label128"
+        Label128.Size = New Size(111, 20)
+        Label128.TabIndex = 121
+        Label128.Text = "z1g Suite v1.0.0"
         ' 
         ' Form3
         ' 
@@ -2012,6 +3165,7 @@ Partial Class Form3
         CType(PictureBox20, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
+        CType(PictureBox24, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox19, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
@@ -2023,6 +3177,24 @@ Partial Class Form3
         Panel6.PerformLayout()
         Panel7.ResumeLayout(False)
         Panel7.PerformLayout()
+        Panel12.ResumeLayout(False)
+        Panel12.PerformLayout()
+        Panel13.ResumeLayout(False)
+        Panel13.PerformLayout()
+        CType(PictureBox34, ComponentModel.ISupportInitialize).EndInit()
+        Panel15.ResumeLayout(False)
+        Panel15.PerformLayout()
+        CType(PictureBox33, ComponentModel.ISupportInitialize).EndInit()
+        Panel14.ResumeLayout(False)
+        Panel14.PerformLayout()
+        CType(PictureBox32, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox30, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox31, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox29, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox28, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox27, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox26, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox25, ComponentModel.ISupportInitialize).EndInit()
         Panel8.ResumeLayout(False)
         Panel8.PerformLayout()
         CType(PictureBox18, ComponentModel.ISupportInitialize).EndInit()
@@ -2048,7 +3220,23 @@ Partial Class Form3
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox24, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox35, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox36, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox37, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox38, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox39, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox40, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox41, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox44, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox42, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox43, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox45, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox46, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox47, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox48, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox49, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox50, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox51, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -2208,4 +3396,92 @@ Partial Class Form3
     Friend WithEvents Label88 As Label
     Friend WithEvents PictureBox22 As PictureBox
     Friend WithEvents PictureBox24 As PictureBox
+    Friend WithEvents InformationToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label91 As Label
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents Label92 As Label
+    Friend WithEvents Label93 As Label
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Label94 As Label
+    Friend WithEvents Label95 As Label
+    Friend WithEvents PictureBox25 As PictureBox
+    Friend WithEvents Label97 As Label
+    Friend WithEvents PictureBox26 As PictureBox
+    Friend WithEvents Label96 As Label
+    Friend WithEvents Label98 As Label
+    Friend WithEvents PictureBox28 As PictureBox
+    Friend WithEvents PictureBox27 As PictureBox
+    Friend WithEvents Label99 As Label
+    Friend WithEvents Label100 As Label
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label101 As Label
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button13 As Button
+    Friend WithEvents Label102 As Label
+    Friend WithEvents Label103 As Label
+    Friend WithEvents PictureBox29 As PictureBox
+    Friend WithEvents Label104 As Label
+    Friend WithEvents PictureBox30 As PictureBox
+    Friend WithEvents Label105 As Label
+    Friend WithEvents PictureBox31 As PictureBox
+    Friend WithEvents Label106 As Label
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents Label107 As Label
+    Friend WithEvents Label108 As Label
+    Friend WithEvents Label109 As Label
+    Friend WithEvents PictureBox32 As PictureBox
+    Friend WithEvents Label110 As Label
+    Friend WithEvents Label111 As Label
+    Friend WithEvents Panel14 As Panel
+    Friend WithEvents Label115 As Label
+    Friend WithEvents Label113 As Label
+    Friend WithEvents Label112 As Label
+    Friend WithEvents PictureBox33 As PictureBox
+    Friend WithEvents Label114 As Label
+    Friend WithEvents Button15 As Button
+    Friend WithEvents Button14 As Button
+    Friend WithEvents Button16 As Button
+    Friend WithEvents Button17 As Button
+    Friend WithEvents Label116 As Label
+    Friend WithEvents Label117 As Label
+    Friend WithEvents Label118 As Label
+    Friend WithEvents PictureBox34 As PictureBox
+    Friend WithEvents Panel15 As Panel
+    Friend WithEvents Label119 As Label
+    Friend WithEvents Label120 As Label
+    Friend WithEvents PictureBox35 As PictureBox
+    Friend WithEvents PictureBox41 As PictureBox
+    Friend WithEvents Button20 As Button
+    Friend WithEvents Button21 As Button
+    Friend WithEvents PictureBox44 As PictureBox
+    Friend WithEvents Label122 As Label
+    Friend WithEvents PictureBox40 As PictureBox
+    Friend WithEvents Button19 As Button
+    Friend WithEvents Button18 As Button
+    Friend WithEvents PictureBox39 As PictureBox
+    Friend WithEvents PictureBox38 As PictureBox
+    Friend WithEvents PictureBox37 As PictureBox
+    Friend WithEvents Label121 As Label
+    Friend WithEvents PictureBox36 As PictureBox
+    Friend WithEvents Label125 As Label
+    Friend WithEvents Button26 As Button
+    Friend WithEvents Button27 As Button
+    Friend WithEvents PictureBox47 As PictureBox
+    Friend WithEvents Button24 As Button
+    Friend WithEvents Button25 As Button
+    Friend WithEvents PictureBox48 As PictureBox
+    Friend WithEvents PictureBox49 As PictureBox
+    Friend WithEvents PictureBox50 As PictureBox
+    Friend WithEvents Label124 As Label
+    Friend WithEvents PictureBox42 As PictureBox
+    Friend WithEvents Button22 As Button
+    Friend WithEvents Button23 As Button
+    Friend WithEvents PictureBox43 As PictureBox
+    Friend WithEvents PictureBox45 As PictureBox
+    Friend WithEvents PictureBox46 As PictureBox
+    Friend WithEvents Label123 As Label
+    Friend WithEvents Label126 As Label
+    Friend WithEvents PictureBox51 As PictureBox
+    Friend WithEvents Label128 As Label
+    Friend WithEvents Label127 As Label
 End Class

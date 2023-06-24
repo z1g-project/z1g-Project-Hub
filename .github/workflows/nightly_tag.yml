@@ -48,7 +48,7 @@ jobs:
           tag_name: "z1g-hub-nightly-${{ steps.date.outputs.date }}"
           release_name: "Nightly Build - ${{ steps.date.outputs.date }}"
           draft: false
-          prerelease: false
+          prerelease: true
 
       - name: Upload compiled ZIP as release asset
         uses: actions/upload-release-asset@v1
