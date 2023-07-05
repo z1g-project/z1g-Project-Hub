@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BruhProx.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Blurred_X.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="FormWidth" Type="System.Int32" Scope="User">
@@ -24,7 +24,7 @@
       <Value Profile="(Default)">Segoe UI, 9pt</Value>
     </Setting>
     <Setting Name="versionurl" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://bruhprox.pages.dev</Value>
+      <Value Profile="(Default)">http://localhost</Value>
     </Setting>
   </Settings>
 </SettingsFile>

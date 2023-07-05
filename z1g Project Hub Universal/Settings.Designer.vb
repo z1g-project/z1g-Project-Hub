@@ -60,6 +60,11 @@ Partial Class Settings
         FolderBrowserDialog1 = New FolderBrowserDialog()
         FolderBrowserDialog2 = New FolderBrowserDialog()
         Panel4 = New Panel()
+        buildswitcher = New Panel()
+        Button11 = New Button()
+        Button13 = New Button()
+        Button12 = New Button()
+        Button10 = New Button()
         ProgressBar1 = New ProgressBar()
         Button4 = New Button()
         Label16 = New Label()
@@ -85,6 +90,7 @@ Partial Class Settings
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
         Panel4.SuspendLayout()
+        buildswitcher.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel5.SuspendLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
@@ -468,6 +474,8 @@ Partial Class Settings
         ' 
         ' Panel4
         ' 
+        Panel4.Controls.Add(buildswitcher)
+        Panel4.Controls.Add(Button10)
         Panel4.Controls.Add(ProgressBar1)
         Panel4.Controls.Add(Button4)
         Panel4.Controls.Add(Label16)
@@ -478,6 +486,69 @@ Partial Class Settings
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(625, 504)
         Panel4.TabIndex = 34
+        ' 
+        ' buildswitcher
+        ' 
+        buildswitcher.Controls.Add(Button11)
+        buildswitcher.Controls.Add(Button13)
+        buildswitcher.Controls.Add(Button12)
+        buildswitcher.Location = New Point(487, 169)
+        buildswitcher.Name = "buildswitcher"
+        buildswitcher.Size = New Size(117, 85)
+        buildswitcher.TabIndex = 35
+        ' 
+        ' Button11
+        ' 
+        Button11.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button11.FlatAppearance.BorderSize = 0
+        Button11.FlatStyle = FlatStyle.Flat
+        Button11.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Button11.Location = New Point(3, 0)
+        Button11.Name = "Button11"
+        Button11.Size = New Size(111, 25)
+        Button11.TabIndex = 32
+        Button11.Text = "Stable"
+        Button11.UseVisualStyleBackColor = False
+        ' 
+        ' Button13
+        ' 
+        Button13.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button13.FlatAppearance.BorderColor = Color.Green
+        Button13.FlatAppearance.BorderSize = 0
+        Button13.FlatStyle = FlatStyle.Flat
+        Button13.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Button13.Location = New Point(3, 50)
+        Button13.Name = "Button13"
+        Button13.Size = New Size(111, 32)
+        Button13.TabIndex = 34
+        Button13.Text = "Nightly"
+        Button13.UseVisualStyleBackColor = False
+        ' 
+        ' Button12
+        ' 
+        Button12.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button12.FlatAppearance.BorderSize = 0
+        Button12.FlatStyle = FlatStyle.Flat
+        Button12.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Button12.Location = New Point(3, 25)
+        Button12.Name = "Button12"
+        Button12.Size = New Size(111, 25)
+        Button12.TabIndex = 33
+        Button12.Text = "LTS"
+        Button12.UseVisualStyleBackColor = False
+        ' 
+        ' Button10
+        ' 
+        Button10.BackColor = Color.FromArgb(CByte(35), CByte(35), CByte(35))
+        Button10.FlatAppearance.BorderSize = 0
+        Button10.FlatStyle = FlatStyle.Flat
+        Button10.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Button10.Location = New Point(490, 143)
+        Button10.Name = "Button10"
+        Button10.Size = New Size(111, 25)
+        Button10.TabIndex = 31
+        Button10.Text = "Switch Build"
+        Button10.UseVisualStyleBackColor = False
         ' 
         ' ProgressBar1
         ' 
@@ -505,9 +576,9 @@ Partial Class Settings
         Label16.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label16.Location = New Point(170, 119)
         Label16.Name = "Label16"
-        Label16.Size = New Size(205, 20)
+        Label16.Size = New Size(261, 20)
         Label16.TabIndex = 24
-        Label16.Text = "v1.3.0u (Arch Valley Universal)"
+        Label16.Text = "v1.3.0u - Stable (Arch Valley Universal)"
         ' 
         ' Label14
         ' 
@@ -710,6 +781,7 @@ Partial Class Settings
         Panel3.PerformLayout()
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
+        buildswitcher.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
@@ -777,4 +849,9 @@ Partial Class Settings
     Friend WithEvents Label26 As Label
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button13 As Button
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button11 As Button
+    Friend WithEvents buildswitcher As Panel
 End Class

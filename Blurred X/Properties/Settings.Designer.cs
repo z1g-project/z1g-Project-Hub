@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BruhProx.Properties {
+namespace Blurred_X.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -109,7 +109,7 @@ namespace BruhProx.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://bruhprox.pages.dev")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost")]
         public string versionurl {
             get {
                 return ((string)(this["versionurl"]));

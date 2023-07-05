@@ -47,11 +47,14 @@
             tabPage1 = new TabPage();
             chromiumWebBrowser1 = new CefSharp.WinForms.ChromiumWebBrowser();
             tabControl1 = new TabControl();
+            panel3 = new Panel();
+            label2 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             tabPage1.SuspendLayout();
             tabControl1.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -257,6 +260,7 @@
             // tabPage1
             // 
             tabPage1.BackColor = Color.FromArgb(24, 24, 24);
+            tabPage1.Controls.Add(panel3);
             tabPage1.Controls.Add(chromiumWebBrowser1);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
@@ -285,6 +289,24 @@
             tabControl1.Size = new Size(1315, 693);
             tabControl1.TabIndex = 6;
             // 
+            // panel3
+            // 
+            panel3.Controls.Add(label2);
+            panel3.Location = new Point(1107, 3);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(200, 205);
+            panel3.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(16, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(152, 32);
+            label2.TabIndex = 0;
+            label2.Text = "Quick Menu";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -308,6 +330,8 @@
             panel2.PerformLayout();
             tabPage1.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -331,5 +355,7 @@
         internal Button button9;
         public CefSharp.WinForms.ChromiumWebBrowser chromiumWebBrowser1;
         public TabControl tabControl1;
+        private Panel panel3;
+        private Label label2;
     }
 }

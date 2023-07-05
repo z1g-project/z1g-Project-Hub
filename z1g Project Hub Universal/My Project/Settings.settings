@@ -23,5 +23,11 @@
     <Setting Name="windowPosition" Type="System.String" Scope="User">
       <Value Profile="(Default)">CenterScreen</Value>
     </Setting>
+    <Setting Name="buildtype" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Stable</Value>
+    </Setting>
+    <Setting Name="buildfetchurl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://cdn.z1g-project.repl.co/z1g-hub/client/currentversion.txt</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

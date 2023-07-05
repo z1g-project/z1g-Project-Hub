@@ -1,4 +1,47 @@
-# v1.3.0 (Nightly 6-17-23)
+# v1.3.0 (Nightly 6-24-23)
+
+- Add z1g Suite (Beta) Features
+- Add Experimental Overlay (Only Avalible for Terbium right now on Insider Builds)
+- Fix UI Scaling Issues
+- Make Settings Window Resizable
+- Make z1g Hub Consume 5% less memory than v1.2.5
+- Other Minor Performance Improvements
+- Other Minor UI Changes
+- Bug Fixes
+
+Released: 6/24/2023
+Downloads: [Avalible](https://github.com/z1g-project/z1g-Project-Hub/releases/tag/z1g-hub-nightly-06-24-2023)
+
+## v1.3.0 (Nightly 6-20-23)
+
+- Fixed Weird Breaking Issue
+- Major Uplift to Feed (Almost Ready to Exit Beta)
+- Fix Changelogs
+- Other Minor Changes
+- Bug Fixes
+- Fix UI Breaking
+- Fix Preview Builds being unavalible
+- Fix Window Resoulution Breaking
+- Add Preview Labels to Apps
+- Final Update to Blurred's Vault
+- Fix Window Crashing when installing Project X (Beta)
+- Fix Assets unavalible on tag releases
+- New z1g Package Installer coming soon!
+- More Local Host Options (More to come!)
+- Intergration with Discord
+
+Released: 6/20/2023
+Downloads: [Avalible](https://github.com/z1g-project/z1g-Project-Hub/releases/tag/z1g-hub-nightly-06-20-2023)
+
+## v1.3.0 (Nightly 6-18-23)
+
+- Minor UI Fixes
+- Bug Fixes
+
+Released: 6/18/2023
+Downloads: [Avalible](https://github.com/z1g-project/z1g-Project-Hub/releases/tag/z1g-hub-nightly-06-18-2023)
+
+## v1.3.0 (Nightly 6-17-23)
 
 - Fix UI Breaking
 - Fix Preview Builds being unavalible

@@ -137,6 +137,30 @@ Namespace My
                 Me("windowPosition") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Stable")>  _
+        Public Property buildtype() As String
+            Get
+                Return CType(Me("buildtype"),String)
+            End Get
+            Set
+                Me("buildtype") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://cdn.z1g-project.repl.co/z1g-hub/client/currentversion.txt")>  _
+        Public Property buildfetchurl() As String
+            Get
+                Return CType(Me("buildfetchurl"),String)
+            End Get
+            Set
+                Me("buildfetchurl") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

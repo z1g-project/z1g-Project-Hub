@@ -281,12 +281,12 @@ Public Class Form3
 
     Private Sub Label24_Click(sender As Object, e As EventArgs) Handles Label24.Click
         'BruhProx
-        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+        MsgBox("This product is released however the server for the application is offline. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
     End Sub
 
     Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
         'BruhProx
-        MsgBox("This product is not released yet. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+        MsgBox("This product is released however the server for the application is offline. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
     End Sub
 
     Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
@@ -735,7 +735,43 @@ Public Class Form3
             If Not String.IsNullOrEmpty(expirationDate) Then
                 Label106.Text = "Expires: " & expirationDate
                 Label107.Text = "Expires: " & expirationDate
-                Panel13.visible = True
+                Panel13.Visible = True
+                If My.Computer.FileSystem.FileExists("C:\Users\Public\UblockInstalled.dat") Then
+                    Button18.Enabled = False
+                    Label121.Text = "UBlock Origin (Installed)"
+                    Button19.Enabled = True
+                Else
+                    Button18.Enabled = True
+                    Label121.Text = "UBlock Origin"
+                    Button19.Enabled = False
+                End If
+                If My.Computer.FileSystem.FileExists("C:\Users\Public\YTModsInstalled.dat") Then
+                    Button21.Enabled = False
+                    Label122.Text = "Youtube Addons (Installed)"
+                    Button20.Enabled = True
+                Else
+                    Button21.Enabled = True
+                    Label122.Text = "Youtube Addons"
+                    Button20.Enabled = False
+                End If
+                If My.Computer.FileSystem.FileExists("C:\Users\Public\customcur.dat") Then
+                    Button23.Enabled = False
+                    Label123.Text = "Custom Cursor (Installed)"
+                    Button22.Enabled = True
+                Else
+                    Button23.Enabled = True
+                    Label123.Text = "Custom Cursor"
+                    Button22.Enabled = False
+                End If
+                If My.Computer.FileSystem.FileExists("C:\Users\Public\tampmonkey.dat") Then
+                    Button25.Enabled = False
+                    Label124.Text = "Tampermonkey (Installed)"
+                    Button24.Enabled = True
+                Else
+                    Button25.Enabled = True
+                    Label124.Text = "Tampermonkey"
+                    Button24.Enabled = False
+                End If
             Else
                 Label106.Text = "Expires: No Expiration"
                 panel13.visible = False
@@ -1512,6 +1548,255 @@ Public Class Form3
 
     Private Sub Label105_Click(sender As Object, e As EventArgs) Handles Label105.Click
         Process.Start("https://z1g-project.repl.co/z1g-suite/")
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        Button18.Enabled = False
+        Label121.Text = "UBlock Origin (Downloading...)"
+
+        Dim webClient As New WebClient()
+
+        ' Attach the event handler for the download completion
+        AddHandler webClient.DownloadFileCompleted, AddressOf UBlockDownloadCompleted
+
+        ' Start the file download
+        webClient.DownloadFileAsync(New Uri("https://github.com/gorhill/uBlock/releases/download/uBOLite_1.0.23.6195/uBOLite_1.0.23.6195.chromium.mv3.zip"), "C:\z1g Apps\Temp\Ublock-tmp.zip")
+    End Sub
+
+    Private Sub UBlockDownloadCompleted(sender As Object, e As System.ComponentModel.AsyncCompletedEventArgs)
+        If e.Error IsNot Nothing Then
+            ' Handle any download errors
+            MessageBox.Show("An error occurred while downloading the file.")
+        Else
+            ' Download completed successfully
+            Label121.Text = "UBlock Origin (Extracting...)"
+
+            ' Extract the files
+            ZipFile.ExtractToDirectory("C:\z1g Apps\temp\Ublock-tmp.zip", "C:\z1g Apps\Terbium\UBlock\")
+            Label121.Text = "UBlock Origin (Pass: 2 of 5)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\Ublock-tmp.zip", "C:\z1g Apps\Velocity\UBlock\")
+            Label121.Text = "UBlock Origin (Pass: 3 of 5)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\Ublock-tmp.zip", "C:\z1g Apps\BruhProx\UBlock\")
+            Label121.Text = "UBlock Origin (Pass: 4 of 5)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\Ublock-tmp.zip", "C:\z1g Apps\Blurred X\UBlock\")
+            Label121.Text = "UBlock Origin (Pass: 5 of 5)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\Ublock-tmp.zip", "C:\z1g Apps\z1g Browser\UBlock\")
+            Label121.Text = "UBlock Origin (Cleaning...)"
+
+            ' Save the installation info
+            Dim isInstalled As New System.IO.StreamWriter("C:\Users\Public\UblockInstalled.dat")
+            isInstalled.WriteLine("ExtVer=1.0.23.6195.chromium.mv3")
+            isInstalled.Close()
+
+            ' Delete the temporary file
+            My.Computer.FileSystem.DeleteFile("C:\z1g Apps\Temp\Ublock-tmp.zip")
+            Label121.Text = "UBlock Origin (Installed)"
+        End If
+    End Sub
+
+    Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
+        Button21.Enabled = False
+        Label122.Text = "Youtube Addons (Downloading...)"
+
+        Dim webClient As New WebClient()
+        Dim webClient2 As New WebClient()
+
+        ' Attach the event handler for the download completion
+        AddHandler webClient.DownloadFileCompleted, AddressOf YTDownloadCompleted
+        AddHandler webClient2.DownloadFileCompleted, AddressOf YTDownloadCompleted2
+
+        ' Start the file download
+        webClient.DownloadFileAsync(New Uri("https://tb-client.johnglynn2.repl.co/ext/ytadblock.zip"), "C:\z1g Apps\Temp\ytadblock.zip")
+        webClient2.DownloadFileAsync(New Uri("https://tb-client.johnglynn2.repl.co/ext/ytdislikebtn.zip"), "C:\z1g Apps\Temp\ytdislikebtn.zip")
+    End Sub
+
+    Private Sub YTDownloadCompleted(sender As Object, e As System.ComponentModel.AsyncCompletedEventArgs)
+        If e.Error IsNot Nothing Then
+            ' Handle any download errors
+            MessageBox.Show("An error occurred while downloading the file.")
+        Else
+            ' Download completed successfully
+            Label122.Text = "Youtube Addons (Extracting...)"
+
+            ' Extract the files
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\ytadblock.zip", "C:\z1g Apps\Velocity\YTAdblock\")
+            Label122.Text = "Youtube Addons (Pass: 2 of 4)"
+            'ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\ytdislikebtn.zip", "C:\z1g Apps\Velocity\YTDislikeMod\")
+            Label122.Text = "Youtube Addons (Pass: 3 of 4)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\ytadblock.zip", "C:\z1g Apps\z1g Browser\YTAdblock\")
+            Label122.Text = "Youtube Addons (Pass: 4 of 4)"
+            'ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\ytdislikebtn.zip", "C:\z1g Apps\z1g Browser\YTDislikeMod\")
+            Label122.Text = "Youtube Addons (Cleaning...)"
+
+            ' Save the installation info
+            Dim isInstalled As New System.IO.StreamWriter("C:\Users\Public\YTModsInstalled.dat")
+            isInstalled.WriteLine("ExtVer=z1gYTModPack-v1.0.0")
+            isInstalled.Close()
+
+            ' Delete the temporary file
+            My.Computer.FileSystem.DeleteFile("C:\z1g Apps\Temp\ytadblock.zip")
+            Label122.Text = "Youtube Addons (Installed)"
+        End If
+    End Sub
+
+    Private Sub YTDownloadCompleted2(sender As Object, e As System.ComponentModel.AsyncCompletedEventArgs)
+        If e.Error IsNot Nothing Then
+            ' Handle any download errors
+            MessageBox.Show("An error occurred while downloading the file.")
+        Else
+            ' Download completed successfully
+            Label122.Text = "Youtube Addons (Extracting...)"
+
+            ' Extract the files
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\ytdislikebtn.zip", "C:\z1g Apps\Velocity\YTDislikeMod\")
+            Label122.Text = "Youtube Addons (Pass: 3 of 4)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\ytdislikebtn.zip", "C:\z1g Apps\z1g Browser\YTDislikeMod\")
+            Label122.Text = "Youtube Addons (Cleaning...)"
+            ' Save the installation info
+
+            ' Delete the temporary file
+            My.Computer.FileSystem.DeleteFile("C:\z1g Apps\Temp\ytdislikebtn.zip")
+            Label122.Text = "Youtube Addons (Installed)"
+        End If
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        Button19.Enabled = False
+        My.Computer.FileSystem.DeleteFile("C:\Users\Public\UblockInstalled.dat")
+        Label121.Text = "UBlock Origin (Removing...)"
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\z1g Browser\UBlock\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Blurred X\UBlock\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\BruhProx\UBlock\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Velocity\UBlock\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Terbium\UBlock\", True)
+        Label121.Text = "UBlock Origin"
+        Button19.Enabled = False
+        Button18.Enabled = True
+    End Sub
+
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        Button23.Enabled = False
+        Label123.Text = "Custom Cursor (Downloading...)"
+
+        Dim webClient As New WebClient()
+
+        ' Attach the event handler for the download completion
+        AddHandler webClient.DownloadFileCompleted, AddressOf CustomCur
+
+        ' Start the file download
+        webClient.DownloadFileAsync(New Uri("https://tb-client.johnglynn2.repl.co/ext/customcur.zip"), "C:\z1g Apps\Temp\customcur.zip")
+    End Sub
+
+    Private Sub CustomCur(sender As Object, e As System.ComponentModel.AsyncCompletedEventArgs)
+        If e.Error IsNot Nothing Then
+            ' Handle any download errors
+            MessageBox.Show("An error occurred while downloading the file.")
+        Else
+            ' Download completed successfully
+            Label123.Text = "Custom Cursor (Extracting...)"
+
+            ' Extract the files
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\customcur.zip", "C:\z1g Apps\Velocity\customcur\")
+            Label123.Text = "Custom Cursor (Pass: 2 of 4)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\customcur.zip", "C:\z1g Apps\BruhProx\customcur\")
+            Label123.Text = "Custom Cursor (Pass: 3 of 4)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\customcur.zip", "C:\z1g Apps\Blurred X\customcur\")
+            Label123.Text = "Custom Cursor (Pass: 4 of 4)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\customcur.zip", "C:\z1g Apps\z1g Browser\customcur\")
+
+            Label123.Text = "Custom Cursor (Cleaning...)"
+
+            ' Save the installation info
+            Dim isInstalled As New System.IO.StreamWriter("C:\Users\Public\customcur.dat")
+            isInstalled.WriteLine("ExtVer=customcur-v1.0.0")
+            isInstalled.Close()
+
+            ' Delete the temporary file
+            My.Computer.FileSystem.DeleteFile("C:\z1g Apps\Temp\customcur.zip")
+            Label123.Text = "Custom Cursor (Installed)"
+        End If
+    End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        Button25.Enabled = False
+        Label125.Text = "Tampermonkey (Downloading...)"
+
+        Dim webClient As New WebClient()
+
+        ' Attach the event handler for the download completion
+        AddHandler webClient.DownloadFileCompleted, AddressOf TampMonkey
+
+        ' Start the file download
+        webClient.DownloadFileAsync(New Uri("https://tb-client.johnglynn2.repl.co/ext/tampmonkey.zip"), "C:\z1g Apps\Temp\tampmonkey.zip")
+    End Sub
+
+    Private Sub TampMonkey(sender As Object, e As System.ComponentModel.AsyncCompletedEventArgs)
+        If e.Error IsNot Nothing Then
+            ' Handle any download errors
+            MessageBox.Show("An error occurred while downloading the file.")
+        Else
+            ' Download completed successfully
+            Label125.Text = "Tampermonkey (Extracting...)"
+
+            ' Extract the files
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\tampmonkey.zip", "C:\z1g Apps\Velocity\TampMonkey\")
+            Label125.Text = "Tampermonkey (Pass: 2 of 4)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\tampmonkey.zip", "C:\z1g Apps\BruhProx\TampMonkey\")
+            Label125.Text = "Tampermonkey (Pass: 3 of 4)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\tampmonkey.zip", "C:\z1g Apps\Blurred X\TampMonkey\")
+            Label125.Text = "Tampermonkey (Pass: 4 of 4)"
+            ZipFile.ExtractToDirectory("C:\z1g Apps\Temp\tampmonkey.zip", "C:\z1g Apps\z1g Browser\TampMonkey\")
+
+            Label125.Text = "Tampermonkey (Cleaning...)"
+
+            ' Save the installation info
+            Dim isInstalled As New System.IO.StreamWriter("C:\Users\Public\tampmonkey.dat")
+            isInstalled.WriteLine("ExtVer=tampmonkey-v1.0.0")
+            isInstalled.Close()
+
+            ' Delete the temporary file
+            My.Computer.FileSystem.DeleteFile("C:\z1g Apps\Temp\tampmonkey.zip")
+            Label125.Text = "Tampermonkey (Installed)"
+        End If
+    End Sub
+
+    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+        Button20.Enabled = False
+        My.Computer.FileSystem.DeleteFile("C:\Users\Public\YTModsInstalled.dat")
+        Label121.Text = "Youtube Addons (Removing...)"
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Velocity\YTAdblock\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Velocity\ytdislikebtn\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\z1g Browser\YTAdblock\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\z1g Browser\ytdislikebtn\", True)
+        Label121.Text = "Youtube Addons"
+        Button20.Enabled = False
+        Button21.Enabled = True
+    End Sub
+
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+        Button22.Enabled = False
+        My.Computer.FileSystem.DeleteFile("C:\Users\Public\customcur.dat")
+        Label123.Text = "Custom Cursor (Removing...)"
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\z1g Browser\customcur\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Blurred X\customcur\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\BruhProx\customcur\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Velocity\customcur\", True)
+        Label123.Text = "Custom Cursor"
+        Button22.Enabled = False
+        Button23.Enabled = True
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        Button24.Enabled = False
+        My.Computer.FileSystem.DeleteFile("C:\Users\Public\tampmonkey.dat")
+        Label124.Text = "Tampermonkey (Removing...)"
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\z1g Browser\TampMonkey\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Blurred X\TampMonkey\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\BruhProx\TampMonkey\", True)
+        My.Computer.FileSystem.DeleteDirectory("C:\z1g Apps\Velocity\TampMonkey\", True)
+        Label124.Text = "Tampermonkey"
+        Button24.Enabled = False
+        Button25.Enabled = True
     End Sub
 End Class
 

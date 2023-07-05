@@ -5,6 +5,8 @@ Imports System.Net.Http
 Imports System.IO
 Imports System.IO.Compression
 Imports System.Runtime.InteropServices
+Imports System.Net
+Imports Newtonsoft.Json.Linq
 
 Public Class Settings
     Private Const WM_NCLBUTTONDOWN As Integer = &HA1
@@ -55,6 +57,7 @@ Public Class Settings
         Panel3.Visible = False
         Panel4.Visible = False
         Panel5.Visible = False
+        buildswitcher.Visible = False
         textBox1.Text = My.Settings.formWidth
         textBox2.Text = My.Settings.formHeight
         ComboBox1.Text = My.Settings.savelocation
@@ -90,13 +93,15 @@ Public Class Settings
         Panel2.Visible = True
         Panel3.Visible = True
         Panel4.Visible = True
+        buildswitcher.Visible = False
+        Label16.Text = "v1.3.0u - " + My.Settings.buildtype + " (Arch Valley Universal)"
         Panel5.Visible = False
     End Sub
 
     Private Async Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         ProgressBar1.Increment(10)
         If ProgressBar1.Value = 100 Then
-            Dim response As HttpResponseMessage = Await httpClient.GetAsync("https://cdn.z1g-project.repl.co/z1g-hub/client/currentversion.txt")
+            Dim response As HttpResponseMessage = Await httpClient.GetAsync(My.Settings.buildfetchurl)
             Dim newestVersion As String = Await response.Content.ReadAsStringAsync()
             Dim currentVersion As String = Application.ProductVersion
 
@@ -124,6 +129,7 @@ Public Class Settings
         Panel3.Visible = True
         Panel4.Visible = True
         Panel5.Visible = True
+        buildswitcher.Visible = False
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -136,13 +142,81 @@ Public Class Settings
         End If
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Timer1.Start()
-        ProgressBar1.Value = 0
-        PictureBox1.Image = My.Resources.WindowsLoading
-        Label16.Text = "Checking for Updates..."
-        Button4.Enabled = False
+    Private Async Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        If Button4.Text = "Restart" Then
+            If My.Settings.buildtype = "Stable" Then
+                Await GetLatestReleaseVersionAsync()
+            End If
+            If My.Settings.buildtype = "LTS" Then
+                Await DownloadLTSBuildAsync()
+            End If
+            If My.Settings.buildtype = "Nightly" Then
+                Await GetLatestNightlyVersionAsync()
+            End If
+        Else
+            Timer1.Start()
+            ProgressBar1.Value = 0
+            PictureBox1.Image = My.Resources.WindowsLoading
+            Label16.Text = "Checking for Updates..."
+            Button4.Enabled = False
+        End If
     End Sub
+
+    Private Async Function GetLatestReleaseVersionAsync() As Task
+        Dim httpClient As New HttpClient()
+        Dim owner As String = "z1g-project"
+        Dim repo As String = "z1g-project-hub"
+
+        Dim response As HttpResponseMessage = Await httpClient.GetAsync($"https://api.github.com/repos/{owner}/{repo}/releases/latest")
+        response.EnsureSuccessStatusCode()
+
+        Dim responseContent As String = Await response.Content.ReadAsStringAsync()
+        Dim release As JObject = JObject.Parse(responseContent)
+        Dim latestTagName As String = release("tag_name").ToString()
+
+        ' Use the latest release version for further processing
+        ' ...
+    End Function
+
+    Private Async Function DownloadLTSBuildAsync() As Task
+        Dim batchFilePath As String = "C:\z1g Apps\temp\extract_and_overwrite.bat"
+        Dim zipDownloadUrl As String = "https://github.com/z1g-project/z1g-Project-Hub/releases/download/LTS/z1g-project-hub.zip"
+
+        Dim zipFilePath As String = "C:\z1g Apps\temp\build.zip"
+        Using client As New WebClient()
+            Await client.DownloadFileTaskAsync(New Uri(zipDownloadUrl), zipFilePath)
+        End Using
+
+        Dim batchFileContent As String = "@echo off" & vbCrLf &
+                                     "set ""tempDirectory=C:\z1g Apps\temp""" & vbCrLf &
+                                     "set ""zipFilePath=%tempDirectory%\build.zip""" & vbCrLf &
+                                     "" & vbCrLf &
+                                     "rem Extract the zip file" & vbCrLf &
+                                     "powershell -Command ""Expand-Archive -Path '%zipFilePath%' -DestinationPath '%tempDirectory%' -Force""" & vbCrLf &
+                                     "" & vbCrLf &
+                                     "rem Overwrite the files" & vbCrLf &
+                                     "xcopy /E /Y ""%tempDirectory%"" ""%CD%""" & vbCrLf &
+                                     "" & vbCrLf &
+                                     "rem Clean up the temporary directory" & vbCrLf &
+                                     "rmdir /S /Q ""%tempDirectory%""" & vbCrLf
+
+        File.WriteAllText(batchFilePath, batchFileContent)
+
+        Dim process As New Process()
+        process.StartInfo.FileName = "cmd.exe"
+        process.StartInfo.Arguments = "/C " & batchFilePath
+        process.Start()
+        process.WaitForExit()
+    End Function
+
+    Private Async Function GetLatestNightlyVersionAsync() As Task
+        Dim httpClient As New HttpClient()
+        Dim owner As String = "z1g-project"
+        Dim repo As String = "z1g-project-hub"
+
+        ' Logic to get the latest nightly version from GitHub
+        ' ...
+    End Function
 
     Private Sub Settings_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
         If e.Button = MouseButtons.Left Then
@@ -174,8 +248,7 @@ Public Class Settings
     Private Sub button5_Click(sender As Object, e As EventArgs) Handles button5.Click
         Dim formWidth As Integer = Integer.Parse(textBox1.Text)
         Dim formHeight As Integer = Integer.Parse(textBox2.Text)
-
-        My.Settings.FormWidth = formWidth
+        My.Settings.formWidth = formWidth
         My.Settings.FormHeight = formHeight
         My.Settings.Save()
     End Sub
@@ -203,5 +276,62 @@ Public Class Settings
         My.Settings.Save()
         textBox1.Text = formWidth
         textBox2.Text = formHeight
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        If buildswitcher.Visible = True Then
+            buildswitcher.Visible = False
+        Else
+            buildswitcher.Visible = True
+        End If
+        GetBuildButton()
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        My.Settings.buildtype = "Stable"
+        My.Settings.buildfetchurl = "https://cdn.z1g-project.repl.co/z1g-hub/client/currentversion.txt"
+        My.Settings.Save()
+        GetBuildButton()
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        My.Settings.buildtype = "LTS"
+        My.Settings.buildfetchurl = "https://cdn.z1g-project.repl.co/z1g-hub/client/ltsversion.txt"
+        My.Settings.Save()
+        GetBuildButton()
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        My.Settings.buildtype = "Nightly"
+        My.Settings.buildfetchurl = "https://cdn.z1g-project.repl.co/z1g-hub/client/nightlyversion.txt"
+        My.Settings.Save()
+        GetBuildButton()
+    End Sub
+
+    Private Sub GetBuildButton()
+        If My.Settings.buildtype = "Stable" Then
+            Button11.FlatAppearance.BorderSize = 1
+            Button11.FlatAppearance.BorderColor = Color.Green
+            Button12.FlatAppearance.BorderSize = 0
+            Button12.FlatAppearance.BorderColor = Color.Green
+            Button13.FlatAppearance.BorderSize = 0
+            Button13.FlatAppearance.BorderColor = Color.Green
+        End If
+        If My.Settings.buildtype = "LTS" Then
+            Button11.FlatAppearance.BorderSize = 0
+            Button11.FlatAppearance.BorderColor = Color.Green
+            Button12.FlatAppearance.BorderSize = 1
+            Button12.FlatAppearance.BorderColor = Color.Green
+            Button13.FlatAppearance.BorderSize = 0
+            Button13.FlatAppearance.BorderColor = Color.Green
+        End If
+        If My.Settings.buildtype = "Nightly" Then
+            Button11.FlatAppearance.BorderSize = 0
+            Button11.FlatAppearance.BorderColor = Color.Green
+            Button12.FlatAppearance.BorderSize = 0
+            Button12.FlatAppearance.BorderColor = Color.Green
+            Button13.FlatAppearance.BorderSize = 1
+            Button13.FlatAppearance.BorderColor = Color.Green
+        End If
     End Sub
 End Class

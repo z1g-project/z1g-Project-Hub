@@ -4,11 +4,14 @@ using CefSharp.WinForms;
 using DiscordRPC;
 using DiscordRPC.Logging;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
+using System.Text;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Terbium
 {
@@ -41,8 +44,8 @@ namespace Terbium
             InitializeCefSharp();
             LoadDefaultSettings();
 
-            int formWidth = Properties.Settings.Default.FormWidth;
-            int formHeight = Properties.Settings.Default.FormHeight;
+            int formWidth = Blurred_X.Properties.Settings.Default.FormWidth;
+            int formHeight = Blurred_X.Properties.Settings.Default.FormHeight;
 
             // Set the width and height of the form
             this.Width = formWidth;
@@ -67,12 +70,12 @@ namespace Terbium
 
                 var presence = new RichPresence()
                 {
-                    Details = "Using Terbium WebOS by the z1g Project",
+                    Details = "Using Blurred X by the z1g Project",
                     State = elapsedTimeString,
                     Assets = new Assets()
                     {
-                        LargeImageKey = "terbium",
-                        LargeImageText = "Terbium Logo",
+                        LargeImageKey = "blurred-x",
+                        LargeImageText = "Blurred X Logo",
                         SmallImageKey = "z1g",
                         SmallImageText = "z1g Project Logo"
                     },
@@ -94,7 +97,7 @@ namespace Terbium
 
         private void LoadDefaultSettings()
         {
-            // Load default settings or values from the Properties.Settings.Default
+            // Load default settings or values from the Blurred_X.Properties.Settings.Default
             // Apply the loaded settings
         }
 
@@ -114,19 +117,19 @@ namespace Terbium
         {
             CefSettings settings = new CefSettings();
             settings.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 z1g Browser/114.0.1722.64";
-            string path = ("C:\\z1g Apps\\Terbium\\Data\\");
+            string path = ("C:\\z1g Apps\\Blurred X\\Data\\");
             settings.RemoteDebuggingPort = 8080;
             settings.CachePath = path;
 
-            if (Directory.Exists("C:\\z1g Apps\\Terbium\\UBlock\\"))
+            if (Directory.Exists("C:\\z1g Apps\\Blurred X\\UBlock\\"))
             {
-                string extensionPath = "C:\\z1g Apps\\Terbium\\UBlock\\";
+                string extensionPath = "C:\\z1g Apps\\Blurred X\\UBlock\\";
                 settings.CefCommandLineArgs.Add("load-extension", extensionPath);
             }
 
-            if (Directory.Exists("C:\\z1g Apps\\Terbium\\TampMonkey\\"))
+            if (Directory.Exists("C:\\z1g Apps\\Blurred X\\CustomCur\\"))
             {
-                string extensionPath = "C:\\z1g Apps\\Terbium\\TampMonkey\\";
+                string extensionPath = "C:\\z1g Apps\\Blurred X\\CustomCur\\";
                 settings.CefCommandLineArgs.Add("load-extension", extensionPath);
             }
             // Initialize Cef with the provided settings
@@ -135,38 +138,149 @@ namespace Terbium
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            chromiumWebBrowser1.Load(Properties.Settings.Default.versionurl);
-            string terbiumVerUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/terbium-ver.txt";
-            string setupDoneFile = "C:/z1g apps/Terbium/Data/setupdone.DAT";
-
+            panel2.Visible = false;
             try
             {
+                string terbiumVerUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/blurred-x-ver.txt";
+                string setupDoneFile = "C:/z1g apps/Blurred X/Data/setupdone.DAT";
+                string localinstallexists = "C:/z1g apps/Blurred X/Data/localinstall.DAT";
+
                 using (HttpClient client = new HttpClient())
                 {
                     string newestVersion = await client.GetStringAsync(terbiumVerUrl);
                     string currentVersion = Application.ProductVersion;
 
-                    if (newestVersion.Contains(currentVersion))
-                    {
-                        if (!File.Exists(setupDoneFile))
-                        {
-                            firstrun firstrun = new firstrun();
-                            firstrun.Show();
-                            chromiumWebBrowser1.Load("about:blank");
-                            return; // Stop execution after showing the firstrun form
-                        }
-                    }
-                    else
+                    if (!newestVersion.Contains(currentVersion))
                     {
                         getupdates getupdates = new getupdates();
                         getupdates.Show();
                         return; // Stop execution after showing the getupdates form
                     }
+
+                    if (!File.Exists(setupDoneFile))
+                    {
+                        firstrun firstrun = new firstrun();
+                        firstrun.Show();
+                        chromiumWebBrowser1.Load("about:blank");
+                        return; // Stop execution after showing the firstrun form
+                    }
+                    else
+                    {
+                        // Nothing happens lol
+                    }
+
+                    if (!File.Exists(localinstallexists))
+                    {
+                        // Change directory to the desired path
+                        string projectDirectory = @"C:\z1g Apps\Blurred X\BX-local\Blurred-X-v2-master"; // Update with the correct folder name
+                        Directory.SetCurrentDirectory(projectDirectory);
+
+                        Process runProcess = new Process();
+                        runProcess.StartInfo.FileName = "npm";
+                        runProcess.StartInfo.Arguments = "install";
+                        runProcess.StartInfo.WorkingDirectory = projectDirectory; // Set the working directory to the project folder
+                        runProcess.StartInfo.UseShellExecute = false;
+                        runProcess.StartInfo.RedirectStandardOutput = true;
+                        runProcess.StartInfo.RedirectStandardError = true;
+
+                        StringBuilder outputBuilder = new StringBuilder();
+                        StringBuilder errorBuilder = new StringBuilder();
+
+                        runProcess.OutputDataReceived += (s, evt) =>
+                        {
+                            if (!string.IsNullOrEmpty(evt.Data))
+                            {
+                                outputBuilder.AppendLine(evt.Data);
+                                this.Invoke(new Action(() =>
+                                {
+                                    textBox3.Text = outputBuilder.ToString();
+                                }));
+                            }
+                        };
+                        runProcess.ErrorDataReceived += (s, evt) =>
+                        {
+                            if (!string.IsNullOrEmpty(evt.Data))
+                            {
+                                errorBuilder.AppendLine(evt.Data);
+                                this.Invoke(new Action(() =>
+                                {
+                                    textBox3.Text = errorBuilder.ToString();
+                                }));
+                            }
+                        };
+
+                        runProcess.Start();
+                        runProcess.BeginOutputReadLine();
+                        runProcess.BeginErrorReadLine();
+                        runProcess.WaitForExit();
+
+                        if (runProcess.ExitCode != 0)
+                        {
+                            // Error occurred during npm install
+                            MessageBox.Show("Error occurred during npm install. See textbox3 for details.", "Error");
+                            return;
+                        }
+
+                        // Run npm start
+                        Process startProcess = new Process();
+                        startProcess.StartInfo.FileName = "npm";
+                        startProcess.StartInfo.Arguments = "start";
+                        startProcess.StartInfo.WorkingDirectory = projectDirectory; // Set the working directory to the project folder
+                        startProcess.StartInfo.UseShellExecute = false;
+                        startProcess.StartInfo.RedirectStandardOutput = true;
+                        startProcess.StartInfo.RedirectStandardError = true;
+
+                        outputBuilder.Clear();
+                        errorBuilder.Clear();
+
+                        startProcess.OutputDataReceived += (s, evt) =>
+                        {
+                            if (!string.IsNullOrEmpty(evt.Data))
+                            {
+                                outputBuilder.AppendLine(evt.Data);
+                                this.Invoke(new Action(() =>
+                                {
+                                    textBox3.Text = outputBuilder.ToString();
+                                }));
+                            }
+                        };
+                        startProcess.ErrorDataReceived += (s, evt) =>
+                        {
+                            if (!string.IsNullOrEmpty(evt.Data))
+                            {
+                                errorBuilder.AppendLine(evt.Data);
+                                this.Invoke(new Action(() =>
+                                {
+                                    textBox3.Text = errorBuilder.ToString();
+                                }));
+                            }
+                        };
+
+                        startProcess.Start();
+                        startProcess.BeginOutputReadLine();
+                        startProcess.BeginErrorReadLine();
+                        startProcess.WaitForExit();
+
+                        if (startProcess.ExitCode != 0)
+                        {
+                            // Error occurred during npm start
+                            MessageBox.Show("Error occurred during npm start. See textbox3 for details.", "Error");
+                            return;
+                        }
+
+                        // Load the URL in ChromiumWebBrowser
+                        chromiumWebBrowser1.Load("http://localhost");
+                    }
+                    else
+                    {
+                        // Load the URL in ChromiumWebBrowser
+                        chromiumWebBrowser1.Load(Blurred_X.Properties.Settings.Default.versionurl);
+                    }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while checking for updates: " + ex.Message);
+                MessageBox.Show("An error occurred: " + ex.Message, "Error");
             }
         }
 
@@ -277,7 +391,7 @@ namespace Terbium
 
         private void inspectToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Feature isn't ready yet. Check the source here: https://github.com/z1g-project/Terbium");
+            MessageBox.Show("Feature isn't ready yet. Check the source here: https://github.com/z1g-project/Blurred-X-v2");
         }
 
         private void resetSessionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -309,5 +423,14 @@ namespace Terbium
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+        }
     }
 }

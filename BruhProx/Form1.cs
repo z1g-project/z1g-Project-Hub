@@ -121,10 +121,9 @@ namespace Terbium
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            string url = "";
+            
             string terbiumVerUrl = "https://cdn.z1g-project.repl.co/z1g-hub/client/terbium-ver.txt";
-            string terbiumHomePage = "https://bruhprox.pages.dev";
-            string terbiumFallbackPage = "https://bruhprox.glitch.me";
+            chromiumWebBrowser1.Load(BruhProx.Properties.Settings.Default.versionurl);
             string setupDoneFile = "C:/z1g apps/BruhProx/Data/setupdone.DAT";
             string verConfFile = "C:/z1g apps/BruhProx/Data/verconf.DAT";
 
@@ -154,10 +153,8 @@ namespace Terbium
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred while checking for updates: " + ex.Message);
-                url = File.Exists(verConfFile) ? terbiumHomePage : terbiumFallbackPage;
+                File.Exists(verConfFile);
             }
-
-            chromiumWebBrowser1.Load(url);
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
