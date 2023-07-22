@@ -286,7 +286,32 @@ Public Class Form3
 
     Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
         'BruhProx
-        MsgBox("This product is released however the server for the application is offline. Check back soon!", MsgBoxStyle.Critical, "Download Unavalible")
+        If My.Computer.FileSystem.FileExists("C:\z1g Apps\BruhProx\BruhProx.exe") Then
+            Process.Start("C:\z1g Apps\BruhProx\BruhProx.exe")
+        Else
+            PictureBox24.Visible = True
+            downloads.PictureBox1.Image = My.Resources.uv
+            downloads.Label1.Text = "BruhProx"
+            downloads.Label2.Text = "Downloading: 0 of 0mb"
+            Dim zipUrl As String = "https://tb-client.johnglynn2.repl.co/bruhprox.zip"
+            Dim zipPath As String = Path.Combine("C:\z1g Apps\Temp\", "bruhprox.zip")
+            Using client As New WebClient()
+                client.DownloadFile(zipUrl, zipPath)
+            End Using
+
+            ' Extract the zip file
+            Dim extractPath As String = Path.Combine("C:\z1g Apps\", "BruhProx\")
+            If Directory.Exists(extractPath) Then
+                Directory.Delete(extractPath, True)
+            End If
+            ZipFile.ExtractToDirectory(zipPath, extractPath)
+
+            Dim createShortcutThread As New Threading.Thread(AddressOf CreateBruhProxShortcut)
+            createShortcutThread.Start()
+            Label21.Text = "BruhProx (Downloading...)"
+            downloads.Label2.Text = "Installing: 0%"
+            downloads.Panel2.Visible = True
+        End If
     End Sub
 
     Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
@@ -635,6 +660,47 @@ Public Class Form3
         File.Delete(batchFilePath)
         Process.Start("C:\z1g Apps\Terbium\Terbium.exe")
         Label21.Text = "Terbium"
+        downloads.Panel3.Visible = False
+        downloads.Panel2.Visible = False
+        downloads.Hide()
+        PictureBox24.Visible = False
+    End Sub
+
+    Private Sub CreateBruhProxShortcut()
+        downloads.Panel3.Visible = True
+        downloads.Label2.Text = "Installing: 50%"
+        Dim targetPath As String = Path.Combine("C:\z1g Apps\BruhProx\", "BruhProx.exe")
+        Dim shortcutPath As String = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.CommonPrograms),
+            "BruhProx.lnk"
+        )
+
+        ' Create a batch file content to create the shortcut
+        Dim batchContent As String = $"@echo off{Environment.NewLine}"
+        batchContent += $"echo Set oWS = WScript.CreateObject(""WScript.Shell"") > CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"echo sLinkFile = ""{shortcutPath}"" >> CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"echo Set oLink = oWS.CreateShortcut(sLinkFile) >> CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"echo oLink.TargetPath = ""{targetPath}"" >> CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"echo oLink.WorkingDirectory = ""{Path.GetDirectoryName(targetPath)}"" >> CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"echo oLink.Save >> CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"cscript CreateShortcut.vbs{Environment.NewLine}"
+        batchContent += $"del CreateShortcut.vbs"
+
+        ' Write the batch file
+        Dim batchFilePath As String = Path.Combine(Path.GetTempPath(), "CreateShortcut.bat")
+        File.WriteAllText(batchFilePath, batchContent)
+
+        ' Run the batch file
+        Dim processStartInfo As New ProcessStartInfo(batchFilePath)
+        processStartInfo.CreateNoWindow = True
+        processStartInfo.UseShellExecute = False
+        Process.Start(processStartInfo)
+
+        downloads.Label2.Text = "Cleaning Up..."
+        ' Clean up the batch file
+        File.Delete(batchFilePath)
+        Process.Start("C:\z1g Apps\BruhProx\BruhProx.exe")
+        Label21.Text = "BruhProx"
         downloads.Panel3.Visible = False
         downloads.Panel2.Visible = False
         downloads.Hide()
