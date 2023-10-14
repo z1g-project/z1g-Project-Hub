@@ -5,6 +5,8 @@
 # The z1g Project Hub Source Code
 
 The Official z1g Project Hub Client source code repository!
+<br>
+**NOTE** This version is considered the "legacy" version of z1g Hub and is no longer supported check out the new one here: [z1g Hub](https://github.com/z1g-project/z1g-hub)
 
 ## Multiplatform Installation
 
